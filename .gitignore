@@ -1,0 +1,14 @@
+# Upstream repositories (cloned for reference/building)
+upstream/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build artifacts
+*.log

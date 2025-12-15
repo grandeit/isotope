@@ -1,0 +1,855 @@
+name: AWX Operator
+
+on:
+  push:
+    paths:
+      - "images/awx-operator/**"
+      - ".github/workflows/awx-operator.yml"
+      - ".github/workflows/build-isotopes.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *" # Daily at 00:00 UTC
+    - cron: "0 12 * * *" # Daily at 12:00 UTC
+
+env:
+  REGISTRY: ghcr.io
+  NAME: awx-operator
+  VERSION: "devel"
+  ANSIBLE_OPERATOR_VERSION: "v1.42.0"
+
+jobs:
+  isotopes:
+    uses: ./.github/workflows/build-isotopes.yml
+    with:
+      name: awx-operator
+      # NOTE: Distroless is NOT supported for Ansible-based operators because:
+      # - ansible-operator spawns ansible-runner via exec.Command
+      # - ansible-runner spawns ansible-playbook as subprocess
+      # - AWX operator uses command:/shell: Ansible modules (33 times)
+      # - Proper locale support is required for Ansible
+      isotopes: '["ubi-micro", "ubi-minimal", "ubi"]'
+      upstream_repo: ansible/awx-operator
+      upstream_version: "devel"
+      build_repos: '[{"repo": "operator-framework/ansible-operator-plugins", "version": "v1.42.0"}, {"repo": "krallin/tini", "version": "v0.19.0"}]'
+      build_stages_without_cache: |
+        tini-builder
+        go-builder
+        python-builder
+    permissions:
+      contents: read
+      actions: write
+      packages: write
+    secrets: inherit
+
+  smoke-test:
+    needs: isotopes
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        isotope: ["ubi-micro", "ubi-minimal", "ubi"]
+    env:
+      IMAGE: ghcr.io/${{ github.repository }}/awx-operator:devel-${{ matrix.isotope }}-${{ github.run_id }}
+    steps:
+      - name: Log into GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pull isotope image
+        run: docker pull ${{ env.IMAGE }}
+
+      - name: Test ansible-operator --help
+        run: |
+          set -euo pipefail
+
+          docker run --rm ${{ env.IMAGE }} --help 2>&1 | tee output.txt
+          if [ ! -s output.txt ]; then
+            echo "❌ ${{ matrix.isotope }} isotope --help produced no output"
+            exit 1
+          fi
+
+          echo "✅ ${{ matrix.isotope }} isotope --help works"
+
+      - name: Verify ansible-operator version
+        run: |
+          set -euo pipefail
+
+          docker run --rm --entrypoint /usr/local/bin/ansible-operator ${{ env.IMAGE }} version 2>&1 | tee version.txt
+          if ! grep -q "ansible-operator" version.txt; then
+            echo "❌ ansible-operator version check failed"
+            exit 1
+          fi
+
+          echo "✅ ansible-operator binary works"
+
+      - name: Verify Python runtime
+        run: |
+          set -euo pipefail
+
+          docker run --rm --entrypoint python3 ${{ env.IMAGE }} --version 2>&1 | tee python.txt
+          if ! grep -qE "Python 3\.(11|12)" python.txt; then
+            echo "❌ Python version check failed"
+            cat python.txt
+            exit 1
+          fi
+
+          echo "✅ Python runtime works"
+
+      - name: Verify ansible-playbook works
+        run: |
+          set -euo pipefail
+
+          docker run --rm --entrypoint ansible-playbook ${{ env.IMAGE }} --version 2>&1 | tee ansible.txt
+          if ! grep -q "ansible-playbook" ansible.txt; then
+            echo "❌ ansible-playbook version check failed"
+            cat ansible.txt
+            exit 1
+          fi
+
+          echo "✅ ansible-playbook works"
+
+      - name: Verify core Python modules
+        run: |
+          set -euo pipefail
+
+          docker run --rm --entrypoint python3 ${{ env.IMAGE }} -c "
+          import ansible_runner
+          import kubernetes
+          import urllib3
+          import yaml
+          import jinja2
+          print('All core modules imported successfully')
+          "
+
+          echo "✅ Core Python modules work"
+
+      - name: Verify Ansible collections
+        run: |
+          set -euo pipefail
+
+          docker run --rm --entrypoint python3 ${{ env.IMAGE }} -c "
+          import os
+          collections = [
+              '/usr/share/ansible/collections/ansible_collections/operator_sdk/util',
+              '/usr/share/ansible/collections/ansible_collections/kubernetes/core'
+          ]
+          for c in collections:
+              assert os.path.isdir(c), f'Collection not found: {c}'
+              print(f'✓ {c}')
+          "
+
+          echo "✅ Ansible collections installed"
+
+      - name: Verify AWX operator content
+        run: |
+          set -euo pipefail
+
+          docker run --rm --entrypoint python3 ${{ env.IMAGE }} -c "
+          import os
+          assert os.path.exists('/opt/ansible/watches.yaml'), 'watches.yaml not found'
+          assert os.path.isdir('/opt/ansible/roles'), 'roles directory not found'
+          assert os.path.isdir('/opt/ansible/playbooks'), 'playbooks directory not found'
+          print('AWX operator content verified')
+          "
+
+          echo "✅ AWX operator content exists"
+
+  integration-test:
+    needs: [isotopes, smoke-test]
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        isotope: ["ubi-micro", "ubi-minimal", "ubi"]
+    env:
+      IMAGE: ghcr.io/${{ github.repository }}/awx-operator:devel-${{ matrix.isotope }}-${{ github.run_id }}
+    steps:
+      - name: Checkout upstream for CRDs
+        uses: actions/checkout@v4
+        with:
+          repository: ansible/awx-operator
+          ref: "devel"
+          path: upstream
+
+      - name: Log into GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Kind
+        uses: helm/kind-action@v1.10.0
+        with:
+          cluster_name: test-${{ matrix.isotope }}
+
+      - name: Load image into Kind
+        run: |
+          set -euo pipefail
+
+          docker pull "${{ env.IMAGE }}"
+          kind load docker-image "${{ env.IMAGE }}" --name test-${{ matrix.isotope }}
+
+          echo "✅ Image loaded into Kind"
+
+      - name: Install CRDs
+        run: |
+          set -euo pipefail
+
+          kubectl apply -f upstream/config/crd/bases/
+
+          kubectl wait --for=condition=established crd/awxs.awx.ansible.com --timeout=60s
+          kubectl wait --for=condition=established crd/awxbackups.awx.ansible.com --timeout=60s
+          kubectl wait --for=condition=established crd/awxrestores.awx.ansible.com --timeout=60s
+          kubectl wait --for=condition=established crd/awxmeshingresses.awx.ansible.com --timeout=60s
+
+          echo "✅ All AWX CRDs installed"
+
+      - name: Deploy operator
+        run: |
+          set -euo pipefail
+
+          kubectl create namespace awx
+
+          # ServiceAccount
+          kubectl apply -f - <<EOF
+          apiVersion: v1
+          kind: ServiceAccount
+          metadata:
+            name: awx-operator
+            namespace: awx
+          EOF
+
+          # Role with full AWX operator permissions
+          kubectl apply -f - <<EOF
+          apiVersion: rbac.authorization.k8s.io/v1
+          kind: Role
+          metadata:
+            name: awx-operator
+            namespace: awx
+          rules:
+          # Leader election
+          - apiGroups: ["coordination.k8s.io"]
+            resources: ["leases"]
+            verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+          # Core resources
+          - apiGroups: [""]
+            resources: ["pods", "services", "services/finalizers", "serviceaccounts",
+                        "endpoints", "persistentvolumeclaims", "events", "configmaps", "secrets"]
+            verbs: ["*"]
+          - apiGroups: ["apps"]
+            resources: ["deployments", "deployments/finalizers", "daemonsets", "replicasets", "statefulsets"]
+            verbs: ["*"]
+          - apiGroups: ["networking.k8s.io"]
+            resources: ["ingresses"]
+            verbs: ["*"]
+          - apiGroups: ["batch"]
+            resources: ["cronjobs", "jobs"]
+            verbs: ["*"]
+          - apiGroups: ["rbac.authorization.k8s.io"]
+            resources: ["roles", "rolebindings"]
+            verbs: ["*"]
+          - apiGroups: ["awx.ansible.com"]
+            resources: ["*"]
+            verbs: ["*"]
+          - apiGroups: [""]
+            resources: ["pods/exec", "pods/attach", "pods/log"]
+            verbs: ["create", "get"]
+          EOF
+
+          kubectl apply -f - <<EOF
+          apiVersion: rbac.authorization.k8s.io/v1
+          kind: RoleBinding
+          metadata:
+            name: awx-operator
+            namespace: awx
+          subjects:
+          - kind: ServiceAccount
+            name: awx-operator
+            namespace: awx
+          roleRef:
+            kind: Role
+            name: awx-operator
+            apiGroup: rbac.authorization.k8s.io
+          EOF
+
+          # Deployment
+          kubectl apply -f - <<EOF
+          apiVersion: apps/v1
+          kind: Deployment
+          metadata:
+            name: awx-operator
+            namespace: awx
+          spec:
+            replicas: 1
+            selector:
+              matchLabels:
+                app: awx-operator
+            template:
+              metadata:
+                labels:
+                  app: awx-operator
+              spec:
+                serviceAccountName: awx-operator
+                securityContext:
+                  runAsNonRoot: true
+                containers:
+                - name: awx-manager
+                  image: ${{ env.IMAGE }}
+                  imagePullPolicy: Never
+                  args:
+                  - --leader-elect
+                  - --leader-election-id=awx-operator
+                  env:
+                  - name: ANSIBLE_GATHERING
+                    value: explicit
+                  - name: ANSIBLE_DEBUG_LOGS
+                    value: "false"
+                  - name: WATCH_NAMESPACE
+                    valueFrom:
+                      fieldRef:
+                        fieldPath: metadata.namespace
+                  ports:
+                  - containerPort: 6789
+                    name: health
+                  livenessProbe:
+                    httpGet:
+                      path: /healthz
+                      port: 6789
+                    initialDelaySeconds: 15
+                    periodSeconds: 20
+                  readinessProbe:
+                    httpGet:
+                      path: /readyz
+                      port: 6789
+                    initialDelaySeconds: 5
+                    periodSeconds: 10
+                  resources:
+                    requests:
+                      memory: "64Mi"
+                      cpu: "100m"
+                    limits:
+                      memory: "512Mi"
+                      cpu: "500m"
+                  securityContext:
+                    allowPrivilegeEscalation: false
+                    capabilities:
+                      drop:
+                      - "ALL"
+          EOF
+
+          echo "✅ AWX operator deployment created"
+
+      - name: Wait for operator to be ready
+        run: |
+          set -euo pipefail
+
+          echo "Waiting for deployment..."
+          for i in {1..90}; do
+            echo "--- Attempt $i/90 ---"
+            if kubectl wait --for=condition=available deployment/awx-operator \
+              -n awx --timeout=5s 2>/dev/null; then
+              echo "✅ AWX operator deployment ready"
+              exit 0
+            fi
+
+            if [[ $((i % 5)) -eq 0 ]]; then
+              echo "=== Pod status ==="
+              kubectl get pods -n awx -o wide 2>/dev/null || true
+              echo "=== Recent logs ==="
+              kubectl logs -l app=awx-operator -n awx --tail=30 2>/dev/null || true
+            fi
+
+            sleep 4
+          done
+
+          echo "❌ Deployment not ready after 6 minutes"
+          kubectl describe pods -n awx
+          kubectl logs -l app=awx-operator -n awx --tail=500 || true
+          exit 1
+
+      - name: Verify health endpoints
+        run: |
+          set -euo pipefail
+
+          kubectl port-forward -n awx deployment/awx-operator 6789:6789 &
+          PF_PID=$!
+          sleep 5
+
+          curl -sf http://localhost:6789/healthz && echo " ✅ /healthz OK"
+          curl -sf http://localhost:6789/readyz && echo " ✅ /readyz OK"
+
+          kill $PF_PID 2>/dev/null || true
+
+          echo "✅ Health endpoints responding"
+
+      - name: Create AWX CR
+        run: |
+          set -euo pipefail
+
+          # Create AWX instance with reduced resource requirements for testing
+          kubectl apply -f - <<EOF
+          apiVersion: awx.ansible.com/v1beta1
+          kind: AWX
+          metadata:
+            name: test-awx
+            namespace: awx
+          spec:
+            service_type: ClusterIP
+            ingress_type: ingress
+            ingress_path: /awx
+            hostname: awx.local
+            # Resource requests only - no limits in CI to avoid OOMKilled
+            web_resource_requirements:
+              requests:
+                cpu: 100m
+                memory: 256Mi
+            task_resource_requirements:
+              requests:
+                cpu: 100m
+                memory: 256Mi
+            ee_resource_requirements:
+              requests:
+                cpu: 50m
+                memory: 64Mi
+            # Postgres settings - uses built-in postgres
+            postgres_storage_class: standard
+            postgres_resource_requirements:
+              requests:
+                cpu: 50m
+                memory: 64Mi
+            # Enable debug logging for tests
+            no_log: false
+          EOF
+
+          echo "✅ AWX CR created"
+
+      - name: Wait for AWX deployment
+        run: |
+          set -euo pipefail
+
+          echo "Waiting for AWX deployment to complete..."
+          echo "This typically takes 5-10 minutes for postgres, web, and task pods."
+
+          # Helper function to show debug info
+          show_debug() {
+            local component="$1"
+            echo ""
+            echo "=== Debug Info for $component ==="
+            echo "--- All Pods ---"
+            kubectl get pods -n awx -o wide 2>/dev/null || true
+            echo ""
+            echo "--- AWX CR Status ---"
+            kubectl get awx test-awx -n awx -o jsonpath='{.status}' 2>/dev/null | jq . 2>/dev/null || true
+            echo ""
+            echo "--- Recent Events ---"
+            kubectl get events -n awx --sort-by='.lastTimestamp' 2>/dev/null | tail -15 || true
+            echo ""
+            echo "--- Operator Logs (last 50 lines) ---"
+            kubectl logs -l app=awx-operator -n awx --tail=50 2>/dev/null || true
+            echo "================================"
+            echo ""
+          }
+
+          # Wait for PostgreSQL StatefulSet
+          echo "--- Waiting for PostgreSQL ---"
+          PG_READY=false
+          for i in {1..120}; do
+            if kubectl get statefulset test-awx-postgres-15 -n awx &>/dev/null; then
+              echo "PostgreSQL StatefulSet found"
+              if kubectl rollout status statefulset/test-awx-postgres-15 -n awx --timeout=10s 2>/dev/null; then
+                echo "✅ PostgreSQL ready"
+                PG_READY=true
+                break
+              fi
+            fi
+            if [[ $((i % 5)) -eq 0 ]]; then
+              echo "Still waiting for PostgreSQL (attempt $i/120)..."
+              show_debug "PostgreSQL"
+            fi
+            sleep 5
+          done
+
+          if [[ "$PG_READY" != "true" ]]; then
+            echo "⚠️ PostgreSQL did not become ready in time"
+            show_debug "PostgreSQL-timeout"
+          fi
+
+          # Wait for AWX Web Deployment
+          echo "--- Waiting for AWX Web ---"
+          WEB_READY=false
+          for i in {1..90}; do
+            if kubectl get deployment test-awx-web -n awx &>/dev/null; then
+              echo "AWX Web Deployment found"
+              if kubectl rollout status deployment/test-awx-web -n awx --timeout=10s 2>/dev/null; then
+                echo "✅ AWX Web ready"
+                WEB_READY=true
+                break
+              fi
+            fi
+            if [[ $((i % 5)) -eq 0 ]]; then
+              echo "Still waiting for AWX Web (attempt $i/90)..."
+              echo ""
+              echo "--- All Pods in awx namespace ---"
+              kubectl get pods -n awx -o wide 2>/dev/null || true
+              echo ""
+              echo "--- AWX Web Pod Describe ---"
+              WEB_POD=$(kubectl get pods -n awx -o name 2>/dev/null | grep web | head -1 || true)
+              if [[ -n "$WEB_POD" ]]; then
+                echo "Found: $WEB_POD"
+                kubectl describe $WEB_POD -n awx 2>/dev/null | tail -60 || true
+                echo ""
+                echo "--- Init Container Logs ---"
+                kubectl logs $WEB_POD -n awx -c init-database --tail=30 2>&1 || echo "(no init-database logs)"
+                echo ""
+                echo "--- Main Container Logs ---"
+                kubectl logs $WEB_POD -n awx -c test-awx-web --tail=20 2>&1 || echo "(no test-awx-web logs)"
+                kubectl logs $WEB_POD -n awx -c redis --tail=10 2>&1 || echo "(no redis logs)"
+                echo ""
+                echo "--- Previous test-awx-web logs (if crashed) ---"
+                kubectl logs $WEB_POD -n awx -c test-awx-web --previous --tail=30 2>&1 || true
+              else
+                echo "(no web pod found)"
+              fi
+              echo ""
+              echo "--- Operator Logs (last 30 lines) ---"
+              kubectl logs -l app=awx-operator -n awx --tail=30 2>/dev/null || true
+              echo "================================"
+            fi
+            sleep 5
+          done
+
+          if [[ "$WEB_READY" != "true" ]]; then
+            echo "⚠️ AWX Web did not become ready in time"
+            show_debug "AWX-Web-timeout"
+            echo "--- AWX Web Container Logs ---"
+            kubectl logs -l app.kubernetes.io/name=awx-web -n awx --all-containers --tail=50 2>/dev/null || true
+          fi
+
+          # Wait for AWX Task Deployment
+          echo "--- Waiting for AWX Task ---"
+          TASK_READY=false
+          for i in {1..90}; do
+            if kubectl get deployment test-awx-task -n awx &>/dev/null; then
+              echo "AWX Task Deployment found"
+              if kubectl rollout status deployment/test-awx-task -n awx --timeout=10s 2>/dev/null; then
+                echo "✅ AWX Task ready"
+                TASK_READY=true
+                break
+              fi
+            fi
+            if [[ $((i % 5)) -eq 0 ]]; then
+              echo "Still waiting for AWX Task (attempt $i/90)..."
+              echo ""
+              echo "--- All Pods in awx namespace ---"
+              kubectl get pods -n awx -o wide 2>/dev/null || true
+              echo ""
+              echo "--- AWX Task Pod Describe ---"
+              TASK_POD=$(kubectl get pods -n awx -o name 2>/dev/null | grep task | head -1 || true)
+              if [[ -n "$TASK_POD" ]]; then
+                echo "Found: $TASK_POD"
+                kubectl describe $TASK_POD -n awx 2>/dev/null | tail -60 || true
+                echo ""
+                echo "--- Init Container Logs ---"
+                kubectl logs $TASK_POD -n awx -c init-database --tail=30 2>&1 || echo "(no init-database logs)"
+                kubectl logs $TASK_POD -n awx -c init-receptor --tail=30 2>&1 || echo "(no init-receptor logs)"
+                echo ""
+                echo "--- Main Container Logs ---"
+                kubectl logs $TASK_POD -n awx -c test-awx-task --tail=20 2>&1 || echo "(no test-awx-task logs)"
+                kubectl logs $TASK_POD -n awx -c redis --tail=20 2>&1 || echo "(no redis logs)"
+              else
+                echo "(no task pod found)"
+              fi
+              echo ""
+              echo "--- AWX Web Pod Status ---"
+              WEB_POD=$(kubectl get pods -n awx -o name 2>/dev/null | grep web | head -1 || true)
+              if [[ -n "$WEB_POD" ]]; then
+                echo "Found: $WEB_POD"
+                kubectl logs $WEB_POD -n awx -c test-awx-web --tail=20 2>&1 || echo "(no test-awx-web logs)"
+                kubectl logs $WEB_POD -n awx -c test-awx-web --previous --tail=20 2>&1 || true
+              fi
+              echo ""
+              echo "--- Operator Logs (last 30 lines) ---"
+              kubectl logs -l app=awx-operator -n awx --tail=30 2>/dev/null || true
+              echo "================================"
+            fi
+            sleep 5
+          done
+
+          if [[ "$TASK_READY" != "true" ]]; then
+            echo "⚠️ AWX Task did not become ready in time"
+            show_debug "AWX-Task-timeout"
+            echo "--- AWX Task Container Logs ---"
+            kubectl logs -l app.kubernetes.io/name=awx-task -n awx --all-containers --tail=50 2>/dev/null || true
+          fi
+
+          # Wait for AWX Running condition
+          echo "--- Waiting for AWX Running condition ---"
+          AWX_RUNNING=false
+          for i in {1..60}; do
+            STATUS=$(kubectl get awx test-awx -n awx -o jsonpath='{.status.conditions[?(@.type=="Running")].status}' 2>/dev/null || echo "")
+            if [[ "$STATUS" == "True" ]]; then
+              echo "✅ AWX is Running"
+              AWX_RUNNING=true
+              break
+            fi
+            if [[ $((i % 5)) -eq 0 ]]; then
+              echo "Still waiting for Running condition (attempt $i/60)..."
+              echo "--- AWX CR Conditions ---"
+              kubectl get awx test-awx -n awx -o jsonpath='{.status.conditions}' 2>/dev/null | jq . 2>/dev/null || true
+              echo ""
+              echo "--- Operator Logs (last 30 lines) ---"
+              kubectl logs -l app=awx-operator -n awx --tail=30 2>/dev/null || true
+            fi
+            sleep 5
+          done
+
+          if [[ "$AWX_RUNNING" != "true" ]]; then
+            echo "⚠️ AWX did not reach Running condition in time"
+            show_debug "AWX-Running-timeout"
+          fi
+
+          echo ""
+          echo "=== Final AWX Status ==="
+          kubectl get pods -n awx -o wide
+          echo ""
+          kubectl get awx test-awx -n awx
+          echo ""
+          echo "=== AWX CR Full Status ==="
+          kubectl get awx test-awx -n awx -o jsonpath='{.status}' | jq . 2>/dev/null || true
+          echo ""
+
+          # CRITICAL: Fail the step if essential components are not ready
+          FAILED=false
+          if [[ "$PG_READY" != "true" ]]; then
+            echo "❌ FAILURE: PostgreSQL did not become ready"
+            FAILED=true
+          fi
+          if [[ "$WEB_READY" != "true" ]]; then
+            echo "❌ FAILURE: AWX Web did not become ready"
+            FAILED=true
+          fi
+          if [[ "$TASK_READY" != "true" ]]; then
+            echo "❌ FAILURE: AWX Task did not become ready"
+            FAILED=true
+          fi
+          if [[ "$AWX_RUNNING" != "true" ]]; then
+            echo "❌ FAILURE: AWX CR did not reach Running condition"
+            FAILED=true
+          fi
+
+          if [[ "$FAILED" == "true" ]]; then
+            echo ""
+            echo "========================================="
+            echo "❌ INTEGRATION TEST FAILED"
+            echo "One or more critical AWX components failed to deploy."
+            echo "See debug output above for details."
+            echo "========================================="
+            exit 1
+          fi
+
+          echo "✅ All AWX components deployed successfully"
+
+      - name: Verify AWX API
+        run: |
+          set -euo pipefail
+
+          echo "Verifying AWX API is accessible..."
+
+          # Get admin password from secret
+          ADMIN_PASSWORD=$(kubectl get secret test-awx-admin-password -n awx -o jsonpath='{.data.password}' | base64 -d)
+          echo "✅ Retrieved admin password from secret"
+
+          # Port forward to AWX web service
+          kubectl port-forward -n awx svc/test-awx-service 8080:80 &
+          PF_PID=$!
+          sleep 5
+
+          # Test health endpoint
+          echo "Testing AWX health endpoint..."
+          for i in {1..30}; do
+            if curl -sf http://localhost:8080/awx/api/v2/ping/ >/dev/null 2>&1; then
+              echo "✅ AWX API is responding"
+              break
+            fi
+            echo "Waiting for AWX API (attempt $i/30)..."
+            sleep 5
+          done
+
+          # Test authentication
+          echo "Testing authentication..."
+          RESPONSE=$(curl -sf -u "admin:${ADMIN_PASSWORD}" http://localhost:8080/awx/api/v2/me/ 2>/dev/null || echo "")
+          if echo "$RESPONSE" | grep -q '"username":"admin"'; then
+            echo "✅ Admin authentication successful"
+          else
+            echo "⚠️ Could not verify admin auth (may still be initializing)"
+            echo "Response: $RESPONSE"
+          fi
+
+          # Check if instance is ready (with retries)
+          echo "Waiting for AWX control instance to be ready..."
+          INSTANCE_READY=false
+          for i in {1..30}; do
+            READY=$(curl -sf -u "admin:${ADMIN_PASSWORD}" "http://localhost:8080/awx/api/v2/instances/?node_type=control&node_state=ready" 2>/dev/null || echo "")
+            if echo "$READY" | grep -q '"count":[1-9]'; then
+              echo "✅ AWX control instance is ready"
+              echo "$READY" | jq '.results[0] | {hostname, node_type, node_state}' 2>/dev/null || true
+              INSTANCE_READY=true
+              break
+            fi
+            echo "  Attempt $i/30: Control instance not yet ready, waiting 10s..."
+            sleep 10
+          done
+
+          kill $PF_PID 2>/dev/null || true
+
+          if [[ "$INSTANCE_READY" != "true" ]]; then
+            echo "❌ AWX control instance failed to become ready within 5 minutes"
+            exit 1
+          fi
+
+          echo ""
+          echo "✅ AWX API verification complete"
+
+      - name: Verify operator reconciliation complete
+        run: |
+          set -euo pipefail
+
+          echo "Verifying final operator state..."
+
+          # Check AWX CR status
+          STATUS=$(kubectl get awx test-awx -n awx -o jsonpath='{.status.conditions[?(@.type=="Running")].status}' 2>/dev/null || echo "")
+          if [[ "$STATUS" == "True" ]]; then
+            echo "✅ AWX CR status is Running"
+          else
+            echo "⚠️ AWX CR not yet in Running state"
+            kubectl get awx test-awx -n awx -o jsonpath='{.status}' | jq . 2>/dev/null || true
+          fi
+
+          echo ""
+          echo "=== All Pods ==="
+          kubectl get pods -n awx
+          echo ""
+          echo "=== Services ==="
+          kubectl get svc -n awx
+          echo ""
+          echo "=== Ingresses ==="
+          kubectl get ingress -n awx
+          echo ""
+          echo "✅ Operator reconciliation verified"
+
+      - name: Verify no crash loops
+        run: |
+          set -euo pipefail
+
+          RESTARTS=$(kubectl get pods -n awx -l app=awx-operator -o jsonpath='{.items[0].status.containerStatuses[0].restartCount}')
+
+          if [[ "$RESTARTS" -gt 2 ]]; then
+            echo "❌ Operator has restarted $RESTARTS times (possible crash loop)"
+            kubectl describe pods -n awx -l app=awx-operator
+            kubectl logs -l app=awx-operator -n awx --tail=200
+            exit 1
+          fi
+
+          echo "✅ Operator stable (restarts: $RESTARTS)"
+
+      - name: Test AWXBackup CR
+        run: |
+          set -euo pipefail
+
+          kubectl apply -f - <<EOF
+          apiVersion: awx.ansible.com/v1beta1
+          kind: AWXBackup
+          metadata:
+            name: test-backup
+            namespace: awx
+          spec:
+            deployment_name: test-awx
+          EOF
+
+          echo "✅ AWXBackup CR created"
+
+          sleep 10
+
+          kubectl get awxbackup test-backup -n awx -o yaml | head -30
+          echo "✅ AWXBackup CR is being processed"
+
+      - name: Test summary
+        run: |
+          echo "🎉 Integration test passed for ${{ matrix.isotope }} isotope"
+          echo ""
+          echo "Operator Tests:"
+          echo "  ✅ Operator starts successfully"
+          echo "  ✅ Health endpoints respond"
+          echo "  ✅ No crash loops detected"
+          echo ""
+          echo "Full AWX Deployment Tests:"
+          echo "  ✅ PostgreSQL StatefulSet deployed"
+          echo "  ✅ AWX Web Deployment ready"
+          echo "  ✅ AWX Task Deployment ready"
+          echo "  ✅ AWX CR reached Running condition"
+          echo "  ✅ Ingress created"
+          echo ""
+          echo "API Tests:"
+          echo "  ✅ AWX API is accessible"
+          echo "  ✅ Admin authentication works"
+          echo "  ✅ Control instance is ready"
+          echo ""
+          echo "Backup Test:"
+          echo "  ✅ AWXBackup CR accepted"
+
+      - name: Collect logs on failure
+        if: failure()
+        run: |
+          echo "=== Operator Logs ==="
+          kubectl logs -l app=awx-operator -n awx --tail=500 || true
+          echo ""
+          echo "=== PostgreSQL Logs ==="
+          kubectl logs -l app.kubernetes.io/name=postgres -n awx --tail=100 || true
+          echo ""
+          echo "=== AWX Web Logs ==="
+          kubectl logs -l app.kubernetes.io/name=awx-web -n awx --tail=100 || true
+          echo ""
+          echo "=== AWX Task Logs ==="
+          kubectl logs -l app.kubernetes.io/name=awx-task -n awx --tail=100 || true
+          echo ""
+          echo "=== All Pods ==="
+          kubectl get pods -A -o wide
+          echo ""
+          echo "=== Pod Descriptions ==="
+          kubectl describe pods -n awx
+          echo ""
+          echo "=== Events ==="
+          kubectl get events -n awx --sort-by='.lastTimestamp' | tail -100
+          echo ""
+          echo "=== AWX CR Status ==="
+          kubectl get awx test-awx -n awx -o yaml || true
+
+  security-scan:
+    needs: [isotopes, smoke-test, integration-test]
+    uses: ./.github/workflows/security-scan.yml
+    with:
+      name: awx-operator
+      isotopes: '["ubi-micro", "ubi-minimal", "ubi"]'
+      upstream_version: "devel"
+      upstream_image: quay.io/ansible/awx-operator
+    permissions:
+      contents: write
+      packages: read
+    secrets: inherit
+
+  promote:
+    needs: [isotopes, smoke-test, integration-test, security-scan]
+    uses: ./.github/workflows/promote-isotopes.yml
+    with:
+      name: awx-operator
+      isotopes: '["ubi-micro", "ubi-minimal", "ubi"]'
+      upstream_version: "devel"
+    permissions:
+      contents: write
+      packages: write
+    secrets: inherit

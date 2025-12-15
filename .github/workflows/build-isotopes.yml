@@ -1,0 +1,125 @@
+name: Build Isotopes
+
+on:
+  workflow_call:
+    inputs:
+      name:
+        description: "Name of the image to build isotopes for"
+        required: true
+        type: string
+      isotopes:
+        description: "JSON array of isotopes to build"
+        required: true
+        type: string
+      upstream_repo:
+        description: "Upstream GitHub repository"
+        required: true
+        type: string
+      upstream_version:
+        description: "Upstream version to build (release/tag or branch)"
+        required: true
+        type: string
+      build_repos:
+        description: "JSON array of additional repositories needed in build context"
+        required: false
+        type: string
+        default: "[]"
+      build_stages_without_cache:
+        description: "List of build stages to disable cache for"
+        required: false
+        type: string
+        default: |
+          builder
+          go-builder
+          python-builder
+
+env:
+  REGISTRY: ghcr.io
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: write
+    steps:
+      - name: Checkout isotope repository
+        uses: actions/checkout@v4
+
+      - name: Generate cache key for upstream source
+        id: generate-cache-key
+        env:
+          UPSTREAM_REPO: ${{ inputs.upstream_repo }}
+          UPSTREAM_VERSION: ${{ inputs.upstream_version }}
+          BUILD_REPOS: ${{ inputs.build_repos }}
+        run: ./.github/scripts/generate-cache-key.sh
+
+      - name: Cache upstream source
+        id: upstream-cache
+        uses: actions/cache@v4
+        with:
+          path: upstream
+          key: ${{ inputs.upstream_repo }}-${{ inputs.upstream_version }}-${{ steps.generate-cache-key.outputs.cache_key }}
+
+      - name: Clone upstream source
+        if: steps.upstream-cache.outputs.cache-hit != 'true'
+        env:
+          UPSTREAM_REPO: ${{ inputs.upstream_repo }}
+          UPSTREAM_VERSION: ${{ inputs.upstream_version }}
+          BUILD_REPOS: ${{ inputs.build_repos }}
+        run: ./.github/scripts/clone-upstream.sh
+
+      - name: Store upstream source
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.name }}-upstream
+          path: upstream
+          retention-days: 1
+
+  build:
+    needs: prepare
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    strategy:
+      fail-fast: false
+      matrix:
+        isotope: ${{ fromJson (inputs.isotopes) }}
+    steps:
+      - name: Checkout isotope repository
+        uses: actions/checkout@v4
+
+      - name: Retrieve upstream source
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.name }}-upstream
+          path: images/${{ inputs.name }}/upstream
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log into GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push isotope
+        uses: docker/build-push-action@v5
+        with:
+          context: images/${{ inputs.name }}
+          file: images/${{ inputs.name }}/Dockerfile
+          target: ${{ matrix.isotope }}
+          pull: true
+          push: true
+          tags: ${{ env.REGISTRY }}/${{ github.repository }}/${{ inputs.name }}:${{ inputs.upstream_version }}-${{ matrix.isotope }}-${{ github.run_id }}
+          labels: |
+            org.opencontainers.image.source=https://github.com/${{ github.repository }}
+            org.opencontainers.image.description=Group-Sync Operator (${{ matrix.isotope }} - built from ${{ inputs.upstream_repo }})
+            org.opencontainers.image.version=${{ inputs.upstream_version }}-${{ matrix.isotope }}
+            org.opencontainers.image.vendor=${{ github.repository_owner }}
+          cache-from: type=gha,scope=${{ inputs.name }}-${{ matrix.isotope }}
+          cache-to: type=gha,mode=max,scope=${{ inputs.name }}-${{ matrix.isotope }}
+          no-cache-filters: ${{ inputs.build_stages_without_cache }}
