@@ -4,13 +4,13 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2025-12-15 13:18:39 UTC
+**Scanned:** 2025-12-16 01:32:03 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 39 (🔧38) | 126 (🔧93) | 90 (🔧19) | 257 | 🔧 152 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 39 (🔧38) | 124 (🔧93) | 90 (🔧19) | 255 | 🔧 152 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 0 | 1 | 5 | 6 | 🔧 0 |
 | ubi-minimal | 0 | 0 | 14 | 31 | 45 | 🔧 0 |
@@ -120,13 +120,11 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-5318 | MEDIUM | libssh | 0.9.6-10.el8_8 | 0.9.6-15.el8_10 | libssh: out-of-bounds read in sftp_handle() |
 | CVE-2025-5351 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: Double Free Vulnerability in libssh Key Export Functions |
 | CVE-2025-5372 | MEDIUM | libssh | 0.9.6-10.el8_8 | 0.9.6-16.el8_10 | libssh: Incorrect Return Code Handling in ssh_kdf() in libssh |
-| CVE-2025-5987 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: Invalid return code for chacha20 poly1305 with OpenSSL backend |
 | CVE-2025-8114 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: NULL Pointer Dereference in libssh KEX Session ID Calculation |
 | CVE-2023-48795 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | 0.9.6-13.el8_9 | ssh: Prefix truncation attack on Binary Packet Protocol (BPP) |
 | CVE-2025-5318 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | 0.9.6-15.el8_10 | libssh: out-of-bounds read in sftp_handle() |
 | CVE-2025-5351 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: Double Free Vulnerability in libssh Key Export Functions |
 | CVE-2025-5372 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | 0.9.6-16.el8_10 | libssh: Incorrect Return Code Handling in ssh_kdf() in libssh |
-| CVE-2025-5987 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: Invalid return code for chacha20 poly1305 with OpenSSL backend |
 | CVE-2025-8114 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: NULL Pointer Dereference in libssh KEX Session ID Calculation |
 | CVE-2020-11023 | MEDIUM | libstdc++ | 8.5.0-20.el8 | 8.5.0-23.el8_10 | jquery: Untrusted code execution via <option> tag in HTML passed to DOM manipulation methods |
 | CVE-2024-12133 | MEDIUM | libtasn1 | 4.13-4.el8_7 | 4.13-5.el8_10 | libtasn1: Inefficient DER Decoding in libtasn1 Leading to Potential Remote DoS |
