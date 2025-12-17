@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2025-12-16 12:26:00 UTC
+**Scanned:** 2025-12-17 00:27:18 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 36 (🔧36) | 150 (🔧100) | 192 (🔧12) | 378 | 🔧 148 |
+| **upstream** | 0 | 🟠 36 (🔧36) | 154 (🔧100) | 192 (🔧12) | 382 | 🔧 148 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 3 (🔧2) | 5 | 10 | 🔧 4 |
-| ubi-minimal | 0 | 🟠 2 (🔧2) | 28 (🔧2) | 37 | 67 | 🔧 4 |
-| ubi | 0 | 🟠 2 (🔧2) | 52 (🔧2) | 180 | 234 | 🔧 4 |
+| ubi-minimal | 0 | 🟠 2 (🔧2) | 30 (🔧2) | 37 | 69 | 🔧 4 |
+| ubi | 0 | 🟠 2 (🔧2) | 56 (🔧2) | 180 | 238 | 🔧 4 |
 
 ## Details
 
@@ -122,6 +122,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-11168 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-1.el9_5 | python: Improper validation of IPv6 and IPvFuture addresses |
 | CVE-2024-9287 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-1.el9_5 | python: Virtual environment (venv) activation scripts don't quote paths |
 | CVE-2025-0938 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-2.el9 | python: cpython: URL parser allowed square brackets in domain names |
+| CVE-2025-12084 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4330 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: python: Extraction filter bypass for linking outside extraction directory |
@@ -133,6 +134,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-11168 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-1.el9_5 | python: Improper validation of IPv6 and IPvFuture addresses |
 | CVE-2024-9287 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-1.el9_5 | python: Virtual environment (venv) activation scripts don't quote paths |
 | CVE-2025-0938 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9 | python: cpython: URL parser allowed square brackets in domain names |
+| CVE-2025-12084 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4330 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: python: Extraction filter bypass for linking outside extraction directory |
@@ -150,6 +152,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-47273 | MEDIUM | python3-setuptools-wheel | 53.0.0-13.el9 | 53.0.0-13.el9_6.1 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
 | CVE-2024-9287 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | 3.12.5-2.el9_5.2 | python: Virtual environment (venv) activation scripts don't quote paths |
 | CVE-2025-0938 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | 3.12.9-1.el9 | python: cpython: URL parser allowed square brackets in domain names |
+| CVE-2025-12084 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4330 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: python: Extraction filter bypass for linking outside extraction directory |
@@ -160,6 +163,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-8291 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
 | CVE-2024-9287 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.5-2.el9_5.2 | python: Virtual environment (venv) activation scripts don't quote paths |
 | CVE-2025-0938 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.9-1.el9 | python: cpython: URL parser allowed square brackets in domain names |
+| CVE-2025-12084 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4330 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: python: Extraction filter bypass for linking outside extraction directory |
@@ -240,11 +244,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14104 | MEDIUM | libmount | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libsmartcols | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libuuid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2025-12084 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4516 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2025-8291 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-12084 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4516 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
@@ -280,11 +286,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14104 | MEDIUM | libmount | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libsmartcols | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libuuid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2025-12084 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4516 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2025-8291 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-12084 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4516 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
@@ -293,11 +301,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
+| CVE-2025-12084 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4516 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2025-8291 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-12084 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4516 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
