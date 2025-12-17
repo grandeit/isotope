@@ -4,7 +4,7 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2025-12-16 15:06:28 UTC
+**Scanned:** 2025-12-17 03:35:22 UTC
 
 ## Overview
 
@@ -12,7 +12,7 @@
 |---------|----------|------|--------|-----|-------|---------|
 | **upstream** | 🔴 11 (🔧11) | 🟠 120 (🔧119) | 317 (🔧268) | 223 (🔧31) | 671 | 🔧 429 |
 | ubi-minimal | 0 | 0 | 15 (🔧1) | 35 | 50 | 🔧 1 |
-| ubi | 0 | 0 | 39 (🔧1) | 178 | 217 | 🔧 1 |
+| ubi | 0 | 0 | 41 (🔧1) | 178 | 219 | 🔧 1 |
 
 ## Details
 
@@ -112,7 +112,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-58187 | HIGH | stdlib | v1.18.10 | 1.24.9, 1.25.3 | Due to the design of the name constraint checking algorithm, the proce ... |
 | CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509 |
 | CVE-2022-21698 | HIGH | github.com/prometheus/client_golang | v1.1.0 | 1.11.1 | prometheus/client_golang: Denial of service using InstrumentHandlerCounter |
-| CVE-2025-65637 | HIGH | github.com/sirupsen/logrus | v1.4.2 | 1.8.3, 1.9.1, 1.9.3 | A denial-of-service vulnerability exists in github.com/sirupsen/logrus ... |
+| CVE-2025-65637 | HIGH | github.com/sirupsen/logrus | v1.4.2 | 1.8.3, 1.9.1, 1.9.3 | github.com/sirupsen/logrus: github.com/sirupsen/logrus: Denial-of-Service due to large single-line payload |
 | CVE-2022-41722 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: path/filepath: path-filepath filepath.Clean path traversal |
 | CVE-2022-41723 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang.org/x/net/http2: avoid quadratic complexity in HPACK decoding |
 | CVE-2022-41724 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: crypto/tls: large handshake records may cause panics |
@@ -514,11 +514,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14104 | MEDIUM | libmount | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libsmartcols | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libuuid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2025-12084 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4516 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2025-8291 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-12084 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4516 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
