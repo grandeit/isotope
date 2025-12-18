@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2025-12-17 12:26:35 UTC
+**Scanned:** 2025-12-18 00:25:49 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 36 (🔧36) | 154 (🔧100) | 192 (🔧12) | 382 | 🔧 148 |
+| **upstream** | 0 | 🟠 35 (🔧34) | 157 (🔧103) | 192 (🔧12) | 384 | 🔧 149 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 3 (🔧2) | 5 | 10 | 🔧 4 |
 | ubi-minimal | 0 | 🟠 2 (🔧2) | 30 (🔧2) | 37 | 69 | 🔧 4 |
-| ubi | 0 | 🟠 2 (🔧2) | 56 (🔧2) | 180 | 238 | 🔧 4 |
+| ubi | 0 | 🟠 3 (🔧2) | 56 (🔧2) | 180 | 239 | 🔧 4 |
 
 ## Details
 
@@ -39,6 +39,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-12718 | HIGH | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
 | CVE-2025-4517 | HIGH | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | python: cpython: Arbitrary writes via tarfile realpath overflow |
+| CVE-2025-66418 | HIGH | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2024-12254 | HIGH | python3.12 | 3.12.5-2.el9_5.1 | 3.12.5-2.el9_5.2 | python: Unbounded memory buffering in SelectorSocketTransport.writelines() |
 | CVE-2024-12718 | HIGH | python3.12 | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | python3.12 | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
@@ -50,14 +51,12 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.34.1-7.el9_3 | 3.34.1-9.el9_7 | sqlite: Integer Truncation in SQLite |
 | CVE-2024-8775 | HIGH | ansible-core | 2.17.5 | 2.17.6, 2.16.13 | ansible-core: Exposure of Sensitive Information in Ansible Vault Files Due to Improper Logging |
 | CVE-2025-47273 | HIGH | setuptools | 75.2.0 | 78.1.1 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
-| CVE-2025-66418 | HIGH | urllib3 | 1.26.20 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
+| CVE-2025-66418 | HIGH | urllib3 | 1.26.20 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 1.26.20 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
 | CVE-2025-22868 | HIGH | golang.org/x/oauth2 | v0.21.0 | 0.27.0 | golang.org/x/oauth2/jws: Unexpected memory consumption during token parsing in golang.org/x/oauth2/jws |
 | CVE-2024-34156 | HIGH | stdlib | v1.22.5 | 1.22.7, 1.23.1 | encoding/gob: golang: Calling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion |
 | CVE-2025-47907 | HIGH | stdlib | v1.22.5 | 1.23.12, 1.24.6 | database/sql: Postgres Scan Race Condition |
 | CVE-2025-58183 | HIGH | stdlib | v1.22.5 | 1.24.8, 1.25.2 | golang: archive/tar: Unbounded allocation when parsing GNU sparse map |
-| CVE-2025-58186 | HIGH | stdlib | v1.22.5 | 1.24.8, 1.25.2 | Despite HTTP headers having a default limit of 1MB, the number of cook ... |
-| CVE-2025-58187 | HIGH | stdlib | v1.22.5 | 1.24.9, 1.25.3 | Due to the design of the name constraint checking algorithm, the proce ... |
 | CVE-2025-61729 | HIGH | stdlib | v1.22.5 | 1.24.11, 1.25.5 | crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509 |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.8-8.el9 | 1.0.8-10.el9_5 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-36.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -190,6 +189,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-56326 | MEDIUM | Jinja2 | 3.1.4 | 3.1.5 | jinja2: Jinja has a sandbox breakout through indirect reference to format method |
 | CVE-2025-27516 | MEDIUM | Jinja2 | 3.1.4 | 3.1.6 | jinja2: Jinja sandbox breakout through attr filter selecting format method |
 | CVE-2024-9902 | MEDIUM | ansible-core | 2.17.5 | 2.14.18rc1, 2.15.13rc1, 2.16.13rc1, 2.17.6rc1, 2.18.0rc2 | ansible-core: Ansible-core user may read/write unauthorized content |
+| CVE-2025-68146 | MEDIUM | filelock | 3.16.1 | 3.20.1 | filelock: filelock: Time-of-Check-Time-of-Use (TOCTOU) race condition and symlink attack allows arbitrary file corruption or truncation |
 | CVE-2025-8869 | MEDIUM | pip | 23.3.2 | 25.3 | pip: pip missing checks on symbolic link extraction |
 | CVE-2024-35195 | MEDIUM | requests | 2.31.0 | 2.32.0 | requests: subsequent requests to the same host ignore cert verification |
 | CVE-2024-47081 | MEDIUM | requests | 2.31.0 | 2.32.4 | requests: Requests vulnerable to .netrc credentials leak via malicious URLs |
@@ -207,18 +207,20 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-47906 | MEDIUM | stdlib | v1.22.5 | 1.23.12, 1.24.6 | os/exec: Unexpected paths returned from LookPath in os/exec |
 | CVE-2025-47912 | MEDIUM | stdlib | v1.22.5 | 1.24.8, 1.25.2 | net/url: Insufficient validation of bracketed IPv6 hostnames in net/url |
 | CVE-2025-58185 | MEDIUM | stdlib | v1.22.5 | 1.24.8, 1.25.2 | encoding/asn1: Parsing DER payload can cause memory exhaustion in encoding/asn1 |
+| CVE-2025-58186 | MEDIUM | stdlib | v1.22.5 | 1.24.8, 1.25.2 | golang.org/net/http: Lack of limit when parsing cookies can cause memory exhaustion in net/http |
+| CVE-2025-58187 | MEDIUM | stdlib | v1.22.5 | 1.24.9, 1.25.3 | crypto/x509: Quadratic complexity when checking name constraints in crypto/x509 |
 | CVE-2025-58188 | MEDIUM | stdlib | v1.22.5 | 1.24.8, 1.25.2 | crypto/x509: golang: Panic when validating certificates with DSA public keys in crypto/x509 |
 | CVE-2025-58189 | MEDIUM | stdlib | v1.22.5 | 1.24.8, 1.25.2 | crypto/tls: go crypto/tls ALPN negotiation error contains attacker controlled information |
 | CVE-2025-61723 | MEDIUM | stdlib | v1.22.5 | 1.24.8, 1.25.2 | encoding/pem: Quadratic complexity when parsing some invalid inputs in encoding/pem |
 | CVE-2025-61724 | MEDIUM | stdlib | v1.22.5 | 1.24.8, 1.25.2 | net/textproto: Excessive CPU consumption in Reader.ReadResponse in net/textproto |
 | CVE-2025-61725 | MEDIUM | stdlib | v1.22.5 | 1.24.8, 1.25.2 | net/mail: Excessive CPU consumption in ParseAddress in net/mail |
-| CVE-2025-61727 | MEDIUM | stdlib | v1.22.5 | 1.24.11, 1.25.5 | An excluded subdomain constraint in a certificate chain does not restr ... |
+| CVE-2025-61727 | MEDIUM | stdlib | v1.22.5 | 1.24.11, 1.25.5 | golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs |
 
 ### ubi-micro
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
+| CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-50181 | MEDIUM | urllib3 | 2.3.0 | 2.5.0 | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
@@ -228,7 +230,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
+| CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-10966 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
@@ -265,7 +267,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
+| CVE-2025-66418 | HIGH | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
+| CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-10966 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
