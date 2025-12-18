@@ -4,17 +4,17 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2025-12-17 13:17:30 UTC
+**Scanned:** 2025-12-18 01:31:45 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 39 (🔧38) | 124 (🔧93) | 90 (🔧19) | 255 | 🔧 152 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 37 (🔧36) | 126 (🔧95) | 90 (🔧19) | 255 | 🔧 152 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 0 | 1 | 5 | 6 | 🔧 0 |
 | ubi-minimal | 0 | 0 | 14 | 31 | 45 | 🔧 0 |
-| ubi | 0 | 0 | 40 | 178 | 218 | 🔧 0 |
+| ubi | 0 | 🟠 1 | 40 | 178 | 219 | 🔧 0 |
 
 ## Details
 
@@ -62,8 +62,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-34156 | HIGH | stdlib | v1.19.13 | 1.22.7, 1.23.1 | encoding/gob: golang: Calling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion |
 | CVE-2025-47907 | HIGH | stdlib | v1.19.13 | 1.23.12, 1.24.6 | database/sql: Postgres Scan Race Condition |
 | CVE-2025-58183 | HIGH | stdlib | v1.19.13 | 1.24.8, 1.25.2 | golang: archive/tar: Unbounded allocation when parsing GNU sparse map |
-| CVE-2025-58186 | HIGH | stdlib | v1.19.13 | 1.24.8, 1.25.2 | Despite HTTP headers having a default limit of 1MB, the number of cook ... |
-| CVE-2025-58187 | HIGH | stdlib | v1.19.13 | 1.24.9, 1.25.3 | Due to the design of the name constraint checking algorithm, the proce ... |
 | CVE-2025-61729 | HIGH | stdlib | v1.19.13 | 1.24.11, 1.25.5 | crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509 |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | 1.0.6-28.el8_10 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-15.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -183,12 +181,14 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-47906 | MEDIUM | stdlib | v1.19.13 | 1.23.12, 1.24.6 | os/exec: Unexpected paths returned from LookPath in os/exec |
 | CVE-2025-47912 | MEDIUM | stdlib | v1.19.13 | 1.24.8, 1.25.2 | net/url: Insufficient validation of bracketed IPv6 hostnames in net/url |
 | CVE-2025-58185 | MEDIUM | stdlib | v1.19.13 | 1.24.8, 1.25.2 | encoding/asn1: Parsing DER payload can cause memory exhaustion in encoding/asn1 |
+| CVE-2025-58186 | MEDIUM | stdlib | v1.19.13 | 1.24.8, 1.25.2 | golang.org/net/http: Lack of limit when parsing cookies can cause memory exhaustion in net/http |
+| CVE-2025-58187 | MEDIUM | stdlib | v1.19.13 | 1.24.9, 1.25.3 | crypto/x509: Quadratic complexity when checking name constraints in crypto/x509 |
 | CVE-2025-58188 | MEDIUM | stdlib | v1.19.13 | 1.24.8, 1.25.2 | crypto/x509: golang: Panic when validating certificates with DSA public keys in crypto/x509 |
 | CVE-2025-58189 | MEDIUM | stdlib | v1.19.13 | 1.24.8, 1.25.2 | crypto/tls: go crypto/tls ALPN negotiation error contains attacker controlled information |
 | CVE-2025-61723 | MEDIUM | stdlib | v1.19.13 | 1.24.8, 1.25.2 | encoding/pem: Quadratic complexity when parsing some invalid inputs in encoding/pem |
 | CVE-2025-61724 | MEDIUM | stdlib | v1.19.13 | 1.24.8, 1.25.2 | net/textproto: Excessive CPU consumption in Reader.ReadResponse in net/textproto |
 | CVE-2025-61725 | MEDIUM | stdlib | v1.19.13 | 1.24.8, 1.25.2 | net/mail: Excessive CPU consumption in ParseAddress in net/mail |
-| CVE-2025-61727 | MEDIUM | stdlib | v1.19.13 | 1.24.11, 1.25.5 | An excluded subdomain constraint in a certificate chain does not restr ... |
+| CVE-2025-61727 | MEDIUM | stdlib | v1.19.13 | 1.24.11, 1.25.5 | golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs |
 
 ### distroless
 
@@ -223,6 +223,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2025-66418 | HIGH | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-10966 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
