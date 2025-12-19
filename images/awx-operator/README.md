@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2025-12-18 12:25:33 UTC
+**Scanned:** 2025-12-19 00:27:50 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 35 (🔧34) | 157 (🔧103) | 192 (🔧12) | 384 | 🔧 149 |
+| **upstream** | 0 | 🟠 34 (🔧34) | 157 (🔧103) | 192 (🔧12) | 383 | 🔧 149 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 3 (🔧2) | 5 | 10 | 🔧 4 |
 | ubi-minimal | 0 | 🟠 2 (🔧2) | 30 (🔧2) | 37 | 69 | 🔧 4 |
-| ubi | 0 | 🟠 3 (🔧2) | 56 (🔧2) | 180 | 239 | 🔧 4 |
+| ubi | 0 | 🟠 2 (🔧2) | 56 (🔧2) | 180 | 238 | 🔧 4 |
 
 ## Details
 
@@ -39,7 +39,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-12718 | HIGH | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
 | CVE-2025-4517 | HIGH | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | python: cpython: Arbitrary writes via tarfile realpath overflow |
-| CVE-2025-66418 | HIGH | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2024-12254 | HIGH | python3.12 | 3.12.5-2.el9_5.1 | 3.12.5-2.el9_5.2 | python: Unbounded memory buffering in SelectorSocketTransport.writelines() |
 | CVE-2024-12718 | HIGH | python3.12 | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | python3.12 | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
@@ -267,7 +266,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2025-66418 | HIGH | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
