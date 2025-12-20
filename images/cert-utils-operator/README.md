@@ -4,17 +4,17 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2025-12-19 13:15:37 UTC
+**Scanned:** 2025-12-20 01:31:30 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 37 (🔧36) | 126 (🔧95) | 90 (🔧19) | 255 | 🔧 152 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 37 (🔧36) | 126 (🔧97) | 90 (🔧19) | 255 | 🔧 154 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 0 | 1 | 5 | 6 | 🔧 0 |
 | ubi-minimal | 0 | 0 | 14 | 31 | 45 | 🔧 0 |
-| ubi | 0 | 0 | 40 | 178 | 218 | 🔧 0 |
+| ubi | 0 | 0 | 40 (🔧4) | 180 (🔧4) | 220 | 🔧 8 |
 
 ## Details
 
@@ -68,7 +68,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-46218 | MEDIUM | curl | 7.61.1-33.el8 | 7.61.1-33.el8_9.5 | curl: information disclosure by exploiting a mixed case flaw |
 | CVE-2024-2398 | MEDIUM | curl | 7.61.1-33.el8 | 7.61.1-34.el8_10.2 | curl: HTTP/2 push headers memory-leak |
 | CVE-2025-10966 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
-| CVE-2025-9086 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: libcurl: Curl out of bounds read for cookie path |
+| CVE-2025-9086 | MEDIUM | curl | 7.61.1-33.el8 | 7.61.1-34.el8_10.9 | curl: libcurl: Curl out of bounds read for cookie path |
 | CVE-2021-33294 | MEDIUM | elfutils-libelf | 0.189-3.el8 | - | elfutils: an infinite loop was found in the function handle_symtab in readelf.c which causes denial of service |
 | CVE-2019-8905 | MEDIUM | file-libs | 5.33-25.el8 | - | file: stack-based buffer over-read in do_core_note in readelf.c |
 | CVE-2024-34397 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-166.el8_10 | glib2: Signal subscription vulnerabilities |
@@ -107,7 +107,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-46218 | MEDIUM | libcurl | 7.61.1-33.el8 | 7.61.1-33.el8_9.5 | curl: information disclosure by exploiting a mixed case flaw |
 | CVE-2024-2398 | MEDIUM | libcurl | 7.61.1-33.el8 | 7.61.1-34.el8_10.2 | curl: HTTP/2 push headers memory-leak |
 | CVE-2025-10966 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
-| CVE-2025-9086 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: libcurl: Curl out of bounds read for cookie path |
+| CVE-2025-9086 | MEDIUM | libcurl | 7.61.1-33.el8 | 7.61.1-34.el8_10.9 | curl: libcurl: Curl out of bounds read for cookie path |
 | CVE-2020-11023 | MEDIUM | libgcc | 8.5.0-20.el8 | 8.5.0-23.el8_10 | jquery: Untrusted code execution via <option> tag in HTML passed to DOM manipulation methods |
 | CVE-2019-12904 | MEDIUM | libgcrypt | 1.8.5-7.el8_6 | - | Libgcrypt: physical addresses being available to other processes leads to a flush-and-reload side-channel attack |
 | CVE-2024-2236 | MEDIUM | libgcrypt | 1.8.5-7.el8_6 | - | libgcrypt: vulnerable to Marvin Attack |
@@ -246,14 +246,14 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-13836 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4516 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
-| CVE-2025-6069 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: Python HTMLParser quadratic complexity |
-| CVE-2025-8291 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-6069 | MEDIUM | python3 | 3.9.23-2.el9 | 3.9.25-2.el9_7 | cpython: Python HTMLParser quadratic complexity |
+| CVE-2025-8291 | MEDIUM | python3 | 3.9.23-2.el9 | 3.9.25-2.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
 | CVE-2025-12084 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4516 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
-| CVE-2025-6069 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: Python HTMLParser quadratic complexity |
-| CVE-2025-8291 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-6069 | MEDIUM | python3-libs | 3.9.23-2.el9 | 3.9.25-2.el9_7 | cpython: Python HTMLParser quadratic complexity |
+| CVE-2025-8291 | MEDIUM | python3-libs | 3.9.23-2.el9 | 3.9.25-2.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
