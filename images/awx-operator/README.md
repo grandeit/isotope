@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2025-12-19 12:25:40 UTC
+**Scanned:** 2025-12-20 00:27:49 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 34 (🔧34) | 157 (🔧103) | 192 (🔧12) | 383 | 🔧 149 |
+| **upstream** | 0 | 🟠 34 (🔧34) | 157 (🔧109) | 194 (🔧16) | 385 | 🔧 159 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 3 (🔧2) | 5 | 10 | 🔧 4 |
-| ubi-minimal | 0 | 🟠 2 (🔧2) | 30 (🔧2) | 37 | 69 | 🔧 4 |
-| ubi | 0 | 🟠 2 (🔧2) | 56 (🔧2) | 180 | 238 | 🔧 4 |
+| ubi-minimal | 0 | 🟠 2 (🔧2) | 30 (🔧4) | 37 | 69 | 🔧 6 |
+| ubi | 0 | 🟠 2 (🔧2) | 56 (🔧8) | 182 (🔧4) | 240 | 🔧 14 |
 
 ## Details
 
@@ -126,9 +126,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4330 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: python: Extraction filter bypass for linking outside extraction directory |
 | CVE-2025-4435 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: Tarfile extracts filtered members when errorlevel=0 |
 | CVE-2025-4516 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
-| CVE-2025-6069 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | - | cpython: Python HTMLParser quadratic complexity |
+| CVE-2025-6069 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.25-2.el9_7 | cpython: Python HTMLParser quadratic complexity |
 | CVE-2025-8194 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.2 | cpython: Cpython infinite loop when parsing a tarfile |
-| CVE-2025-8291 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-8291 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.25-2.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
 | CVE-2024-11168 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-1.el9_5 | python: Improper validation of IPv6 and IPvFuture addresses |
 | CVE-2024-9287 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-1.el9_5 | python: Virtual environment (venv) activation scripts don't quote paths |
 | CVE-2025-0938 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9 | python: cpython: URL parser allowed square brackets in domain names |
@@ -138,9 +138,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4330 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: python: Extraction filter bypass for linking outside extraction directory |
 | CVE-2025-4435 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: Tarfile extracts filtered members when errorlevel=0 |
 | CVE-2025-4516 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
-| CVE-2025-6069 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | - | cpython: Python HTMLParser quadratic complexity |
+| CVE-2025-6069 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.25-2.el9_7 | cpython: Python HTMLParser quadratic complexity |
 | CVE-2025-8194 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.2 | cpython: Cpython infinite loop when parsing a tarfile |
-| CVE-2025-8291 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-8291 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.25-2.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
@@ -158,7 +158,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4516 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2025-8194 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.2 | cpython: Cpython infinite loop when parsing a tarfile |
-| CVE-2025-8291 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-8291 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | 3.12.12-1.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
 | CVE-2024-9287 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.5-2.el9_5.2 | python: Virtual environment (venv) activation scripts don't quote paths |
 | CVE-2025-0938 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.9-1.el9 | python: cpython: URL parser allowed square brackets in domain names |
 | CVE-2025-12084 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
@@ -169,7 +169,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4516 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2025-8194 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.2 | cpython: Cpython infinite loop when parsing a tarfile |
-| CVE-2025-8291 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-8291 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.12-1.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-4.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-4.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2025-4598 | MEDIUM | systemd | 252-46.el9_5.2 | 252-55.el9_7.7 | systemd-coredump: race condition that allows a local attacker to crash a SUID program and gain read access to the resulting core dump |
@@ -250,13 +250,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-13837 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4516 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: Python HTMLParser quadratic complexity |
-| CVE-2025-8291 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-8291 | MEDIUM | python3.12 | 3.12.11-2.el9 | 3.12.12-1.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
 | CVE-2025-12084 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4516 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: Python HTMLParser quadratic complexity |
-| CVE-2025-8291 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-8291 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | 3.12.12-1.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2025-50181 | MEDIUM | urllib3 | 2.3.0 | 2.5.0 | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
@@ -291,14 +291,14 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-13836 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4516 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
-| CVE-2025-6069 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: Python HTMLParser quadratic complexity |
-| CVE-2025-8291 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-6069 | MEDIUM | python3 | 3.9.23-2.el9 | 3.9.25-2.el9_7 | cpython: Python HTMLParser quadratic complexity |
+| CVE-2025-8291 | MEDIUM | python3 | 3.9.23-2.el9 | 3.9.25-2.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
 | CVE-2025-12084 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4516 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
-| CVE-2025-6069 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: Python HTMLParser quadratic complexity |
-| CVE-2025-8291 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-6069 | MEDIUM | python3-libs | 3.9.23-2.el9 | 3.9.25-2.el9_7 | cpython: Python HTMLParser quadratic complexity |
+| CVE-2025-8291 | MEDIUM | python3-libs | 3.9.23-2.el9 | 3.9.25-2.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
@@ -307,13 +307,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-13837 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4516 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: Python HTMLParser quadratic complexity |
-| CVE-2025-8291 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-8291 | MEDIUM | python3.12 | 3.12.11-2.el9 | 3.12.12-1.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
 | CVE-2025-12084 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-4516 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: Python HTMLParser quadratic complexity |
-| CVE-2025-8291 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-8291 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | 3.12.12-1.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2005-2541 | MEDIUM | tar | 2:1.34-7.el9 | - | tar: does not properly warn the user when extracting setuid or setgid files |
