@@ -4,7 +4,7 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2025-12-20 15:05:09 UTC
+**Scanned:** 2025-12-21 03:37:59 UTC
 
 ## Overview
 
@@ -360,7 +360,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-53906 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | 2:8.0.1763-21.el8_10 | vim: Vim path traversal |
 | CVE-2023-48795 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.17.0, 0.0.0-20231218163308-9d2ee975ef9f | ssh: Prefix truncation attack on Binary Packet Protocol (BPP) |
 | CVE-2025-47914 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.45.0 | golang.org/x/crypto/ssh/agent: in golang.org/x/crypto/ssh/agent |
-| CVE-2025-58181 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.45.0 | SSH servers parsing GSSAPI authentication requests do not validate the ... |
+| CVE-2025-58181 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.45.0 | golang.org/x/crypto/ssh: in golang.org/x/crypto/ssh |
 | CVE-2022-41717 | MEDIUM | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.4.0 | golang: net/http: excessive memory growth in a Go server accepting HTTP/2 requests |
 | CVE-2023-3978 | MEDIUM | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.13.0 | golang.org/x/net/html: Cross site scripting |
 | CVE-2023-44487 | MEDIUM | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.17.0 | HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack) |
