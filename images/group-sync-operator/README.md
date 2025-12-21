@@ -4,7 +4,7 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2025-12-20 14:03:55 UTC
+**Scanned:** 2025-12-21 02:49:13 UTC
 
 ## Overview
 
@@ -59,7 +59,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4598 | MEDIUM | systemd-libs | 252-51.el9_6.1 | 252-55.el9_7.7 | systemd-coredump: race condition that allows a local attacker to crash a SUID program and gain read access to the resulting core dump |
 | CVE-2024-35255 | MEDIUM | github.com/Azure/azure-sdk-for-go/sdk/azidentity | v1.1.0 | 1.6.0-beta.4.0.20240610221955-50774cd97099 | azure-identity: Azure Identity Libraries Elevation of Privilege Vulnerability in github.com/Azure/azure-sdk-for-go/sdk/azidentity |
 | CVE-2025-47914 | MEDIUM | golang.org/x/crypto | v0.17.0 | 0.45.0 | golang.org/x/crypto/ssh/agent: in golang.org/x/crypto/ssh/agent |
-| CVE-2025-58181 | MEDIUM | golang.org/x/crypto | v0.17.0 | 0.45.0 | SSH servers parsing GSSAPI authentication requests do not validate the ... |
+| CVE-2025-58181 | MEDIUM | golang.org/x/crypto | v0.17.0 | 0.45.0 | golang.org/x/crypto/ssh: in golang.org/x/crypto/ssh |
 | CVE-2023-45288 | MEDIUM | golang.org/x/net | v0.17.0 | 0.23.0 | golang: net/http, x/net/http2: unlimited number of CONTINUATION frames causes DoS |
 | CVE-2025-22870 | MEDIUM | golang.org/x/net | v0.17.0 | 0.36.0 | golang.org/x/net/proxy: golang.org/x/net/http/httpproxy: HTTP Proxy bypass using IPv6 Zone IDs in golang.org/x/net |
 | CVE-2025-22872 | MEDIUM | golang.org/x/net | v0.17.0 | 0.38.0 | golang.org/x/net/html: Incorrect Neutralization of Input During Web Page Generation in x/net in golang.org/x/net |
