@@ -4,7 +4,7 @@
 
 **Version:** `devel`
 
-**Scanned:** 2025-12-22 00:29:24 UTC
+**Scanned:** 2025-12-22 12:26:05 UTC
 
 ## Overview
 
@@ -13,7 +13,7 @@
 | **upstream** | 0 | 🟠 34 (🔧34) | 157 (🔧109) | 194 (🔧16) | 385 | 🔧 159 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 3 (🔧2) | 5 | 10 | 🔧 4 |
 | ubi-minimal | 0 | 🟠 2 (🔧2) | 30 (🔧4) | 37 | 69 | 🔧 6 |
-| ubi | 0 | 🟠 2 (🔧2) | 56 (🔧8) | 182 (🔧4) | 240 | 🔧 14 |
+| ubi | 0 | 🟠 2 (🔧2) | 50 (🔧2) | 178 | 230 | 🔧 4 |
 
 ## Details
 
@@ -287,33 +287,27 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14104 | MEDIUM | libmount | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libsmartcols | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libuuid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
-| CVE-2025-12084 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
-| CVE-2025-13836 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
-| CVE-2025-13837 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: Out-of-memory when loading Plist |
-| CVE-2025-4516 | MEDIUM | python3 | 3.9.23-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
-| CVE-2025-6069 | MEDIUM | python3 | 3.9.23-2.el9 | 3.9.25-2.el9_7 | cpython: Python HTMLParser quadratic complexity |
-| CVE-2025-8291 | MEDIUM | python3 | 3.9.23-2.el9 | 3.9.25-2.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
-| CVE-2025-12084 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
-| CVE-2025-13836 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
-| CVE-2025-13837 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: Out-of-memory when loading Plist |
-| CVE-2025-4516 | MEDIUM | python3-libs | 3.9.23-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
-| CVE-2025-6069 | MEDIUM | python3-libs | 3.9.23-2.el9 | 3.9.25-2.el9_7 | cpython: Python HTMLParser quadratic complexity |
-| CVE-2025-8291 | MEDIUM | python3-libs | 3.9.23-2.el9 | 3.9.25-2.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-12084 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
+| CVE-2025-13836 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
+| CVE-2025-13837 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-4516 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
+| CVE-2025-12084 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
+| CVE-2025-13836 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
+| CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-4516 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
-| CVE-2025-12084 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
-| CVE-2025-13836 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
-| CVE-2025-13837 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: Out-of-memory when loading Plist |
-| CVE-2025-4516 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
-| CVE-2025-6069 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: Python HTMLParser quadratic complexity |
-| CVE-2025-8291 | MEDIUM | python3.12 | 3.12.11-2.el9 | 3.12.12-1.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
-| CVE-2025-12084 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
-| CVE-2025-13836 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
-| CVE-2025-13837 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: Out-of-memory when loading Plist |
-| CVE-2025-4516 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: python: CPython DecodeError Handling Vulnerability |
-| CVE-2025-6069 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | - | cpython: Python HTMLParser quadratic complexity |
-| CVE-2025-8291 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | 3.12.12-1.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2025-12084 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
+| CVE-2025-13836 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
+| CVE-2025-13837 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-4516 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
+| CVE-2025-6069 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: Python HTMLParser quadratic complexity |
+| CVE-2025-12084 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
+| CVE-2025-13836 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
+| CVE-2025-13837 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-4516 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
+| CVE-2025-6069 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2005-2541 | MEDIUM | tar | 2:1.34-7.el9 | - | tar: does not properly warn the user when extracting setuid or setgid files |
