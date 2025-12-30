@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2025-12-29 12:26:02 UTC
+**Scanned:** 2025-12-30 00:28:19 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 34 (🔧34) | 157 (🔧109) | 194 (🔧16) | 385 | 🔧 159 |
+| **upstream** | 0 | 🟠 35 (🔧34) | 157 (🔧109) | 194 (🔧16) | 386 | 🔧 159 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 3 (🔧2) | 5 | 10 | 🔧 4 |
-| ubi-minimal | 0 | 🟠 2 (🔧2) | 30 (🔧4) | 37 | 69 | 🔧 6 |
-| ubi | 0 | 🟠 2 (🔧2) | 50 (🔧2) | 178 | 230 | 🔧 4 |
+| ubi-minimal | 0 | 🟠 3 (🔧2) | 30 (🔧4) | 37 | 70 | 🔧 6 |
+| ubi | 0 | 🟠 3 (🔧2) | 50 (🔧2) | 178 | 231 | 🔧 4 |
 
 ## Details
 
@@ -24,6 +24,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-59375 | HIGH | expat | 2.5.0-2.el9_4.1 | 2.5.0-5.el9_7.1 | expat: libexpat in Expat allows attackers to trigger large dynamic memory allocations via a small document that is submitted for parsing |
+| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | In GnuPG through 2.4.8, armor_filter in g10/armor.c has two increments ... |
 | CVE-2025-5914 | HIGH | libarchive | 3.5.3-4.el9 | 3.5.3-6.el9_6 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
 | CVE-2024-56171 | HIGH | libxml2 | 2.9.13-6.el9_4 | 2.9.13-6.el9_5.2 | libxml2: Use-After-Free in libxml2 |
 | CVE-2025-24928 | HIGH | libxml2 | 2.9.13-6.el9_4 | 2.9.13-6.el9_5.2 | libxml2: Stack-based buffer overflow in xmlSnprintfElements of libxml2 |
@@ -229,6 +230,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | In GnuPG through 2.4.8, armor_filter in g10/armor.c has two increments ... |
 | CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -266,6 +268,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | In GnuPG through 2.4.8, armor_filter in g10/armor.c has two increments ... |
 | CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
