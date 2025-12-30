@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2025-12-29 15:05:24 UTC
+**Scanned:** 2025-12-30 03:37:37 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 11 (🔧11) | 🟠 114 (🔧113) | 323 (🔧276) | 223 (🔧31) | 671 | 🔧 431 |
-| ubi-minimal | 0 | 0 | 15 (🔧1) | 35 | 50 | 🔧 1 |
-| ubi | 0 | 0 | 37 (🔧1) | 176 | 213 | 🔧 1 |
+| **upstream** | 🔴 11 (🔧11) | 🟠 115 (🔧113) | 323 (🔧276) | 223 (🔧31) | 672 | 🔧 431 |
+| ubi-minimal | 0 | 🟠 1 | 15 (🔧1) | 35 | 51 | 🔧 1 |
+| ubi | 0 | 🟠 1 | 37 (🔧1) | 176 | 214 | 🔧 1 |
 
 ## Details
 
@@ -45,6 +45,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-4911 | HIGH | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: buffer overflow in ld.so leading to privilege escalation |
 | CVE-2024-2961 | HIGH | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.1 | glibc: Out of bounds write in iconv may lead to remote code execution |
 | CVE-2024-33599 | HIGH | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.2 | glibc: stack-based buffer overflow in netgroup cache |
+| CVE-2025-68973 | HIGH | gnupg2 | 2.2.20-3.el8_6 | - | In GnuPG through 2.4.8, armor_filter in g10/armor.c has two increments ... |
 | CVE-2022-42898 | HIGH | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-25.el8_8 | krb5: integer overflow vulnerabilities in PAC parsing |
 | CVE-2024-3596 | HIGH | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-30.el8_10 | freeradius: forgery attack |
 | CVE-2025-5914 | HIGH | libarchive | 3.3.3-4.el8 | 3.3.3-6.el8_10 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
@@ -475,6 +476,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | In GnuPG through 2.4.8, armor_filter in g10/armor.c has two increments ... |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-10966 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
@@ -495,6 +497,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | In GnuPG through 2.4.8, armor_filter in g10/armor.c has two increments ... |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-10966 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
