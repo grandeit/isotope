@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2025-12-30 12:25:27 UTC
+**Scanned:** 2025-12-31 00:29:17 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 35 (🔧34) | 157 (🔧109) | 194 (🔧16) | 386 | 🔧 159 |
+| **upstream** | 0 | 🟠 35 (🔧34) | 158 (🔧109) | 196 (🔧16) | 389 | 🔧 159 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 3 (🔧2) | 5 | 10 | 🔧 4 |
-| ubi-minimal | 0 | 🟠 3 (🔧2) | 30 (🔧4) | 37 | 70 | 🔧 6 |
-| ubi | 0 | 🟠 3 (🔧2) | 50 (🔧2) | 178 | 231 | 🔧 4 |
+| ubi-minimal | 0 | 🟠 3 (🔧2) | 31 (🔧4) | 37 | 71 | 🔧 6 |
+| ubi | 0 | 🟠 3 (🔧2) | 51 (🔧2) | 180 | 234 | 🔧 4 |
 
 ## Details
 
@@ -24,7 +24,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-59375 | HIGH | expat | 2.5.0-2.el9_4.1 | 2.5.0-5.el9_7.1 | expat: libexpat in Expat allows attackers to trigger large dynamic memory allocations via a small document that is submitted for parsing |
-| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | In GnuPG through 2.4.8, armor_filter in g10/armor.c has two increments ... |
+| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2025-5914 | HIGH | libarchive | 3.5.3-4.el9 | 3.5.3-6.el9_6 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
 | CVE-2024-56171 | HIGH | libxml2 | 2.9.13-6.el9_4 | 2.9.13-6.el9_5.2 | libxml2: Use-After-Free in libxml2 |
 | CVE-2025-24928 | HIGH | libxml2 | 2.9.13-6.el9_4 | 2.9.13-6.el9_5.2 | libxml2: Stack-based buffer overflow in xmlSnprintfElements of libxml2 |
@@ -89,6 +89,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4802 | MEDIUM | glibc-minimal-langpack | 2.34-125.el9_5.1 | 2.34-168.el9_6.19 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-5702 | MEDIUM | glibc-minimal-langpack | 2.34-125.el9_5.1 | 2.34-168.el9_6.20 | glibc: Vector register overwrite bug in glibc |
 | CVE-2025-8058 | MEDIUM | glibc-minimal-langpack | 2.34-125.el9_5.1 | 2.34-168.el9_6.23 | glibc: Double free in glibc |
+| CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-4.el9 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2024-12243 | MEDIUM | gnutls | 3.8.3-4.el9_4 | 3.8.3-6.el9 | gnutls: GnuTLS Impacted by Inefficient DER Decoding in libtasn1 Leading to Remote DoS |
 | CVE-2025-32988 | MEDIUM | gnutls | 3.8.3-4.el9_4 | 3.8.3-6.el9_6.2 | gnutls: Vulnerability in GnuTLS otherName SAN export |
 | CVE-2025-32989 | MEDIUM | gnutls | 3.8.3-4.el9_4 | 3.8.3-6.el9_6.2 | gnutls: Vulnerability in GnuTLS SCT extension parsing |
@@ -230,7 +231,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | In GnuPG through 2.4.8, armor_filter in g10/armor.c has two increments ... |
+| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -239,6 +240,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer overflow in in g_escape_uri_string() |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
+| CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-4.el9 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2025-14104 | MEDIUM | libblkid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
@@ -268,7 +270,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | In GnuPG through 2.4.8, armor_filter in g10/armor.c has two increments ... |
+| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -281,6 +283,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer overflow in in g_escape_uri_string() |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
+| CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-4.el9 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2025-14104 | MEDIUM | libblkid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
