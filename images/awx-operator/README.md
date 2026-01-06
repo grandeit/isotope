@@ -4,7 +4,7 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-01-06 00:30:04 UTC
+**Scanned:** 2026-01-06 12:25:06 UTC
 
 ## Overview
 
@@ -316,8 +316,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6069 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
-| CVE-2005-2541 | MEDIUM | tar | 2:1.34-7.el9 | - | tar: does not properly warn the user when extracting setuid or setgid files |
-| CVE-2025-45582 | MEDIUM | tar | 2:1.34-7.el9 | - | tar: Tar path traversal |
+| CVE-2005-2541 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: does not properly warn the user when extracting setuid or setgid files |
+| CVE-2025-45582 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: Tar path traversal |
 | CVE-2024-29040 | MEDIUM | tpm2-tss | 3.2.3-1.el9 | - | tpm2-tss: arbitrary quote data may go undetected by Fapi_VerifyQuote |
 | CVE-2025-14104 | MEDIUM | util-linux | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | util-linux-core | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
