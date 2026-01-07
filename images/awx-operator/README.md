@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-01-06 12:25:06 UTC
+**Scanned:** 2026-01-07 00:27:58 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 35 (🔧34) | 158 (🔧109) | 200 (🔧16) | 393 | 🔧 159 |
+| **upstream** | 0 | 🟠 35 (🔧34) | 158 (🔧110) | 200 (🔧16) | 393 | 🔧 160 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 3 (🔧2) | 5 | 10 | 🔧 4 |
 | ubi-minimal | 0 | 🟠 3 (🔧2) | 31 (🔧4) | 37 | 71 | 🔧 6 |
-| ubi | 0 | 🟠 3 (🔧2) | 51 (🔧2) | 184 | 238 | 🔧 4 |
+| ubi | 0 | 🟠 3 (🔧2) | 50 (🔧2) | 184 | 237 | 🔧 4 |
 
 ## Details
 
@@ -179,7 +179,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4598 | MEDIUM | systemd-pam | 252-46.el9_5.2 | 252-55.el9_7.7 | systemd-coredump: race condition that allows a local attacker to crash a SUID program and gain read access to the resulting core dump |
 | CVE-2025-4598 | MEDIUM | systemd-rpm-macros | 252-46.el9_5.2 | 252-55.el9_7.7 | systemd-coredump: race condition that allows a local attacker to crash a SUID program and gain read access to the resulting core dump |
 | CVE-2005-2541 | MEDIUM | tar | 2:1.34-7.el9 | - | tar: does not properly warn the user when extracting setuid or setgid files |
-| CVE-2025-45582 | MEDIUM | tar | 2:1.34-7.el9 | - | tar: Tar path traversal |
+| CVE-2025-45582 | MEDIUM | tar | 2:1.34-7.el9 | 2:1.34-9.el9_7 | tar: Tar path traversal |
 | CVE-2024-29040 | MEDIUM | tpm2-tss | 3.2.3-1.el9 | - | tpm2-tss: arbitrary quote data may go undetected by Fapi_VerifyQuote |
 | CVE-2025-14104 | MEDIUM | util-linux | 2.37.4-20.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | util-linux-core | 2.37.4-20.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
@@ -317,7 +317,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2005-2541 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: does not properly warn the user when extracting setuid or setgid files |
-| CVE-2025-45582 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: Tar path traversal |
 | CVE-2024-29040 | MEDIUM | tpm2-tss | 3.2.3-1.el9 | - | tpm2-tss: arbitrary quote data may go undetected by Fapi_VerifyQuote |
 | CVE-2025-14104 | MEDIUM | util-linux | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | util-linux-core | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
