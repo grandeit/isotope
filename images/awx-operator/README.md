@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-01-08 12:26:55 UTC
+**Scanned:** 2026-01-09 00:29:19 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 35 (🔧34) | 158 (🔧110) | 200 (🔧16) | 393 | 🔧 160 |
-| ubi-micro | 0 | 🟠 2 (🔧2) | 3 (🔧2) | 5 | 10 | 🔧 4 |
-| ubi-minimal | 0 | 🟠 3 (🔧2) | 31 (🔧4) | 37 | 71 | 🔧 6 |
-| ubi | 0 | 🟠 3 (🔧2) | 50 (🔧2) | 184 | 237 | 🔧 4 |
+| **upstream** | 0 | 🟠 36 (🔧35) | 158 (🔧110) | 200 (🔧16) | 394 | 🔧 161 |
+| ubi-micro | 0 | 🟠 3 (🔧3) | 3 (🔧2) | 5 | 11 | 🔧 5 |
+| ubi-minimal | 0 | 🟠 4 (🔧3) | 31 (🔧4) | 37 | 72 | 🔧 7 |
+| ubi | 0 | 🟠 4 (🔧3) | 50 (🔧2) | 184 | 238 | 🔧 5 |
 
 ## Details
 
@@ -52,7 +52,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-8775 | HIGH | ansible-core | 2.17.5 | 2.17.6, 2.16.13 | ansible-core: Exposure of Sensitive Information in Ansible Vault Files Due to Improper Logging |
 | CVE-2025-47273 | HIGH | setuptools | 75.2.0 | 78.1.1 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
 | CVE-2025-66418 | HIGH | urllib3 | 1.26.20 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
-| CVE-2025-66471 | HIGH | urllib3 | 1.26.20 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
+| CVE-2025-66471 | HIGH | urllib3 | 1.26.20 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
+| CVE-2026-21441 | HIGH | urllib3 | 1.26.20 | 2.6.3 | urllib3 is an HTTP client library for Python. urllib3's streaming API ... |
 | CVE-2025-22868 | HIGH | golang.org/x/oauth2 | v0.21.0 | 0.27.0 | golang.org/x/oauth2/jws: Unexpected memory consumption during token parsing in golang.org/x/oauth2/jws |
 | CVE-2024-34156 | HIGH | stdlib | v1.22.5 | 1.22.7, 1.23.1 | encoding/gob: golang: Calling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion |
 | CVE-2025-47907 | HIGH | stdlib | v1.22.5 | 1.23.12, 1.24.6 | database/sql: Postgres Scan Race Condition |
@@ -222,7 +223,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
-| CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
+| CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
+| CVE-2026-21441 | HIGH | urllib3 | 2.3.0 | 2.6.3 | urllib3 is an HTTP client library for Python. urllib3's streaming API ... |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-50181 | MEDIUM | urllib3 | 2.3.0 | 2.5.0 | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | urllib3 | 2.3.0 | 2.5.0 | urllib3: urllib3 does not control redirects in browsers and Node.js |
@@ -233,7 +235,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
-| CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
+| CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
+| CVE-2026-21441 | HIGH | urllib3 | 2.3.0 | 2.6.3 | urllib3 is an HTTP client library for Python. urllib3's streaming API ... |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-10966 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
@@ -272,7 +275,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
-| CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
+| CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
+| CVE-2026-21441 | HIGH | urllib3 | 2.3.0 | 2.6.3 | urllib3 is an HTTP client library for Python. urllib3's streaming API ... |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-10966 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
