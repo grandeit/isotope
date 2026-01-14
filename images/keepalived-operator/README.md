@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-01-13 15:16:12 UTC
+**Scanned:** 2026-01-14 03:40:27 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 11 (🔧11) | 🟠 115 (🔧113) | 324 (🔧276) | 229 (🔧31) | 679 | 🔧 431 |
-| ubi-minimal | 0 | 🟠 1 | 16 (🔧1) | 35 | 52 | 🔧 1 |
-| ubi | 0 | 🟠 1 | 37 (🔧1) | 182 | 220 | 🔧 1 |
+| **upstream** | 🔴 11 (🔧11) | 🟠 116 (🔧113) | 327 (🔧277) | 230 (🔧31) | 684 | 🔧 432 |
+| ubi-minimal | 0 | 🟠 1 | 19 (🔧1) | 36 | 56 | 🔧 1 |
+| ubi | 0 | 🟠 3 | 40 (🔧1) | 183 | 226 | 🔧 1 |
 
 ## Details
 
@@ -81,6 +81,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-6345 | HIGH | python3-setuptools-wheel | 39.2.0-6.el8_7.1 | 39.2.0-8.el8_10 | pypa/setuptools: Remote code execution via download functions in the package_index module in pypa/setuptools |
 | CVE-2023-3899 | HIGH | python3-subscription-manager-rhsm | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2023-3899 | HIGH | python3-syspurpose | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
+| CVE-2025-66418 | HIGH | python3-urllib3 | 1.24.2-5.el8 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-20.el8_10 | sqlite: Integer Truncation in SQLite |
 | CVE-2023-3899 | HIGH | subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2023-3899 | HIGH | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
@@ -109,7 +110,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-34156 | HIGH | stdlib | v1.18.10 | 1.22.7, 1.23.1 | encoding/gob: golang: Calling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion |
 | CVE-2025-47907 | HIGH | stdlib | v1.18.10 | 1.23.12, 1.24.6 | database/sql: Postgres Scan Race Condition |
 | CVE-2025-58183 | HIGH | stdlib | v1.18.10 | 1.24.8, 1.25.2 | golang: archive/tar: Unbounded allocation when parsing GNU sparse map |
-| CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509 |
+| CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2022-21698 | HIGH | github.com/prometheus/client_golang | v1.1.0 | 1.11.1 | prometheus/client_golang: Denial of service using InstrumentHandlerCounter |
 | CVE-2025-65637 | HIGH | github.com/sirupsen/logrus | v1.4.2 | 1.8.3, 1.9.1, 1.9.3 | github.com/sirupsen/logrus: github.com/sirupsen/logrus: Denial-of-Service due to large single-line payload |
 | CVE-2022-41722 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: path/filepath: path-filepath filepath.Clean path traversal |
@@ -129,7 +130,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-34156 | HIGH | stdlib | v1.18.10 | 1.22.7, 1.23.1 | encoding/gob: golang: Calling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion |
 | CVE-2025-47907 | HIGH | stdlib | v1.18.10 | 1.23.12, 1.24.6 | database/sql: Postgres Scan Race Condition |
 | CVE-2025-58183 | HIGH | stdlib | v1.18.10 | 1.24.8, 1.25.2 | golang: archive/tar: Unbounded allocation when parsing GNU sparse map |
-| CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509 |
+| CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2022-41722 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: path/filepath: path-filepath filepath.Clean path traversal |
 | CVE-2022-41723 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang.org/x/net/http2: avoid quadratic complexity in HPACK decoding |
 | CVE-2022-41724 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: crypto/tls: large handshake records may cause panics |
@@ -147,7 +148,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-34156 | HIGH | stdlib | v1.18.10 | 1.22.7, 1.23.1 | encoding/gob: golang: Calling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion |
 | CVE-2025-47907 | HIGH | stdlib | v1.18.10 | 1.23.12, 1.24.6 | database/sql: Postgres Scan Race Condition |
 | CVE-2025-58183 | HIGH | stdlib | v1.18.10 | 1.24.8, 1.25.2 | golang: archive/tar: Unbounded allocation when parsing GNU sparse map |
-| CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: Excessive resource consumption when printing error string for host certificate validation in crypto/x509 |
+| CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | 1.0.6-28.el8_10 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-13.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2023-23916 | MEDIUM | curl | 7.61.1-25.el8_7.2 | 7.61.1-25.el8_7.3 | curl: HTTP multi-header compression denial of service |
@@ -157,6 +158,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-46218 | MEDIUM | curl | 7.61.1-25.el8_7.2 | 7.61.1-33.el8_9.5 | curl: information disclosure by exploiting a mixed case flaw |
 | CVE-2024-2398 | MEDIUM | curl | 7.61.1-25.el8_7.2 | 7.61.1-34.el8_10.2 | curl: HTTP/2 push headers memory-leak |
 | CVE-2025-10966 | MEDIUM | curl | 7.61.1-25.el8_7.2 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
+| CVE-2025-14017 | MEDIUM | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl | 7.61.1-25.el8_7.2 | 7.61.1-34.el8_10.9 | curl: libcurl: Curl out of bounds read for cookie path |
 | CVE-2023-34969 | MEDIUM | dbus | 1:1.12.8-23.el8_7.1 | 1:1.12.8-24.el8_8.1 | dbus: dbus-daemon: assertion failure when a monitor is active and a message from the driver cannot be delivered |
 | CVE-2023-34969 | MEDIUM | dbus-common | 1:1.12.8-23.el8_7.1 | 1:1.12.8-24.el8_8.1 | dbus: dbus-daemon: assertion failure when a monitor is active and a message from the driver cannot be delivered |
@@ -234,6 +236,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-46218 | MEDIUM | libcurl | 7.61.1-25.el8_7.2 | 7.61.1-33.el8_9.5 | curl: information disclosure by exploiting a mixed case flaw |
 | CVE-2024-2398 | MEDIUM | libcurl | 7.61.1-25.el8_7.2 | 7.61.1-34.el8_10.2 | curl: HTTP/2 push headers memory-leak |
 | CVE-2025-10966 | MEDIUM | libcurl | 7.61.1-25.el8_7.2 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
+| CVE-2025-14017 | MEDIUM | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | libcurl | 7.61.1-25.el8_7.2 | 7.61.1-34.el8_10.9 | curl: libcurl: Curl out of bounds read for cookie path |
 | CVE-2025-14104 | MEDIUM | libfdisk | 2.32.1-39.el8_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2020-11023 | MEDIUM | libgcc | 8.5.0-16.el8_7 | 8.5.0-23.el8_10 | jquery: Untrusted code execution via <option> tag in HTML passed to DOM manipulation methods |
@@ -274,12 +277,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-29491 | MEDIUM | ncurses-base | 6.1-9.20180224.el8 | 6.1-9.20180224.el8_8.1 | ncurses: Local users can trigger security-relevant memory corruption via malformed data |
 | CVE-2018-19217 | MEDIUM | ncurses-libs | 6.1-9.20180224.el8 | - | ncurses: Null pointer dereference at function _nc_name_match |
 | CVE-2023-29491 | MEDIUM | ncurses-libs | 6.1-9.20180224.el8 | 6.1-9.20180224.el8_8.1 | ncurses: Local users can trigger security-relevant memory corruption via malformed data |
+| CVE-2026-22185 | MEDIUM | openldap | 2.4.46-18.el8 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2022-4304 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-9.el8_7 | openssl: timing attack in RSA Decryption implementation |
 | CVE-2022-4450 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-9.el8_7 | openssl: double free after calling PEM_read_bio_ex |
 | CVE-2023-0215 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-9.el8_7 | openssl: use-after-free following BIO_new_NDEF |
 | CVE-2023-0466 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | - | openssl: Certificate policy check not enabled |
 | CVE-2024-2408 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-12.el8_9 | php: potential exposure to Marvin attack via unsafe implementation of RSA decryption API |
-| CVE-2025-9230 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | - | openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap |
+| CVE-2025-9230 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-14.el8_10 | openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap |
 | CVE-2024-10041 | MEDIUM | pam | 1.3.1-22.el8 | 1.3.1-36.el8_10 | pam: libpam: Libpam vulnerable to read hashed password |
 | CVE-2024-22365 | MEDIUM | pam | 1.3.1-22.el8 | 1.3.1-33.el8 | pam: allowing unprivileged user to block another user namespace |
 | CVE-2007-4559 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-56.el8_9 | python: tarfile module directory traversal |
@@ -480,6 +484,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-10966 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
+| CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
 | CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer overflow in in g_escape_uri_string() |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
@@ -489,10 +494,12 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2025-14104 | MEDIUM | libblkid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-10966 | MEDIUM | libcurl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
+| CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | libcurl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
 | CVE-2025-14104 | MEDIUM | libmount | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libsmartcols | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libuuid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20180926160741-c2ed4eda69e7 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 
 ### ubi
@@ -500,8 +507,11 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
+| CVE-2026-21441 | HIGH | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
+| CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-10966 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
+| CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
 | CVE-2025-11081 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils out-of-bounds read |
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
@@ -515,11 +525,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2025-14104 | MEDIUM | libblkid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-10966 | MEDIUM | libcurl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
+| CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | libcurl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
 | CVE-2025-14104 | MEDIUM | libfdisk | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libmount | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libsmartcols | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libuuid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2025-12084 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Out-of-memory when loading Plist |
