@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-01-14 12:25:34 UTC
+**Scanned:** 2026-01-15 00:28:42 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 39 (🔧35) | 161 (🔧110) | 201 (🔧16) | 401 | 🔧 161 |
-| ubi-micro | 0 | 🟠 3 (🔧3) | 3 (🔧2) | 5 | 11 | 🔧 5 |
-| ubi-minimal | 0 | 🟠 5 (🔧3) | 34 (🔧4) | 38 | 77 | 🔧 7 |
-| ubi | 0 | 🟠 7 (🔧3) | 53 (🔧2) | 185 | 245 | 🔧 5 |
+| **upstream** | 0 | 🟠 38 (🔧36) | 163 (🔧112) | 201 (🔧16) | 402 | 🔧 164 |
+| ubi-micro | 0 | 🟠 4 (🔧4) | 3 (🔧2) | 5 | 12 | 🔧 6 |
+| ubi-minimal | 0 | 🟠 5 (🔧4) | 34 (🔧4) | 38 | 77 | 🔧 8 |
+| ubi | 0 | 🟠 6 (🔧4) | 53 (🔧2) | 185 | 244 | 🔧 6 |
 
 ## Details
 
@@ -40,7 +40,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-12718 | HIGH | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
 | CVE-2025-4517 | HIGH | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | python: cpython: Arbitrary writes via tarfile realpath overflow |
-| CVE-2026-21441 | HIGH | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2024-12254 | HIGH | python3.12 | 3.12.5-2.el9_5.1 | 3.12.5-2.el9_5.2 | python: Unbounded memory buffering in SelectorSocketTransport.writelines() |
 | CVE-2024-12718 | HIGH | python3.12 | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
@@ -50,9 +49,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-12718 | HIGH | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
 | CVE-2025-4517 | HIGH | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | python: cpython: Arbitrary writes via tarfile realpath overflow |
-| CVE-2026-21441 | HIGH | python3.12-pip-wheel | 23.2.1-4.el9 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.34.1-7.el9_3 | 3.34.1-9.el9_7 | sqlite: Integer Truncation in SQLite |
 | CVE-2024-8775 | HIGH | ansible-core | 2.17.5 | 2.17.6, 2.16.13 | ansible-core: Exposure of Sensitive Information in Ansible Vault Files Due to Improper Logging |
+| GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
 | CVE-2025-47273 | HIGH | setuptools | 75.2.0 | 78.1.1 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
 | CVE-2025-66418 | HIGH | urllib3 | 1.26.20 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 1.26.20 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
@@ -198,10 +197,12 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-27516 | MEDIUM | Jinja2 | 3.1.4 | 3.1.6 | jinja2: Jinja sandbox breakout through attr filter selecting format method |
 | CVE-2024-9902 | MEDIUM | ansible-core | 2.17.5 | 2.14.18rc1, 2.15.13rc1, 2.16.13rc1, 2.17.6rc1, 2.18.0rc2 | ansible-core: Ansible-core user may read/write unauthorized content |
 | CVE-2025-68146 | MEDIUM | filelock | 3.16.1 | 3.20.1 | filelock: filelock: Time-of-Check-Time-of-Use (TOCTOU) race condition and symlink attack allows arbitrary file corruption or truncation |
+| CVE-2026-22701 | MEDIUM | filelock | 3.16.1 | 3.20.3 | filelock: filelock Time-of-Check-Time-of-Use (TOCTOU) in SoftFileLock |
 | CVE-2025-8869 | MEDIUM | pip | 23.3.2 | 25.3 | pip: pip missing checks on symbolic link extraction |
 | CVE-2024-35195 | MEDIUM | requests | 2.31.0 | 2.32.0 | requests: subsequent requests to the same host ignore cert verification |
 | CVE-2024-47081 | MEDIUM | requests | 2.31.0 | 2.32.4 | requests: Requests vulnerable to .netrc credentials leak via malicious URLs |
 | CVE-2025-50181 | MEDIUM | urllib3 | 1.26.20 | 2.5.0 | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
+| CVE-2026-22702 | MEDIUM | virtualenv | 20.27.1 | 20.36.1 | virtualenv: virtualenv: Local attacker can redirect file operations via TOCTOU race condition |
 | CVE-2025-22870 | MEDIUM | golang.org/x/net | v0.29.0 | 0.36.0 | golang.org/x/net/proxy: golang.org/x/net/http/httpproxy: HTTP Proxy bypass using IPv6 Zone IDs in golang.org/x/net |
 | CVE-2025-22872 | MEDIUM | golang.org/x/net | v0.29.0 | 0.38.0 | golang.org/x/net/html: Incorrect Neutralization of Input During Web Page Generation in x/net in golang.org/x/net |
 | CVE-2024-34155 | MEDIUM | stdlib | v1.22.5 | 1.22.7, 1.23.1 | go/parser: golang: Calling any of the Parse functions containing deeply nested literals can cause a panic/stack exhaustion |
@@ -228,6 +229,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
 | CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | urllib3 | 2.3.0 | 2.6.3 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
@@ -240,7 +242,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
-| CVE-2026-21441 | HIGH | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
+| GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
 | CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | urllib3 | 2.3.0 | 2.6.3 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
@@ -284,9 +286,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
-| CVE-2026-21441 | HIGH | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
-| CVE-2026-21441 | HIGH | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
+| GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
 | CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | urllib3 | 2.3.0 | 2.6.3 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
