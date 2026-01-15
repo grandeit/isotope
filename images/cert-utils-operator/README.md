@@ -4,7 +4,7 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-01-14 13:18:46 UTC
+**Scanned:** 2026-01-15 01:31:44 UTC
 
 ## Overview
 
@@ -14,7 +14,7 @@
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 0 | 1 | 5 | 6 | 🔧 0 |
 | ubi-minimal | 0 | 🟠 1 | 18 | 32 | 51 | 🔧 0 |
-| ubi | 0 | 🟠 3 | 39 | 183 | 225 | 🔧 0 |
+| ubi | 0 | 🟠 2 | 39 | 183 | 224 | 🔧 0 |
 
 ## Details
 
@@ -234,7 +234,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
-| CVE-2026-21441 | HIGH | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-10966 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
