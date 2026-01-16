@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-01-16 00:28:53 UTC
+**Scanned:** 2026-01-16 12:25:28 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
 | **upstream** | 0 | 🟠 38 (🔧36) | 161 (🔧110) | 201 (🔧16) | 400 | 🔧 162 |
-| ubi-micro | 0 | 🟠 4 (🔧4) | 3 (🔧2) | 5 | 12 | 🔧 6 |
-| ubi-minimal | 0 | 🟠 5 (🔧4) | 34 (🔧4) | 38 | 77 | 🔧 8 |
-| ubi | 0 | 🟠 6 (🔧4) | 53 (🔧2) | 185 | 244 | 🔧 6 |
+| ubi-micro | 0 | 🟠 1 (🔧1) | 1 | 5 | 7 | 🔧 1 |
+| ubi-minimal | 0 | 🟠 2 (🔧1) | 32 (🔧2) | 38 | 72 | 🔧 3 |
+| ubi | 0 | 🟠 3 (🔧1) | 51 | 185 | 239 | 🔧 1 |
 
 ## Details
 
@@ -228,12 +228,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
-| CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
-| CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
-| CVE-2026-21441 | HIGH | urllib3 | 2.3.0 | 2.6.3 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
-| CVE-2025-50181 | MEDIUM | urllib3 | 2.3.0 | 2.5.0 | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
-| CVE-2025-50182 | MEDIUM | urllib3 | 2.3.0 | 2.5.0 | urllib3: urllib3 does not control redirects in browsers and Node.js |
 
 ### ubi-minimal
 
@@ -241,9 +236,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
-| CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
-| CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
-| CVE-2026-21441 | HIGH | urllib3 | 2.3.0 | 2.6.3 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-10966 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
@@ -276,8 +268,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-8291 | MEDIUM | python3.12-libs | 3.12.11-2.el9 | 3.12.12-1.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
-| CVE-2025-50181 | MEDIUM | urllib3 | 2.3.0 | 2.5.0 | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
-| CVE-2025-50182 | MEDIUM | urllib3 | 2.3.0 | 2.5.0 | urllib3: urllib3 does not control redirects in browsers and Node.js |
 
 ### ubi
 
@@ -286,9 +276,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
-| CVE-2025-66418 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
-| CVE-2025-66471 | HIGH | urllib3 | 2.3.0 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
-| CVE-2026-21441 | HIGH | urllib3 | 2.3.0 | 2.6.3 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-10966 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
@@ -340,8 +327,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14104 | MEDIUM | util-linux | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | util-linux-core | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-29768 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim vulnerable to potential data loss with zip.vim and special crafted zip files |
-| CVE-2025-50181 | MEDIUM | urllib3 | 2.3.0 | 2.5.0 | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
-| CVE-2025-50182 | MEDIUM | urllib3 | 2.3.0 | 2.5.0 | urllib3: urllib3 does not control redirects in browsers and Node.js |
 
 ---
 *Generated by [Trivy](https://trivy.dev)*
