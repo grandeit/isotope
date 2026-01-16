@@ -4,13 +4,13 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-01-15 12:26:15 UTC
+**Scanned:** 2026-01-16 00:28:53 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 38 (🔧36) | 163 (🔧112) | 201 (🔧16) | 402 | 🔧 164 |
+| **upstream** | 0 | 🟠 38 (🔧36) | 161 (🔧110) | 201 (🔧16) | 400 | 🔧 162 |
 | ubi-micro | 0 | 🟠 4 (🔧4) | 3 (🔧2) | 5 | 12 | 🔧 6 |
 | ubi-minimal | 0 | 🟠 5 (🔧4) | 34 (🔧4) | 38 | 77 | 🔧 8 |
 | ubi | 0 | 🟠 6 (🔧4) | 53 (🔧2) | 185 | 244 | 🔧 6 |
@@ -122,8 +122,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6021 | MEDIUM | libxml2 | 2.9.13-6.el9_4 | 2.9.13-10.el9_6 | libxml2: Integer Overflow in xmlBuildQName() Leads to Stack Buffer Overflow in libxml2 |
 | CVE-2025-9714 | MEDIUM | libxml2 | 2.9.13-6.el9_4 | 2.9.13-14.el9_7 | libxslt: libxml2: Inifinite recursion at exsltDynMapFunction function in libexslt/dynamic.c |
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.6-3.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
-| CVE-2025-9230 | MEDIUM | openssl | 1:3.2.2-6.el9_5.1 | 1:3.5.1-4.el9_7 | openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap |
-| CVE-2025-9230 | MEDIUM | openssl-libs | 1:3.2.2-6.el9_5.1 | 1:3.5.1-4.el9_7 | openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap |
 | CVE-2024-10041 | MEDIUM | pam | 1.5.1-20.el9 | 1.5.1-21.el9_5 | pam: libpam: Libpam vulnerable to read hashed password |
 | CVE-2024-11168 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-1.el9_5 | python: Improper validation of IPv6 and IPvFuture addresses |
 | CVE-2024-9287 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-1.el9_5 | python: Virtual environment (venv) activation scripts don't quote paths |
