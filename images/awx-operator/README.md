@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-01-16 12:25:28 UTC
+**Scanned:** 2026-01-17 00:27:00 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 38 (🔧36) | 161 (🔧110) | 201 (🔧16) | 400 | 🔧 162 |
-| ubi-micro | 0 | 🟠 1 (🔧1) | 1 | 5 | 7 | 🔧 1 |
-| ubi-minimal | 0 | 🟠 2 (🔧1) | 32 (🔧2) | 38 | 72 | 🔧 3 |
-| ubi | 0 | 🟠 3 (🔧1) | 51 | 185 | 239 | 🔧 1 |
+| **upstream** | 0 | 🟠 42 (🔧37) | 166 (🔧110) | 204 (🔧16) | 412 | 🔧 163 |
+| ubi-micro | 0 | 🟠 4 (🔧1) | 4 | 5 | 13 | 🔧 1 |
+| ubi-minimal | 0 | 🟠 5 (🔧2) | 36 (🔧2) | 41 | 82 | 🔧 4 |
+| ubi | 0 | 🟠 6 (🔧2) | 55 | 188 | 249 | 🔧 2 |
 
 ## Details
 
@@ -24,7 +24,11 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-59375 | HIGH | expat | 2.5.0-2.el9_4.1 | 2.5.0-5.el9_7.1 | expat: libexpat in Expat allows attackers to trigger large dynamic memory allocations via a small document that is submitted for parsing |
-| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
+| CVE-2026-0861 | HIGH | glibc | 2.34-125.el9_5.1 | - | glibc: Integer overflow in memalign leads to heap corruption |
+| CVE-2026-0861 | HIGH | glibc-common | 2.34-125.el9_5.1 | - | glibc: Integer overflow in memalign leads to heap corruption |
+| CVE-2026-0861 | HIGH | glibc-langpack-en | 2.34-125.el9_5.1 | - | glibc: Integer overflow in memalign leads to heap corruption |
+| CVE-2026-0861 | HIGH | glibc-minimal-langpack | 2.34-125.el9_5.1 | - | glibc: Integer overflow in memalign leads to heap corruption |
+| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | 2.3.3-5.el9_7 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2025-5914 | HIGH | libarchive | 3.5.3-4.el9 | 3.5.3-6.el9_6 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
 | CVE-2024-56171 | HIGH | libxml2 | 2.9.13-6.el9_4 | 2.9.13-6.el9_5.2 | libxml2: Use-After-Free in libxml2 |
 | CVE-2025-24928 | HIGH | libxml2 | 2.9.13-6.el9_4 | 2.9.13-6.el9_5.2 | libxml2: Stack-based buffer overflow in xmlSnprintfElements of libxml2 |
@@ -81,18 +85,22 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4802 | MEDIUM | glibc | 2.34-125.el9_5.1 | 2.34-168.el9_6.19 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-5702 | MEDIUM | glibc | 2.34-125.el9_5.1 | 2.34-168.el9_6.20 | glibc: Vector register overwrite bug in glibc |
 | CVE-2025-8058 | MEDIUM | glibc | 2.34-125.el9_5.1 | 2.34-168.el9_6.23 | glibc: Double free in glibc |
+| CVE-2026-0915 | MEDIUM | glibc | 2.34-125.el9_5.1 | - | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2025-0395 | MEDIUM | glibc-common | 2.34-125.el9_5.1 | 2.34-125.el9_5.8 | glibc: buffer overflow in the GNU C Library's assert() |
 | CVE-2025-4802 | MEDIUM | glibc-common | 2.34-125.el9_5.1 | 2.34-168.el9_6.19 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-5702 | MEDIUM | glibc-common | 2.34-125.el9_5.1 | 2.34-168.el9_6.20 | glibc: Vector register overwrite bug in glibc |
 | CVE-2025-8058 | MEDIUM | glibc-common | 2.34-125.el9_5.1 | 2.34-168.el9_6.23 | glibc: Double free in glibc |
+| CVE-2026-0915 | MEDIUM | glibc-common | 2.34-125.el9_5.1 | - | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2025-0395 | MEDIUM | glibc-langpack-en | 2.34-125.el9_5.1 | 2.34-125.el9_5.8 | glibc: buffer overflow in the GNU C Library's assert() |
 | CVE-2025-4802 | MEDIUM | glibc-langpack-en | 2.34-125.el9_5.1 | 2.34-168.el9_6.19 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-5702 | MEDIUM | glibc-langpack-en | 2.34-125.el9_5.1 | 2.34-168.el9_6.20 | glibc: Vector register overwrite bug in glibc |
 | CVE-2025-8058 | MEDIUM | glibc-langpack-en | 2.34-125.el9_5.1 | 2.34-168.el9_6.23 | glibc: Double free in glibc |
+| CVE-2026-0915 | MEDIUM | glibc-langpack-en | 2.34-125.el9_5.1 | - | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2025-0395 | MEDIUM | glibc-minimal-langpack | 2.34-125.el9_5.1 | 2.34-125.el9_5.8 | glibc: buffer overflow in the GNU C Library's assert() |
 | CVE-2025-4802 | MEDIUM | glibc-minimal-langpack | 2.34-125.el9_5.1 | 2.34-168.el9_6.19 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-5702 | MEDIUM | glibc-minimal-langpack | 2.34-125.el9_5.1 | 2.34-168.el9_6.20 | glibc: Vector register overwrite bug in glibc |
 | CVE-2025-8058 | MEDIUM | glibc-minimal-langpack | 2.34-125.el9_5.1 | 2.34-168.el9_6.23 | glibc: Double free in glibc |
+| CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.34-125.el9_5.1 | - | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-4.el9 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2024-12243 | MEDIUM | gnutls | 3.8.3-4.el9_4 | 3.8.3-6.el9 | gnutls: GnuTLS Impacted by Inefficient DER Decoding in libtasn1 Leading to Remote DoS |
 | CVE-2025-32988 | MEDIUM | gnutls | 3.8.3-4.el9_4 | 3.8.3-6.el9_6.2 | gnutls: Vulnerability in GnuTLS otherName SAN export |
@@ -121,6 +129,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-32415 | MEDIUM | libxml2 | 2.9.13-6.el9_4 | 2.9.13-12.el9_6 | libxml2: Out-of-bounds Read in xmlSchemaIDCFillNodeTables |
 | CVE-2025-6021 | MEDIUM | libxml2 | 2.9.13-6.el9_4 | 2.9.13-10.el9_6 | libxml2: Integer Overflow in xmlBuildQName() Leads to Stack Buffer Overflow in libxml2 |
 | CVE-2025-9714 | MEDIUM | libxml2 | 2.9.13-6.el9_4 | 2.9.13-14.el9_7 | libxslt: libxml2: Inifinite recursion at exsltDynMapFunction function in libexslt/dynamic.c |
+| CVE-2026-0990 | MEDIUM | libxml2 | 2.9.13-6.el9_4 | - | libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing |
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.6-3.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2024-10041 | MEDIUM | pam | 1.5.1-20.el9 | 1.5.1-21.el9_5 | pam: libpam: Libpam vulnerable to read hashed password |
 | CVE-2024-11168 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-1.el9_5 | python: Improper validation of IPv6 and IPvFuture addresses |
@@ -227,14 +236,23 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-0861 | HIGH | glibc | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
+| CVE-2026-0861 | HIGH | glibc-common | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
+| CVE-2026-0861 | HIGH | glibc-minimal-langpack | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
 | GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
+| CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc-common | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
 
 ### ubi-minimal
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
+| CVE-2026-0861 | HIGH | glibc | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
+| CVE-2026-0861 | HIGH | glibc-common | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
+| CVE-2026-0861 | HIGH | glibc-minimal-langpack | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
+| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | 2.3.3-5.el9_7 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-10966 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
@@ -243,6 +261,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer overflow in in g_escape_uri_string() |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
+| CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc-common | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-4.el9 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
@@ -253,6 +274,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14104 | MEDIUM | libmount | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libsmartcols | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libuuid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2026-0990 | MEDIUM | libxml2 | 2.9.13-14.el9_7 | - | libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing |
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2025-12084 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3.12 | 3.12.11-2.el9 | - | cpython: Excessive read buffering DoS in http.client |
@@ -273,7 +295,10 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
+| CVE-2026-0861 | HIGH | glibc | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
+| CVE-2026-0861 | HIGH | glibc-common | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
+| CVE-2026-0861 | HIGH | glibc-minimal-langpack | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
+| CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | 2.3.3-5.el9_7 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -287,6 +312,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer overflow in in g_escape_uri_string() |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
+| CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc-common | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-4.el9 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
@@ -298,6 +326,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14104 | MEDIUM | libmount | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libsmartcols | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | libuuid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2026-0990 | MEDIUM | libxml2 | 2.9.13-14.el9_7 | - | libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing |
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2025-12084 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
