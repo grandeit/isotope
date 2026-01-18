@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-01-17 12:23:26 UTC
+**Scanned:** 2026-01-18 00:30:04 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 42 (🔧37) | 166 (🔧110) | 204 (🔧16) | 412 | 🔧 163 |
-| ubi-micro | 0 | 🟠 4 (🔧1) | 4 | 5 | 13 | 🔧 1 |
-| ubi-minimal | 0 | 🟠 5 (🔧2) | 36 (🔧2) | 41 | 82 | 🔧 4 |
-| ubi | 0 | 🟠 6 (🔧2) | 55 | 188 | 249 | 🔧 2 |
+| **upstream** | 0 | 🟠 39 (🔧38) | 164 (🔧110) | 208 (🔧16) | 411 | 🔧 164 |
+| ubi-micro | 0 | 🟠 1 (🔧1) | 4 | 8 | 13 | 🔧 1 |
+| ubi-minimal | 0 | 🟠 2 (🔧2) | 34 (🔧2) | 44 | 80 | 🔧 4 |
+| ubi | 0 | 🟠 3 (🔧2) | 53 | 191 | 247 | 🔧 2 |
 
 ## Details
 
@@ -24,10 +24,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-59375 | HIGH | expat | 2.5.0-2.el9_4.1 | 2.5.0-5.el9_7.1 | expat: libexpat in Expat allows attackers to trigger large dynamic memory allocations via a small document that is submitted for parsing |
-| CVE-2026-0861 | HIGH | glibc | 2.34-125.el9_5.1 | - | glibc: Integer overflow in memalign leads to heap corruption |
-| CVE-2026-0861 | HIGH | glibc-common | 2.34-125.el9_5.1 | - | glibc: Integer overflow in memalign leads to heap corruption |
-| CVE-2026-0861 | HIGH | glibc-langpack-en | 2.34-125.el9_5.1 | - | glibc: Integer overflow in memalign leads to heap corruption |
-| CVE-2026-0861 | HIGH | glibc-minimal-langpack | 2.34-125.el9_5.1 | - | glibc: Integer overflow in memalign leads to heap corruption |
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | 2.3.3-5.el9_7 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2025-5914 | HIGH | libarchive | 3.5.3-4.el9 | 3.5.3-6.el9_6 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
 | CVE-2024-56171 | HIGH | libxml2 | 2.9.13-6.el9_4 | 2.9.13-6.el9_5.2 | libxml2: Use-After-Free in libxml2 |
@@ -56,6 +52,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.34.1-7.el9_3 | 3.34.1-9.el9_7 | sqlite: Integer Truncation in SQLite |
 | CVE-2024-8775 | HIGH | ansible-core | 2.17.5 | 2.17.6, 2.16.13 | ansible-core: Exposure of Sensitive Information in Ansible Vault Files Due to Improper Logging |
 | GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
+| CVE-2026-23490 | HIGH | pyasn1 | 0.6.1 | 0.6.2 | pyasn1 is a generic ASN.1 library for Python. Prior to 0.6.2, a Denial ... |
 | CVE-2025-47273 | HIGH | setuptools | 75.2.0 | 78.1.1 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
 | CVE-2025-66418 | HIGH | urllib3 | 1.26.20 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 1.26.20 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
@@ -67,7 +64,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61729 | HIGH | stdlib | v1.22.5 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.8-8.el9 | 1.0.8-10.el9_5 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-36.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
-| CVE-2025-10966 | MEDIUM | curl-minimal | 7.76.1-31.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-31.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-31.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
 | CVE-2024-50602 | MEDIUM | expat | 2.5.0-2.el9_4.1 | 2.5.0-3.el9_5.1 | libexpat: expat: DoS via XML_ResumeParser |
@@ -113,7 +109,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-25724 | MEDIUM | libarchive | 3.5.3-4.el9 | 3.5.3-5.el9_6 | libarchive: Buffer Overflow vulnerability in libarchive |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-4.el9 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2025-14104 | MEDIUM | libblkid | 2.37.4-20.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
-| CVE-2025-10966 | MEDIUM | libcurl-minimal | 7.76.1-31.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-31.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | libcurl-minimal | 7.76.1-31.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
 | CVE-2025-14104 | MEDIUM | libfdisk | 2.37.4-20.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
@@ -236,9 +231,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-0861 | HIGH | glibc | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
-| CVE-2026-0861 | HIGH | glibc-common | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
-| CVE-2026-0861 | HIGH | glibc-minimal-langpack | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
 | GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
@@ -249,13 +241,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-0861 | HIGH | glibc | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
-| CVE-2026-0861 | HIGH | glibc-common | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
-| CVE-2026-0861 | HIGH | glibc-minimal-langpack | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | 2.3.3-5.el9_7 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
-| CVE-2025-10966 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
 | CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer overflow in in g_escape_uri_string() |
@@ -268,7 +256,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2025-14104 | MEDIUM | libblkid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
-| CVE-2025-10966 | MEDIUM | libcurl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | libcurl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
 | CVE-2025-14104 | MEDIUM | libmount | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
@@ -295,14 +282,10 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-0861 | HIGH | glibc | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
-| CVE-2026-0861 | HIGH | glibc-common | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
-| CVE-2026-0861 | HIGH | glibc-minimal-langpack | 2.34-231.el9_7.2 | - | glibc: Integer overflow in memalign leads to heap corruption |
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | 2.3.3-5.el9_7 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
-| CVE-2025-10966 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
 | CVE-2025-11081 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils out-of-bounds read |
@@ -319,7 +302,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2025-14104 | MEDIUM | libblkid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
-| CVE-2025-10966 | MEDIUM | libcurl-minimal | 7.76.1-34.el9 | - | curl: Curl missing SFTP host verification with wolfSSH backend |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | libcurl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
 | CVE-2025-14104 | MEDIUM | libfdisk | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
