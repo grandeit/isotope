@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-01-21 00:29:18 UTC
+**Scanned:** 2026-01-21 12:26:24 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
 | **upstream** | 0 | 🟠 39 (🔧38) | 164 (🔧110) | 208 (🔧16) | 411 | 🔧 164 |
-| ubi-micro | 0 | 🟠 1 (🔧1) | 4 | 8 | 13 | 🔧 1 |
-| ubi-minimal | 0 | 🟠 1 (🔧1) | 32 | 44 | 77 | 🔧 1 |
-| ubi | 0 | 🟠 2 (🔧1) | 53 | 191 | 246 | 🔧 1 |
+| ubi-micro | 0 | 0 | 4 | 8 | 12 | 🔧 0 |
+| ubi-minimal | 0 | 0 | 32 | 44 | 76 | 🔧 0 |
+| ubi | 0 | 🟠 1 | 53 | 191 | 245 | 🔧 0 |
 
 ## Details
 
@@ -231,7 +231,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2026-0915 | MEDIUM | glibc-common | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
@@ -241,7 +240,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
@@ -280,7 +278,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
-| GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
