@@ -4,7 +4,7 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-01-20 12:26:49 UTC
+**Scanned:** 2026-01-21 00:29:18 UTC
 
 ## Overview
 
@@ -52,7 +52,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.34.1-7.el9_3 | 3.34.1-9.el9_7 | sqlite: Integer Truncation in SQLite |
 | CVE-2024-8775 | HIGH | ansible-core | 2.17.5 | 2.17.6, 2.16.13 | ansible-core: Exposure of Sensitive Information in Ansible Vault Files Due to Improper Logging |
 | GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
-| CVE-2026-23490 | HIGH | pyasn1 | 0.6.1 | 0.6.2 | pyasn1 is a generic ASN.1 library for Python. Prior to 0.6.2, a Denial ... |
+| CVE-2026-23490 | HIGH | pyasn1 | 0.6.1 | 0.6.2 | pyasn1: pyasn1 has a DoS vulnerability in decoder |
 | CVE-2025-47273 | HIGH | setuptools | 75.2.0 | 78.1.1 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
 | CVE-2025-66418 | HIGH | urllib3 | 1.26.20 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 1.26.20 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
