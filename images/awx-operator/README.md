@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-01-21 12:26:24 UTC
+**Scanned:** 2026-01-22 00:29:47 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 39 (🔧38) | 164 (🔧110) | 208 (🔧16) | 411 | 🔧 164 |
-| ubi-micro | 0 | 0 | 4 | 8 | 12 | 🔧 0 |
-| ubi-minimal | 0 | 0 | 32 | 44 | 76 | 🔧 0 |
-| ubi | 0 | 🟠 1 | 53 | 191 | 245 | 🔧 0 |
+| **upstream** | 0 | 🟠 41 (🔧38) | 164 (🔧110) | 212 (🔧16) | 417 | 🔧 164 |
+| ubi-micro | 0 | 0 | 4 | 11 | 15 | 🔧 0 |
+| ubi-minimal | 0 | 0 | 32 | 47 | 79 | 🔧 0 |
+| ubi | 0 | 🟠 3 | 53 | 194 | 250 | 🔧 0 |
 
 ## Details
 
@@ -41,6 +41,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4138 | HIGH | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
 | CVE-2025-4517 | HIGH | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | python: cpython: Arbitrary writes via tarfile realpath overflow |
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
+| CVE-2025-66471 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3 Streaming API improperly handles highly compressed data |
+| CVE-2026-21441 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2024-12254 | HIGH | python3.12 | 3.12.5-2.el9_5.1 | 3.12.5-2.el9_5.2 | python: Unbounded memory buffering in SelectorSocketTransport.writelines() |
 | CVE-2024-12718 | HIGH | python3.12 | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | python3.12 | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
@@ -51,7 +53,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4517 | HIGH | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | python: cpython: Arbitrary writes via tarfile realpath overflow |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.34.1-7.el9_3 | 3.34.1-9.el9_7 | sqlite: Integer Truncation in SQLite |
 | CVE-2024-8775 | HIGH | ansible-core | 2.17.5 | 2.17.6, 2.16.13 | ansible-core: Exposure of Sensitive Information in Ansible Vault Files Due to Improper Logging |
-| GHSA-58pv-8j8x-9vj2 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context Has a Path Traversal Vulnerability |
+| CVE-2026-23949 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context: jaraco.context: Path traversal via malicious tar archives |
 | CVE-2026-23490 | HIGH | pyasn1 | 0.6.1 | 0.6.2 | pyasn1: pyasn1 has a DoS vulnerability in decoder |
 | CVE-2025-47273 | HIGH | setuptools | 75.2.0 | 78.1.1 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
 | CVE-2025-66418 | HIGH | urllib3 | 1.26.20 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
@@ -278,6 +280,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
+| CVE-2025-66471 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3 Streaming API improperly handles highly compressed data |
+| CVE-2026-21441 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
