@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-01-21 15:09:23 UTC
+**Scanned:** 2026-01-22 03:40:06 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 11 (🔧11) | 🟠 116 (🔧114) | 330 (🔧277) | 235 (🔧31) | 692 | 🔧 433 |
-| ubi-minimal | 0 | 0 | 21 (🔧1) | 42 | 63 | 🔧 1 |
-| ubi | 0 | 🟠 1 | 42 (🔧1) | 189 | 232 | 🔧 1 |
+| **upstream** | 🔴 11 (🔧11) | 🟠 119 (🔧114) | 330 (🔧277) | 238 (🔧31) | 698 | 🔧 433 |
+| ubi-minimal | 0 | 0 | 21 (🔧1) | 45 | 66 | 🔧 1 |
+| ubi | 0 | 🟠 3 | 42 (🔧1) | 192 | 237 | 🔧 1 |
 
 ## Details
 
@@ -78,10 +78,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-49794 | HIGH | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-21.el8_10.1 | libxml: Heap use after free (UAF) leads to Denial of service (DoS) |
 | CVE-2025-49796 | HIGH | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-21.el8_10.1 | libxml: Type confusion leads to Denial of service (DoS) |
 | CVE-2025-7425 | HIGH | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-21.el8_10.2 | libxslt: Heap Use-After-Free in libxslt caused by atype corruption in xmlAttrPtr |
+| CVE-2026-21441 | HIGH | python3-pip-wheel | 9.0.3-22.el8 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2024-6345 | HIGH | python3-setuptools-wheel | 39.2.0-6.el8_7.1 | 39.2.0-8.el8_10 | pypa/setuptools: Remote code execution via download functions in the package_index module in pypa/setuptools |
 | CVE-2023-3899 | HIGH | python3-subscription-manager-rhsm | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2023-3899 | HIGH | python3-syspurpose | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.24.2-5.el8 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
+| CVE-2025-66471 | HIGH | python3-urllib3 | 1.24.2-5.el8 | - | urllib3: urllib3 Streaming API improperly handles highly compressed data |
+| CVE-2026-21441 | HIGH | python3-urllib3 | 1.24.2-5.el8 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-20.el8_10 | sqlite: Integer Truncation in SQLite |
 | CVE-2023-3899 | HIGH | subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2023-3899 | HIGH | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
@@ -511,6 +514,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
+| CVE-2025-66471 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3 Streaming API improperly handles highly compressed data |
+| CVE-2026-21441 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
