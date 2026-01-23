@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-01-22 12:27:52 UTC
+**Scanned:** 2026-01-23 00:29:58 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 41 (🔧38) | 164 (🔧110) | 212 (🔧16) | 417 | 🔧 164 |
-| ubi-micro | 0 | 0 | 4 | 11 | 15 | 🔧 0 |
-| ubi-minimal | 0 | 0 | 32 | 47 | 79 | 🔧 0 |
-| ubi | 0 | 🟠 3 | 53 | 194 | 250 | 🔧 0 |
+| **upstream** | 0 | 🟠 42 (🔧39) | 188 (🔧111) | 212 (🔧16) | 442 | 🔧 166 |
+| ubi-micro | 0 | 🟠 1 (🔧1) | 4 | 11 | 16 | 🔧 1 |
+| ubi-minimal | 0 | 🟠 1 (🔧1) | 44 (🔧1) | 47 | 92 | 🔧 2 |
+| ubi | 0 | 🟠 4 (🔧1) | 77 (🔧1) | 194 | 275 | 🔧 2 |
 
 ## Details
 
@@ -54,11 +54,12 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.34.1-7.el9_3 | 3.34.1-9.el9_7 | sqlite: Integer Truncation in SQLite |
 | CVE-2024-8775 | HIGH | ansible-core | 2.17.5 | 2.17.6, 2.16.13 | ansible-core: Exposure of Sensitive Information in Ansible Vault Files Due to Improper Logging |
 | CVE-2026-23949 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context: jaraco.context: Path traversal via malicious tar archives |
-| CVE-2026-23490 | HIGH | pyasn1 | 0.6.1 | 0.6.2 | pyasn1: pyasn1 has a DoS vulnerability in decoder |
+| CVE-2026-23490 | HIGH | pyasn1 | 0.6.1 | 0.6.2 | pyasn1: pyasn1: Denial of Service due to memory exhaustion from malformed RELATIVE-OID |
 | CVE-2025-47273 | HIGH | setuptools | 75.2.0 | 78.1.1 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
 | CVE-2025-66418 | HIGH | urllib3 | 1.26.20 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 1.26.20 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | urllib3 | 1.26.20 | 2.6.3 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
+| CVE-2026-24049 | HIGH | wheel | 0.43.0 | 0.46.2 | Wheel Affected by Arbitrary File Permission Modification via Path Traversal in wheel unpack |
 | CVE-2025-22868 | HIGH | golang.org/x/oauth2 | v0.21.0 | 0.27.0 | golang.org/x/oauth2/jws: Unexpected memory consumption during token parsing in golang.org/x/oauth2/jws |
 | CVE-2024-34156 | HIGH | stdlib | v1.22.5 | 1.22.7, 1.23.1 | encoding/gob: golang: Calling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion |
 | CVE-2025-47907 | HIGH | stdlib | v1.22.5 | 1.23.12, 1.24.6 | database/sql: Postgres Scan Race Condition |
@@ -75,7 +76,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 14.2-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 14.2-3.el9 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
 | CVE-2024-52533 | MEDIUM | glib2 | 2.68.4-14.el9_4.1 | 2.68.4-16.el9_6.2 | glib: buffer overflow in set_connect_msg() |
-| CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-14.el9_4.1 | - | glib: Integer overflow in in g_escape_uri_string() |
+| CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-14.el9_4.1 | 2.68.4-18.el9_7.1 | glib: Integer overflow in in g_escape_uri_string() |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-14.el9_4.1 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-14.el9_4.1 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2025-4373 | MEDIUM | glib2 | 2.68.4-14.el9_4.1 | 2.68.4-16.el9_6.2 | glib: Buffer Underflow on GLib through glib/gstring.c via function g_string_insert_unichar |
@@ -132,27 +133,39 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-11168 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-1.el9_5 | python: Improper validation of IPv6 and IPvFuture addresses |
 | CVE-2024-9287 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-1.el9_5 | python: Virtual environment (venv) activation scripts don't quote paths |
 | CVE-2025-0938 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-2.el9 | python: cpython: URL parser allowed square brackets in domain names |
+| CVE-2025-11468 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | - | cpython: Header injection via newlines in data URL mediatype in Python |
+| CVE-2025-15366 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | - | cpython: IMAP command injection in user-controlled commands |
+| CVE-2025-15367 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | - | cpython: POP3 command injection in user-controlled commands |
 | CVE-2025-4330 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: python: Extraction filter bypass for linking outside extraction directory |
 | CVE-2025-4435 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: Tarfile extracts filtered members when errorlevel=0 |
 | CVE-2025-4516 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.25-2.el9_7 | cpython: Python HTMLParser quadratic complexity |
 | CVE-2025-8194 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.2 | cpython: Cpython infinite loop when parsing a tarfile |
 | CVE-2025-8291 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.25-2.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2026-0672 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2024-11168 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-1.el9_5 | python: Improper validation of IPv6 and IPvFuture addresses |
 | CVE-2024-9287 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-1.el9_5 | python: Virtual environment (venv) activation scripts don't quote paths |
 | CVE-2025-0938 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9 | python: cpython: URL parser allowed square brackets in domain names |
+| CVE-2025-11468 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | - | cpython: Header injection via newlines in data URL mediatype in Python |
+| CVE-2025-15366 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | - | cpython: IMAP command injection in user-controlled commands |
+| CVE-2025-15367 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | - | cpython: POP3 command injection in user-controlled commands |
 | CVE-2025-4330 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: python: Extraction filter bypass for linking outside extraction directory |
 | CVE-2025-4435 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: Tarfile extracts filtered members when errorlevel=0 |
 | CVE-2025-4516 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.25-2.el9_7 | cpython: Python HTMLParser quadratic complexity |
 | CVE-2025-8194 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.2 | cpython: Cpython infinite loop when parsing a tarfile |
 | CVE-2025-8291 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | 3.9.25-2.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2026-0672 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3-libs | 3.9.19-8.el9_5.1 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
@@ -162,26 +175,38 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-47273 | MEDIUM | python3-setuptools-wheel | 53.0.0-13.el9 | 53.0.0-13.el9_6.1 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
 | CVE-2024-9287 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | 3.12.5-2.el9_5.2 | python: Virtual environment (venv) activation scripts don't quote paths |
 | CVE-2025-0938 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | 3.12.9-1.el9 | python: cpython: URL parser allowed square brackets in domain names |
+| CVE-2025-11468 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: Header injection via newlines in data URL mediatype in Python |
+| CVE-2025-15366 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: IMAP command injection in user-controlled commands |
+| CVE-2025-15367 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: POP3 command injection in user-controlled commands |
 | CVE-2025-4330 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: python: Extraction filter bypass for linking outside extraction directory |
 | CVE-2025-4435 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: Tarfile extracts filtered members when errorlevel=0 |
 | CVE-2025-4516 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2025-8194 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.2 | cpython: Cpython infinite loop when parsing a tarfile |
 | CVE-2025-8291 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | 3.12.12-1.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2026-0672 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3.12 | 3.12.5-2.el9_5.1 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2024-9287 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.5-2.el9_5.2 | python: Virtual environment (venv) activation scripts don't quote paths |
 | CVE-2025-0938 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.9-1.el9 | python: cpython: URL parser allowed square brackets in domain names |
+| CVE-2025-11468 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: Header injection via newlines in data URL mediatype in Python |
+| CVE-2025-15366 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: IMAP command injection in user-controlled commands |
+| CVE-2025-15367 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: POP3 command injection in user-controlled commands |
 | CVE-2025-4330 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: python: Extraction filter bypass for linking outside extraction directory |
 | CVE-2025-4435 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: Tarfile extracts filtered members when errorlevel=0 |
 | CVE-2025-4516 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2025-8194 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.2 | cpython: Cpython infinite loop when parsing a tarfile |
 | CVE-2025-8291 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.12-1.el9_7 | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2026-0672 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3.12-libs | 3.12.5-2.el9_5.1 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-4.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-4.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2025-4598 | MEDIUM | systemd | 252-46.el9_5.2 | 252-55.el9_7.7 | systemd-coredump: race condition that allows a local attacker to crash a SUID program and gain read access to the resulting core dump |
@@ -233,6 +258,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-24049 | HIGH | wheel | 0.45.1 | 0.46.2 | Wheel Affected by Arbitrary File Permission Modification via Path Traversal in wheel unpack |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2026-0915 | MEDIUM | glibc-common | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
@@ -242,10 +268,11 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-24049 | HIGH | wheel | 0.45.1 | 0.46.2 | Wheel Affected by Arbitrary File Permission Modification via Path Traversal in wheel unpack |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
-| CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer overflow in in g_escape_uri_string() |
+| CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-18.el9_7 | 2.68.4-18.el9_7.1 | glib: Integer overflow in in g_escape_uri_string() |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
@@ -262,16 +289,28 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14104 | MEDIUM | libuuid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2026-0990 | MEDIUM | libxml2 | 2.9.13-14.el9_7 | - | libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing |
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
+| CVE-2025-11468 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
+| CVE-2025-15366 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: IMAP command injection in user-controlled commands |
+| CVE-2025-15367 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: POP3 command injection in user-controlled commands |
 | CVE-2025-4516 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: Python HTMLParser quadratic complexity |
+| CVE-2026-0672 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2025-11468 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
+| CVE-2025-15366 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: IMAP command injection in user-controlled commands |
+| CVE-2025-15367 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: POP3 command injection in user-controlled commands |
 | CVE-2025-4516 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: Python HTMLParser quadratic complexity |
+| CVE-2026-0672 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 
@@ -282,6 +321,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
+| CVE-2026-24049 | HIGH | wheel | 0.45.1 | 0.46.2 | Wheel Affected by Arbitrary File Permission Modification via Path Traversal in wheel unpack |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
@@ -289,7 +329,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
-| CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer overflow in in g_escape_uri_string() |
+| CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-18.el9_7 | 2.68.4-18.el9_7.1 | glib: Integer overflow in in g_escape_uri_string() |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
@@ -307,27 +347,51 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14104 | MEDIUM | libuuid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2026-0990 | MEDIUM | libxml2 | 2.9.13-14.el9_7 | - | libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing |
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
+| CVE-2025-11468 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
+| CVE-2025-15366 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: IMAP command injection in user-controlled commands |
+| CVE-2025-15367 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: POP3 command injection in user-controlled commands |
 | CVE-2025-4516 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
+| CVE-2026-0672 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
+| CVE-2025-15366 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: IMAP command injection in user-controlled commands |
+| CVE-2025-15367 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: POP3 command injection in user-controlled commands |
 | CVE-2025-4516 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
+| CVE-2026-0672 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
+| CVE-2025-11468 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
+| CVE-2025-15366 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: IMAP command injection in user-controlled commands |
+| CVE-2025-15367 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: POP3 command injection in user-controlled commands |
 | CVE-2025-4516 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: Python HTMLParser quadratic complexity |
+| CVE-2026-0672 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3.12 | 3.12.12-1.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2025-11468 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
+| CVE-2025-15366 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: IMAP command injection in user-controlled commands |
+| CVE-2025-15367 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: POP3 command injection in user-controlled commands |
 | CVE-2025-4516 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2025-6069 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: Python HTMLParser quadratic complexity |
+| CVE-2026-0672 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3.12-libs | 3.12.12-1.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2005-2541 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: does not properly warn the user when extracting setuid or setgid files |
