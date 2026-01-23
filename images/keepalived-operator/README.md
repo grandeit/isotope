@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-01-22 15:09:13 UTC
+**Scanned:** 2026-01-23 03:38:35 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 11 (🔧11) | 🟠 119 (🔧114) | 330 (🔧277) | 238 (🔧31) | 698 | 🔧 433 |
-| ubi-minimal | 0 | 0 | 21 (🔧1) | 45 | 66 | 🔧 1 |
-| ubi | 0 | 🟠 3 | 42 (🔧1) | 192 | 237 | 🔧 1 |
+| **upstream** | 🔴 11 (🔧11) | 🟠 118 (🔧114) | 329 (🔧277) | 238 (🔧31) | 696 | 🔧 433 |
+| ubi-minimal | 0 | 0 | 21 (🔧2) | 45 | 66 | 🔧 2 |
+| ubi | 0 | 🟠 3 | 54 (🔧2) | 192 | 249 | 🔧 2 |
 
 ## Details
 
@@ -78,7 +78,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-49794 | HIGH | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-21.el8_10.1 | libxml: Heap use after free (UAF) leads to Denial of service (DoS) |
 | CVE-2025-49796 | HIGH | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-21.el8_10.1 | libxml: Type confusion leads to Denial of service (DoS) |
 | CVE-2025-7425 | HIGH | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-21.el8_10.2 | libxslt: Heap Use-After-Free in libxslt caused by atype corruption in xmlAttrPtr |
-| CVE-2026-21441 | HIGH | python3-pip-wheel | 9.0.3-22.el8 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2024-6345 | HIGH | python3-setuptools-wheel | 39.2.0-6.el8_7.1 | 39.2.0-8.el8_10 | pypa/setuptools: Remote code execution via download functions in the package_index module in pypa/setuptools |
 | CVE-2023-3899 | HIGH | python3-subscription-manager-rhsm | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2023-3899 | HIGH | python3-syspurpose | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
@@ -181,7 +180,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-50602 | MEDIUM | expat | 2.2.5-10.el8_7.1 | 2.2.5-16.el8_10 | libexpat: expat: DoS via XML_ResumeParser |
 | CVE-2024-8176 | MEDIUM | expat | 2.2.5-10.el8_7.1 | 2.2.5-17.el8_10 | libexpat: expat: Improper Restriction of XML Entity Expansion Depth in libexpat |
 | CVE-2019-8905 | MEDIUM | file-libs | 5.33-21.el8 | - | file: stack-based buffer over-read in do_core_note in readelf.c |
-| CVE-2025-11081 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: GNU Binutils out-of-bounds read |
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
 | CVE-2024-34397 | MEDIUM | glib2 | 2.56.4-159.el8 | 2.56.4-166.el8_10 | glib2: Signal subscription vulnerabilities |
 | CVE-2024-52533 | MEDIUM | glib2 | 2.56.4-159.el8 | 2.56.4-166.el8_10 | glib: buffer overflow in set_connect_msg() |
@@ -371,8 +369,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-53905 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | 2:8.0.1763-21.el8_10 | vim: Vim path traversial |
 | CVE-2025-53906 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | 2:8.0.1763-21.el8_10 | vim: Vim path traversal |
 | CVE-2023-48795 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.17.0, 0.0.0-20231218163308-9d2ee975ef9f | ssh: Prefix truncation attack on Binary Packet Protocol (BPP) |
-| CVE-2025-47914 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.45.0 | golang.org/x/crypto/ssh/agent: in golang.org/x/crypto/ssh/agent |
-| CVE-2025-58181 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.45.0 | golang.org/x/crypto/ssh: in golang.org/x/crypto/ssh |
+| CVE-2025-47914 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.45.0 | golang.org/x/crypto/ssh/agent: SSH Agent servers: Denial of Service due to malformed messages |
+| CVE-2025-58181 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.45.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via unbounded memory consumption in GSSAPI authentication |
 | CVE-2022-41717 | MEDIUM | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.4.0 | golang: net/http: excessive memory growth in a Go server accepting HTTP/2 requests |
 | CVE-2023-3978 | MEDIUM | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.13.0 | golang.org/x/net/html: Cross site scripting |
 | CVE-2023-44487 | MEDIUM | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.17.0 | HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack) |
@@ -490,7 +488,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
-| CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer overflow in in g_escape_uri_string() |
+| CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-18.el9_7 | 2.68.4-18.el9_7.1 | glib: Integer overflow in in g_escape_uri_string() |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
@@ -523,7 +521,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
-| CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer overflow in in g_escape_uri_string() |
+| CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-18.el9_7 | 2.68.4-18.el9_7.1 | glib: Integer overflow in in g_escape_uri_string() |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
@@ -541,14 +539,26 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14104 | MEDIUM | libuuid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2026-0990 | MEDIUM | libxml2 | 2.9.13-14.el9_7 | - | libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing |
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
+| CVE-2025-11468 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
+| CVE-2025-15366 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: IMAP command injection in user-controlled commands |
+| CVE-2025-15367 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: POP3 command injection in user-controlled commands |
 | CVE-2025-4516 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
+| CVE-2026-0672 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-13836 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
+| CVE-2025-15366 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: IMAP command injection in user-controlled commands |
+| CVE-2025-15367 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: POP3 command injection in user-controlled commands |
 | CVE-2025-4516 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
+| CVE-2026-0672 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
