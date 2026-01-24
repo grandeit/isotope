@@ -4,17 +4,17 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-01-23 13:18:58 UTC
+**Scanned:** 2026-01-24 01:32:01 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 38 (🔧37) | 132 (🔧98) | 97 (🔧19) | 269 | 🔧 156 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 38 (🔧37) | 129 (🔧99) | 97 (🔧19) | 266 | 🔧 157 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 0 | 4 | 11 | 15 | 🔧 0 |
 | ubi-minimal | 0 | 0 | 20 (🔧1) | 41 | 61 | 🔧 1 |
-| ubi | 0 | 🟠 3 | 53 (🔧1) | 192 | 248 | 🔧 1 |
+| ubi | 0 | 🟠 3 | 55 (🔧1) | 192 | 250 | 🔧 1 |
 
 ## Details
 
@@ -70,11 +70,10 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-2398 | MEDIUM | curl | 7.61.1-33.el8 | 7.61.1-34.el8_10.2 | curl: HTTP/2 push headers memory-leak |
 | CVE-2025-14017 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl | 7.61.1-33.el8 | 7.61.1-34.el8_10.9 | curl: libcurl: Curl out of bounds read for cookie path |
-| CVE-2021-33294 | MEDIUM | elfutils-libelf | 0.189-3.el8 | - | elfutils: an infinite loop was found in the function handle_symtab in readelf.c which causes denial of service |
 | CVE-2019-8905 | MEDIUM | file-libs | 5.33-25.el8 | - | file: stack-based buffer over-read in do_core_note in readelf.c |
 | CVE-2024-34397 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-166.el8_10 | glib2: Signal subscription vulnerabilities |
 | CVE-2024-52533 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-166.el8_10 | glib: buffer overflow in set_connect_msg() |
-| CVE-2025-13601 | MEDIUM | glib2 | 2.56.4-161.el8 | - | glib: Integer overflow in in g_escape_uri_string() |
+| CVE-2025-13601 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-168.el8_10 | glib: Integer overflow in in g_escape_uri_string() |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.56.4-161.el8 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
 | CVE-2025-14512 | MEDIUM | glib2 | 2.56.4-161.el8 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2025-4373 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-166.el8_10 | glib: Buffer Underflow on GLib through glib/gstring.c via function g_string_insert_unichar |
@@ -141,8 +140,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0990 | MEDIUM | libxml2 | 2.9.7-18.el8_9 | - | libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing |
 | CVE-2022-4899 | MEDIUM | libzstd | 1.4.4-1.el8 | - | zstd: mysql: buffer overrun in util.c |
 | CVE-2019-17543 | MEDIUM | lz4-libs | 1.8.3-3.el8_4 | 1.8.3-5.el8_10 | lz4: heap-based buffer overflow in LZ4_write32 |
-| CVE-2018-19217 | MEDIUM | ncurses-base | 6.1-10.20180224.el8 | - | ncurses: Null pointer dereference at function _nc_name_match |
-| CVE-2018-19217 | MEDIUM | ncurses-libs | 6.1-10.20180224.el8 | - | ncurses: Null pointer dereference at function _nc_name_match |
 | CVE-2026-22185 | MEDIUM | openldap | 2.4.46-18.el8 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2023-0466 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | - | openssl: Certificate policy check not enabled |
 | CVE-2025-9230 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | 1:1.1.1k-14.el8_10 | openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap |
@@ -269,6 +266,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2025-11468 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
+| CVE-2025-12781 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13836 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-15282 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
@@ -279,6 +277,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0865 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
+| CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13836 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-15282 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
