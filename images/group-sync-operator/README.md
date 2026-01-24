@@ -4,7 +4,7 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-01-23 14:06:16 UTC
+**Scanned:** 2026-01-24 02:45:33 UTC
 
 ## Overview
 
@@ -14,7 +14,7 @@
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 0 | 4 | 11 | 15 | 🔧 0 |
 | ubi-minimal | 0 | 0 | 20 (🔧1) | 41 | 61 | 🔧 1 |
-| ubi | 0 | 🟠 3 | 53 (🔧1) | 192 | 248 | 🔧 1 |
+| ubi | 0 | 🟠 3 | 55 (🔧1) | 192 | 250 | 🔧 1 |
 
 ## Details
 
@@ -164,6 +164,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2025-11468 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
+| CVE-2025-12781 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13836 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-15282 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
@@ -174,6 +175,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0865 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
+| CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13836 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-15282 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
