@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-01-23 15:07:35 UTC
+**Scanned:** 2026-01-24 03:37:21 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 11 (🔧11) | 🟠 118 (🔧114) | 329 (🔧277) | 238 (🔧31) | 696 | 🔧 433 |
+| **upstream** | 🔴 11 (🔧11) | 🟠 118 (🔧114) | 324 (🔧278) | 238 (🔧31) | 691 | 🔧 434 |
 | ubi-minimal | 0 | 0 | 21 (🔧2) | 45 | 66 | 🔧 2 |
-| ubi | 0 | 🟠 3 | 54 (🔧2) | 192 | 249 | 🔧 2 |
+| ubi | 0 | 🟠 3 | 56 (🔧2) | 192 | 251 | 🔧 2 |
 
 ## Details
 
@@ -167,9 +167,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-34969 | MEDIUM | dbus-libs | 1:1.12.8-23.el8_7.1 | 1:1.12.8-24.el8_8.1 | dbus: dbus-daemon: assertion failure when a monitor is active and a message from the driver cannot be delivered |
 | CVE-2023-34969 | MEDIUM | dbus-tools | 1:1.12.8-23.el8_7.1 | 1:1.12.8-24.el8_8.1 | dbus: dbus-daemon: assertion failure when a monitor is active and a message from the driver cannot be delivered |
 | CVE-2023-30630 | MEDIUM | dmidecode | 1:3.3-4.el8 | 1:3.3-4.el8_8.1 | dmidecode: dump-bin to overwrite a local file |
-| CVE-2021-33294 | MEDIUM | elfutils-default-yama-scope | 0.187-4.el8 | - | elfutils: an infinite loop was found in the function handle_symtab in readelf.c which causes denial of service |
-| CVE-2021-33294 | MEDIUM | elfutils-libelf | 0.187-4.el8 | - | elfutils: an infinite loop was found in the function handle_symtab in readelf.c which causes denial of service |
-| CVE-2021-33294 | MEDIUM | elfutils-libs | 0.187-4.el8 | - | elfutils: an infinite loop was found in the function handle_symtab in readelf.c which causes denial of service |
 | CVE-2013-0340 | MEDIUM | expat | 2.2.5-10.el8_7.1 | 2.5.0-1.el8_10 | expat: internal entity expansion |
 | CVE-2022-23990 | MEDIUM | expat | 2.2.5-10.el8_7.1 | 2.5.0-1.el8_10 | expat: integer overflow in the doProlog function |
 | CVE-2023-52425 | MEDIUM | expat | 2.2.5-10.el8_7.1 | 2.2.5-11.el8_9.1 | expat: parsing large tokens can trigger a denial of service |
@@ -183,7 +180,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
 | CVE-2024-34397 | MEDIUM | glib2 | 2.56.4-159.el8 | 2.56.4-166.el8_10 | glib2: Signal subscription vulnerabilities |
 | CVE-2024-52533 | MEDIUM | glib2 | 2.56.4-159.el8 | 2.56.4-166.el8_10 | glib: buffer overflow in set_connect_msg() |
-| CVE-2025-13601 | MEDIUM | glib2 | 2.56.4-159.el8 | - | glib: Integer overflow in in g_escape_uri_string() |
+| CVE-2025-13601 | MEDIUM | glib2 | 2.56.4-159.el8 | 2.56.4-168.el8_10 | glib: Integer overflow in in g_escape_uri_string() |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.56.4-159.el8 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
 | CVE-2025-14512 | MEDIUM | glib2 | 2.56.4-159.el8 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2025-4373 | MEDIUM | glib2 | 2.56.4-159.el8 | 2.56.4-166.el8_10 | glib: Buffer Underflow on GLib through glib/gstring.c via function g_string_insert_unichar |
@@ -276,9 +273,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0990 | MEDIUM | libxml2 | 2.9.7-15.el8_7.1 | - | libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing |
 | CVE-2022-4899 | MEDIUM | libzstd | 1.4.4-1.el8 | - | zstd: mysql: buffer overrun in util.c |
 | CVE-2019-17543 | MEDIUM | lz4-libs | 1.8.3-3.el8_4 | 1.8.3-5.el8_10 | lz4: heap-based buffer overflow in LZ4_write32 |
-| CVE-2018-19217 | MEDIUM | ncurses-base | 6.1-9.20180224.el8 | - | ncurses: Null pointer dereference at function _nc_name_match |
 | CVE-2023-29491 | MEDIUM | ncurses-base | 6.1-9.20180224.el8 | 6.1-9.20180224.el8_8.1 | ncurses: Local users can trigger security-relevant memory corruption via malformed data |
-| CVE-2018-19217 | MEDIUM | ncurses-libs | 6.1-9.20180224.el8 | - | ncurses: Null pointer dereference at function _nc_name_match |
 | CVE-2023-29491 | MEDIUM | ncurses-libs | 6.1-9.20180224.el8 | 6.1-9.20180224.el8_8.1 | ncurses: Local users can trigger security-relevant memory corruption via malformed data |
 | CVE-2026-22185 | MEDIUM | openldap | 2.4.46-18.el8 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2022-4304 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-9.el8_7 | openssl: timing attack in RSA Decryption implementation |
@@ -541,6 +536,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2025-11468 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
+| CVE-2025-12781 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13836 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-15282 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
@@ -551,6 +547,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0865 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
+| CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13836 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Excessive read buffering DoS in http.client |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-15282 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
