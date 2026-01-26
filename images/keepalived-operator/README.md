@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-01-25 15:05:06 UTC
+**Scanned:** 2026-01-26 03:45:20 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
 | **upstream** | 🔴 11 (🔧11) | 🟠 118 (🔧114) | 324 (🔧278) | 238 (🔧31) | 691 | 🔧 434 |
-| ubi-minimal | 0 | 0 | 21 (🔧2) | 45 | 66 | 🔧 2 |
-| ubi | 0 | 🟠 3 | 56 (🔧2) | 192 | 251 | 🔧 2 |
+| ubi-minimal | 0 | 0 | 20 (🔧1) | 45 | 65 | 🔧 1 |
+| ubi | 0 | 🟠 3 | 55 (🔧1) | 192 | 250 | 🔧 1 |
 
 ## Details
 
@@ -483,9 +483,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
-| CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-18.el9_7 | 2.68.4-18.el9_7.1 | glib: Integer overflow in in g_escape_uri_string() |
-| CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
-| CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
+| CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
+| CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2026-0915 | MEDIUM | glibc-common | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
@@ -516,9 +515,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
-| CVE-2025-13601 | MEDIUM | glib2 | 2.68.4-18.el9_7 | 2.68.4-18.el9_7.1 | glib: Integer overflow in in g_escape_uri_string() |
-| CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
-| CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
+| CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
+| CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2026-0915 | MEDIUM | glibc-common | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
