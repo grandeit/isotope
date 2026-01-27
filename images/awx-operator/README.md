@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-01-27 00:29:47 UTC
+**Scanned:** 2026-01-27 12:26:40 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 42 (🔧39) | 192 (🔧111) | 212 (🔧16) | 446 | 🔧 166 |
+| **upstream** | 0 | 🟠 42 (🔧42) | 192 (🔧111) | 213 (🔧16) | 447 | 🔧 169 |
 | ubi-micro | 0 | 0 | 4 | 11 | 15 | 🔧 0 |
-| ubi-minimal | 0 | 0 | 45 | 47 | 92 | 🔧 0 |
-| ubi | 0 | 🟠 3 | 80 | 194 | 277 | 🔧 0 |
+| ubi-minimal | 0 | 0 | 45 | 48 | 93 | 🔧 0 |
+| ubi | 0 | 0 | 80 | 195 | 275 | 🔧 0 |
 
 ## Details
 
@@ -40,9 +40,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-12718 | HIGH | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
 | CVE-2025-4517 | HIGH | python3-libs | 3.9.19-8.el9_5.1 | 3.9.21-2.el9_6.1 | python: cpython: Arbitrary writes via tarfile realpath overflow |
-| CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
-| CVE-2025-66471 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3 Streaming API improperly handles highly compressed data |
-| CVE-2026-21441 | HIGH | python3-urllib3 | 1.26.5-6.el9 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
+| CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | 1.26.5-6.el9_7.1 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
+| CVE-2025-66471 | HIGH | python3-urllib3 | 1.26.5-6.el9 | 1.26.5-6.el9_7.1 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
+| CVE-2026-21441 | HIGH | python3-urllib3 | 1.26.5-6.el9 | 1.26.5-6.el9_7.1 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2024-12254 | HIGH | python3.12 | 3.12.5-2.el9_5.1 | 3.12.5-2.el9_5.2 | python: Unbounded memory buffering in SelectorSocketTransport.writelines() |
 | CVE-2024-12718 | HIGH | python3.12 | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | python3.12 | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
@@ -321,9 +321,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9_7.1 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
-| CVE-2025-66471 | HIGH | python3-urllib3 | 1.26.5-6.el9_7.1 | - | urllib3: urllib3 Streaming API improperly handles highly compressed data |
-| CVE-2026-21441 | HIGH | python3-urllib3 | 1.26.5-6.el9_7.1 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: libcurl: Curl out of bounds read for cookie path |
