@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-01-27 03:40:20 UTC
+**Scanned:** 2026-01-27 15:10:05 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 11 (🔧11) | 🟠 118 (🔧114) | 324 (🔧278) | 238 (🔧31) | 691 | 🔧 434 |
-| ubi-minimal | 0 | 0 | 20 (🔧1) | 45 | 65 | 🔧 1 |
-| ubi | 0 | 0 | 55 (🔧1) | 192 | 247 | 🔧 1 |
+| **upstream** | 🔴 11 (🔧11) | 🟠 118 (🔧117) | 324 (🔧278) | 239 (🔧31) | 692 | 🔧 437 |
+| ubi-minimal | 0 | 0 | 20 (🔧1) | 46 | 66 | 🔧 1 |
+| ubi | 0 | 0 | 55 (🔧1) | 193 | 248 | 🔧 1 |
 
 ## Details
 
@@ -81,9 +81,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-6345 | HIGH | python3-setuptools-wheel | 39.2.0-6.el8_7.1 | 39.2.0-8.el8_10 | pypa/setuptools: Remote code execution via download functions in the package_index module in pypa/setuptools |
 | CVE-2023-3899 | HIGH | python3-subscription-manager-rhsm | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2023-3899 | HIGH | python3-syspurpose | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
-| CVE-2025-66418 | HIGH | python3-urllib3 | 1.24.2-5.el8 | - | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
-| CVE-2025-66471 | HIGH | python3-urllib3 | 1.24.2-5.el8 | - | urllib3: urllib3 Streaming API improperly handles highly compressed data |
-| CVE-2026-21441 | HIGH | python3-urllib3 | 1.24.2-5.el8 | - | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
+| CVE-2025-66418 | HIGH | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-9.el8_10 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
+| CVE-2025-66471 | HIGH | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-9.el8_10 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
+| CVE-2026-21441 | HIGH | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-9.el8_10 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-20.el8_10 | sqlite: Integer Truncation in SQLite |
 | CVE-2023-3899 | HIGH | subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2023-3899 | HIGH | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
