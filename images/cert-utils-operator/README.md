@@ -4,17 +4,17 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-01-29 13:27:32 UTC
+**Scanned:** 2026-01-30 01:32:56 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 40 (🔧37) | 133 (🔧99) | 109 (🔧19) | 284 | 🔧 157 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 40 (🔧37) | 133 (🔧99) | 109 (🔧19) | 284 | 🔧 160 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 0 | 4 | 11 | 15 | 🔧 0 |
 | ubi-minimal | 0 | 🟠 3 (🔧1) | 23 (🔧4) | 53 (🔧9) | 79 | 🔧 14 |
-| ubi | 0 | 🟠 4 (🔧2) | 58 (🔧8) | 214 (🔧18) | 276 | 🔧 28 |
+| ubi | 0 | 🟠 4 (🔧2) | 60 (🔧8) | 214 (🔧18) | 278 | 🔧 28 |
 
 ## Details
 
@@ -292,6 +292,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4516 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2026-0672 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2026-1299 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: email header injection due to unquoted newlines |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | 3.9.25-3.el9_7 | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
@@ -302,6 +303,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4516 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2026-0672 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2026-1299 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: email header injection due to unquoted newlines |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
