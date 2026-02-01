@@ -4,13 +4,13 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-01-31 14:05:34 UTC
+**Scanned:** 2026-02-01 03:12:18 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 15 (🔧12) | 58 (🔧38) | 55 (🔧11) | 129 | 🔧 65 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 17 (🔧14) | 59 (🔧39) | 55 (🔧11) | 132 | 🔧 65 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 0 | 4 | 11 | 15 | 🔧 0 |
 | ubi-minimal | 0 | 🟠 3 (🔧1) | 23 (🔧4) | 53 (🔧9) | 79 | 🔧 14 |
@@ -39,6 +39,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-34156 | HIGH | stdlib | v1.21.13 | 1.22.7, 1.23.1 | encoding/gob: golang: Calling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion |
 | CVE-2025-47907 | HIGH | stdlib | v1.21.13 | 1.23.12, 1.24.6 | database/sql: Postgres Scan Race Condition |
 | CVE-2025-58183 | HIGH | stdlib | v1.21.13 | 1.24.8, 1.25.2 | golang: archive/tar: Unbounded allocation when parsing GNU sparse map |
+| CVE-2025-61726 | HIGH | stdlib | v1.21.13 | 1.24.12, 1.25.6 | The net/url package does not set a limit on the number of query parame ... |
+| CVE-2025-61728 | HIGH | stdlib | v1.21.13 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61729 | HIGH | stdlib | v1.21.13 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
@@ -98,6 +100,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61724 | MEDIUM | stdlib | v1.21.13 | 1.24.8, 1.25.2 | net/textproto: Excessive CPU consumption in Reader.ReadResponse in net/textproto |
 | CVE-2025-61725 | MEDIUM | stdlib | v1.21.13 | 1.24.8, 1.25.2 | net/mail: Excessive CPU consumption in ParseAddress in net/mail |
 | CVE-2025-61727 | MEDIUM | stdlib | v1.21.13 | 1.24.11, 1.25.5 | golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs |
+| CVE-2025-61730 | MEDIUM | stdlib | v1.21.13 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
 
 ### distroless
 
