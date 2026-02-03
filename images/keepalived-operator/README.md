@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-02-02 15:16:17 UTC
+**Scanned:** 2026-02-03 03:53:32 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 11 (🔧11) | 🟠 126 (🔧123) | 331 (🔧281) | 251 (🔧31) | 719 | 🔧 446 |
+| **upstream** | 🔴 11 (🔧11) | 🟠 126 (🔧123) | 333 (🔧283) | 251 (🔧31) | 721 | 🔧 448 |
 | ubi-minimal | 0 | 🟠 3 (🔧1) | 24 (🔧5) | 57 (🔧9) | 84 | 🔧 15 |
 | ubi | 0 | 🟠 4 (🔧2) | 61 (🔧9) | 214 (🔧18) | 279 | 🔧 29 |
 
@@ -305,6 +305,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-6232 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-67.el8_10 | python: cpython: tarfile: ReDos via excessive backtracking while parsing header values |
 | CVE-2024-6923 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-67.el8_10 | cpython: python: email module doesn't properly quotes newlines in email headers, allowing header injection |
 | CVE-2024-9287 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-69.el8_10 | python: Virtual environment (venv) activation scripts don't quote paths |
+| CVE-2025-12084 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-72.el8_10 | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-4330 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Extraction filter bypass for linking outside extraction directory |
 | CVE-2025-4435 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: Tarfile extracts filtered members when errorlevel=0 |
 | CVE-2025-8194 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-71.el8_10 | cpython: Cpython infinite loop when parsing a tarfile |
@@ -319,6 +320,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-6232 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-67.el8_10 | python: cpython: tarfile: ReDos via excessive backtracking while parsing header values |
 | CVE-2024-6923 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-67.el8_10 | cpython: python: email module doesn't properly quotes newlines in email headers, allowing header injection |
 | CVE-2024-9287 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-69.el8_10 | python: Virtual environment (venv) activation scripts don't quote paths |
+| CVE-2025-12084 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-72.el8_10 | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-4330 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Extraction filter bypass for linking outside extraction directory |
 | CVE-2025-4435 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: Tarfile extracts filtered members when errorlevel=0 |
 | CVE-2025-8194 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-71.el8_10 | cpython: Cpython infinite loop when parsing a tarfile |
