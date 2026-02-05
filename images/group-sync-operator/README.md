@@ -4,17 +4,17 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-02-04 14:16:38 UTC
+**Scanned:** 2026-02-05 03:18:11 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 17 (🔧14) | 60 (🔧39) | 55 (🔧11) | 133 | 🔧 65 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 15 (🔧14) | 60 (🔧39) | 55 (🔧11) | 131 | 🔧 65 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 0 | 4 | 11 | 15 | 🔧 0 |
-| ubi-minimal | 0 | 🟠 2 | 20 | 44 | 66 | 🔧 0 |
-| ubi | 0 | 🟠 4 (🔧2) | 61 (🔧8) | 214 (🔧18) | 279 | 🔧 28 |
+| ubi-minimal | 0 | 0 | 20 | 44 | 64 | 🔧 0 |
+| ubi | 0 | 0 | 53 | 196 | 249 | 🔧 0 |
 
 ## Details
 
@@ -26,8 +26,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2024-45337 | CRITICAL | golang.org/x/crypto | v0.17.0 | 0.31.0 | golang.org/x/crypto/ssh: Misuse of ServerConfig.PublicKeyCallback may cause authorization bypass in golang.org/x/crypto |
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | 2.3.3-5.el9_7 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
-| CVE-2026-24881 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Remote code execution and denial of service via crafted CMS EnvelopedData message |
-| CVE-2026-24882 | HIGH | gnupg2 | 2.3.3-4.el9 | - | GnuPG: GnuPG: Stack-based buffer overflow in tpm2daemon allows arbitrary code execution |
 | CVE-2025-5914 | HIGH | libarchive | 3.5.3-5.el9_6 | 3.5.3-6.el9_6 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
 | CVE-2025-15467 | HIGH | openssl-libs | 1:3.2.2-6.el9_5.1 | 1:3.5.1-7.el9_7 | openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.34.1-8.el9_6 | 3.34.1-9.el9_7 | sqlite: Integer Truncation in SQLite |
@@ -120,8 +118,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-24881 | HIGH | gnupg2 | 2.3.3-5.el9_7 | - | GnuPG: GnuPG: Remote code execution and denial of service via crafted CMS EnvelopedData message |
-| CVE-2026-24882 | HIGH | gnupg2 | 2.3.3-5.el9_7 | - | GnuPG: GnuPG: Stack-based buffer overflow in tpm2daemon allows arbitrary code execution |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
@@ -147,13 +143,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-24881 | HIGH | gnupg2 | 2.3.3-5.el9_7 | - | GnuPG: GnuPG: Remote code execution and denial of service via crafted CMS EnvelopedData message |
-| CVE-2026-24882 | HIGH | gnupg2 | 2.3.3-5.el9_7 | - | GnuPG: GnuPG: Stack-based buffer overflow in tpm2daemon allows arbitrary code execution |
-| CVE-2025-15467 | HIGH | openssl | 1:3.5.1-5.el9_7 | 1:3.5.1-7.el9_7 | openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing |
-| CVE-2025-15467 | HIGH | openssl-libs | 1:3.5.1-5.el9_7 | 1:3.5.1-7.el9_7 | openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
-| CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
-| CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-34.el9 | 7.76.1-35.el9_7.3 | curl: libcurl: Curl out of bounds read for cookie path |
+| CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-11081 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils out-of-bounds read |
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
@@ -168,49 +159,42 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
-| CVE-2025-14104 | MEDIUM | libblkid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
-| CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-34.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
-| CVE-2025-9086 | MEDIUM | libcurl-minimal | 7.76.1-34.el9 | 7.76.1-35.el9_7.3 | curl: libcurl: Curl out of bounds read for cookie path |
-| CVE-2025-14104 | MEDIUM | libfdisk | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
-| CVE-2025-14104 | MEDIUM | libmount | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
-| CVE-2025-14104 | MEDIUM | libsmartcols | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
-| CVE-2025-14104 | MEDIUM | libuuid | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2025-14104 | MEDIUM | libblkid | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
+| CVE-2025-14104 | MEDIUM | libfdisk | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2025-14104 | MEDIUM | libmount | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2025-14104 | MEDIUM | libsmartcols | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2025-14104 | MEDIUM | libuuid | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2026-0990 | MEDIUM | libxml2 | 2.9.13-14.el9_7 | - | libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing |
 | CVE-2026-1757 | MEDIUM | libxml2 | 2.9.13-14.el9_7 | - | libxml2: Memory Leak Leading to Local Denial of Service in xmllint Interactive Shell |
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
-| CVE-2025-11187 | MEDIUM | openssl | 1:3.5.1-5.el9_7 | 1:3.5.1-7.el9_7 | openssl: OpenSSL: Arbitrary code execution or denial of service through crafted PKCS#12 file |
-| CVE-2025-69419 | MEDIUM | openssl | 1:3.5.1-5.el9_7 | 1:3.5.1-7.el9_7 | openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing |
-| CVE-2025-11187 | MEDIUM | openssl-libs | 1:3.5.1-5.el9_7 | 1:3.5.1-7.el9_7 | openssl: OpenSSL: Arbitrary code execution or denial of service through crafted PKCS#12 file |
-| CVE-2025-69419 | MEDIUM | openssl-libs | 1:3.5.1-5.el9_7 | 1:3.5.1-7.el9_7 | openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing |
-| CVE-2025-11468 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Missing character filtering in Python |
-| CVE-2025-12084 | MEDIUM | python3 | 3.9.25-2.el9_7 | 3.9.25-3.el9_7 | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
-| CVE-2025-12781 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
-| CVE-2025-13837 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Out-of-memory when loading Plist |
-| CVE-2025-15282 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
-| CVE-2025-15366 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: IMAP command injection in user-controlled commands |
-| CVE-2025-15367 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: POP3 command injection in user-controlled commands |
-| CVE-2025-4516 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
-| CVE-2026-0672 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: Header injection in http.cookies.Morsel in Python |
-| CVE-2026-0865 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
-| CVE-2026-1299 | MEDIUM | python3 | 3.9.25-2.el9_7 | - | cpython: email header injection due to unquoted newlines |
-| CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Missing character filtering in Python |
-| CVE-2025-12084 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | 3.9.25-3.el9_7 | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
-| CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
-| CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Out-of-memory when loading Plist |
-| CVE-2025-15282 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
-| CVE-2025-15366 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: IMAP command injection in user-controlled commands |
-| CVE-2025-15367 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: POP3 command injection in user-controlled commands |
-| CVE-2025-4516 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
-| CVE-2026-0672 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: Header injection in http.cookies.Morsel in Python |
-| CVE-2026-0865 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
-| CVE-2026-1299 | MEDIUM | python3-libs | 3.9.25-2.el9_7 | - | cpython: email header injection due to unquoted newlines |
+| CVE-2025-11468 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: Missing character filtering in Python |
+| CVE-2025-12781 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
+| CVE-2025-13837 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
+| CVE-2025-15366 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: IMAP command injection in user-controlled commands |
+| CVE-2025-15367 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: POP3 command injection in user-controlled commands |
+| CVE-2025-4516 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
+| CVE-2026-0672 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2026-1299 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: email header injection due to unquoted newlines |
+| CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: Missing character filtering in Python |
+| CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
+| CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
+| CVE-2025-15366 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: IMAP command injection in user-controlled commands |
+| CVE-2025-15367 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: POP3 command injection in user-controlled commands |
+| CVE-2025-4516 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
+| CVE-2026-0672 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2026-1299 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: email header injection due to unquoted newlines |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2005-2541 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: does not properly warn the user when extracting setuid or setgid files |
 | CVE-2024-29040 | MEDIUM | tpm2-tss | 3.2.3-1.el9 | - | tpm2-tss: arbitrary quote data may go undetected by Fapi_VerifyQuote |
-| CVE-2025-14104 | MEDIUM | util-linux | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
-| CVE-2025-14104 | MEDIUM | util-linux-core | 2.37.4-21.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2025-14104 | MEDIUM | util-linux | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2025-14104 | MEDIUM | util-linux-core | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-29768 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim vulnerable to potential data loss with zip.vim and special crafted zip files |
 
 ---
