@@ -4,13 +4,13 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-02-05 12:32:09 UTC
+**Scanned:** 2026-02-06 00:30:55 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 46 (🔧46) | 202 (🔧124) | 235 (🔧35) | 483 | 🔧 205 |
+| **upstream** | 0 | 🟠 46 (🔧46) | 203 (🔧125) | 235 (🔧35) | 484 | 🔧 207 |
 | ubi-micro | 0 | 0 | 4 | 11 | 15 | 🔧 0 |
 | ubi-minimal | 0 | 0 | 44 | 51 | 95 | 🔧 0 |
 | ubi | 0 | 0 | 77 | 198 | 275 | 🔧 0 |
@@ -258,6 +258,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-0913 | MEDIUM | stdlib | v1.22.5 | 1.23.10, 1.24.4 | Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall |
 | CVE-2025-22866 | MEDIUM | stdlib | v1.22.5 | 1.22.12, 1.23.6, 1.24.0-rc.3 | crypto/internal/nistec: golang: Timing sidechannel for P-256 on ppc64le in crypto/internal/nistec |
 | CVE-2025-22871 | MEDIUM | stdlib | v1.22.5 | 1.23.8, 1.24.2 | net/http: Request smuggling due to acceptance of invalid chunked data in net/http |
+| CVE-2025-22873 | MEDIUM | stdlib | v1.22.5 | 1.23.9, 1.24.3 | It was possible to improperly access the parent directory of an os.Roo ... |
 | CVE-2025-4673 | MEDIUM | stdlib | v1.22.5 | 1.23.10, 1.24.4 | net/http: Sensitive headers not cleared on cross-origin redirect in net/http |
 | CVE-2025-47906 | MEDIUM | stdlib | v1.22.5 | 1.23.12, 1.24.6 | os/exec: Unexpected paths returned from LookPath in os/exec |
 | CVE-2025-47912 | MEDIUM | stdlib | v1.22.5 | 1.24.8, 1.25.2 | net/url: Insufficient validation of bracketed IPv6 hostnames in net/url |
