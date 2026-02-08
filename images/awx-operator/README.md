@@ -4,13 +4,13 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-02-08 00:38:28 UTC
+**Scanned:** 2026-02-08 12:26:59 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 0 | 🟠 46 (🔧46) | 203 (🔧125) | 235 (🔧35) | 484 | 🔧 207 |
+| **upstream** | 0 | 🟠 48 (🔧48) | 202 (🔧124) | 235 (🔧35) | 485 | 🔧 207 |
 | ubi-micro | 0 | 0 | 4 | 11 | 15 | 🔧 0 |
 | ubi-minimal | 0 | 0 | 44 | 51 | 95 | 🔧 0 |
 | ubi | 0 | 0 | 77 | 198 | 275 | 🔧 0 |
@@ -69,6 +69,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61726 | HIGH | stdlib | v1.22.5 | 1.24.12, 1.25.6 | golang: net/url: Memory exhaustion in query parameter parsing in net/url |
 | CVE-2025-61728 | HIGH | stdlib | v1.22.5 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61729 | HIGH | stdlib | v1.22.5 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
+| CVE-2025-61730 | HIGH | stdlib | v1.22.5 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
+| CVE-2025-68121 | HIGH | stdlib | v1.22.5 | 1.24.13, 1.25.7, 1.26.0-rc.3 | During session resumption in crypto/tls, if the underlying Config has ... |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.8-8.el9 | 1.0.8-10.el9_5 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-36.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-31.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
@@ -271,7 +273,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61724 | MEDIUM | stdlib | v1.22.5 | 1.24.8, 1.25.2 | net/textproto: Excessive CPU consumption in Reader.ReadResponse in net/textproto |
 | CVE-2025-61725 | MEDIUM | stdlib | v1.22.5 | 1.24.8, 1.25.2 | net/mail: Excessive CPU consumption in ParseAddress in net/mail |
 | CVE-2025-61727 | MEDIUM | stdlib | v1.22.5 | 1.24.11, 1.25.5 | golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs |
-| CVE-2025-61730 | MEDIUM | stdlib | v1.22.5 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
 
 ### ubi-micro
 
