@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-02-11 15:22:18 UTC
+**Scanned:** 2026-02-12 03:59:14 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 11 (🔧11) | 🟠 130 (🔧129) | 339 (🔧283) | 251 (🔧31) | 731 | 🔧 454 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 127 (🔧126) | 339 (🔧283) | 251 (🔧31) | 731 | 🔧 454 |
 | ubi-minimal | 0 | 0 | 21 (🔧1) | 48 | 69 | 🔧 1 |
 | ubi | 0 | 0 | 54 (🔧1) | 196 | 250 | 🔧 1 |
 
@@ -27,12 +27,15 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-24538 | CRITICAL | stdlib | v1.18.10 | 1.19.8, 1.20.3 | golang: html/template: backticks not treated as string delimiters |
 | CVE-2023-24540 | CRITICAL | stdlib | v1.18.10 | 1.19.9, 1.20.4 | golang: html/template: improper handling of JavaScript whitespace |
 | CVE-2024-24790 | CRITICAL | stdlib | v1.18.10 | 1.21.11, 1.22.4 | golang: net/netip: Unexpected behavior from Is methods for IPv4-mapped IPv6 addresses |
+| CVE-2025-68121 | CRITICAL | stdlib | v1.18.10 | 1.24.13, 1.25.7, 1.26.0-rc.3 | During session resumption in crypto/tls, if the underlying Config has ... |
 | CVE-2023-24538 | CRITICAL | stdlib | v1.18.10 | 1.19.8, 1.20.3 | golang: html/template: backticks not treated as string delimiters |
 | CVE-2023-24540 | CRITICAL | stdlib | v1.18.10 | 1.19.9, 1.20.4 | golang: html/template: improper handling of JavaScript whitespace |
 | CVE-2024-24790 | CRITICAL | stdlib | v1.18.10 | 1.21.11, 1.22.4 | golang: net/netip: Unexpected behavior from Is methods for IPv4-mapped IPv6 addresses |
+| CVE-2025-68121 | CRITICAL | stdlib | v1.18.10 | 1.24.13, 1.25.7, 1.26.0-rc.3 | During session resumption in crypto/tls, if the underlying Config has ... |
 | CVE-2023-24538 | CRITICAL | stdlib | v1.18.10 | 1.19.8, 1.20.3 | golang: html/template: backticks not treated as string delimiters |
 | CVE-2023-24540 | CRITICAL | stdlib | v1.18.10 | 1.19.9, 1.20.4 | golang: html/template: improper handling of JavaScript whitespace |
 | CVE-2024-24790 | CRITICAL | stdlib | v1.18.10 | 1.21.11, 1.22.4 | golang: net/netip: Unexpected behavior from Is methods for IPv4-mapped IPv6 addresses |
+| CVE-2025-68121 | CRITICAL | stdlib | v1.18.10 | 1.24.13, 1.25.7, 1.26.0-rc.3 | During session resumption in crypto/tls, if the underlying Config has ... |
 | CVE-2025-6176 | HIGH | brotli | 1.0.6-3.el8 | - | Scrapy: python-scrapy: brotli: Python brotli decompression bomb DoS |
 | CVE-2023-3899 | HIGH | dnf-plugin-subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2025-59375 | HIGH | expat | 2.2.5-10.el8_7.1 | 2.5.0-1.el8_10 | expat: libexpat in Expat allows attackers to trigger large dynamic memory allocations via a small document that is submitted for parsing |
@@ -116,7 +119,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61728 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2025-61730 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
-| CVE-2025-68121 | HIGH | stdlib | v1.18.10 | 1.24.13, 1.25.7, 1.26.0-rc.3 | During session resumption in crypto/tls, if the underlying Config has ... |
 | CVE-2022-21698 | HIGH | github.com/prometheus/client_golang | v1.1.0 | 1.11.1 | prometheus/client_golang: Denial of service using InstrumentHandlerCounter |
 | CVE-2025-65637 | HIGH | github.com/sirupsen/logrus | v1.4.2 | 1.8.3, 1.9.1, 1.9.3 | github.com/sirupsen/logrus: github.com/sirupsen/logrus: Denial-of-Service due to large single-line payload |
 | CVE-2022-41722 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: path/filepath: path-filepath filepath.Clean path traversal |
@@ -140,7 +142,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61728 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2025-61730 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
-| CVE-2025-68121 | HIGH | stdlib | v1.18.10 | 1.24.13, 1.25.7, 1.26.0-rc.3 | During session resumption in crypto/tls, if the underlying Config has ... |
 | CVE-2022-41722 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: path/filepath: path-filepath filepath.Clean path traversal |
 | CVE-2022-41723 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang.org/x/net/http2: avoid quadratic complexity in HPACK decoding |
 | CVE-2022-41724 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: crypto/tls: large handshake records may cause panics |
@@ -162,7 +163,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61728 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2025-61730 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
-| CVE-2025-68121 | HIGH | stdlib | v1.18.10 | 1.24.13, 1.25.7, 1.26.0-rc.3 | During session resumption in crypto/tls, if the underlying Config has ... |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | 1.0.6-28.el8_10 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-13.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2023-23916 | MEDIUM | curl | 7.61.1-25.el8_7.2 | 7.61.1-25.el8_7.3 | curl: HTTP multi-header compression denial of service |
@@ -419,7 +419,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-0913 | MEDIUM | stdlib | v1.18.10 | 1.23.10, 1.24.4 | Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall |
 | CVE-2025-22866 | MEDIUM | stdlib | v1.18.10 | 1.22.12, 1.23.6, 1.24.0-rc.3 | crypto/internal/nistec: golang: Timing sidechannel for P-256 on ppc64le in crypto/internal/nistec |
 | CVE-2025-22871 | MEDIUM | stdlib | v1.18.10 | 1.23.8, 1.24.2 | net/http: Request smuggling due to acceptance of invalid chunked data in net/http |
-| CVE-2025-22873 | MEDIUM | stdlib | v1.18.10 | 1.23.9, 1.24.3 | It was possible to improperly access the parent directory of an os.Roo ... |
+| CVE-2025-22873 | MEDIUM | stdlib | v1.18.10 | 1.23.9, 1.24.3 | os: os: Information disclosure via path traversal using specially crafted filenames |
 | CVE-2025-4673 | MEDIUM | stdlib | v1.18.10 | 1.23.10, 1.24.4 | net/http: Sensitive headers not cleared on cross-origin redirect in net/http |
 | CVE-2025-47906 | MEDIUM | stdlib | v1.18.10 | 1.23.12, 1.24.6 | os/exec: Unexpected paths returned from LookPath in os/exec |
 | CVE-2025-47912 | MEDIUM | stdlib | v1.18.10 | 1.24.8, 1.25.2 | net/url: Insufficient validation of bracketed IPv6 hostnames in net/url |
@@ -454,7 +454,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-0913 | MEDIUM | stdlib | v1.18.10 | 1.23.10, 1.24.4 | Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall |
 | CVE-2025-22866 | MEDIUM | stdlib | v1.18.10 | 1.22.12, 1.23.6, 1.24.0-rc.3 | crypto/internal/nistec: golang: Timing sidechannel for P-256 on ppc64le in crypto/internal/nistec |
 | CVE-2025-22871 | MEDIUM | stdlib | v1.18.10 | 1.23.8, 1.24.2 | net/http: Request smuggling due to acceptance of invalid chunked data in net/http |
-| CVE-2025-22873 | MEDIUM | stdlib | v1.18.10 | 1.23.9, 1.24.3 | It was possible to improperly access the parent directory of an os.Roo ... |
+| CVE-2025-22873 | MEDIUM | stdlib | v1.18.10 | 1.23.9, 1.24.3 | os: os: Information disclosure via path traversal using specially crafted filenames |
 | CVE-2025-4673 | MEDIUM | stdlib | v1.18.10 | 1.23.10, 1.24.4 | net/http: Sensitive headers not cleared on cross-origin redirect in net/http |
 | CVE-2025-47906 | MEDIUM | stdlib | v1.18.10 | 1.23.12, 1.24.6 | os/exec: Unexpected paths returned from LookPath in os/exec |
 | CVE-2025-47912 | MEDIUM | stdlib | v1.18.10 | 1.24.8, 1.25.2 | net/url: Insufficient validation of bracketed IPv6 hostnames in net/url |
@@ -489,7 +489,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-0913 | MEDIUM | stdlib | v1.18.10 | 1.23.10, 1.24.4 | Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall |
 | CVE-2025-22866 | MEDIUM | stdlib | v1.18.10 | 1.22.12, 1.23.6, 1.24.0-rc.3 | crypto/internal/nistec: golang: Timing sidechannel for P-256 on ppc64le in crypto/internal/nistec |
 | CVE-2025-22871 | MEDIUM | stdlib | v1.18.10 | 1.23.8, 1.24.2 | net/http: Request smuggling due to acceptance of invalid chunked data in net/http |
-| CVE-2025-22873 | MEDIUM | stdlib | v1.18.10 | 1.23.9, 1.24.3 | It was possible to improperly access the parent directory of an os.Roo ... |
+| CVE-2025-22873 | MEDIUM | stdlib | v1.18.10 | 1.23.9, 1.24.3 | os: os: Information disclosure via path traversal using specially crafted filenames |
 | CVE-2025-4673 | MEDIUM | stdlib | v1.18.10 | 1.23.10, 1.24.4 | net/http: Sensitive headers not cleared on cross-origin redirect in net/http |
 | CVE-2025-47906 | MEDIUM | stdlib | v1.18.10 | 1.23.12, 1.24.6 | os/exec: Unexpected paths returned from LookPath in os/exec |
 | CVE-2025-47912 | MEDIUM | stdlib | v1.18.10 | 1.24.8, 1.25.2 | net/url: Insufficient validation of bracketed IPv6 hostnames in net/url |
