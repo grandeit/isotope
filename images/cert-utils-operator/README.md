@@ -4,13 +4,13 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-02-11 13:32:53 UTC
+**Scanned:** 2026-02-12 01:33:04 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 42 (🔧41) | 135 (🔧100) | 109 (🔧19) | 288 | 🔧 162 |
+| **upstream** | 🔴 3 (🔧3) | 🟠 41 (🔧40) | 135 (🔧100) | 109 (🔧19) | 288 | 🔧 162 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 0 | 4 | 11 | 15 | 🔧 0 |
 | ubi-minimal | 0 | 0 | 20 | 44 | 64 | 🔧 0 |
@@ -26,6 +26,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2024-45337 | CRITICAL | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.31.0 | golang.org/x/crypto/ssh: Misuse of ServerConfig.PublicKeyCallback may cause authorization bypass in golang.org/x/crypto |
 | CVE-2024-24790 | CRITICAL | stdlib | v1.19.13 | 1.21.11, 1.22.4 | golang: net/netip: Unexpected behavior from Is methods for IPv4-mapped IPv6 addresses |
+| CVE-2025-68121 | CRITICAL | stdlib | v1.19.13 | 1.24.13, 1.25.7, 1.26.0-rc.3 | During session resumption in crypto/tls, if the underlying Config has ... |
 | CVE-2025-6176 | HIGH | brotli | 1.0.6-3.el8 | - | Scrapy: python-scrapy: brotli: Python brotli decompression bomb DoS |
 | CVE-2024-2961 | HIGH | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.1 | glibc: Out of bounds write in iconv may lead to remote code execution |
 | CVE-2024-33599 | HIGH | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.2 | glibc: stack-based buffer overflow in netgroup cache |
@@ -67,7 +68,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61728 | HIGH | stdlib | v1.19.13 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61729 | HIGH | stdlib | v1.19.13 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2025-61730 | HIGH | stdlib | v1.19.13 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
-| CVE-2025-68121 | HIGH | stdlib | v1.19.13 | 1.24.13, 1.25.7, 1.26.0-rc.3 | During session resumption in crypto/tls, if the underlying Config has ... |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | 1.0.6-28.el8_10 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-15.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2023-46218 | MEDIUM | curl | 7.61.1-33.el8 | 7.61.1-33.el8_9.5 | curl: information disclosure by exploiting a mixed case flaw |
@@ -190,7 +190,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-0913 | MEDIUM | stdlib | v1.19.13 | 1.23.10, 1.24.4 | Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall |
 | CVE-2025-22866 | MEDIUM | stdlib | v1.19.13 | 1.22.12, 1.23.6, 1.24.0-rc.3 | crypto/internal/nistec: golang: Timing sidechannel for P-256 on ppc64le in crypto/internal/nistec |
 | CVE-2025-22871 | MEDIUM | stdlib | v1.19.13 | 1.23.8, 1.24.2 | net/http: Request smuggling due to acceptance of invalid chunked data in net/http |
-| CVE-2025-22873 | MEDIUM | stdlib | v1.19.13 | 1.23.9, 1.24.3 | It was possible to improperly access the parent directory of an os.Roo ... |
+| CVE-2025-22873 | MEDIUM | stdlib | v1.19.13 | 1.23.9, 1.24.3 | os: os: Information disclosure via path traversal using specially crafted filenames |
 | CVE-2025-4673 | MEDIUM | stdlib | v1.19.13 | 1.23.10, 1.24.4 | net/http: Sensitive headers not cleared on cross-origin redirect in net/http |
 | CVE-2025-47906 | MEDIUM | stdlib | v1.19.13 | 1.23.12, 1.24.6 | os/exec: Unexpected paths returned from LookPath in os/exec |
 | CVE-2025-47912 | MEDIUM | stdlib | v1.19.13 | 1.24.8, 1.25.2 | net/url: Insufficient validation of bracketed IPv6 hostnames in net/url |
