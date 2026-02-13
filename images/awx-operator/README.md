@@ -4,13 +4,13 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-02-12 12:36:10 UTC
+**Scanned:** 2026-02-13 00:34:29 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 48 (🔧48) | 202 (🔧124) | 235 (🔧35) | 486 | 🔧 208 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 46 (🔧46) | 198 (🔧120) | 217 (🔧17) | 462 | 🔧 184 |
 | ubi-micro | 0 | 0 | 4 | 11 | 15 | 🔧 0 |
 | ubi-minimal | 0 | 0 | 44 | 51 | 95 | 🔧 0 |
 | ubi | 0 | 0 | 77 | 198 | 275 | 🔧 0 |
@@ -23,7 +23,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2025-68121 | CRITICAL | stdlib | v1.22.5 | 1.24.13, 1.25.7, 1.26.0-rc.3 | During session resumption in crypto/tls, if the underlying Config has ... |
+| CVE-2025-68121 | CRITICAL | stdlib | v1.22.5 | 1.24.13, 1.25.7, 1.26.0-rc.3 | crypto/tls: Unexpected session resumption in crypto/tls |
 | CVE-2025-59375 | HIGH | expat | 2.5.0-2.el9_4.1 | 2.5.0-5.el9_7.1 | expat: libexpat in Expat allows attackers to trigger large dynamic memory allocations via a small document that is submitted for parsing |
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | 2.3.3-5.el9_7 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2025-5914 | HIGH | libarchive | 3.5.3-4.el9 | 3.5.3-6.el9_6 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
@@ -32,8 +32,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-49794 | HIGH | libxml2 | 2.9.13-6.el9_4 | 2.9.13-10.el9_6 | libxml: Heap use after free (UAF) leads to Denial of service (DoS) |
 | CVE-2025-49796 | HIGH | libxml2 | 2.9.13-6.el9_4 | 2.9.13-10.el9_6 | libxml: Type confusion leads to Denial of service (DoS) |
 | CVE-2025-7425 | HIGH | libxml2 | 2.9.13-6.el9_4 | 2.9.13-11.el9_6 | libxslt: Heap Use-After-Free in libxslt caused by atype corruption in xmlAttrPtr |
-| CVE-2025-15467 | HIGH | openssl | 1:3.5.1-5.el9_7 | 1:3.5.1-7.el9_7 | openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing |
-| CVE-2025-15467 | HIGH | openssl-libs | 1:3.5.1-5.el9_7 | 1:3.5.1-7.el9_7 | openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing |
 | CVE-2024-10963 | HIGH | pam | 1.5.1-20.el9 | 1.5.1-22.el9_5 | pam: Improper Hostname Interpretation in pam_access Leads to Access Control Bypass |
 | CVE-2025-6020 | HIGH | pam | 1.5.1-20.el9 | 1.5.1-26.el9_6 | linux-pam: Linux-pam directory Traversal |
 | CVE-2025-8941 | HIGH | pam | 1.5.1-20.el9 | 1.5.1-26.el9_6 | linux-pam: Incomplete fix for CVE-2025-6020 |
@@ -139,10 +137,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0990 | MEDIUM | libxml2 | 2.9.13-6.el9_4 | - | libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing |
 | CVE-2026-1757 | MEDIUM | libxml2 | 2.9.13-6.el9_4 | - | libxml2: Memory Leak Leading to Local Denial of Service in xmllint Interactive Shell |
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.6-3.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
-| CVE-2025-11187 | MEDIUM | openssl | 1:3.5.1-5.el9_7 | 1:3.5.1-7.el9_7 | openssl: OpenSSL: Arbitrary code execution or denial of service through crafted PKCS#12 file |
-| CVE-2025-69419 | MEDIUM | openssl | 1:3.5.1-5.el9_7 | 1:3.5.1-7.el9_7 | openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing |
-| CVE-2025-11187 | MEDIUM | openssl-libs | 1:3.5.1-5.el9_7 | 1:3.5.1-7.el9_7 | openssl: OpenSSL: Arbitrary code execution or denial of service through crafted PKCS#12 file |
-| CVE-2025-69419 | MEDIUM | openssl-libs | 1:3.5.1-5.el9_7 | 1:3.5.1-7.el9_7 | openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing |
 | CVE-2024-10041 | MEDIUM | pam | 1.5.1-20.el9 | 1.5.1-21.el9_5 | pam: libpam: Libpam vulnerable to read hashed password |
 | CVE-2024-11168 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-1.el9_5 | python: Improper validation of IPv6 and IPvFuture addresses |
 | CVE-2024-9287 | MEDIUM | python3 | 3.9.19-8.el9_5.1 | 3.9.21-1.el9_5 | python: Virtual environment (venv) activation scripts don't quote paths |
