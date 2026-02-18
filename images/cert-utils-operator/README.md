@@ -4,7 +4,7 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-02-17 13:30:30 UTC
+**Scanned:** 2026-02-18 01:33:07 UTC
 
 ## Overview
 
@@ -213,9 +213,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
-| CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
-| CVE-2026-0915 | MEDIUM | glibc-common | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
-| CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
 
 ### ubi-minimal
 
@@ -227,9 +227,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
-| CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
-| CVE-2026-0915 | MEDIUM | glibc-common | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
-| CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
@@ -256,9 +256,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
-| CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
-| CVE-2026-0915 | MEDIUM | glibc-common | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
-| CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.2 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
