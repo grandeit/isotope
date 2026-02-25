@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-02-24 12:34:18 UTC
+**Scanned:** 2026-02-25 00:35:00 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 46 (🔧46) | 198 (🔧120) | 217 (🔧17) | 462 | 🔧 184 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 47 (🔧46) | 199 (🔧120) | 217 (🔧17) | 464 | 🔧 184 |
 | ubi-micro | 0 | 0 | 4 | 11 | 15 | 🔧 0 |
 | ubi-minimal | 0 | 0 | 44 | 51 | 95 | 🔧 0 |
-| ubi | 0 | 0 | 77 | 198 | 275 | 🔧 0 |
+| ubi | 0 | 🟠 1 | 78 | 198 | 277 | 🔧 0 |
 
 ## Details
 
@@ -53,6 +53,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4138 | HIGH | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
 | CVE-2025-4517 | HIGH | python3.12-libs | 3.12.5-2.el9_5.1 | 3.12.9-1.el9_6.1 | python: cpython: Arbitrary writes via tarfile realpath overflow |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.34.1-7.el9_3 | 3.34.1-9.el9_7 | sqlite: Integer Truncation in SQLite |
+| CVE-2026-23745 | HIGH | tar | 2:1.34-7.el9 | - | node-tar: tar: node-tar: Arbitrary file overwrite and symlink poisoning via unsanitized linkpaths in archives |
 | CVE-2024-8775 | HIGH | ansible-core | 2.17.5 | 2.17.6, 2.16.13 | ansible-core: Exposure of Sensitive Information in Ansible Vault Files Due to Improper Logging |
 | CVE-2026-26007 | HIGH | cryptography | 43.0.1 | 46.0.5 | cryptography: cryptography Subgroup Attack Due to Missing Subgroup Validation for SECT Curves |
 | CVE-2026-23949 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context: jaraco.context: Path traversal via malicious tar archives |
@@ -229,6 +230,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4598 | MEDIUM | systemd-rpm-macros | 252-46.el9_5.2 | 252-55.el9_7.7 | systemd-coredump: race condition that allows a local attacker to crash a SUID program and gain read access to the resulting core dump |
 | CVE-2005-2541 | MEDIUM | tar | 2:1.34-7.el9 | - | tar: does not properly warn the user when extracting setuid or setgid files |
 | CVE-2025-45582 | MEDIUM | tar | 2:1.34-7.el9 | 2:1.34-9.el9_7 | tar: Tar path traversal |
+| CVE-2025-64118 | MEDIUM | tar | 2:1.34-7.el9 | - | node-tar: tar: node-tar: Information disclosure via reading a truncated tar file |
 | CVE-2024-29040 | MEDIUM | tpm2-tss | 3.2.3-1.el9 | - | tpm2-tss: arbitrary quote data may go undetected by Fapi_VerifyQuote |
 | CVE-2025-14104 | MEDIUM | util-linux | 2.37.4-20.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | util-linux-core | 2.37.4-20.el9 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
@@ -331,6 +333,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-23745 | HIGH | tar | 2:1.34-9.el9_7 | - | node-tar: tar: node-tar: Arbitrary file overwrite and symlink poisoning via unsanitized linkpaths in archives |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-11081 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils out-of-bounds read |
@@ -404,6 +407,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2005-2541 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: does not properly warn the user when extracting setuid or setgid files |
+| CVE-2025-64118 | MEDIUM | tar | 2:1.34-9.el9_7 | - | node-tar: tar: node-tar: Information disclosure via reading a truncated tar file |
 | CVE-2024-29040 | MEDIUM | tpm2-tss | 3.2.3-1.el9 | - | tpm2-tss: arbitrary quote data may go undetected by Fapi_VerifyQuote |
 | CVE-2025-14104 | MEDIUM | util-linux | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | util-linux-core | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
