@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-02-24 15:20:51 UTC
+**Scanned:** 2026-02-25 04:00:04 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 127 (🔧126) | 339 (🔧283) | 251 (🔧31) | 731 | 🔧 454 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 128 (🔧126) | 371 (🔧283) | 263 (🔧31) | 776 | 🔧 454 |
 | ubi-minimal | 0 | 0 | 21 (🔧1) | 48 | 69 | 🔧 1 |
-| ubi | 0 | 0 | 54 (🔧1) | 196 | 250 | 🔧 1 |
+| ubi | 0 | 🟠 1 | 55 (🔧1) | 196 | 252 | 🔧 1 |
 
 ## Details
 
@@ -90,6 +90,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-20.el8_10 | sqlite: Integer Truncation in SQLite |
 | CVE-2023-3899 | HIGH | subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2023-3899 | HIGH | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
+| CVE-2026-23745 | HIGH | tar | 2:1.30-6.el8_7.1 | - | node-tar: tar: node-tar: Arbitrary file overwrite and symlink poisoning via unsanitized linkpaths in archives |
 | CVE-2022-27191 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.0.0-20220314234659-1baeb1ce4c0b | golang: crash in a golang.org/x/crypto/ssh server |
 | CVE-2025-22869 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.35.0 | golang.org/x/crypto/ssh: Denial of Service in the Key Exchange of golang.org/x/crypto/ssh |
 | CVE-2022-27664 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.0.0-20220906165146-f3363e06e74c | golang: net/http: handle server errors after sending GOAWAY |
@@ -179,6 +180,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-34969 | MEDIUM | dbus-libs | 1:1.12.8-23.el8_7.1 | 1:1.12.8-24.el8_8.1 | dbus: dbus-daemon: assertion failure when a monitor is active and a message from the driver cannot be delivered |
 | CVE-2023-34969 | MEDIUM | dbus-tools | 1:1.12.8-23.el8_7.1 | 1:1.12.8-24.el8_8.1 | dbus: dbus-daemon: assertion failure when a monitor is active and a message from the driver cannot be delivered |
 | CVE-2023-30630 | MEDIUM | dmidecode | 1:3.3-4.el8 | 1:3.3-4.el8_8.1 | dmidecode: dump-bin to overwrite a local file |
+| CVE-2022-0235 | MEDIUM | dnf-plugin-subscription-manager | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
 | CVE-2013-0340 | MEDIUM | expat | 2.2.5-10.el8_7.1 | 2.5.0-1.el8_10 | expat: internal entity expansion |
 | CVE-2022-23990 | MEDIUM | expat | 2.2.5-10.el8_7.1 | 2.5.0-1.el8_10 | expat: integer overflow in the doProlog function |
 | CVE-2023-52425 | MEDIUM | expat | 2.2.5-10.el8_7.1 | 2.2.5-11.el8_9.1 | expat: parsing large tokens can trigger a denial of service |
@@ -310,13 +312,26 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-6232 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-67.el8_10 | python: cpython: tarfile: ReDos via excessive backtracking while parsing header values |
 | CVE-2024-6923 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-67.el8_10 | cpython: python: email module doesn't properly quotes newlines in email headers, allowing header injection |
 | CVE-2024-9287 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-69.el8_10 | python: Virtual environment (venv) activation scripts don't quote paths |
+| CVE-2025-0938 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | python: cpython: URL parser allowed square brackets in domain names |
+| CVE-2025-11468 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-72.el8_10 | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
+| CVE-2025-12781 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
+| CVE-2025-13836 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: Excessive read buffering DoS in http.client |
+| CVE-2025-13837 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: Header injection via newlines in data URL mediatype in Python |
 | CVE-2025-15366 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: IMAP command injection in user-controlled commands |
 | CVE-2025-15367 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: POP3 command injection in user-controlled commands |
 | CVE-2025-4330 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Extraction filter bypass for linking outside extraction directory |
 | CVE-2025-4435 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: Tarfile extracts filtered members when errorlevel=0 |
+| CVE-2025-4516 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
+| CVE-2025-6069 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2025-8194 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-71.el8_10 | cpython: Cpython infinite loop when parsing a tarfile |
+| CVE-2025-8291 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2026-0672 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2026-1299 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: email header injection due to unquoted newlines |
 | CVE-2025-47273 | MEDIUM | platform-python-setuptools | 39.2.0-6.el8_7.1 | 39.2.0-9.el8_10 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
+| CVE-2022-0235 | MEDIUM | python3-cloud-what | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
 | CVE-2024-3651 | MEDIUM | python3-idna | 2.5-5.el8 | 2.5-7.el8_10 | python-idna: potential DoS via resource consumption via specially crafted inputs to idna.encode() |
 | CVE-2007-4559 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-56.el8_9 | python: tarfile module directory traversal |
 | CVE-2022-48560 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-56.el8_9.2 | python: use after free in heappushpop() of heapq module |
@@ -327,12 +342,24 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-6232 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-67.el8_10 | python: cpython: tarfile: ReDos via excessive backtracking while parsing header values |
 | CVE-2024-6923 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-67.el8_10 | cpython: python: email module doesn't properly quotes newlines in email headers, allowing header injection |
 | CVE-2024-9287 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-69.el8_10 | python: Virtual environment (venv) activation scripts don't quote paths |
+| CVE-2025-0938 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | python: cpython: URL parser allowed square brackets in domain names |
+| CVE-2025-11468 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-72.el8_10 | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
+| CVE-2025-12781 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
+| CVE-2025-13836 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: Excessive read buffering DoS in http.client |
+| CVE-2025-13837 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: Header injection via newlines in data URL mediatype in Python |
 | CVE-2025-15366 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: IMAP command injection in user-controlled commands |
 | CVE-2025-15367 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: POP3 command injection in user-controlled commands |
 | CVE-2025-4330 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Extraction filter bypass for linking outside extraction directory |
 | CVE-2025-4435 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: Tarfile extracts filtered members when errorlevel=0 |
+| CVE-2025-4516 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
+| CVE-2025-6069 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2025-8194 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-71.el8_10 | cpython: Cpython infinite loop when parsing a tarfile |
+| CVE-2025-8291 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
+| CVE-2026-0672 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2026-1299 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: email header injection due to unquoted newlines |
 | CVE-2022-49043 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-18.el8_10.2 | libxml: use-after-free in xmlXIncludeAddNode |
 | CVE-2023-28484 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-16.el8_8.1 | libxml2: NULL dereference in xmlSchemaFixupComplexType |
 | CVE-2023-29469 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-16.el8_8.1 | libxml2: Hashing of empty dict strings isn't deterministic |
@@ -345,6 +372,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0990 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | - | libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing |
 | CVE-2026-1757 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | - | libxml2: Memory Leak Leading to Local Denial of Service in xmllint Interactive Shell |
 | CVE-2007-4559 | MEDIUM | python3-pip-wheel | 9.0.3-22.el8 | 9.0.3-23.el8 | python: tarfile module directory traversal |
+| CVE-2023-45803 | MEDIUM | python3-pip-wheel | 9.0.3-22.el8 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 9.0.3-22.el8 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 9.0.3-22.el8 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2023-32681 | MEDIUM | python3-requests | 2.20.0-2.1.el8_1 | 2.20.0-3.el8_8 | python-requests: Unintended leak of Proxy-Authorization header |
@@ -354,6 +382,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2021-35938 | MEDIUM | python3-rpm | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: races with chown/chmod/capabilities calls during installation |
 | CVE-2021-35939 | MEDIUM | python3-rpm | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: checks for unsafe symlinks are not performed for intermediary directories |
 | CVE-2025-47273 | MEDIUM | python3-setuptools-wheel | 39.2.0-6.el8_7.1 | 39.2.0-9.el8_10 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
+| CVE-2022-0235 | MEDIUM | python3-subscription-manager-rhsm | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
+| CVE-2022-0235 | MEDIUM | python3-syspurpose | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
 | CVE-2023-43804 | MEDIUM | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-5.el8_9.2 | python-urllib3: Cookie request header isn't stripped during cross-origin redirects |
 | CVE-2023-45803 | MEDIUM | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-5.el8_9.2 | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2024-37891 | MEDIUM | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-8.el8_10 | urllib3: proxy-authorization request header is not stripped during cross-origin redirects |
@@ -368,6 +398,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2021-35939 | MEDIUM | rpm-libs | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: checks for unsafe symlinks are not performed for intermediary directories |
 | CVE-2020-24736 | MEDIUM | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-18.el8_8 | sqlite: Crash due to misuse of window functions. |
 | CVE-2023-7104 | MEDIUM | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-19.el8_9 | sqlite: heap-buffer-overflow at sessionfuzz |
+| CVE-2022-0235 | MEDIUM | subscription-manager | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
+| CVE-2022-0235 | MEDIUM | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
 | CVE-2018-20839 | MEDIUM | systemd | 239-68.el8_7.4 | - | systemd: mishandling of the current keyboard mode check leading to passwords being disclosed in cleartext to attacker |
 | CVE-2023-26604 | MEDIUM | systemd | 239-68.el8_7.4 | 239-74.el8_8.2 | systemd: privilege escalation via the less pager |
 | CVE-2023-7008 | MEDIUM | systemd | 239-68.el8_7.4 | 239-82.el8 | systemd-resolved: Unsigned name response in signed zone is not refused when DNSSEC=yes |
@@ -382,6 +414,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4598 | MEDIUM | systemd-pam | 239-68.el8_7.4 | - | systemd-coredump: race condition that allows a local attacker to crash a SUID program and gain read access to the resulting core dump |
 | CVE-2005-2541 | MEDIUM | tar | 2:1.30-6.el8_7.1 | - | tar: does not properly warn the user when extracting setuid or setgid files |
 | CVE-2025-45582 | MEDIUM | tar | 2:1.30-6.el8_7.1 | - | tar: Tar path traversal |
+| CVE-2025-64118 | MEDIUM | tar | 2:1.30-6.el8_7.1 | - | node-tar: tar: node-tar: Information disclosure via reading a truncated tar file |
 | CVE-2023-22745 | MEDIUM | tpm2-tss | 2.3.2-4.el8 | 2.3.2-5.el8 | tpm2-tss: Buffer Overlow in TSS2_RC_Decode |
 | CVE-2025-14104 | MEDIUM | util-linux | 2.32.1-39.el8_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-29768 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim vulnerable to potential data loss with zip.vim and special crafted zip files |
@@ -533,6 +566,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-23745 | HIGH | tar | 2:1.34-9.el9_7 | - | node-tar: tar: node-tar: Arbitrary file overwrite and symlink poisoning via unsanitized linkpaths in archives |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-11081 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils out-of-bounds read |
@@ -582,6 +616,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2005-2541 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: does not properly warn the user when extracting setuid or setgid files |
+| CVE-2025-64118 | MEDIUM | tar | 2:1.34-9.el9_7 | - | node-tar: tar: node-tar: Information disclosure via reading a truncated tar file |
 | CVE-2024-29040 | MEDIUM | tpm2-tss | 3.2.3-1.el9 | - | tpm2-tss: arbitrary quote data may go undetected by Fapi_VerifyQuote |
 | CVE-2025-14104 | MEDIUM | util-linux | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | util-linux-core | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
