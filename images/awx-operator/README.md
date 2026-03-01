@@ -4,13 +4,13 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-02-28 12:25:50 UTC
+**Scanned:** 2026-03-01 00:34:18 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 47 (🔧46) | 199 (🔧120) | 217 (🔧17) | 464 | 🔧 184 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 48 (🔧47) | 199 (🔧120) | 217 (🔧17) | 465 | 🔧 185 |
 | ubi-micro | 0 | 0 | 4 | 11 | 15 | 🔧 0 |
 | ubi-minimal | 0 | 0 | 44 | 51 | 95 | 🔧 0 |
 | ubi | 0 | 🟠 1 | 78 | 198 | 277 | 🔧 0 |
@@ -63,6 +63,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-66471 | HIGH | urllib3 | 1.26.20 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | urllib3 | 1.26.20 | 2.6.3 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2026-24049 | HIGH | wheel | 0.43.0 | 0.46.2 | wheel: wheel: Privilege Escalation or Arbitrary Code Execution via malicious wheel file unpacking |
+| CVE-2026-24051 | HIGH | go.opentelemetry.io/otel/sdk | v1.23.1 | 1.40.0 | OpenTelemetry Go SDK Vulnerable to Arbitrary Code Execution via PATH Hijacking |
 | CVE-2025-22868 | HIGH | golang.org/x/oauth2 | v0.21.0 | 0.27.0 | golang.org/x/oauth2/jws: Unexpected memory consumption during token parsing in golang.org/x/oauth2/jws |
 | CVE-2024-34156 | HIGH | stdlib | v1.22.5 | 1.22.7, 1.23.1 | encoding/gob: golang: Calling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion |
 | CVE-2025-47907 | HIGH | stdlib | v1.22.5 | 1.23.12, 1.24.6 | database/sql: Postgres Scan Race Condition |
