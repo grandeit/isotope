@@ -4,7 +4,7 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-03-11 03:05:19 UTC
+**Scanned:** 2026-03-11 14:20:02 UTC
 
 ## Overview
 
@@ -171,26 +171,26 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0990 | MEDIUM | libxml2 | 2.9.13-14.el9_7 | - | libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing |
 | CVE-2026-1757 | MEDIUM | libxml2 | 2.9.13-14.el9_7 | - | libxml2: Memory Leak Leading to Local Denial of Service in xmllint Interactive Shell |
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
-| CVE-2025-11468 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: Missing character filtering in Python |
-| CVE-2025-12781 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
-| CVE-2025-13837 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: Out-of-memory when loading Plist |
-| CVE-2025-15282 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
-| CVE-2025-15366 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: IMAP command injection in user-controlled commands |
-| CVE-2025-15367 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: POP3 command injection in user-controlled commands |
-| CVE-2025-4516 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
-| CVE-2026-0672 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: Header injection in http.cookies.Morsel in Python |
-| CVE-2026-0865 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
-| CVE-2026-1299 | MEDIUM | python3 | 3.9.25-3.el9_7 | - | cpython: email header injection due to unquoted newlines |
-| CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: Missing character filtering in Python |
-| CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
-| CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: Out-of-memory when loading Plist |
-| CVE-2025-15282 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: Header injection via newlines in data URL mediatype in Python |
-| CVE-2025-15366 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: IMAP command injection in user-controlled commands |
-| CVE-2025-15367 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: POP3 command injection in user-controlled commands |
-| CVE-2025-4516 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: python: CPython DecodeError Handling Vulnerability |
-| CVE-2026-0672 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: Header injection in http.cookies.Morsel in Python |
-| CVE-2026-0865 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
-| CVE-2026-1299 | MEDIUM | python3-libs | 3.9.25-3.el9_7 | - | cpython: email header injection due to unquoted newlines |
+| CVE-2025-11468 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: Missing character filtering in Python |
+| CVE-2025-12781 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
+| CVE-2025-13837 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: Header injection via newlines in data URL mediatype in Python |
+| CVE-2025-15366 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: IMAP command injection in user-controlled commands |
+| CVE-2025-15367 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: POP3 command injection in user-controlled commands |
+| CVE-2025-4516 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
+| CVE-2026-0672 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2026-1299 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: email header injection due to unquoted newlines |
+| CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Missing character filtering in Python |
+| CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
+| CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Out-of-memory when loading Plist |
+| CVE-2025-15282 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Header injection via newlines in data URL mediatype in Python |
+| CVE-2025-15366 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: IMAP command injection in user-controlled commands |
+| CVE-2025-15367 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: POP3 command injection in user-controlled commands |
+| CVE-2025-4516 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
+| CVE-2026-0672 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0865 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2026-1299 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: email header injection due to unquoted newlines |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
