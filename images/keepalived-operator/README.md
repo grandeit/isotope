@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-03-11 15:19:21 UTC
+**Scanned:** 2026-03-12 03:53:16 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 125 (🔧123) | 374 (🔧286) | 266 (🔧34) | 779 | 🔧 463 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 125 (🔧123) | 380 (🔧292) | 266 (🔧34) | 785 | 🔧 463 |
 | ubi-minimal | 0 | 0 | 21 (🔧1) | 48 | 69 | 🔧 1 |
 | ubi | 0 | 🟠 1 | 55 (🔧1) | 196 | 252 | 🔧 1 |
 
@@ -463,6 +463,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61725 | MEDIUM | stdlib | v1.18.10 | 1.24.8, 1.25.2 | net/mail: Excessive CPU consumption in ParseAddress in net/mail |
 | CVE-2025-61727 | MEDIUM | stdlib | v1.18.10 | 1.24.11, 1.25.5 | golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.18.10 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
+| CVE-2026-25679 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
+| CVE-2026-27142 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20200302150141-5c8b2ff67527 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 | CVE-2023-24532 | MEDIUM | stdlib | v1.18.10 | 1.19.7, 1.20.2 | golang: crypto/internal/nistec: specific unreduced P-256 scalars produce incorrect results |
 | CVE-2023-29406 | MEDIUM | stdlib | v1.18.10 | 1.19.11, 1.20.6 | golang: net/http: insufficient sanitization of Host header |
@@ -499,6 +501,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61725 | MEDIUM | stdlib | v1.18.10 | 1.24.8, 1.25.2 | net/mail: Excessive CPU consumption in ParseAddress in net/mail |
 | CVE-2025-61727 | MEDIUM | stdlib | v1.18.10 | 1.24.11, 1.25.5 | golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.18.10 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
+| CVE-2026-25679 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
+| CVE-2026-27142 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20180926160741-c2ed4eda69e7 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 | CVE-2023-24532 | MEDIUM | stdlib | v1.18.10 | 1.19.7, 1.20.2 | golang: crypto/internal/nistec: specific unreduced P-256 scalars produce incorrect results |
 | CVE-2023-29406 | MEDIUM | stdlib | v1.18.10 | 1.19.11, 1.20.6 | golang: net/http: insufficient sanitization of Host header |
@@ -535,6 +539,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61725 | MEDIUM | stdlib | v1.18.10 | 1.24.8, 1.25.2 | net/mail: Excessive CPU consumption in ParseAddress in net/mail |
 | CVE-2025-61727 | MEDIUM | stdlib | v1.18.10 | 1.24.11, 1.25.5 | golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.18.10 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
+| CVE-2026-25679 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
+| CVE-2026-27142 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
 
 ### ubi-minimal
 
