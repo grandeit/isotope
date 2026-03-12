@@ -4,13 +4,13 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-03-11 14:20:02 UTC
+**Scanned:** 2026-03-12 03:08:06 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 15 (🔧14) | 61 (🔧40) | 56 (🔧12) | 134 | 🔧 70 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 15 (🔧14) | 63 (🔧42) | 56 (🔧12) | 136 | 🔧 70 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 0 | 4 | 11 | 15 | 🔧 0 |
 | ubi-minimal | 0 | 0 | 20 | 44 | 64 | 🔧 0 |
@@ -102,6 +102,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61725 | MEDIUM | stdlib | v1.21.13 | 1.24.8, 1.25.2 | net/mail: Excessive CPU consumption in ParseAddress in net/mail |
 | CVE-2025-61727 | MEDIUM | stdlib | v1.21.13 | 1.24.11, 1.25.5 | golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.21.13 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
+| CVE-2026-25679 | MEDIUM | stdlib | v1.21.13 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
+| CVE-2026-27142 | MEDIUM | stdlib | v1.21.13 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
 
 ### distroless
 
