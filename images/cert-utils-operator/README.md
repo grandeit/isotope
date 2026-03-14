@@ -4,17 +4,17 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-03-13 13:28:07 UTC
+**Scanned:** 2026-03-14 01:32:34 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 3 (🔧3) | 🟠 40 (🔧39) | 138 (🔧103) | 112 (🔧20) | 293 | 🔧 165 |
+| **upstream** | 🔴 3 (🔧3) | 🟠 40 (🔧40) | 153 (🔧108) | 120 (🔧20) | 316 | 🔧 171 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
-| ubi-micro | 0 | 0 | 4 | 11 | 15 | 🔧 0 |
-| ubi-minimal | 0 | 0 | 20 | 44 | 64 | 🔧 0 |
-| ubi | 0 | 🟠 1 | 54 | 196 | 251 | 🔧 0 |
+| ubi-micro | 0 | 0 | 1 | 5 | 6 | 🔧 0 |
+| ubi-minimal | 0 | 0 | 24 | 39 | 63 | 🔧 0 |
+| ubi | 0 | 0 | 60 | 204 | 264 | 🔧 0 |
 
 ## Details
 
@@ -27,7 +27,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-45337 | CRITICAL | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.31.0 | golang.org/x/crypto/ssh: Misuse of ServerConfig.PublicKeyCallback may cause authorization bypass in golang.org/x/crypto |
 | CVE-2024-24790 | CRITICAL | stdlib | v1.19.13 | 1.21.11, 1.22.4 | golang: net/netip: Unexpected behavior from Is methods for IPv4-mapped IPv6 addresses |
 | CVE-2025-68121 | CRITICAL | stdlib | v1.19.13 | 1.24.13, 1.25.7, 1.26.0-rc.3 | crypto/tls: Unexpected session resumption in crypto/tls |
-| CVE-2025-6176 | HIGH | brotli | 1.0.6-3.el8 | - | Scrapy: python-scrapy: brotli: Python brotli decompression bomb DoS |
+| CVE-2025-6176 | HIGH | brotli | 1.0.6-3.el8 | 1.0.6-4.el8_10 | Scrapy: python-scrapy: brotli: Python brotli decompression bomb DoS |
 | CVE-2024-2961 | HIGH | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.1 | glibc: Out of bounds write in iconv may lead to remote code execution |
 | CVE-2024-33599 | HIGH | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.2 | glibc: stack-based buffer overflow in netgroup cache |
 | CVE-2024-2961 | HIGH | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.1 | glibc: Out of bounds write in iconv may lead to remote code execution |
@@ -73,6 +73,10 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-2398 | MEDIUM | curl | 7.61.1-33.el8 | 7.61.1-34.el8_10.2 | curl: HTTP/2 push headers memory-leak |
 | CVE-2025-14017 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl | 7.61.1-33.el8 | 7.61.1-34.el8_10.9 | curl: libcurl: Curl out of bounds read for cookie path |
+| CVE-2026-1965 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
+| CVE-2026-3783 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
+| CVE-2026-3784 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
+| CVE-2026-3805 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
 | CVE-2019-8905 | MEDIUM | file-libs | 5.33-25.el8 | - | file: stack-based buffer over-read in do_core_note in readelf.c |
 | CVE-2024-34397 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-166.el8_10 | glib2: Signal subscription vulnerabilities |
 | CVE-2024-52533 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-166.el8_10 | glib: buffer overflow in set_connect_msg() |
@@ -102,6 +106,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-0553 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_9.1 | gnutls: incomplete fix for CVE-2023-5981 |
 | CVE-2024-12243 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.3 | gnutls: GnuTLS Impacted by Inefficient DER Decoding in libtasn1 Leading to Remote DoS |
 | CVE-2024-28834 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_9.3 | gnutls: vulnerable to Minerva side-channel information leak |
+| CVE-2025-14831 | MEDIUM | gnutls | 3.6.16-8.el8_9 | - | gnutls: GnuTLS: Denial of Service via excessive resource consumption during certificate verification |
 | CVE-2025-32988 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.4 | gnutls: Vulnerability in GnuTLS otherName SAN export |
 | CVE-2025-32990 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.4 | gnutls: Vulnerability in GnuTLS certtool template parsing |
 | CVE-2025-6395 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.4 | gnutls: NULL pointer dereference in _gnutls_figure_common_ciphersuite() |
@@ -112,30 +117,40 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-57970 | MEDIUM | libarchive | 3.3.3-5.el8 | - | libarchive: heap buffer over-read in header_gnu_longlink |
 | CVE-2025-25724 | MEDIUM | libarchive | 3.3.3-5.el8 | - | libarchive: Buffer Overflow vulnerability in libarchive |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.3.3-5.el8 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
-| CVE-2025-14104 | MEDIUM | libblkid | 2.32.1-43.el8 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2025-14104 | MEDIUM | libblkid | 2.32.1-43.el8 | 2.32.1-48.el8_10 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2023-46218 | MEDIUM | libcurl | 7.61.1-33.el8 | 7.61.1-33.el8_9.5 | curl: information disclosure by exploiting a mixed case flaw |
 | CVE-2024-2398 | MEDIUM | libcurl | 7.61.1-33.el8 | 7.61.1-34.el8_10.2 | curl: HTTP/2 push headers memory-leak |
 | CVE-2025-14017 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | libcurl | 7.61.1-33.el8 | 7.61.1-34.el8_10.9 | curl: libcurl: Curl out of bounds read for cookie path |
+| CVE-2026-1965 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
+| CVE-2026-3783 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
+| CVE-2026-3784 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
+| CVE-2026-3805 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
 | CVE-2020-11023 | MEDIUM | libgcc | 8.5.0-20.el8 | 8.5.0-23.el8_10 | jquery: Untrusted code execution via <option> tag in HTML passed to DOM manipulation methods |
 | CVE-2019-12904 | MEDIUM | libgcrypt | 1.8.5-7.el8_6 | - | Libgcrypt: physical addresses being available to other processes leads to a flush-and-reload side-channel attack |
 | CVE-2024-2236 | MEDIUM | libgcrypt | 1.8.5-7.el8_6 | - | libgcrypt: vulnerable to Marvin Attack |
-| CVE-2025-14104 | MEDIUM | libmount | 2.32.1-43.el8 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2025-14104 | MEDIUM | libmount | 2.32.1-43.el8 | 2.32.1-48.el8_10 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2024-28182 | MEDIUM | libnghttp2 | 1.33.0-5.el8_9 | 1.33.0-6.el8_10.1 | nghttp2: CONTINUATION frames DoS |
-| CVE-2025-14104 | MEDIUM | libsmartcols | 2.32.1-43.el8 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2025-14104 | MEDIUM | libsmartcols | 2.32.1-43.el8 | 2.32.1-48.el8_10 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2023-48795 | MEDIUM | libssh | 0.9.6-10.el8_8 | 0.9.6-13.el8_9 | ssh: Prefix truncation attack on Binary Packet Protocol (BPP) |
 | CVE-2025-5318 | MEDIUM | libssh | 0.9.6-10.el8_8 | 0.9.6-15.el8_10 | libssh: out-of-bounds read in sftp_handle() |
 | CVE-2025-5351 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: Double Free Vulnerability in libssh Key Export Functions |
 | CVE-2025-5372 | MEDIUM | libssh | 0.9.6-10.el8_8 | 0.9.6-16.el8_10 | libssh: Incorrect Return Code Handling in ssh_kdf() in libssh |
 | CVE-2025-8114 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: NULL Pointer Dereference in libssh KEX Session ID Calculation |
+| CVE-2026-0964 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: Improper sanitation of paths received from SCP servers |
+| CVE-2026-0966 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: Buffer underflow in ssh_get_hexa() on invalid input |
+| CVE-2026-3731 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: libssh: Denial of Service via out-of-bounds read in SFTP extension name handler |
 | CVE-2023-48795 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | 0.9.6-13.el8_9 | ssh: Prefix truncation attack on Binary Packet Protocol (BPP) |
 | CVE-2025-5318 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | 0.9.6-15.el8_10 | libssh: out-of-bounds read in sftp_handle() |
 | CVE-2025-5351 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: Double Free Vulnerability in libssh Key Export Functions |
 | CVE-2025-5372 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | 0.9.6-16.el8_10 | libssh: Incorrect Return Code Handling in ssh_kdf() in libssh |
 | CVE-2025-8114 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: NULL Pointer Dereference in libssh KEX Session ID Calculation |
+| CVE-2026-0964 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: Improper sanitation of paths received from SCP servers |
+| CVE-2026-0966 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: Buffer underflow in ssh_get_hexa() on invalid input |
+| CVE-2026-3731 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: libssh: Denial of Service via out-of-bounds read in SFTP extension name handler |
 | CVE-2020-11023 | MEDIUM | libstdc++ | 8.5.0-20.el8 | 8.5.0-23.el8_10 | jquery: Untrusted code execution via <option> tag in HTML passed to DOM manipulation methods |
 | CVE-2024-12133 | MEDIUM | libtasn1 | 4.13-4.el8_7 | 4.13-5.el8_10 | libtasn1: Inefficient DER Decoding in libtasn1 Leading to Potential Remote DoS |
-| CVE-2025-14104 | MEDIUM | libuuid | 2.32.1-43.el8 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2025-14104 | MEDIUM | libuuid | 2.32.1-43.el8 | 2.32.1-48.el8_10 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2022-49043 | MEDIUM | libxml2 | 2.9.7-18.el8_9 | 2.9.7-18.el8_10.2 | libxml: use-after-free in xmlXIncludeAddNode |
 | CVE-2024-25062 | MEDIUM | libxml2 | 2.9.7-18.el8_9 | 2.9.7-18.el8_10.1 | libxml2: use-after-free in XMLReader |
 | CVE-2025-32414 | MEDIUM | libxml2 | 2.9.7-18.el8_9 | 2.9.7-20.el8_10 | libxml2: Out-of-Bounds Read in libxml2 |
@@ -148,8 +163,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2019-17543 | MEDIUM | lz4-libs | 1.8.3-3.el8_4 | 1.8.3-5.el8_10 | lz4: heap-based buffer overflow in LZ4_write32 |
 | CVE-2026-22185 | MEDIUM | openldap | 2.4.46-18.el8 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2023-0466 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | - | openssl: Certificate policy check not enabled |
-| CVE-2025-11187 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | - | openssl: OpenSSL: Arbitrary code execution or denial of service through crafted PKCS#12 file |
-| CVE-2025-69419 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | - | openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing |
+| CVE-2025-69419 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | 1:1.1.1k-15.el8_6 | openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing |
 | CVE-2025-9230 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | 1:1.1.1k-14.el8_10 | openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap |
 | CVE-2021-35937 | MEDIUM | rpm | 4.14.3-26.el8 | 4.14.3-28.el8_9 | rpm: TOCTOU race in checks for unsafe symlinks |
 | CVE-2021-35938 | MEDIUM | rpm | 4.14.3-26.el8 | 4.14.3-28.el8_9 | rpm: races with chown/chmod/capabilities calls during installation |
@@ -160,6 +174,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2018-20839 | MEDIUM | systemd-libs | 239-78.el8 | - | systemd: mishandling of the current keyboard mode check leading to passwords being disclosed in cleartext to attacker |
 | CVE-2023-7008 | MEDIUM | systemd-libs | 239-78.el8 | 239-82.el8 | systemd-resolved: Unsigned name response in signed zone is not refused when DNSSEC=yes |
 | CVE-2025-4598 | MEDIUM | systemd-libs | 239-78.el8 | - | systemd-coredump: race condition that allows a local attacker to crash a SUID program and gain read access to the resulting core dump |
+| CVE-2026-4105 | MEDIUM | systemd-libs | 239-78.el8 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
 | CVE-2023-48795 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.17.0, 0.0.0-20231218163308-9d2ee975ef9f | ssh: Prefix truncation attack on Binary Packet Protocol (BPP) |
 | CVE-2025-47914 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.45.0 | golang.org/x/crypto/ssh/agent: SSH Agent servers: Denial of Service due to malformed messages |
 | CVE-2025-58181 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.45.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via unbounded memory consumption in GSSAPI authentication |
@@ -215,9 +230,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
-| CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
-| CVE-2026-0915 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
-| CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
 
 ### ubi-minimal
 
@@ -225,84 +237,93 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
+| CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
+| CVE-2026-3783 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
+| CVE-2026-3784 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
+| CVE-2026-3805 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
-| CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
-| CVE-2026-0915 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
-| CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
-| CVE-2025-14104 | MEDIUM | libblkid | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
-| CVE-2025-14104 | MEDIUM | libmount | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
-| CVE-2025-14104 | MEDIUM | libsmartcols | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
-| CVE-2025-14104 | MEDIUM | libuuid | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
+| CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
+| CVE-2026-3784 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
+| CVE-2026-3805 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
 | CVE-2026-0990 | MEDIUM | libxml2 | 2.9.13-14.el9_7 | - | libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing |
 | CVE-2026-1757 | MEDIUM | libxml2 | 2.9.13-14.el9_7 | - | libxml2: Memory Leak Leading to Local Denial of Service in xmllint Interactive Shell |
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
+| CVE-2026-2100 | MEDIUM | p11-kit | 0.25.3-3.el9_5 | - | p11-kit: p11-kit: NULL dereference via C_DeriveKey with specific NULL parameters |
+| CVE-2026-2100 | MEDIUM | p11-kit-trust | 0.25.3-3.el9_5 | - | p11-kit: p11-kit: NULL dereference via C_DeriveKey with specific NULL parameters |
+| CVE-2026-4105 | MEDIUM | systemd-libs | 252-55.el9_7.7 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
 
 ### ubi
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-23745 | HIGH | tar | 2:1.34-9.el9_7 | - | node-tar: tar: node-tar: Arbitrary file overwrite and symlink poisoning via unsanitized linkpaths in archives |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
+| CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
+| CVE-2026-3783 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
+| CVE-2026-3784 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
+| CVE-2026-3805 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
 | CVE-2025-11081 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils out-of-bounds read |
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
+| CVE-2026-3441 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils: Information disclosure via specially crafted XCOFF object file |
+| CVE-2026-3442 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils: Information disclosure or denial of service via out-of-bounds read in bfd linker |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
-| CVE-2026-0915 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
-| CVE-2026-0915 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
-| CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
-| CVE-2025-14104 | MEDIUM | libblkid | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
-| CVE-2025-14104 | MEDIUM | libfdisk | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
-| CVE-2025-14104 | MEDIUM | libmount | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
-| CVE-2025-14104 | MEDIUM | libsmartcols | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
-| CVE-2025-14104 | MEDIUM | libuuid | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
+| CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
+| CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
+| CVE-2026-3784 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
+| CVE-2026-3805 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
 | CVE-2026-0990 | MEDIUM | libxml2 | 2.9.13-14.el9_7 | - | libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing |
 | CVE-2026-1757 | MEDIUM | libxml2 | 2.9.13-14.el9_7 | - | libxml2: Memory Leak Leading to Local Denial of Service in xmllint Interactive Shell |
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
+| CVE-2026-2100 | MEDIUM | p11-kit | 0.25.3-3.el9_5 | - | p11-kit: p11-kit: NULL dereference via C_DeriveKey with specific NULL parameters |
+| CVE-2026-2100 | MEDIUM | p11-kit-trust | 0.25.3-3.el9_5 | - | p11-kit: p11-kit: NULL dereference via C_DeriveKey with specific NULL parameters |
 | CVE-2025-11468 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-15282 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: Header injection via newlines in data URL mediatype in Python |
-| CVE-2025-15366 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: IMAP command injection in user-controlled commands |
-| CVE-2025-15367 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: POP3 command injection in user-controlled commands |
 | CVE-2025-4516 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2026-0672 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
-| CVE-2026-0865 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
-| CVE-2026-1299 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: email header injection due to unquoted newlines |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-15282 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Header injection via newlines in data URL mediatype in Python |
-| CVE-2025-15366 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: IMAP command injection in user-controlled commands |
-| CVE-2025-15367 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: POP3 command injection in user-controlled commands |
 | CVE-2025-4516 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2026-0672 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
-| CVE-2026-0865 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
-| CVE-2026-1299 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: email header injection due to unquoted newlines |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
+| CVE-2026-4105 | MEDIUM | systemd | 252-55.el9_7.7 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
+| CVE-2026-4105 | MEDIUM | systemd-libs | 252-55.el9_7.7 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
+| CVE-2026-4105 | MEDIUM | systemd-pam | 252-55.el9_7.7 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
+| CVE-2026-4105 | MEDIUM | systemd-rpm-macros | 252-55.el9_7.7 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
 | CVE-2005-2541 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: does not properly warn the user when extracting setuid or setgid files |
 | CVE-2025-64118 | MEDIUM | tar | 2:1.34-9.el9_7 | - | node-tar: tar: node-tar: Information disclosure via reading a truncated tar file |
+| CVE-2026-26960 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: node-tar: node-tar: Arbitrary file read/write via malicious archive hardlink creation |
+| CVE-2026-31802 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: tar: File overwrite via drive-relative symlink traversal |
 | CVE-2024-29040 | MEDIUM | tpm2-tss | 3.2.3-1.el9 | - | tpm2-tss: arbitrary quote data may go undetected by Fapi_VerifyQuote |
-| CVE-2025-14104 | MEDIUM | util-linux | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
-| CVE-2025-14104 | MEDIUM | util-linux-core | 2.37.4-21.el9_7 | - | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-29768 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim vulnerable to potential data loss with zip.vim and special crafted zip files |
+| CVE-2026-25749 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim: Arbitrary code execution via 'helpfile' option processing |
+| CVE-2026-28417 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim: Arbitrary code execution via OS command injection in the netrw plugin |
+| CVE-2026-28418 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim: Information disclosure via heap-based buffer overflow in Emacs-style tags file parsing |
+| CVE-2026-28419 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim: Information disclosure and denial of service via malformed tags file |
+| CVE-2026-28420 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim: Information disclosure and denial of service via crafted Unicode characters in terminal emulator |
+| CVE-2026-28421 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim: Denial of service and information disclosure via crafted swap file |
 
 ---
 *Generated by [Trivy](https://trivy.dev)*
