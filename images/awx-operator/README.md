@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-03-14 12:28:23 UTC
+**Scanned:** 2026-03-15 00:37:04 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 19 (🔧19) | 146 (🔧68) | 218 (🔧10) | 384 | 🔧 98 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 20 (🔧19) | 146 (🔧68) | 222 (🔧10) | 389 | 🔧 98 |
 | ubi-micro | 0 | 0 | 1 | 5 | 6 | 🔧 0 |
-| ubi-minimal | 0 | 0 | 42 | 48 | 90 | 🔧 0 |
-| ubi | 0 | 0 | 78 | 208 | 286 | 🔧 0 |
+| ubi-minimal | 0 | 🟠 1 | 42 | 52 | 95 | 🔧 0 |
+| ubi | 0 | 🟠 1 | 78 | 212 | 291 | 🔧 0 |
 
 ## Details
 
@@ -26,6 +26,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-68121 | CRITICAL | stdlib | v1.24.4 | 1.24.13, 1.25.7, 1.26.0-rc.3 | crypto/tls: Unexpected session resumption in crypto/tls |
 | CVE-2025-59375 | HIGH | expat | 2.5.0-5.el9_6 | 2.5.0-5.el9_7.1 | expat: libexpat in Expat allows attackers to trigger large dynamic memory allocations via a small document that is submitted for parsing |
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | 2.3.3-5.el9_7 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
+| CVE-2026-4111 | HIGH | libarchive | 3.5.3-6.el9_6 | - | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | 1.26.5-6.el9_7.1 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | python3-urllib3 | 1.26.5-6.el9 | 1.26.5-6.el9_7.1 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | python3-urllib3 | 1.26.5-6.el9 | 1.26.5-6.el9_7.1 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
@@ -200,6 +201,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-4111 | HIGH | libarchive | 3.5.3-6.el9_6 | - | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
@@ -247,6 +249,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-4111 | HIGH | libarchive | 3.5.3-6.el9_6 | - | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
