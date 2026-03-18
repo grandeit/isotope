@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-03-17 15:24:14 UTC
+**Scanned:** 2026-03-18 03:57:19 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 125 (🔧124) | 404 (🔧308) | 288 (🔧34) | 831 | 🔧 480 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 125 (🔧124) | 411 (🔧308) | 288 (🔧34) | 838 | 🔧 480 |
 | ubi-minimal | 0 | 🟠 1 | 25 (🔧1) | 46 | 72 | 🔧 1 |
-| ubi | 0 | 🟠 1 | 61 (🔧1) | 208 | 270 | 🔧 1 |
+| ubi | 0 | 🟠 1 | 68 (🔧1) | 208 | 277 | 🔧 1 |
 
 ## Details
 
@@ -191,6 +191,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-45492 | MEDIUM | expat | 2.2.5-10.el8_7.1 | 2.2.5-15.el8_10 | libexpat: integer overflow |
 | CVE-2024-50602 | MEDIUM | expat | 2.2.5-10.el8_7.1 | 2.2.5-16.el8_10 | libexpat: expat: DoS via XML_ResumeParser |
 | CVE-2024-8176 | MEDIUM | expat | 2.2.5-10.el8_7.1 | 2.2.5-17.el8_10 | libexpat: expat: Improper Restriction of XML Entity Expansion Depth in libexpat |
+| CVE-2026-32776 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Denial of Service due to NULL pointer dereference |
+| CVE-2026-32777 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing |
+| CVE-2026-32778 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition |
 | CVE-2019-8905 | MEDIUM | file-libs | 5.33-21.el8 | - | file: stack-based buffer over-read in do_core_note in readelf.c |
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
 | CVE-2026-3441 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: GNU Binutils: Information disclosure via specially crafted XCOFF object file |
@@ -342,6 +345,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0672 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-73.el8_10 | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2026-1299 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-73.el8_10 | cpython: email header injection due to unquoted newlines |
+| CVE-2026-3644 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: Incomplete control character validation in http.cookies |
+| CVE-2026-4224 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-47273 | MEDIUM | platform-python-setuptools | 39.2.0-6.el8_7.1 | 39.2.0-9.el8_10 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
 | CVE-2022-0235 | MEDIUM | python3-cloud-what | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
 | CVE-2024-3651 | MEDIUM | python3-idna | 2.5-5.el8 | 2.5-7.el8_10 | python-idna: potential DoS via resource consumption via specially crafted inputs to idna.encode() |
@@ -371,6 +376,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0672 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-73.el8_10 | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2026-1299 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-73.el8_10 | cpython: email header injection due to unquoted newlines |
+| CVE-2026-3644 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: Incomplete control character validation in http.cookies |
+| CVE-2026-4224 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2022-49043 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-18.el8_10.2 | libxml: use-after-free in xmlXIncludeAddNode |
 | CVE-2023-28484 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-16.el8_8.1 | libxml2: NULL dereference in xmlSchemaFixupComplexType |
 | CVE-2023-29469 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-16.el8_8.1 | libxml2: Hashing of empty dict strings isn't deterministic |
@@ -608,6 +615,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-3783 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
 | CVE-2026-3805 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
+| CVE-2026-32776 | MEDIUM | expat | 2.5.0-5.el9_7.1 | - | libexpat: libexpat: Denial of Service due to NULL pointer dereference |
+| CVE-2026-32777 | MEDIUM | expat | 2.5.0-5.el9_7.1 | - | libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing |
+| CVE-2026-32778 | MEDIUM | expat | 2.5.0-5.el9_7.1 | - | libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition |
 | CVE-2025-11081 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils out-of-bounds read |
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
@@ -637,12 +647,16 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-15282 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: Header injection via newlines in data URL mediatype in Python |
 | CVE-2025-4516 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2026-0672 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-3644 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: Incomplete control character validation in http.cookies |
+| CVE-2026-4224 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-15282 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Header injection via newlines in data URL mediatype in Python |
 | CVE-2025-4516 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2026-0672 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-3644 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Incomplete control character validation in http.cookies |
+| CVE-2026-4224 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
