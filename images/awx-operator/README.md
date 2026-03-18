@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-03-17 12:36:42 UTC
+**Scanned:** 2026-03-18 00:33:59 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 20 (🔧19) | 146 (🔧68) | 222 (🔧10) | 389 | 🔧 98 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 21 (🔧20) | 157 (🔧68) | 222 (🔧10) | 401 | 🔧 99 |
 | ubi-micro | 0 | 0 | 1 | 5 | 6 | 🔧 0 |
-| ubi-minimal | 0 | 🟠 1 | 42 | 52 | 95 | 🔧 0 |
-| ubi | 0 | 🟠 1 | 78 | 212 | 291 | 🔧 0 |
+| ubi-minimal | 0 | 🟠 1 | 49 | 52 | 102 | 🔧 0 |
+| ubi | 0 | 🟠 1 | 89 | 212 | 302 | 🔧 0 |
 
 ## Details
 
@@ -34,6 +34,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-26007 | HIGH | cryptography | 45.0.7 | 46.0.5 | cryptography: cryptography Subgroup Attack Due to Missing Subgroup Validation for SECT Curves |
 | CVE-2026-23949 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context: jaraco.context: Path traversal via malicious tar archives |
 | CVE-2026-23490 | HIGH | pyasn1 | 0.6.1 | 0.6.2 | pyasn1: pyasn1: Denial of Service due to memory exhaustion from malformed RELATIVE-OID |
+| CVE-2026-30922 | HIGH | pyasn1 | 0.6.1 | 0.6.3 | Denial of Service in pyasn1 via Unbounded Recursion |
 | CVE-2025-66418 | HIGH | urllib3 | 2.5.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 2.5.0 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | urllib3 | 2.5.0 | 2.6.3 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
@@ -51,6 +52,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-3783 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
 | CVE-2026-3805 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
+| CVE-2026-32776 | MEDIUM | expat | 2.5.0-5.el9_6 | - | libexpat: libexpat: Denial of Service due to NULL pointer dereference |
+| CVE-2026-32777 | MEDIUM | expat | 2.5.0-5.el9_6 | - | libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing |
+| CVE-2026-32778 | MEDIUM | expat | 2.5.0-5.el9_6 | - | libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition |
 | CVE-2025-11081 | MEDIUM | gdb-gdbserver | 14.2-4.1.el9_6 | - | binutils: GNU Binutils out-of-bounds read |
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 14.2-4.1.el9_6 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 14.2-4.1.el9_6 | - | binutils: GNU Binutils Linker heap-based overflow |
@@ -101,6 +105,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0672 | MEDIUM | python3 | 3.9.21-2.el9_6.2 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3 | 3.9.21-2.el9_6.2 | 3.9.25-3.el9_7.1 | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2026-1299 | MEDIUM | python3 | 3.9.21-2.el9_6.2 | 3.9.25-3.el9_7.1 | cpython: email header injection due to unquoted newlines |
+| CVE-2026-3644 | MEDIUM | python3 | 3.9.21-2.el9_6.2 | - | cpython: Incomplete control character validation in http.cookies |
+| CVE-2026-4224 | MEDIUM | python3 | 3.9.21-2.el9_6.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | 3.9.25-3.el9_7 | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-12781 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
@@ -114,6 +120,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0672 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | 3.9.25-3.el9_7.1 | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2026-1299 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | 3.9.25-3.el9_7.1 | cpython: email header injection due to unquoted newlines |
+| CVE-2026-3644 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | - | cpython: Incomplete control character validation in http.cookies |
+| CVE-2026-4224 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
@@ -131,6 +139,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0672 | MEDIUM | python3.12 | 3.12.9-1.el9_6.2 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3.12 | 3.12.9-1.el9_6.2 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2026-1299 | MEDIUM | python3.12 | 3.12.9-1.el9_6.2 | 3.12.12-4.el9_7.1 | cpython: email header injection due to unquoted newlines |
+| CVE-2026-3644 | MEDIUM | python3.12 | 3.12.9-1.el9_6.2 | - | cpython: Incomplete control character validation in http.cookies |
+| CVE-2026-4224 | MEDIUM | python3.12 | 3.12.9-1.el9_6.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-11468 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | 3.12.12-4.el9_7 | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-12781 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
@@ -145,6 +155,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0672 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2026-1299 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | 3.12.12-4.el9_7.1 | cpython: email header injection due to unquoted newlines |
+| CVE-2026-3644 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | cpython: Incomplete control character validation in http.cookies |
+| CVE-2026-4224 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-4.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-4.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2025-4598 | MEDIUM | systemd | 252-51.el9_6.1 | 252-55.el9_7.7 | systemd-coredump: race condition that allows a local attacker to crash a SUID program and gain read access to the resulting core dump |
@@ -208,6 +220,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-3783 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
 | CVE-2026-3805 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
+| CVE-2026-32776 | MEDIUM | expat | 2.5.0-5.el9_7.1 | - | libexpat: libexpat: Denial of Service due to NULL pointer dereference |
+| CVE-2026-32777 | MEDIUM | expat | 2.5.0-5.el9_7.1 | - | libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing |
+| CVE-2026-32778 | MEDIUM | expat | 2.5.0-5.el9_7.1 | - | libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
@@ -233,6 +248,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6069 | MEDIUM | python3.12 | 3.12.12-4.el9_7.1 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2026-0672 | MEDIUM | python3.12 | 3.12.12-4.el9_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3.12 | 3.12.12-4.el9_7.1 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2026-3644 | MEDIUM | python3.12 | 3.12.12-4.el9_7.1 | - | cpython: Incomplete control character validation in http.cookies |
+| CVE-2026-4224 | MEDIUM | python3.12 | 3.12.12-4.el9_7.1 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-11468 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.1 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.1 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.1 | - | cpython: Out-of-memory when loading Plist |
@@ -241,6 +258,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6069 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.1 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2026-0672 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.1 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2026-3644 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.1 | - | cpython: Incomplete control character validation in http.cookies |
+| CVE-2026-4224 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.1 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2026-4105 | MEDIUM | systemd-libs | 252-55.el9_7.7 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
@@ -256,6 +275,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-3783 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
 | CVE-2026-3805 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
+| CVE-2026-32776 | MEDIUM | expat | 2.5.0-5.el9_7.1 | - | libexpat: libexpat: Denial of Service due to NULL pointer dereference |
+| CVE-2026-32777 | MEDIUM | expat | 2.5.0-5.el9_7.1 | - | libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing |
+| CVE-2026-32778 | MEDIUM | expat | 2.5.0-5.el9_7.1 | - | libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition |
 | CVE-2025-11081 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils out-of-bounds read |
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
@@ -285,12 +307,16 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-15282 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: Header injection via newlines in data URL mediatype in Python |
 | CVE-2025-4516 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2026-0672 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-3644 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: Incomplete control character validation in http.cookies |
+| CVE-2026-4224 | MEDIUM | python3 | 3.9.25-3.el9_7.1 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Out-of-memory when loading Plist |
 | CVE-2025-15282 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Header injection via newlines in data URL mediatype in Python |
 | CVE-2025-4516 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2026-0672 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-3644 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Incomplete control character validation in http.cookies |
+| CVE-2026-4224 | MEDIUM | python3-libs | 3.9.25-3.el9_7.1 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
@@ -302,6 +328,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6069 | MEDIUM | python3.12 | 3.12.12-4.el9_7.1 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2026-0672 | MEDIUM | python3.12 | 3.12.12-4.el9_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3.12 | 3.12.12-4.el9_7.1 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2026-3644 | MEDIUM | python3.12 | 3.12.12-4.el9_7.1 | - | cpython: Incomplete control character validation in http.cookies |
+| CVE-2026-4224 | MEDIUM | python3.12 | 3.12.12-4.el9_7.1 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-11468 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.1 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.1 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.1 | - | cpython: Out-of-memory when loading Plist |
@@ -310,6 +338,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6069 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.1 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2026-0672 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.1 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2026-3644 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.1 | - | cpython: Incomplete control character validation in http.cookies |
+| CVE-2026-4224 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.1 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2026-4105 | MEDIUM | systemd | 252-55.el9_7.7 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
