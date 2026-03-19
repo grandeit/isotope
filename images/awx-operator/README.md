@@ -4,13 +4,13 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-03-18 12:38:23 UTC
+**Scanned:** 2026-03-19 00:33:49 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 21 (🔧20) | 157 (🔧68) | 222 (🔧10) | 401 | 🔧 99 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 22 (🔧21) | 156 (🔧67) | 222 (🔧10) | 401 | 🔧 99 |
 | ubi-micro | 0 | 0 | 1 | 5 | 6 | 🔧 0 |
 | ubi-minimal | 0 | 🟠 1 | 49 | 52 | 102 | 🔧 0 |
 | ubi | 0 | 🟠 1 | 89 | 212 | 302 | 🔧 0 |
@@ -34,7 +34,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-26007 | HIGH | cryptography | 45.0.7 | 46.0.5 | cryptography: cryptography Subgroup Attack Due to Missing Subgroup Validation for SECT Curves |
 | CVE-2026-23949 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context: jaraco.context: Path traversal via malicious tar archives |
 | CVE-2026-23490 | HIGH | pyasn1 | 0.6.1 | 0.6.2 | pyasn1: pyasn1: Denial of Service due to memory exhaustion from malformed RELATIVE-OID |
-| CVE-2026-30922 | HIGH | pyasn1 | 0.6.1 | 0.6.3 | Denial of Service in pyasn1 via Unbounded Recursion |
+| CVE-2026-30922 | HIGH | pyasn1 | 0.6.1 | 0.6.3 | pyasn1 is a generic ASN.1 library for Python. Prior to 0.6.3, the `pya ... |
 | CVE-2025-66418 | HIGH | urllib3 | 2.5.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 2.5.0 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | urllib3 | 2.5.0 | 2.6.3 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
@@ -45,6 +45,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61726 | HIGH | stdlib | v1.24.4 | 1.24.12, 1.25.6 | golang: net/url: Memory exhaustion in query parameter parsing in net/url |
 | CVE-2025-61728 | HIGH | stdlib | v1.24.4 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61729 | HIGH | stdlib | v1.24.4 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
+| CVE-2026-25679 | HIGH | stdlib | v1.24.4 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | 7.76.1-35.el9_7.3 | curl: libcurl: Curl out of bounds read for cookie path |
@@ -200,7 +201,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61725 | MEDIUM | stdlib | v1.24.4 | 1.24.8, 1.25.2 | net/mail: Excessive CPU consumption in ParseAddress in net/mail |
 | CVE-2025-61727 | MEDIUM | stdlib | v1.24.4 | 1.24.11, 1.25.5 | golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.24.4 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
-| CVE-2026-25679 | MEDIUM | stdlib | v1.24.4 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
 | CVE-2026-27142 | MEDIUM | stdlib | v1.24.4 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
 
 ### ubi-micro
