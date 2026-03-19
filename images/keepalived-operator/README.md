@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-03-18 15:28:15 UTC
+**Scanned:** 2026-03-19 03:56:53 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 125 (🔧124) | 411 (🔧308) | 288 (🔧34) | 838 | 🔧 480 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 128 (🔧127) | 408 (🔧308) | 288 (🔧37) | 838 | 🔧 486 |
 | ubi-minimal | 0 | 🟠 1 | 25 (🔧1) | 46 | 72 | 🔧 1 |
 | ubi | 0 | 🟠 1 | 68 (🔧1) | 208 | 277 | 🔧 1 |
 
@@ -119,6 +119,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61726 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: net/url: Memory exhaustion in query parameter parsing in net/url |
 | CVE-2025-61728 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
+| CVE-2026-25679 | HIGH | stdlib | v1.18.10 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
 | CVE-2022-21698 | HIGH | github.com/prometheus/client_golang | v1.1.0 | 1.11.1 | prometheus/client_golang: Denial of service using InstrumentHandlerCounter |
 | CVE-2025-65637 | HIGH | github.com/sirupsen/logrus | v1.4.2 | 1.8.3, 1.9.1, 1.9.3 | github.com/sirupsen/logrus: github.com/sirupsen/logrus: Denial-of-Service due to large single-line payload |
 | CVE-2022-41722 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: path/filepath: path-filepath filepath.Clean path traversal |
@@ -141,6 +142,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61726 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: net/url: Memory exhaustion in query parameter parsing in net/url |
 | CVE-2025-61728 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
+| CVE-2026-25679 | HIGH | stdlib | v1.18.10 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
 | CVE-2022-41722 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: path/filepath: path-filepath filepath.Clean path traversal |
 | CVE-2022-41723 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang.org/x/net/http2: avoid quadratic complexity in HPACK decoding |
 | CVE-2022-41724 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: crypto/tls: large handshake records may cause panics |
@@ -161,6 +163,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61726 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: net/url: Memory exhaustion in query parameter parsing in net/url |
 | CVE-2025-61728 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
+| CVE-2026-25679 | HIGH | stdlib | v1.18.10 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | 1.0.6-28.el8_10 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-13.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2023-23916 | MEDIUM | curl | 7.61.1-25.el8_7.2 | 7.61.1-25.el8_7.3 | curl: HTTP multi-header compression denial of service |
@@ -213,7 +216,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-0395 | MEDIUM | glibc | 2.28-211.el8 | 2.28-251.el8_10.16 | glibc: buffer overflow in the GNU C Library's assert() |
 | CVE-2025-4802 | MEDIUM | glibc | 2.28-211.el8 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-8058 | MEDIUM | glibc | 2.28-211.el8 | 2.28-251.el8_10.25 | glibc: Double free in glibc |
-| CVE-2026-0915 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc | 2.28-211.el8 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2023-4527 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: Stack read overflow in getaddrinfo in no-aaaa mode |
 | CVE-2023-4806 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in getaddrinfo() |
 | CVE-2023-4813 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in gaih_inet() |
@@ -221,7 +224,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-0395 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.16 | glibc: buffer overflow in the GNU C Library's assert() |
 | CVE-2025-4802 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-8058 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.25 | glibc: Double free in glibc |
-| CVE-2026-0915 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2023-4527 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: Stack read overflow in getaddrinfo in no-aaaa mode |
 | CVE-2023-4806 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in getaddrinfo() |
 | CVE-2023-4813 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in gaih_inet() |
@@ -229,7 +232,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-0395 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.16 | glibc: buffer overflow in the GNU C Library's assert() |
 | CVE-2025-4802 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-8058 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.25 | glibc: Double free in glibc |
-| CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2021-43618 | MEDIUM | gmp | 1:6.1.2-10.el8 | 1:6.1.2-11.el8 | gmp: Integer overflow and resultant buffer overflow via crafted input |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.2.20-3.el8_6 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-0361 | MEDIUM | gnutls | 3.6.16-5.el8_6 | 3.6.16-6.el8_7 | gnutls: timing side-channel in the TLS RSA key exchange code |
@@ -494,7 +497,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61725 | MEDIUM | stdlib | v1.18.10 | 1.24.8, 1.25.2 | net/mail: Excessive CPU consumption in ParseAddress in net/mail |
 | CVE-2025-61727 | MEDIUM | stdlib | v1.18.10 | 1.24.11, 1.25.5 | golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.18.10 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
-| CVE-2026-25679 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
 | CVE-2026-27142 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20200302150141-5c8b2ff67527 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 | CVE-2023-24532 | MEDIUM | stdlib | v1.18.10 | 1.19.7, 1.20.2 | golang: crypto/internal/nistec: specific unreduced P-256 scalars produce incorrect results |
@@ -532,7 +534,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61725 | MEDIUM | stdlib | v1.18.10 | 1.24.8, 1.25.2 | net/mail: Excessive CPU consumption in ParseAddress in net/mail |
 | CVE-2025-61727 | MEDIUM | stdlib | v1.18.10 | 1.24.11, 1.25.5 | golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.18.10 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
-| CVE-2026-25679 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
 | CVE-2026-27142 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20180926160741-c2ed4eda69e7 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 | CVE-2023-24532 | MEDIUM | stdlib | v1.18.10 | 1.19.7, 1.20.2 | golang: crypto/internal/nistec: specific unreduced P-256 scalars produce incorrect results |
@@ -570,7 +571,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61725 | MEDIUM | stdlib | v1.18.10 | 1.24.8, 1.25.2 | net/mail: Excessive CPU consumption in ParseAddress in net/mail |
 | CVE-2025-61727 | MEDIUM | stdlib | v1.18.10 | 1.24.11, 1.25.5 | golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.18.10 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
-| CVE-2026-25679 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
 | CVE-2026-27142 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
 
 ### ubi-minimal
