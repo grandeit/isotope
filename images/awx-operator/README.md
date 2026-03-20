@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-03-19 12:33:00 UTC
+**Scanned:** 2026-03-20 00:33:53 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 22 (🔧21) | 156 (🔧67) | 222 (🔧10) | 401 | 🔧 99 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 22 (🔧21) | 155 (🔧67) | 222 (🔧10) | 401 | 🔧 100 |
 | ubi-micro | 0 | 0 | 1 | 5 | 6 | 🔧 0 |
 | ubi-minimal | 0 | 🟠 1 | 49 | 52 | 102 | 🔧 0 |
-| ubi | 0 | 🟠 1 | 89 | 212 | 302 | 🔧 0 |
+| ubi | 0 | 🟠 1 | 88 | 212 | 301 | 🔧 0 |
 
 ## Details
 
@@ -23,6 +23,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-33186 | CRITICAL | google.golang.org/grpc | v1.75.0 | 1.79.3 | gRPC-Go has an authorization bypass via missing leading slash in :path |
 | CVE-2025-68121 | CRITICAL | stdlib | v1.24.4 | 1.24.13, 1.25.7, 1.26.0-rc.3 | crypto/tls: Unexpected session resumption in crypto/tls |
 | CVE-2025-59375 | HIGH | expat | 2.5.0-5.el9_6 | 2.5.0-5.el9_7.1 | expat: libexpat in Expat allows attackers to trigger large dynamic memory allocations via a small document that is submitted for parsing |
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | 2.3.3-5.el9_7 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
@@ -34,7 +35,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-26007 | HIGH | cryptography | 45.0.7 | 46.0.5 | cryptography: cryptography Subgroup Attack Due to Missing Subgroup Validation for SECT Curves |
 | CVE-2026-23949 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context: jaraco.context: Path traversal via malicious tar archives |
 | CVE-2026-23490 | HIGH | pyasn1 | 0.6.1 | 0.6.2 | pyasn1: pyasn1: Denial of Service due to memory exhaustion from malformed RELATIVE-OID |
-| CVE-2026-30922 | HIGH | pyasn1 | 0.6.1 | 0.6.3 | pyasn1 is a generic ASN.1 library for Python. Prior to 0.6.3, the `pya ... |
+| CVE-2026-30922 | HIGH | pyasn1 | 0.6.1 | 0.6.3 | pyasn1: pyasn1 Vulnerable to Denial of Service via Unbounded Recursion |
 | CVE-2025-66418 | HIGH | urllib3 | 2.5.0 | 2.6.0 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | urllib3 | 2.5.0 | 2.6.0 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | urllib3 | 2.5.0 | 2.6.3 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
@@ -172,7 +173,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-45582 | MEDIUM | tar | 2:1.34-7.el9 | 2:1.34-9.el9_7 | tar: Tar path traversal |
 | CVE-2025-64118 | MEDIUM | tar | 2:1.34-7.el9 | - | node-tar: tar: node-tar: Information disclosure via reading a truncated tar file |
 | CVE-2026-26960 | MEDIUM | tar | 2:1.34-7.el9 | - | tar: node-tar: node-tar: Arbitrary file read/write via malicious archive hardlink creation |
-| CVE-2026-31802 | MEDIUM | tar | 2:1.34-7.el9 | - | tar: tar: File overwrite via drive-relative symlink traversal |
 | CVE-2024-29040 | MEDIUM | tpm2-tss | 3.2.3-1.el9 | - | tpm2-tss: arbitrary quote data may go undetected by Fapi_VerifyQuote |
 | CVE-2025-14104 | MEDIUM | util-linux | 2.37.4-21.el9 | 2.37.4-21.el9_7 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14104 | MEDIUM | util-linux-core | 2.37.4-21.el9 | 2.37.4-21.el9_7 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
@@ -213,7 +213,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-4111 | HIGH | libarchive | 3.5.3-6.el9_6 | - | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
+| CVE-2026-4111 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
@@ -228,8 +228,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
-| CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
-| CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
+| CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
+| CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
@@ -349,7 +349,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2005-2541 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: does not properly warn the user when extracting setuid or setgid files |
 | CVE-2025-64118 | MEDIUM | tar | 2:1.34-9.el9_7 | - | node-tar: tar: node-tar: Information disclosure via reading a truncated tar file |
 | CVE-2026-26960 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: node-tar: node-tar: Arbitrary file read/write via malicious archive hardlink creation |
-| CVE-2026-31802 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: tar: File overwrite via drive-relative symlink traversal |
 | CVE-2024-29040 | MEDIUM | tpm2-tss | 3.2.3-1.el9 | - | tpm2-tss: arbitrary quote data may go undetected by Fapi_VerifyQuote |
 | CVE-2025-29768 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim vulnerable to potential data loss with zip.vim and special crafted zip files |
 | CVE-2026-25749 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim: Arbitrary code execution via 'helpfile' option processing |
