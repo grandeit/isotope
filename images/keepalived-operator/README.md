@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-03-19 15:17:56 UTC
+**Scanned:** 2026-03-20 03:53:16 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 128 (🔧127) | 408 (🔧308) | 288 (🔧37) | 838 | 🔧 486 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 128 (🔧127) | 407 (🔧308) | 288 (🔧37) | 837 | 🔧 486 |
 | ubi-minimal | 0 | 🟠 1 | 25 (🔧1) | 46 | 72 | 🔧 1 |
-| ubi | 0 | 🟠 1 | 68 (🔧1) | 208 | 277 | 🔧 1 |
+| ubi | 0 | 🟠 1 | 67 (🔧1) | 208 | 276 | 🔧 1 |
 
 ## Details
 
@@ -439,7 +439,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2005-2541 | MEDIUM | tar | 2:1.30-6.el8_7.1 | - | tar: does not properly warn the user when extracting setuid or setgid files |
 | CVE-2025-45582 | MEDIUM | tar | 2:1.30-6.el8_7.1 | - | tar: Tar path traversal |
 | CVE-2025-64118 | MEDIUM | tar | 2:1.30-6.el8_7.1 | - | node-tar: tar: node-tar: Information disclosure via reading a truncated tar file |
-| CVE-2026-31802 | MEDIUM | tar | 2:1.30-6.el8_7.1 | - | tar: tar: File overwrite via drive-relative symlink traversal |
 | CVE-2023-22745 | MEDIUM | tpm2-tss | 2.3.2-4.el8 | 2.3.2-5.el8 | tpm2-tss: Buffer Overlow in TSS2_RC_Decode |
 | CVE-2025-14104 | MEDIUM | util-linux | 2.32.1-39.el8_7 | 2.32.1-48.el8_10 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-29768 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim vulnerable to potential data loss with zip.vim and special crafted zip files |
@@ -577,7 +576,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-4111 | HIGH | libarchive | 3.5.3-6.el9_6 | - | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
+| CVE-2026-4111 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
@@ -589,8 +588,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
-| CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
-| CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
+| CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
+| CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
@@ -667,7 +666,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2005-2541 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: does not properly warn the user when extracting setuid or setgid files |
 | CVE-2025-64118 | MEDIUM | tar | 2:1.34-9.el9_7 | - | node-tar: tar: node-tar: Information disclosure via reading a truncated tar file |
 | CVE-2026-26960 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: node-tar: node-tar: Arbitrary file read/write via malicious archive hardlink creation |
-| CVE-2026-31802 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: tar: File overwrite via drive-relative symlink traversal |
 | CVE-2024-29040 | MEDIUM | tpm2-tss | 3.2.3-1.el9 | - | tpm2-tss: arbitrary quote data may go undetected by Fapi_VerifyQuote |
 | CVE-2025-29768 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim vulnerable to potential data loss with zip.vim and special crafted zip files |
 | CVE-2026-25749 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim: Arbitrary code execution via 'helpfile' option processing |
