@@ -4,7 +4,7 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-03-22 15:07:37 UTC
+**Scanned:** 2026-03-23 04:00:22 UTC
 
 ## Overview
 
@@ -607,7 +607,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-4111 | HIGH | libarchive | 3.5.3-6.el9_6 | - | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
+| CVE-2026-4111 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
@@ -628,8 +628,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
-| CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
-| CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
+| CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
+| CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
