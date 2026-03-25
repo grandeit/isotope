@@ -4,7 +4,7 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-03-25 03:54:26 UTC
+**Scanned:** 2026-03-25 15:27:19 UTC
 
 ## Overview
 
@@ -667,13 +667,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-64118 | MEDIUM | tar | 2:1.34-9.el9_7 | - | node-tar: tar: node-tar: Information disclosure via reading a truncated tar file |
 | CVE-2026-26960 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: node-tar: node-tar: Arbitrary file read/write via malicious archive hardlink creation |
 | CVE-2024-29040 | MEDIUM | tpm2-tss | 3.2.3-1.el9 | - | tpm2-tss: arbitrary quote data may go undetected by Fapi_VerifyQuote |
-| CVE-2025-29768 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim vulnerable to potential data loss with zip.vim and special crafted zip files |
-| CVE-2026-25749 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim: Arbitrary code execution via 'helpfile' option processing |
-| CVE-2026-28417 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim: Arbitrary code execution via OS command injection in the netrw plugin |
-| CVE-2026-28418 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim: Information disclosure via heap-based buffer overflow in Emacs-style tags file parsing |
-| CVE-2026-28419 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim: Information disclosure and denial of service via malformed tags file |
-| CVE-2026-28420 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim: Information disclosure and denial of service via crafted Unicode characters in terminal emulator |
-| CVE-2026-28421 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7 | - | vim: Vim: Denial of service and information disclosure via crafted swap file |
+| CVE-2025-29768 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim vulnerable to potential data loss with zip.vim and special crafted zip files |
+| CVE-2026-25749 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via 'helpfile' option processing |
+| CVE-2026-28417 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via OS command injection in the netrw plugin |
+| CVE-2026-28418 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Information disclosure via heap-based buffer overflow in Emacs-style tags file parsing |
+| CVE-2026-28419 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Information disclosure and denial of service via malformed tags file |
+| CVE-2026-28420 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Information disclosure and denial of service via crafted Unicode characters in terminal emulator |
+| CVE-2026-28421 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Denial of service and information disclosure via crafted swap file |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20180926160741-c2ed4eda69e7 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 
 ---
