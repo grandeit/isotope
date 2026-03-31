@@ -4,17 +4,17 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-03-30 01:33:14 UTC
+**Scanned:** 2026-03-31 01:32:49 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 3 (🔧3) | 🟠 42 (🔧41) | 152 (🔧110) | 121 (🔧23) | 318 | 🔧 177 |
+| **upstream** | 🔴 3 (🔧3) | 🟠 44 (🔧41) | 158 (🔧111) | 124 (🔧24) | 329 | 🔧 179 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
-| ubi-micro | 0 | 0 | 1 | 5 | 6 | 🔧 0 |
-| ubi-minimal | 0 | 🟠 1 | 24 | 42 | 67 | 🔧 0 |
-| ubi | 0 | 🟠 1 | 66 | 208 | 275 | 🔧 0 |
+| ubi-micro | 0 | 0 | 4 | 8 | 12 | 🔧 0 |
+| ubi-minimal | 0 | 🟠 2 | 30 | 45 | 77 | 🔧 0 |
+| ubi | 0 | 🟠 5 | 77 | 213 | 295 | 🔧 0 |
 
 ## Details
 
@@ -38,6 +38,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-3596 | HIGH | krb5-libs | 1.18.2-26.el8_9 | 1.18.2-30.el8_10 | freeradius: forgery attack |
 | CVE-2025-5914 | HIGH | libarchive | 3.3.3-5.el8 | 3.3.3-6.el8_10 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
 | CVE-2026-4111 | HIGH | libarchive | 3.3.3-5.el8 | - | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
+| CVE-2026-4424 | HIGH | libarchive | 3.3.3-5.el8 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
+| CVE-2026-27135 | HIGH | libnghttp2 | 1.33.0-5.el8_9 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2024-56171 | HIGH | libxml2 | 2.9.7-18.el8_9 | 2.9.7-19.el8_10 | libxml2: Use-After-Free in libxml2 |
 | CVE-2025-24928 | HIGH | libxml2 | 2.9.7-18.el8_9 | 2.9.7-19.el8_10 | libxml2: Stack-based buffer overflow in xmlSnprintfElements of libxml2 |
 | CVE-2025-49794 | HIGH | libxml2 | 2.9.7-18.el8_9 | 2.9.7-21.el8_10.1 | libxml: Heap use after free (UAF) leads to Denial of service (DoS) |
@@ -93,22 +95,25 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4802 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-8058 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.25 | glibc: Double free in glibc |
 | CVE-2026-0915 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-4437 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2024-33600 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.2 | glibc: null pointer dereferences after failed netgroup cache insertion |
 | CVE-2025-0395 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.16 | glibc: buffer overflow in the GNU C Library's assert() |
 | CVE-2025-4802 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-8058 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.25 | glibc: Double free in glibc |
 | CVE-2026-0915 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-4437 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2024-33600 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.2 | glibc: null pointer dereferences after failed netgroup cache insertion |
 | CVE-2025-0395 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.16 | glibc: buffer overflow in the GNU C Library's assert() |
 | CVE-2025-4802 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-8058 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.25 | glibc: Double free in glibc |
 | CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-4437 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2021-43618 | MEDIUM | gmp | 1:6.1.2-10.el8 | 1:6.1.2-11.el8 | gmp: Integer overflow and resultant buffer overflow via crafted input |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.2.20-3.el8_6 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2024-0553 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_9.1 | gnutls: incomplete fix for CVE-2023-5981 |
 | CVE-2024-12243 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.3 | gnutls: GnuTLS Impacted by Inefficient DER Decoding in libtasn1 Leading to Remote DoS |
 | CVE-2024-28834 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_9.3 | gnutls: vulnerable to Minerva side-channel information leak |
-| CVE-2025-14831 | MEDIUM | gnutls | 3.6.16-8.el8_9 | - | gnutls: GnuTLS: Denial of Service via excessive resource consumption during certificate verification |
+| CVE-2025-14831 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.5 | gnutls: GnuTLS: Denial of Service via excessive resource consumption during certificate verification |
 | CVE-2025-32988 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.4 | gnutls: Vulnerability in GnuTLS otherName SAN export |
 | CVE-2025-32990 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.4 | gnutls: Vulnerability in GnuTLS certtool template parsing |
 | CVE-2025-6395 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.4 | gnutls: NULL pointer dereference in _gnutls_figure_common_ciphersuite() |
@@ -119,6 +124,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-57970 | MEDIUM | libarchive | 3.3.3-5.el8 | - | libarchive: heap buffer over-read in header_gnu_longlink |
 | CVE-2025-25724 | MEDIUM | libarchive | 3.3.3-5.el8 | - | libarchive: Buffer Overflow vulnerability in libarchive |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.3.3-5.el8 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
+| CVE-2026-4426 | MEDIUM | libarchive | 3.3.3-5.el8 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
+| CVE-2026-5121 | MEDIUM | libarchive | 3.3.3-5.el8 | - | A flaw was found in libarchive. On 32-bit systems, an integer overflow vulnerability exists in the zisofs block pointer allocation logic. A remote att |
 | CVE-2025-14104 | MEDIUM | libblkid | 2.32.1-43.el8 | 2.32.1-48.el8_10 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2023-46218 | MEDIUM | libcurl | 7.61.1-33.el8 | 7.61.1-33.el8_9.5 | curl: information disclosure by exploiting a mixed case flaw |
 | CVE-2024-2398 | MEDIUM | libcurl | 7.61.1-33.el8 | 7.61.1-34.el8_10.2 | curl: HTTP/2 push headers memory-leak |
@@ -176,6 +183,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2018-20839 | MEDIUM | systemd-libs | 239-78.el8 | - | systemd: mishandling of the current keyboard mode check leading to passwords being disclosed in cleartext to attacker |
 | CVE-2023-7008 | MEDIUM | systemd-libs | 239-78.el8 | 239-82.el8 | systemd-resolved: Unsigned name response in signed zone is not refused when DNSSEC=yes |
 | CVE-2025-4598 | MEDIUM | systemd-libs | 239-78.el8 | - | systemd-coredump: race condition that allows a local attacker to crash a SUID program and gain read access to the resulting core dump |
+| CVE-2026-29111 | MEDIUM | systemd-libs | 239-78.el8 | - | systemd: systemd: Arbitrary code execution or Denial of Service via spurious IPC API call data |
 | CVE-2026-4105 | MEDIUM | systemd-libs | 239-78.el8 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
 | CVE-2023-48795 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.17.0, 0.0.0-20231218163308-9d2ee975ef9f | ssh: Prefix truncation attack on Binary Packet Protocol (BPP) |
 | CVE-2025-47914 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.45.0 | golang.org/x/crypto/ssh/agent: SSH Agent servers: Denial of Service due to malformed messages |
@@ -231,12 +239,16 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
+| CVE-2026-4437 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
+| CVE-2026-4437 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
+| CVE-2026-4437 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 
 ### ubi-minimal
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-4111 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
+| CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
+| CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
@@ -247,9 +259,14 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
+| CVE-2026-4437 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
+| CVE-2026-4437 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
+| CVE-2026-4437 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
+| CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
+| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | A flaw was found in libarchive. On 32-bit systems, an integer overflow vulnerability exists in the zisofs block pointer allocation logic. A remote att |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
@@ -260,13 +277,18 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2026-2100 | MEDIUM | p11-kit | 0.25.3-3.el9_5 | - | p11-kit: p11-kit: NULL dereference via C_DeriveKey with specific NULL parameters |
 | CVE-2026-2100 | MEDIUM | p11-kit-trust | 0.25.3-3.el9_5 | - | p11-kit: p11-kit: NULL dereference via C_DeriveKey with specific NULL parameters |
+| CVE-2026-29111 | MEDIUM | systemd-libs | 252-55.el9_7.7 | - | systemd: systemd: Arbitrary code execution or Denial of Service via spurious IPC API call data |
 | CVE-2026-4105 | MEDIUM | systemd-libs | 252-55.el9_7.7 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
 
 ### ubi
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-4111 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
+| CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
+| CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
+| CVE-2026-4519 | HIGH | python3 | 3.9.25-3.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-4519 | HIGH | python3-libs | 3.9.25-3.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
@@ -282,13 +304,19 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
 | CVE-2026-3441 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils: Information disclosure via specially crafted XCOFF object file |
 | CVE-2026-3442 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: GNU Binutils: Information disclosure or denial of service via out-of-bounds read in bfd linker |
+| CVE-2026-4647 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: Out-of-Bounds Read in XCOFF Relocation Processing in GNU Binutils BFD Library |
 | CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
+| CVE-2026-4437 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
+| CVE-2026-4437 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
+| CVE-2026-4437 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
+| CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
+| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | A flaw was found in libarchive. On 32-bit systems, an integer overflow vulnerability exists in the zisofs block pointer allocation logic. A remote att |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
@@ -318,16 +346,21 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
+| CVE-2026-25645 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | requests: Requests: Security bypass due to predictable temporary file creation |
+| CVE-2026-32284 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | github.com/shamaton/msgpack: msgpack: Denial of Service via truncated fixext data |
+| CVE-2026-29111 | MEDIUM | systemd | 252-55.el9_7.7 | - | systemd: systemd: Arbitrary code execution or Denial of Service via spurious IPC API call data |
 | CVE-2026-4105 | MEDIUM | systemd | 252-55.el9_7.7 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
+| CVE-2026-29111 | MEDIUM | systemd-libs | 252-55.el9_7.7 | - | systemd: systemd: Arbitrary code execution or Denial of Service via spurious IPC API call data |
 | CVE-2026-4105 | MEDIUM | systemd-libs | 252-55.el9_7.7 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
+| CVE-2026-29111 | MEDIUM | systemd-pam | 252-55.el9_7.7 | - | systemd: systemd: Arbitrary code execution or Denial of Service via spurious IPC API call data |
 | CVE-2026-4105 | MEDIUM | systemd-pam | 252-55.el9_7.7 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
+| CVE-2026-29111 | MEDIUM | systemd-rpm-macros | 252-55.el9_7.7 | - | systemd: systemd: Arbitrary code execution or Denial of Service via spurious IPC API call data |
 | CVE-2026-4105 | MEDIUM | systemd-rpm-macros | 252-55.el9_7.7 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
 | CVE-2005-2541 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: does not properly warn the user when extracting setuid or setgid files |
 | CVE-2025-64118 | MEDIUM | tar | 2:1.34-9.el9_7 | - | node-tar: tar: node-tar: Information disclosure via reading a truncated tar file |
-| CVE-2026-26960 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar: node-tar: node-tar: Arbitrary file read/write via malicious archive hardlink creation |
+| CVE-2026-33056 | MEDIUM | tar | 2:1.34-9.el9_7 | - | tar-rs: tar-rs: Arbitrary directory permission modification via crafted tar archive |
 | CVE-2024-29040 | MEDIUM | tpm2-tss | 3.2.3-1.el9 | - | tpm2-tss: arbitrary quote data may go undetected by Fapi_VerifyQuote |
 | CVE-2025-29768 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim vulnerable to potential data loss with zip.vim and special crafted zip files |
-| CVE-2026-25749 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via 'helpfile' option processing |
 | CVE-2026-28417 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via OS command injection in the netrw plugin |
 | CVE-2026-28418 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Information disclosure via heap-based buffer overflow in Emacs-style tags file parsing |
 | CVE-2026-28419 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Information disclosure and denial of service via malformed tags file |
