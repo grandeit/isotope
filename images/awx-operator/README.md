@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-03-31 12:41:20 UTC
+**Scanned:** 2026-04-01 00:38:56 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 29 (🔧22) | 170 (🔧69) | 230 (🔧11) | 431 | 🔧 104 |
-| ubi-micro | 0 | 0 | 4 | 8 | 12 | 🔧 0 |
-| ubi-minimal | 0 | 🟠 4 | 57 | 57 | 118 | 🔧 0 |
-| ubi | 0 | 🟠 7 | 101 | 219 | 327 | 🔧 0 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 33 (🔧22) | 170 (🔧69) | 230 (🔧11) | 435 | 🔧 104 |
+| ubi-micro | 0 | 🟠 3 | 4 | 8 | 15 | 🔧 0 |
+| ubi-minimal | 0 | 🟠 7 | 57 | 57 | 121 | 🔧 0 |
+| ubi | 0 | 🟠 11 | 101 | 219 | 331 | 🔧 0 |
 
 ## Details
 
@@ -23,9 +23,12 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-33186 | CRITICAL | google.golang.org/grpc | v1.75.0 | 1.79.3 | golang: google.golang.org/grpc/grpc-go: google.golang.org/grpc/authz: gRPC-Go: Authorization bypass due to improper HTTP/2 path validation |
+| CVE-2026-33186 | CRITICAL | google.golang.org/grpc | v1.75.0 | 1.79.3 | google.golang.org/grpc/grpc-go: google.golang.org/grpc/authz: gRPC-Go: Authorization bypass due to improper HTTP/2 path validation |
 | CVE-2025-68121 | CRITICAL | stdlib | v1.24.4 | 1.24.13, 1.25.7, 1.26.0-rc.3 | crypto/tls: Unexpected session resumption in crypto/tls |
 | CVE-2025-59375 | HIGH | expat | 2.5.0-5.el9_6 | 2.5.0-5.el9_7.1 | firefox: thunderbird: expat: libexpat in Expat allows attackers to trigger large dynamic memory allocations via a small document that is submitted for |
+| CVE-2026-4046 | HIGH | glibc | 2.34-168.el9_6.23 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
+| CVE-2026-4046 | HIGH | glibc-common | 2.34-168.el9_6.23 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
+| CVE-2026-4046 | HIGH | glibc-minimal-langpack | 2.34-168.el9_6.23 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | 2.3.3-5.el9_7 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2026-4111 | HIGH | libarchive | 3.5.3-6.el9_6 | 3.5.3-7.el9_7 | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-6.el9_6 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
@@ -39,6 +42,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4519 | HIGH | python3.12-libs | 3.12.9-1.el9_6.2 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.34.1-8.el9_6 | 3.34.1-9.el9_7 | sqlite: Integer Truncation in SQLite |
 | CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
+| CVE-2026-34714 | HIGH | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: Vim: Arbitrary code execution via crafted file |
 | CVE-2026-26007 | HIGH | cryptography | 45.0.7 | 46.0.5 | cryptography: cryptography Subgroup Attack Due to Missing Subgroup Validation for SECT Curves |
 | CVE-2026-23949 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context: jaraco.context: Path traversal via malicious tar archives |
 | CVE-2026-23490 | HIGH | pyasn1 | 0.6.1 | 0.6.2 | pyasn1: pyasn1: Denial of Service due to memory exhaustion from malformed RELATIVE-OID |
@@ -89,7 +93,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
-| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | A flaw was found in libarchive. On 32-bit systems, an integer overflow vulnerability exists in the zisofs block pointer allocation logic. A remote att |
+| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | A flaw was found in libarchive. On 32-bit systems, an integer overflow ... |
 | CVE-2025-14104 | MEDIUM | libblkid | 2.37.4-21.el9 | 2.37.4-21.el9_7 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | libcurl-minimal | 7.76.1-31.el9_6.1 | 7.76.1-35.el9_7.3 | curl: libcurl: Curl out of bounds read for cookie path |
@@ -229,6 +233,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-4046 | HIGH | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
+| CVE-2026-4046 | HIGH | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
+| CVE-2026-4046 | HIGH | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2026-4437 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-4437 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
@@ -238,6 +245,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-4046 | HIGH | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
+| CVE-2026-4046 | HIGH | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
+| CVE-2026-4046 | HIGH | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2026-4519 | HIGH | python3.12 | 3.12.12-4.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
@@ -262,7 +272,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
-| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | A flaw was found in libarchive. On 32-bit systems, an integer overflow vulnerability exists in the zisofs block pointer allocation logic. A remote att |
+| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | A flaw was found in libarchive. On 32-bit systems, an integer overflow ... |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
@@ -304,6 +314,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-4046 | HIGH | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
+| CVE-2026-4046 | HIGH | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
+| CVE-2026-4046 | HIGH | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2026-4519 | HIGH | python3 | 3.9.25-3.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
@@ -311,6 +324,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4519 | HIGH | python3.12 | 3.12.12-4.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-4519 | HIGH | python3.12-libs | 3.12.12-4.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
+| CVE-2026-34714 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
@@ -338,7 +352,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
-| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | A flaw was found in libarchive. On 32-bit systems, an integer overflow vulnerability exists in the zisofs block pointer allocation logic. A remote att |
+| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | A flaw was found in libarchive. On 32-bit systems, an integer overflow ... |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
