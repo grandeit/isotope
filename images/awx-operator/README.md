@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-04-01 12:41:42 UTC
+**Scanned:** 2026-04-02 00:33:54 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 33 (🔧22) | 170 (🔧69) | 230 (🔧11) | 435 | 🔧 104 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 33 (🔧24) | 170 (🔧69) | 230 (🔧11) | 435 | 🔧 106 |
 | ubi-micro | 0 | 🟠 3 | 4 | 8 | 15 | 🔧 0 |
-| ubi-minimal | 0 | 🟠 7 | 57 | 57 | 121 | 🔧 0 |
-| ubi | 0 | 🟠 11 | 101 | 219 | 331 | 🔧 0 |
+| ubi-minimal | 0 | 🟠 7 (🔧2) | 57 | 57 | 121 | 🔧 2 |
+| ubi | 0 | 🟠 11 (🔧2) | 101 | 219 | 331 | 🔧 2 |
 
 ## Details
 
@@ -38,8 +38,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | 1.26.5-6.el9_7.1 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | python3-urllib3 | 1.26.5-6.el9 | 1.26.5-6.el9_7.1 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | python3-urllib3 | 1.26.5-6.el9 | 1.26.5-6.el9_7.1 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
-| CVE-2026-4519 | HIGH | python3.12 | 3.12.9-1.el9_6.2 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
-| CVE-2026-4519 | HIGH | python3.12-libs | 3.12.9-1.el9_6.2 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-4519 | HIGH | python3.12 | 3.12.9-1.el9_6.2 | 3.12.12-4.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-4519 | HIGH | python3.12-libs | 3.12.9-1.el9_6.2 | 3.12.12-4.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.34.1-8.el9_6 | 3.34.1-9.el9_7 | sqlite: Integer Truncation in SQLite |
 | CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
 | CVE-2026-34714 | HIGH | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: Vim: Arbitrary code execution via crafted file |
@@ -250,8 +250,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4046 | HIGH | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
-| CVE-2026-4519 | HIGH | python3.12 | 3.12.12-4.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
-| CVE-2026-4519 | HIGH | python3.12-libs | 3.12.12-4.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-4519 | HIGH | python3.12 | 3.12.12-4.el9_7.1 | 3.12.12-4.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-4519 | HIGH | python3.12-libs | 3.12.12-4.el9_7.1 | 3.12.12-4.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
@@ -321,8 +321,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2026-4519 | HIGH | python3 | 3.9.25-3.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-4519 | HIGH | python3-libs | 3.9.25-3.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
-| CVE-2026-4519 | HIGH | python3.12 | 3.12.12-4.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
-| CVE-2026-4519 | HIGH | python3.12-libs | 3.12.12-4.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-4519 | HIGH | python3.12 | 3.12.12-4.el9_7.1 | 3.12.12-4.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-4519 | HIGH | python3.12-libs | 3.12.12-4.el9_7.1 | 3.12.12-4.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
 | CVE-2026-34714 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
