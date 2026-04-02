@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-04-01 15:29:36 UTC
+**Scanned:** 2026-04-02 04:01:16 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 137 (🔧127) | 418 (🔧311) | 293 (🔧38) | 862 | 🔧 490 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 136 (🔧127) | 418 (🔧311) | 293 (🔧38) | 861 | 🔧 490 |
 | ubi-minimal | 0 | 🟠 5 | 31 (🔧1) | 49 | 85 | 🔧 1 |
 | ubi | 0 | 🟠 9 | 78 (🔧1) | 213 | 300 | 🔧 1 |
 
@@ -99,7 +99,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-3899 | HIGH | subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2023-3899 | HIGH | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2026-33412 | HIGH | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
-| CVE-2026-34714 | HIGH | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary code execution via crafted file |
 | CVE-2022-27191 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.0.0-20220314234659-1baeb1ce4c0b | golang: crash in a golang.org/x/crypto/ssh server |
 | CVE-2025-22869 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.35.0 | golang.org/x/crypto/ssh: Denial of Service in the Key Exchange of golang.org/x/crypto/ssh |
 | CVE-2022-27664 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.0.0-20220906165146-f3363e06e74c | golang: net/http: handle server errors after sending GOAWAY |
