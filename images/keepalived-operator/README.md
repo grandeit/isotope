@@ -4,7 +4,7 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-04-02 15:22:51 UTC
+**Scanned:** 2026-04-03 04:02:41 UTC
 
 ## Overview
 
@@ -12,7 +12,7 @@
 |---------|----------|------|--------|-----|-------|---------|
 | **upstream** | 🔴 14 (🔧14) | 🟠 136 (🔧127) | 418 (🔧311) | 293 (🔧38) | 861 | 🔧 490 |
 | ubi-minimal | 0 | 🟠 5 | 31 (🔧1) | 49 | 85 | 🔧 1 |
-| ubi | 0 | 🟠 9 | 78 (🔧1) | 213 | 300 | 🔧 1 |
+| ubi | 0 | 🟠 8 | 78 (🔧1) | 213 | 299 | 🔧 1 |
 
 ## Details
 
@@ -644,7 +644,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4519 | HIGH | python3 | 3.9.25-3.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-4519 | HIGH | python3-libs | 3.9.25-3.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
-| CVE-2026-34714 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
