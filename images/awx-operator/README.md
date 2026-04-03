@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-04-02 12:40:30 UTC
+**Scanned:** 2026-04-03 00:35:49 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 33 (🔧24) | 170 (🔧69) | 230 (🔧11) | 435 | 🔧 106 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 32 (🔧24) | 170 (🔧69) | 230 (🔧11) | 434 | 🔧 106 |
 | ubi-micro | 0 | 🟠 3 | 4 | 8 | 15 | 🔧 0 |
 | ubi-minimal | 0 | 🟠 7 (🔧2) | 57 | 57 | 121 | 🔧 2 |
-| ubi | 0 | 🟠 11 (🔧2) | 101 | 219 | 331 | 🔧 2 |
+| ubi | 0 | 🟠 10 (🔧2) | 101 | 219 | 330 | 🔧 2 |
 
 ## Details
 
@@ -42,7 +42,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4519 | HIGH | python3.12-libs | 3.12.9-1.el9_6.2 | 3.12.12-4.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.34.1-8.el9_6 | 3.34.1-9.el9_7 | sqlite: Integer Truncation in SQLite |
 | CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
-| CVE-2026-34714 | HIGH | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: Vim: Arbitrary code execution via crafted file |
 | CVE-2026-26007 | HIGH | cryptography | 45.0.7 | 46.0.5 | cryptography: cryptography Subgroup Attack Due to Missing Subgroup Validation for SECT Curves |
 | CVE-2026-23949 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context: jaraco.context: Path traversal via malicious tar archives |
 | CVE-2026-23490 | HIGH | pyasn1 | 0.6.1 | 0.6.2 | pyasn1: pyasn1: Denial of Service due to memory exhaustion from malformed RELATIVE-OID |
@@ -324,7 +323,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4519 | HIGH | python3.12 | 3.12.12-4.el9_7.1 | 3.12.12-4.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-4519 | HIGH | python3.12-libs | 3.12.12-4.el9_7.1 | 3.12.12-4.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
-| CVE-2026-34714 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
