@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-04-03 15:16:24 UTC
+**Scanned:** 2026-04-04 03:53:53 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 136 (🔧127) | 418 (🔧311) | 293 (🔧38) | 861 | 🔧 490 |
-| ubi-minimal | 0 | 🟠 5 | 31 (🔧1) | 49 | 85 | 🔧 1 |
-| ubi | 0 | 🟠 8 | 78 (🔧1) | 213 | 299 | 🔧 1 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 132 (🔧129) | 422 (🔧311) | 293 (🔧38) | 861 | 🔧 492 |
+| ubi-minimal | 0 | 🟠 2 | 35 (🔧1) | 49 | 86 | 🔧 1 |
+| ubi | 0 | 🟠 5 | 82 (🔧1) | 213 | 300 | 🔧 1 |
 
 ## Details
 
@@ -42,20 +42,16 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-4911 | HIGH | glibc | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: buffer overflow in ld.so leading to privilege escalation |
 | CVE-2024-2961 | HIGH | glibc | 2.28-211.el8 | 2.28-251.el8_10.1 | glibc: Out of bounds write in iconv may lead to remote code execution |
 | CVE-2024-33599 | HIGH | glibc | 2.28-211.el8 | 2.28-251.el8_10.2 | glibc: stack-based buffer overflow in netgroup cache |
-| CVE-2026-4046 | HIGH | glibc | 2.28-211.el8 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2023-4911 | HIGH | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: buffer overflow in ld.so leading to privilege escalation |
 | CVE-2024-2961 | HIGH | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.1 | glibc: Out of bounds write in iconv may lead to remote code execution |
 | CVE-2024-33599 | HIGH | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.2 | glibc: stack-based buffer overflow in netgroup cache |
-| CVE-2026-4046 | HIGH | glibc-common | 2.28-211.el8 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2023-4911 | HIGH | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: buffer overflow in ld.so leading to privilege escalation |
 | CVE-2024-2961 | HIGH | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.1 | glibc: Out of bounds write in iconv may lead to remote code execution |
 | CVE-2024-33599 | HIGH | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.2 | glibc: stack-based buffer overflow in netgroup cache |
-| CVE-2026-4046 | HIGH | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2025-68973 | HIGH | gnupg2 | 2.2.20-3.el8_6 | 2.2.20-4.el8_10 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2022-42898 | HIGH | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-25.el8_8 | krb5: integer overflow vulnerabilities in PAC parsing |
 | CVE-2024-3596 | HIGH | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-30.el8_10 | freeradius: forgery attack |
 | CVE-2025-5914 | HIGH | libarchive | 3.3.3-4.el8 | 3.3.3-6.el8_10 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
-| CVE-2026-4111 | HIGH | libarchive | 3.3.3-4.el8 | - | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
 | CVE-2026-4424 | HIGH | libarchive | 3.3.3-4.el8 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2023-44487 | HIGH | libnghttp2 | 1.33.0-3.el8_2.1 | 1.33.0-5.el8_8 | HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack) |
 | CVE-2026-27135 | HIGH | libnghttp2 | 1.33.0-3.el8_2.1 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
@@ -74,7 +70,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-12718 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
 | CVE-2025-4517 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | python: cpython: Arbitrary writes via tarfile realpath overflow |
-| CVE-2026-4519 | HIGH | platform-python | 3.6.8-48.el8_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-4519 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-75.el8_10 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2024-6345 | HIGH | platform-python-setuptools | 39.2.0-6.el8_7.1 | 39.2.0-8.el8_10 | pypa/setuptools: Remote code execution via download functions in the package_index module in pypa/setuptools |
 | CVE-2023-3899 | HIGH | python3-cloud-what | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2023-24329 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-51.el8_8.1 | python: urllib.parse url blocklisting bypass |
@@ -83,7 +79,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-12718 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
 | CVE-2025-4517 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | python: cpython: Arbitrary writes via tarfile realpath overflow |
-| CVE-2026-4519 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-4519 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-75.el8_10 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2024-56171 | HIGH | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-19.el8_10 | libxml2: Use-After-Free in libxml2 |
 | CVE-2025-24928 | HIGH | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-19.el8_10 | libxml2: Stack-based buffer overflow in xmlSnprintfElements of libxml2 |
 | CVE-2025-49794 | HIGH | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-21.el8_10.1 | libxml: Heap use after free (UAF) leads to Denial of service (DoS) |
@@ -226,6 +222,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4802 | MEDIUM | glibc | 2.28-211.el8 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-8058 | MEDIUM | glibc | 2.28-211.el8 | 2.28-251.el8_10.25 | glibc: Double free in glibc |
 | CVE-2026-0915 | MEDIUM | glibc | 2.28-211.el8 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-4046 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2023-4527 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: Stack read overflow in getaddrinfo in no-aaaa mode |
 | CVE-2023-4806 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in getaddrinfo() |
@@ -235,6 +232,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4802 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-8058 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.25 | glibc: Double free in glibc |
 | CVE-2026-0915 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-4046 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2023-4527 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: Stack read overflow in getaddrinfo in no-aaaa mode |
 | CVE-2023-4806 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in getaddrinfo() |
@@ -244,6 +242,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4802 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-8058 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.25 | glibc: Double free in glibc |
 | CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-4046 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2021-43618 | MEDIUM | gmp | 1:6.1.2-10.el8 | 1:6.1.2-11.el8 | gmp: Integer overflow and resultant buffer overflow via crafted input |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.2.20-3.el8_6 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
@@ -469,6 +468,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-28419 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Information disclosure and denial of service via malformed tags file |
 | CVE-2026-28420 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Information disclosure and denial of service via crafted Unicode characters in terminal emulator |
 | CVE-2026-28421 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Denial of service and information disclosure via crafted swap file |
+| CVE-2026-34743 | MEDIUM | xz-libs | 5.2.4-4.el8_6 | - | XZ Utils provide a general-purpose data-compression library plus comma ... |
 | CVE-2023-48795 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.17.0, 0.0.0-20231218163308-9d2ee975ef9f | ssh: Prefix truncation attack on Binary Packet Protocol (BPP) |
 | CVE-2025-47914 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.45.0 | golang.org/x/crypto/ssh/agent: SSH Agent servers: Denial of Service due to malformed messages |
 | CVE-2025-58181 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.45.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via unbounded memory consumption in GSSAPI authentication |
@@ -595,9 +595,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-4046 | HIGH | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
-| CVE-2026-4046 | HIGH | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
-| CVE-2026-4046 | HIGH | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -610,8 +607,11 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
+| CVE-2026-4046 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
+| CVE-2026-4046 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
+| CVE-2026-4046 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
@@ -630,15 +630,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-2100 | MEDIUM | p11-kit-trust | 0.25.3-3.el9_5 | - | p11-kit: p11-kit: NULL dereference via C_DeriveKey with specific NULL parameters |
 | CVE-2026-29111 | MEDIUM | systemd-libs | 252-55.el9_7.7 | - | systemd: systemd: Arbitrary code execution or Denial of Service via spurious IPC API call data |
 | CVE-2026-4105 | MEDIUM | systemd-libs | 252-55.el9_7.7 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
+| CVE-2026-34743 | MEDIUM | xz-libs | 5.2.5-8.el9_0 | - | XZ Utils provide a general-purpose data-compression library plus comma ... |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20180926160741-c2ed4eda69e7 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 
 ### ubi
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-4046 | HIGH | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
-| CVE-2026-4046 | HIGH | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
-| CVE-2026-4046 | HIGH | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2026-4519 | HIGH | python3 | 3.9.25-3.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
@@ -664,8 +662,11 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
+| CVE-2026-4046 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
+| CVE-2026-4046 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
+| CVE-2026-4046 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
@@ -721,6 +722,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-28419 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Information disclosure and denial of service via malformed tags file |
 | CVE-2026-28420 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Information disclosure and denial of service via crafted Unicode characters in terminal emulator |
 | CVE-2026-28421 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Denial of service and information disclosure via crafted swap file |
+| CVE-2026-34743 | MEDIUM | xz-libs | 5.2.5-8.el9_0 | - | XZ Utils provide a general-purpose data-compression library plus comma ... |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20180926160741-c2ed4eda69e7 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 
 ---
