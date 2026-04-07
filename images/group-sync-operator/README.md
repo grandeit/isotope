@@ -4,17 +4,17 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-04-07 03:13:40 UTC
+**Scanned:** 2026-04-07 14:42:50 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
 | **upstream** | 🔴 2 (🔧2) | 🟠 19 (🔧16) | 82 (🔧47) | 60 (🔧15) | 163 | 🔧 80 |
-| distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
-| ubi-micro | 0 | 🟠 1 (🔧1) | 7 | 8 | 16 | 🔧 1 |
-| ubi-minimal | 0 | 🟠 3 (🔧1) | 34 | 45 | 82 | 🔧 1 |
-| ubi | 0 | 🟠 6 (🔧1) | 81 | 213 | 300 | 🔧 1 |
+| distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
+| ubi-micro | 0 | 0 | 7 | 8 | 15 | 🔧 0 |
+| ubi-minimal | 0 | 🟠 2 | 34 | 45 | 81 | 🔧 0 |
+| ubi | 0 | 🟠 5 | 81 | 213 | 299 | 🔧 0 |
 
 ## Details
 
@@ -130,15 +130,12 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 ### distroless
 
-| CVE | Severity | Package | Installed | Fixed | Description |
-|-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-34986 | HIGH | github.com/go-jose/go-jose/v3 | v3.0.4 | 3.0.5 | Go JOSE Panics in JWE decryption |
+✅ No Critical, High, or Medium vulnerabilities found.
 
 ### ubi-micro
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-34986 | HIGH | github.com/go-jose/go-jose/v3 | v3.0.4 | 3.0.5 | Go JOSE Panics in JWE decryption |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2026-4046 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
@@ -153,7 +150,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
-| CVE-2026-34986 | HIGH | github.com/go-jose/go-jose/v3 | v3.0.4 | 3.0.5 | Go JOSE Panics in JWE decryption |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
@@ -198,7 +194,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4519 | HIGH | python3 | 3.9.25-3.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-4519 | HIGH | python3-libs | 3.9.25-3.el9_7.1 | - | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
-| CVE-2026-34986 | HIGH | github.com/go-jose/go-jose/v3 | v3.0.4 | 3.0.5 | Go JOSE Panics in JWE decryption |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
