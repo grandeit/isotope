@@ -4,7 +4,7 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-04-08 01:40:48 UTC
+**Scanned:** 2026-04-08 13:35:01 UTC
 
 ## Overview
 
@@ -294,8 +294,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2026-2100 | MEDIUM | p11-kit | 0.25.3-3.el9_5 | - | p11-kit: p11-kit: NULL dereference via C_DeriveKey with specific NULL parameters |
 | CVE-2026-2100 | MEDIUM | p11-kit-trust | 0.25.3-3.el9_5 | - | p11-kit: p11-kit: NULL dereference via C_DeriveKey with specific NULL parameters |
-| CVE-2026-29111 | MEDIUM | systemd-libs | 252-55.el9_7.7 | - | systemd: systemd: Arbitrary code execution or Denial of Service via spurious IPC API call data |
-| CVE-2026-4105 | MEDIUM | systemd-libs | 252-55.el9_7.7 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
+| CVE-2026-29111 | MEDIUM | systemd-libs | 252-55.el9_7.8 | - | systemd: systemd: Arbitrary code execution or Denial of Service via spurious IPC API call data |
+| CVE-2026-4105 | MEDIUM | systemd-libs | 252-55.el9_7.8 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
 | CVE-2026-34743 | MEDIUM | xz-libs | 5.2.5-8.el9_0 | - | xz: XZ Utils: Denial of Service via buffer overflow in index decoding |
 
 ### ubi
