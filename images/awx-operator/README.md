@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-04-13 12:45:57 UTC
+**Scanned:** 2026-04-14 00:42:29 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 31 (🔧27) | 193 (🔧73) | 238 (🔧11) | 464 | 🔧 116 |
-| ubi-micro | 0 | 0 | 7 | 8 | 15 | 🔧 0 |
-| ubi-minimal | 0 | 🟠 2 | 72 | 65 | 139 | 🔧 0 |
-| ubi | 0 | 🟠 4 | 120 | 227 | 351 | 🔧 0 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 34 (🔧29) | 193 (🔧73) | 246 (🔧11) | 475 | 🔧 116 |
+| ubi-micro | 0 | 🟠 1 | 7 | 8 | 16 | 🔧 0 |
+| ubi-minimal | 0 | 🟠 3 | 72 | 73 | 148 | 🔧 0 |
+| ubi | 0 | 🟠 5 | 120 | 235 | 360 | 🔧 0 |
 
 ## Details
 
@@ -29,6 +29,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | 2.3.3-5.el9_7 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2026-4111 | HIGH | libarchive | 3.5.3-6.el9_6 | 3.5.3-7.el9_7 | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-6.el9_6 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
+| CVE-2026-4878 | HIGH | libcap | 2.48-9.el9_2 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
 | CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2026-4519 | HIGH | python3 | 3.9.21-2.el9_6.2 | 3.9.25-3.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-4519 | HIGH | python3-libs | 3.9.21-2.el9_6.2 | 3.9.25-3.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
@@ -56,6 +57,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61728 | HIGH | stdlib | v1.24.4 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61729 | HIGH | stdlib | v1.24.4 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2026-25679 | HIGH | stdlib | v1.24.4 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
+| CVE-2026-32280 | HIGH | stdlib | v1.24.4 | 1.25.9, 1.26.2 | During chain building, the amount of work that is done is not correctl ... |
+| CVE-2026-32282 | HIGH | stdlib | v1.24.4 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
@@ -227,7 +230,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-35177 | MEDIUM | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: zip.vim: Vim zip.vim plugin: Arbitrary file overwrite via path traversal bypass |
 | CVE-2026-39881 | MEDIUM | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: Vim: Arbitrary code execution via command injection in NetBeans interface |
 | CVE-2026-34743 | MEDIUM | xz-libs | 5.2.5-8.el9_0 | - | xz: XZ Utils: Denial of Service via buffer overflow in index decoding |
-| CVE-2026-39892 | MEDIUM | cryptography | 45.0.7 | 46.0.7 | cryptography is a package designed to expose cryptographic primitives ... |
+| CVE-2026-39892 | MEDIUM | cryptography | 45.0.7 | 46.0.7 | cryptography: Cryptography: Buffer overflow via non-contiguous buffer in API |
 | CVE-2025-68146 | MEDIUM | filelock | 3.19.1 | 3.20.1 | filelock: filelock: Time-of-Check-Time-of-Use (TOCTOU) race condition and symlink attack allows arbitrary file corruption or truncation |
 | CVE-2026-22701 | MEDIUM | filelock | 3.19.1 | 3.20.3 | filelock: filelock Time-of-Check-Time-of-Use (TOCTOU) in SoftFileLock |
 | CVE-2025-8869 | MEDIUM | pip | 23.3.2 | 25.3 | pip: pip missing checks on symbolic link extraction |
@@ -254,6 +257,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-4878 | HIGH | libcap | 2.48-10.el9 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2026-4046 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
@@ -267,7 +271,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
-| CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
+| CVE-2026-4878 | HIGH | libcap | 2.48-10.el9 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
+| CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9_7.1 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
@@ -346,7 +351,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
-| CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
+| CVE-2026-4878 | HIGH | libcap | 2.48-10.el9 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
+| CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9_7.1 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
 | CVE-2026-34982 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: arbitrary command execution via modeline sandbox bypass |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
