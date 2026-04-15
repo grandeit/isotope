@@ -4,17 +4,17 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-04-14 13:34:35 UTC
+**Scanned:** 2026-04-15 01:33:00 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 3 (🔧3) | 🟠 46 (🔧43) | 173 (🔧114) | 135 (🔧24) | 357 | 🔧 185 |
+| **upstream** | 🔴 3 (🔧3) | 🟠 46 (🔧44) | 173 (🔧114) | 136 (🔧24) | 358 | 🔧 186 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 1 | 7 | 8 | 16 | 🔧 0 |
-| ubi-minimal | 0 | 🟠 3 | 43 | 57 | 103 | 🔧 0 |
-| ubi | 0 | 🟠 5 | 96 | 229 | 330 | 🔧 0 |
+| ubi-minimal | 0 | 🟠 2 | 43 | 58 | 103 | 🔧 0 |
+| ubi | 0 | 🟠 6 | 98 | 231 | 335 | 🔧 0 |
 
 ## Details
 
@@ -39,7 +39,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-5914 | HIGH | libarchive | 3.3.3-5.el8 | 3.3.3-6.el8_10 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
 | CVE-2026-4424 | HIGH | libarchive | 3.3.3-5.el8 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-4878 | HIGH | libcap | 2.48-6.el8_9 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
-| CVE-2026-27135 | HIGH | libnghttp2 | 1.33.0-5.el8_9 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
+| CVE-2026-27135 | HIGH | libnghttp2 | 1.33.0-5.el8_9 | 1.33.0-6.el8_10.2 | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2024-56171 | HIGH | libxml2 | 2.9.7-18.el8_9 | 2.9.7-19.el8_10 | libxml2: Use-After-Free in libxml2 |
 | CVE-2025-24928 | HIGH | libxml2 | 2.9.7-18.el8_9 | 2.9.7-19.el8_10 | libxml2: Stack-based buffer overflow in xmlSnprintfElements of libxml2 |
 | CVE-2025-49794 | HIGH | libxml2 | 2.9.7-18.el8_9 | 2.9.7-21.el8_10.1 | libxml: Heap use after free (UAF) leads to Denial of service (DoS) |
@@ -270,7 +270,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-4878 | HIGH | libcap | 2.48-10.el9 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
-| CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9_7.1 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
@@ -321,7 +320,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-4878 | HIGH | libcap | 2.48-10.el9 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
-| CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9_7.1 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
+| CVE-2026-6100 | HIGH | python3 | 3.9.25-3.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
+| CVE-2026-6100 | HIGH | python3-libs | 3.9.25-3.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
 | CVE-2026-34982 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: arbitrary command execution via modeline sandbox bypass |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -381,6 +381,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-15282 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | cpython: Header injection via newlines in data URL mediatype in Python |
 | CVE-2025-4516 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2026-0672 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-1502 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Missing character filtering in Python |
@@ -389,6 +390,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-15282 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Header injection via newlines in data URL mediatype in Python |
 | CVE-2025-4516 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2026-0672 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-1502 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
