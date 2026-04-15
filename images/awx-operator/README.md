@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-04-14 12:42:58 UTC
+**Scanned:** 2026-04-15 00:42:21 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 34 (🔧29) | 193 (🔧73) | 246 (🔧11) | 475 | 🔧 116 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 38 (🔧30) | 197 (🔧73) | 248 (🔧11) | 485 | 🔧 117 |
 | ubi-micro | 0 | 🟠 1 | 7 | 8 | 16 | 🔧 0 |
-| ubi-minimal | 0 | 🟠 3 | 72 | 73 | 148 | 🔧 0 |
-| ubi | 0 | 🟠 5 | 120 | 235 | 360 | 🔧 0 |
+| ubi-minimal | 0 | 🟠 4 | 74 | 75 | 153 | 🔧 0 |
+| ubi | 0 | 🟠 8 | 124 | 237 | 369 | 🔧 0 |
 
 ## Details
 
@@ -30,14 +30,18 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4111 | HIGH | libarchive | 3.5.3-6.el9_6 | 3.5.3-7.el9_7 | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-6.el9_6 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-4878 | HIGH | libcap | 2.48-9.el9_2 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
-| CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
+| CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9 | 1.43.0-6.el9_7.1 | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2026-4519 | HIGH | python3 | 3.9.21-2.el9_6.2 | 3.9.25-3.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-6100 | HIGH | python3 | 3.9.21-2.el9_6.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2026-4519 | HIGH | python3-libs | 3.9.21-2.el9_6.2 | 3.9.25-3.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-6100 | HIGH | python3-libs | 3.9.21-2.el9_6.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | 1.26.5-6.el9_7.1 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | python3-urllib3 | 1.26.5-6.el9 | 1.26.5-6.el9_7.1 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | python3-urllib3 | 1.26.5-6.el9 | 1.26.5-6.el9_7.1 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2026-4519 | HIGH | python3.12 | 3.12.9-1.el9_6.2 | 3.12.12-4.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-6100 | HIGH | python3.12 | 3.12.9-1.el9_6.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2026-4519 | HIGH | python3.12-libs | 3.12.9-1.el9_6.2 | 3.12.12-4.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-6100 | HIGH | python3.12-libs | 3.12.9-1.el9_6.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.34.1-8.el9_6 | 3.34.1-9.el9_7 | sqlite: Integer Truncation in SQLite |
 | CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
 | CVE-2026-34982 | HIGH | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: arbitrary command execution via modeline sandbox bypass |
@@ -138,6 +142,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0672 | MEDIUM | python3 | 3.9.21-2.el9_6.2 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3 | 3.9.21-2.el9_6.2 | 3.9.25-3.el9_7.1 | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2026-1299 | MEDIUM | python3 | 3.9.21-2.el9_6.2 | 3.9.25-3.el9_7.1 | cpython: email header injection due to unquoted newlines |
+| CVE-2026-1502 | MEDIUM | python3 | 3.9.21-2.el9_6.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3 | 3.9.21-2.el9_6.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3 | 3.9.21-2.el9_6.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | - | cpython: Missing character filtering in Python |
@@ -153,6 +158,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0672 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | 3.9.25-3.el9_7.1 | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2026-1299 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | 3.9.25-3.el9_7.1 | cpython: email header injection due to unquoted newlines |
+| CVE-2026-1502 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
@@ -174,6 +180,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0672 | MEDIUM | python3.12 | 3.12.9-1.el9_6.2 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3.12 | 3.12.9-1.el9_6.2 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2026-1299 | MEDIUM | python3.12 | 3.12.9-1.el9_6.2 | 3.12.12-4.el9_7.1 | cpython: email header injection due to unquoted newlines |
+| CVE-2026-1502 | MEDIUM | python3.12 | 3.12.9-1.el9_6.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3.12 | 3.12.9-1.el9_6.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3.12 | 3.12.9-1.el9_6.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-11468 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | cpython: Missing character filtering in Python |
@@ -190,6 +197,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0672 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2026-1299 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | 3.12.12-4.el9_7.1 | cpython: email header injection due to unquoted newlines |
+| CVE-2026-1502 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-4.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
@@ -272,7 +280,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-4878 | HIGH | libcap | 2.48-10.el9 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
-| CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9_7.1 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
+| CVE-2026-6100 | HIGH | python3.12 | 3.12.12-4.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
+| CVE-2026-6100 | HIGH | python3.12-libs | 3.12.12-4.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
@@ -326,6 +335,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6069 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2026-0672 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2026-1502 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-11468 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Missing character filtering in Python |
@@ -336,6 +346,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6069 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2026-0672 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2026-1502 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
@@ -352,7 +363,10 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-4878 | HIGH | libcap | 2.48-10.el9 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
-| CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9_7.1 | - | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
+| CVE-2026-6100 | HIGH | python3 | 3.9.25-3.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
+| CVE-2026-6100 | HIGH | python3-libs | 3.9.25-3.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
+| CVE-2026-6100 | HIGH | python3.12 | 3.12.12-4.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
+| CVE-2026-6100 | HIGH | python3.12-libs | 3.12.12-4.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
 | CVE-2026-34982 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: arbitrary command execution via modeline sandbox bypass |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -412,6 +426,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-15282 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | cpython: Header injection via newlines in data URL mediatype in Python |
 | CVE-2025-4516 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2026-0672 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-1502 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Missing character filtering in Python |
@@ -420,6 +435,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-15282 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Header injection via newlines in data URL mediatype in Python |
 | CVE-2025-4516 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2026-0672 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-1502 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
@@ -435,6 +451,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6069 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2026-0672 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2026-1502 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-11468 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Missing character filtering in Python |
@@ -445,6 +462,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6069 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Python HTMLParser quadratic complexity |
 | CVE-2026-0672 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-0865 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: wsgiref.headers.Headers allows header newline injection in Python |
+| CVE-2026-1502 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
