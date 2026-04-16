@@ -4,7 +4,7 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-04-15 14:32:53 UTC
+**Scanned:** 2026-04-16 03:15:33 UTC
 
 ## Overview
 
@@ -14,7 +14,7 @@
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 1 | 7 | 8 | 16 | 🔧 0 |
 | ubi-minimal | 0 | 🟠 2 | 43 | 58 | 103 | 🔧 0 |
-| ubi | 0 | 🟠 6 | 98 | 231 | 335 | 🔧 0 |
+| ubi | 0 | 🟠 8 | 100 | 231 | 339 | 🔧 0 |
 
 ## Details
 
@@ -77,7 +77,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-5.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-5.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-5.el9_6 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
-| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-5.el9_6 | - | A flaw was found in libarchive. On 32-bit systems, an integer overflow ... |
+| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-5.el9_6 | - | libarchive: libarchive: Arbitrary code execution via integer overflow in ISO9660 image processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-5.el9_6 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
 | CVE-2025-14104 | MEDIUM | libblkid | 2.37.4-21.el9 | 2.37.4-21.el9_7 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2026-27456 | MEDIUM | libblkid | 2.37.4-21.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
@@ -187,7 +187,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
-| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | A flaw was found in libarchive. On 32-bit systems, an integer overflow ... |
+| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Arbitrary code execution via integer overflow in ISO9660 image processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
 | CVE-2026-27456 | MEDIUM | libblkid | 2.37.4-21.el9_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2025-13034 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -216,7 +216,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-4878 | HIGH | libcap | 2.48-10.el9 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
+| CVE-2026-4786 | HIGH | python3 | 3.9.25-3.el9_7.2 | - | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | python3 | 3.9.25-3.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
+| CVE-2026-4786 | HIGH | python3-libs | 3.9.25-3.el9_7.2 | - | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | python3-libs | 3.9.25-3.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
 | CVE-2026-34982 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: arbitrary command execution via modeline sandbox bypass |
@@ -249,7 +251,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
-| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | A flaw was found in libarchive. On 32-bit systems, an integer overflow ... |
+| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Arbitrary code execution via integer overflow in ISO9660 image processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
 | CVE-2026-27456 | MEDIUM | libblkid | 2.37.4-21.el9_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2025-13034 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -280,6 +282,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1502 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
+| CVE-2026-5713 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Out-of-memory when loading Plist |
@@ -289,6 +292,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1502 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
+| CVE-2026-5713 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
