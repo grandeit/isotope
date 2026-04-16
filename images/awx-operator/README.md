@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-04-15 12:44:01 UTC
+**Scanned:** 2026-04-16 00:42:22 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 38 (🔧30) | 197 (🔧73) | 248 (🔧11) | 485 | 🔧 117 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 42 (🔧30) | 201 (🔧73) | 248 (🔧11) | 493 | 🔧 117 |
 | ubi-micro | 0 | 🟠 1 | 7 | 8 | 16 | 🔧 0 |
-| ubi-minimal | 0 | 🟠 4 | 74 | 75 | 153 | 🔧 0 |
-| ubi | 0 | 🟠 8 | 124 | 237 | 369 | 🔧 0 |
+| ubi-minimal | 0 | 🟠 6 | 76 | 75 | 157 | 🔧 0 |
+| ubi | 0 | 🟠 12 | 128 | 237 | 377 | 🔧 0 |
 
 ## Details
 
@@ -32,15 +32,19 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4878 | HIGH | libcap | 2.48-9.el9_2 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
 | CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9 | 1.43.0-6.el9_7.1 | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2026-4519 | HIGH | python3 | 3.9.21-2.el9_6.2 | 3.9.25-3.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-4786 | HIGH | python3 | 3.9.21-2.el9_6.2 | - | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | python3 | 3.9.21-2.el9_6.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2026-4519 | HIGH | python3-libs | 3.9.21-2.el9_6.2 | 3.9.25-3.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-4786 | HIGH | python3-libs | 3.9.21-2.el9_6.2 | - | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | python3-libs | 3.9.21-2.el9_6.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.26.5-6.el9 | 1.26.5-6.el9_7.1 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | python3-urllib3 | 1.26.5-6.el9 | 1.26.5-6.el9_7.1 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | python3-urllib3 | 1.26.5-6.el9 | 1.26.5-6.el9_7.1 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2026-4519 | HIGH | python3.12 | 3.12.9-1.el9_6.2 | 3.12.12-4.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-4786 | HIGH | python3.12 | 3.12.9-1.el9_6.2 | - | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | python3.12 | 3.12.9-1.el9_6.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2026-4519 | HIGH | python3.12-libs | 3.12.9-1.el9_6.2 | 3.12.12-4.el9_7.2 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
+| CVE-2026-4786 | HIGH | python3.12-libs | 3.12.9-1.el9_6.2 | - | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | python3.12-libs | 3.12.9-1.el9_6.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.34.1-8.el9_6 | 3.34.1-9.el9_7 | sqlite: Integer Truncation in SQLite |
 | CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
@@ -100,7 +104,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
-| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | A flaw was found in libarchive. On 32-bit systems, an integer overflow ... |
+| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: libarchive: Arbitrary code execution via integer overflow in ISO9660 image processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-6.el9_6 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
 | CVE-2025-14104 | MEDIUM | libblkid | 2.37.4-21.el9 | 2.37.4-21.el9_7 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2026-27456 | MEDIUM | libblkid | 2.37.4-21.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
@@ -145,6 +149,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1502 | MEDIUM | python3 | 3.9.21-2.el9_6.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3 | 3.9.21-2.el9_6.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3 | 3.9.21-2.el9_6.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
+| CVE-2026-5713 | MEDIUM | python3 | 3.9.21-2.el9_6.2 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | 3.9.25-3.el9_7 | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-12781 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
@@ -161,6 +166,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1502 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
+| CVE-2026-5713 | MEDIUM | python3-libs | 3.9.21-2.el9_6.2 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
@@ -183,6 +189,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1502 | MEDIUM | python3.12 | 3.12.9-1.el9_6.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3.12 | 3.12.9-1.el9_6.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3.12 | 3.12.9-1.el9_6.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
+| CVE-2026-5713 | MEDIUM | python3.12 | 3.12.9-1.el9_6.2 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2025-11468 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12084 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | 3.12.12-4.el9_7 | cpython: python: cpython: Quadratic algorithm in xml.dom.minidom leads to denial of service |
 | CVE-2025-12781 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
@@ -200,6 +207,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1502 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
+| CVE-2026-5713 | MEDIUM | python3.12-libs | 3.12.9-1.el9_6.2 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-4.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-4.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2026-25645 | MEDIUM | python3.12-pip-wheel | 23.2.1-4.el9 | - | requests: Requests: Security bypass due to predictable temporary file creation |
@@ -280,7 +288,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-4878 | HIGH | libcap | 2.48-10.el9 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
+| CVE-2026-4786 | HIGH | python3.12 | 3.12.12-4.el9_7.2 | - | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | python3.12 | 3.12.12-4.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
+| CVE-2026-4786 | HIGH | python3.12-libs | 3.12.12-4.el9_7.2 | - | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | python3.12-libs | 3.12.12-4.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -306,7 +316,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
-| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | A flaw was found in libarchive. On 32-bit systems, an integer overflow ... |
+| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Arbitrary code execution via integer overflow in ISO9660 image processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
 | CVE-2026-27456 | MEDIUM | libblkid | 2.37.4-21.el9_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2025-13034 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -338,6 +348,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1502 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
+| CVE-2026-5713 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2025-11468 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Out-of-memory when loading Plist |
@@ -349,6 +360,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1502 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
+| CVE-2026-5713 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2026-25645 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | requests: Requests: Security bypass due to predictable temporary file creation |
@@ -363,9 +375,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-4878 | HIGH | libcap | 2.48-10.el9 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
+| CVE-2026-4786 | HIGH | python3 | 3.9.25-3.el9_7.2 | - | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | python3 | 3.9.25-3.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
+| CVE-2026-4786 | HIGH | python3-libs | 3.9.25-3.el9_7.2 | - | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | python3-libs | 3.9.25-3.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
+| CVE-2026-4786 | HIGH | python3.12 | 3.12.12-4.el9_7.2 | - | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | python3.12 | 3.12.12-4.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
+| CVE-2026-4786 | HIGH | python3.12-libs | 3.12.12-4.el9_7.2 | - | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | python3.12-libs | 3.12.12-4.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
 | CVE-2026-34982 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.1 | - | vim: arbitrary command execution via modeline sandbox bypass |
@@ -398,7 +414,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
-| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | A flaw was found in libarchive. On 32-bit systems, an integer overflow ... |
+| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: libarchive: Arbitrary code execution via integer overflow in ISO9660 image processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-7.el9_7 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
 | CVE-2026-27456 | MEDIUM | libblkid | 2.37.4-21.el9_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2025-13034 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -429,6 +445,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1502 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
+| CVE-2026-5713 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Out-of-memory when loading Plist |
@@ -438,6 +455,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1502 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
+| CVE-2026-5713 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
@@ -454,6 +472,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1502 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
+| CVE-2026-5713 | MEDIUM | python3.12 | 3.12.12-4.el9_7.2 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2025-11468 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Out-of-memory when loading Plist |
@@ -465,6 +484,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1502 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
+| CVE-2026-5713 | MEDIUM | python3.12-libs | 3.12.12-4.el9_7.2 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2025-50181 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2026-25645 | MEDIUM | python3.12-pip-wheel | 23.2.1-5.el9 | - | requests: Requests: Security bypass due to predictable temporary file creation |
