@@ -4,16 +4,16 @@
 
 **Version:** `devel`
 
-**Scanned:** 2026-04-16 12:45:13 UTC
+**Scanned:** 2026-04-17 00:40:55 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 42 (🔧30) | 201 (🔧73) | 248 (🔧11) | 493 | 🔧 117 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 42 (🔧31) | 201 (🔧75) | 248 (🔧11) | 493 | 🔧 120 |
 | ubi-micro | 0 | 🟠 1 | 7 | 8 | 16 | 🔧 0 |
 | ubi-minimal | 0 | 🟠 6 | 76 | 75 | 157 | 🔧 0 |
-| ubi | 0 | 🟠 12 | 128 | 237 | 377 | 🔧 0 |
+| ubi | 0 | 🟠 11 | 126 | 237 | 374 | 🔧 0 |
 
 ## Details
 
@@ -47,7 +47,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4786 | HIGH | python3.12-libs | 3.12.9-1.el9_6.2 | - | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | python3.12-libs | 3.12.9-1.el9_6.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.34.1-8.el9_6 | 3.34.1-9.el9_7 | sqlite: Integer Truncation in SQLite |
-| CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
+| CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-22.el9_6 | 2:8.2.2637-23.el9_7.2 | vim: Vim: Arbitrary code execution via command injection in glob() function |
 | CVE-2026-34982 | HIGH | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: arbitrary command execution via modeline sandbox bypass |
 | CVE-2026-26007 | HIGH | cryptography | 45.0.7 | 46.0.5 | cryptography: cryptography Subgroup Attack Due to Missing Subgroup Validation for SECT Curves |
 | CVE-2026-23949 | HIGH | jaraco.context | 5.3.0 | 6.1.0 | jaraco.context: jaraco.context: Path traversal via malicious tar archives |
@@ -238,11 +238,11 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-53905 | MEDIUM | vim-minimal | 2:8.2.2637-22.el9_6 | 2:8.2.2637-23.el9_7 | vim: Vim path traversial |
 | CVE-2025-53906 | MEDIUM | vim-minimal | 2:8.2.2637-22.el9_6 | 2:8.2.2637-23.el9_7 | vim: Vim path traversal |
 | CVE-2026-25749 | MEDIUM | vim-minimal | 2:8.2.2637-22.el9_6 | 2:8.2.2637-23.el9_7.1 | vim: Vim: Arbitrary code execution via 'helpfile' option processing |
-| CVE-2026-28417 | MEDIUM | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: Vim: Arbitrary code execution via OS command injection in the netrw plugin |
+| CVE-2026-28417 | MEDIUM | vim-minimal | 2:8.2.2637-22.el9_6 | 2:8.2.2637-23.el9_7.2 | vim: Vim: Arbitrary code execution via OS command injection in the netrw plugin |
 | CVE-2026-28418 | MEDIUM | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: Vim: Information disclosure via heap-based buffer overflow in Emacs-style tags file parsing |
 | CVE-2026-28419 | MEDIUM | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: Vim: Information disclosure and denial of service via malformed tags file |
 | CVE-2026-28420 | MEDIUM | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: Vim: Information disclosure and denial of service via crafted Unicode characters in terminal emulator |
-| CVE-2026-28421 | MEDIUM | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: Vim: Denial of service and information disclosure via crafted swap file |
+| CVE-2026-28421 | MEDIUM | vim-minimal | 2:8.2.2637-22.el9_6 | 2:8.2.2637-23.el9_7.2 | vim: Vim: Denial of service and information disclosure via crafted swap file |
 | CVE-2026-35177 | MEDIUM | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: zip.vim: Vim zip.vim plugin: Arbitrary file overwrite via path traversal bypass |
 | CVE-2026-39881 | MEDIUM | vim-minimal | 2:8.2.2637-22.el9_6 | - | vim: Vim: Arbitrary code execution via command injection in NetBeans interface |
 | CVE-2026-34743 | MEDIUM | xz-libs | 5.2.5-8.el9_0 | - | xz: XZ Utils: Denial of Service via buffer overflow in index decoding |
@@ -383,7 +383,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6100 | HIGH | python3.12 | 3.12.12-4.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2026-4786 | HIGH | python3.12-libs | 3.12.12-4.el9_7.2 | - | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | python3.12-libs | 3.12.12-4.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
-| CVE-2026-33412 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.2 | - | vim: Vim: Arbitrary code execution via command injection in glob() function |
 | CVE-2026-34982 | HIGH | vim-minimal | 2:8.2.2637-23.el9_7.2 | - | vim: arbitrary command execution via modeline sandbox bypass |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -505,11 +504,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-27456 | MEDIUM | util-linux | 2.37.4-21.el9_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2026-27456 | MEDIUM | util-linux-core | 2.37.4-21.el9_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2025-29768 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.2 | - | vim: Vim vulnerable to potential data loss with zip.vim and special crafted zip files |
-| CVE-2026-28417 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.2 | - | vim: Vim: Arbitrary code execution via OS command injection in the netrw plugin |
 | CVE-2026-28418 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.2 | - | vim: Vim: Information disclosure via heap-based buffer overflow in Emacs-style tags file parsing |
 | CVE-2026-28419 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.2 | - | vim: Vim: Information disclosure and denial of service via malformed tags file |
 | CVE-2026-28420 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.2 | - | vim: Vim: Information disclosure and denial of service via crafted Unicode characters in terminal emulator |
-| CVE-2026-28421 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.2 | - | vim: Vim: Denial of service and information disclosure via crafted swap file |
 | CVE-2026-35177 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.2 | - | vim: zip.vim: Vim zip.vim plugin: Arbitrary file overwrite via path traversal bypass |
 | CVE-2026-39881 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.2 | - | vim: Vim: Arbitrary code execution via command injection in NetBeans interface |
 | CVE-2026-34743 | MEDIUM | xz-libs | 5.2.5-8.el9_0 | - | xz: XZ Utils: Denial of Service via buffer overflow in index decoding |
