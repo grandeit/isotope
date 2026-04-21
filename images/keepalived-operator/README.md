@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-04-21 04:08:29 UTC
+**Scanned:** 2026-04-21 15:29:57 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 143 (🔧136) | 445 (🔧320) | 305 (🔧38) | 907 | 🔧 511 |
-| ubi-minimal | 0 | 🟠 2 | 44 (🔧1) | 62 | 108 | 🔧 1 |
-| ubi | 0 | 🟠 7 | 99 (🔧1) | 231 | 337 | 🔧 1 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 146 (🔧140) | 448 (🔧324) | 306 (🔧38) | 914 | 🔧 516 |
+| ubi-minimal | 0 | 🟠 1 | 43 (🔧1) | 62 | 106 | 🔧 1 |
+| ubi | 0 | 🟠 6 | 98 (🔧1) | 232 | 336 | 🔧 1 |
 
 ## Details
 
@@ -52,7 +52,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2022-42898 | HIGH | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-25.el8_8 | krb5: integer overflow vulnerabilities in PAC parsing |
 | CVE-2024-3596 | HIGH | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-30.el8_10 | freeradius: forgery attack |
 | CVE-2025-5914 | HIGH | libarchive | 3.3.3-4.el8 | 3.3.3-6.el8_10 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
-| CVE-2026-4424 | HIGH | libarchive | 3.3.3-4.el8 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
+| CVE-2026-4424 | HIGH | libarchive | 3.3.3-4.el8 | 3.3.3-7.el8_10 | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-4878 | HIGH | libcap | 2.48-4.el8 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
 | CVE-2023-44487 | HIGH | libnghttp2 | 1.33.0-3.el8_2.1 | 1.33.0-5.el8_8 | HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack) |
 | CVE-2026-27135 | HIGH | libnghttp2 | 1.33.0-3.el8_2.1 | 1.33.0-6.el8_10.2 | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
@@ -129,8 +129,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61728 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2026-25679 | HIGH | stdlib | v1.18.10 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
-| CVE-2026-32280 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | During chain building, the amount of work that is done is not correctl ... |
-| CVE-2026-32282 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
+| CVE-2026-32280 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: crypto/tls: golang: Go: Denial of Service vulnerability in certificate chain building |
+| CVE-2026-32281 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
+| CVE-2026-32283 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | If one side of the TLS connection sends multiple key update messages p ... |
 | CVE-2022-21698 | HIGH | github.com/prometheus/client_golang | v1.1.0 | 1.11.1 | prometheus/client_golang: Denial of service using InstrumentHandlerCounter |
 | CVE-2025-65637 | HIGH | github.com/sirupsen/logrus | v1.4.2 | 1.8.3, 1.9.1, 1.9.3 | github.com/sirupsen/logrus: github.com/sirupsen/logrus: Denial-of-Service due to large single-line payload |
 | CVE-2022-41722 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: path/filepath: path-filepath filepath.Clean path traversal |
@@ -154,8 +155,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61728 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2026-25679 | HIGH | stdlib | v1.18.10 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
-| CVE-2026-32280 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | During chain building, the amount of work that is done is not correctl ... |
-| CVE-2026-32282 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
+| CVE-2026-32280 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: crypto/tls: golang: Go: Denial of Service vulnerability in certificate chain building |
+| CVE-2026-32281 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
+| CVE-2026-32283 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | If one side of the TLS connection sends multiple key update messages p ... |
 | CVE-2022-41722 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: path/filepath: path-filepath filepath.Clean path traversal |
 | CVE-2022-41723 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang.org/x/net/http2: avoid quadratic complexity in HPACK decoding |
 | CVE-2022-41724 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: crypto/tls: large handshake records may cause panics |
@@ -177,8 +179,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61728 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2026-25679 | HIGH | stdlib | v1.18.10 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
-| CVE-2026-32280 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | During chain building, the amount of work that is done is not correctl ... |
-| CVE-2026-32282 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
+| CVE-2026-32280 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: crypto/tls: golang: Go: Denial of Service vulnerability in certificate chain building |
+| CVE-2026-32281 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
+| CVE-2026-32283 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | If one side of the TLS connection sends multiple key update messages p ... |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | 1.0.6-28.el8_10 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-13.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2023-23916 | MEDIUM | curl | 7.61.1-25.el8_7.2 | 7.61.1-25.el8_7.3 | curl: HTTP multi-header compression denial of service |
@@ -274,7 +277,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-25724 | MEDIUM | libarchive | 3.3.3-4.el8 | - | libarchive: Buffer Overflow vulnerability in libarchive |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.3.3-4.el8 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.3.3-4.el8 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
-| CVE-2026-5121 | MEDIUM | libarchive | 3.3.3-4.el8 | - | libarchive: libarchive: Arbitrary code execution via integer overflow in ISO9660 image processing |
+| CVE-2026-5121 | MEDIUM | libarchive | 3.3.3-4.el8 | 3.3.3-7.el8_10 | libarchive: libarchive: Arbitrary code execution via integer overflow in ISO9660 image processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.3.3-4.el8 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
 | CVE-2025-14104 | MEDIUM | libblkid | 2.32.1-39.el8_7 | 2.32.1-48.el8_10 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2026-27456 | MEDIUM | libblkid | 2.32.1-39.el8_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
@@ -525,6 +528,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-45341 | MEDIUM | stdlib | v1.18.10 | 1.22.11, 1.23.5, 1.24.0-rc.2 | golang: crypto/x509: crypto/x509: usage of IPv6 zone IDs can bypass URI name constraints |
 | CVE-2025-0913 | MEDIUM | stdlib | v1.18.10 | 1.23.10, 1.24.4 | Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall |
 | CVE-2025-22866 | MEDIUM | stdlib | v1.18.10 | 1.22.12, 1.23.6, 1.24.0-rc.3 | crypto/internal/nistec: golang: Timing sidechannel for P-256 on ppc64le in crypto/internal/nistec |
+| CVE-2025-22870 | MEDIUM | stdlib | v1.18.10 | 1.23.7, 1.24.1 | golang.org/x/net/proxy: golang.org/x/net/http/httpproxy: HTTP Proxy bypass using IPv6 Zone IDs in golang.org/x/net |
 | CVE-2025-22871 | MEDIUM | stdlib | v1.18.10 | 1.23.8, 1.24.2 | net/http: Request smuggling due to acceptance of invalid chunked data in net/http |
 | CVE-2025-22873 | MEDIUM | stdlib | v1.18.10 | 1.23.9, 1.24.3 | os: os: Information disclosure via path traversal using specially crafted filenames |
 | CVE-2025-4673 | MEDIUM | stdlib | v1.18.10 | 1.23.10, 1.24.4 | net/http: Sensitive headers not cleared on cross-origin redirect in net/http |
@@ -541,7 +545,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61727 | MEDIUM | stdlib | v1.18.10 | 1.24.11, 1.25.5 | golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.18.10 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
 | CVE-2026-27142 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
-| CVE-2026-32281 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
+| CVE-2026-32282 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20200302150141-5c8b2ff67527 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
@@ -565,6 +569,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-45341 | MEDIUM | stdlib | v1.18.10 | 1.22.11, 1.23.5, 1.24.0-rc.2 | golang: crypto/x509: crypto/x509: usage of IPv6 zone IDs can bypass URI name constraints |
 | CVE-2025-0913 | MEDIUM | stdlib | v1.18.10 | 1.23.10, 1.24.4 | Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall |
 | CVE-2025-22866 | MEDIUM | stdlib | v1.18.10 | 1.22.12, 1.23.6, 1.24.0-rc.3 | crypto/internal/nistec: golang: Timing sidechannel for P-256 on ppc64le in crypto/internal/nistec |
+| CVE-2025-22870 | MEDIUM | stdlib | v1.18.10 | 1.23.7, 1.24.1 | golang.org/x/net/proxy: golang.org/x/net/http/httpproxy: HTTP Proxy bypass using IPv6 Zone IDs in golang.org/x/net |
 | CVE-2025-22871 | MEDIUM | stdlib | v1.18.10 | 1.23.8, 1.24.2 | net/http: Request smuggling due to acceptance of invalid chunked data in net/http |
 | CVE-2025-22873 | MEDIUM | stdlib | v1.18.10 | 1.23.9, 1.24.3 | os: os: Information disclosure via path traversal using specially crafted filenames |
 | CVE-2025-4673 | MEDIUM | stdlib | v1.18.10 | 1.23.10, 1.24.4 | net/http: Sensitive headers not cleared on cross-origin redirect in net/http |
@@ -581,7 +586,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61727 | MEDIUM | stdlib | v1.18.10 | 1.24.11, 1.25.5 | golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.18.10 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
 | CVE-2026-27142 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
-| CVE-2026-32281 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
+| CVE-2026-32282 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20180926160741-c2ed4eda69e7 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
@@ -605,6 +610,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-45341 | MEDIUM | stdlib | v1.18.10 | 1.22.11, 1.23.5, 1.24.0-rc.2 | golang: crypto/x509: crypto/x509: usage of IPv6 zone IDs can bypass URI name constraints |
 | CVE-2025-0913 | MEDIUM | stdlib | v1.18.10 | 1.23.10, 1.24.4 | Inconsistent handling of O_CREATE|O_EXCL on Unix and Windows in os in syscall |
 | CVE-2025-22866 | MEDIUM | stdlib | v1.18.10 | 1.22.12, 1.23.6, 1.24.0-rc.3 | crypto/internal/nistec: golang: Timing sidechannel for P-256 on ppc64le in crypto/internal/nistec |
+| CVE-2025-22870 | MEDIUM | stdlib | v1.18.10 | 1.23.7, 1.24.1 | golang.org/x/net/proxy: golang.org/x/net/http/httpproxy: HTTP Proxy bypass using IPv6 Zone IDs in golang.org/x/net |
 | CVE-2025-22871 | MEDIUM | stdlib | v1.18.10 | 1.23.8, 1.24.2 | net/http: Request smuggling due to acceptance of invalid chunked data in net/http |
 | CVE-2025-22873 | MEDIUM | stdlib | v1.18.10 | 1.23.9, 1.24.3 | os: os: Information disclosure via path traversal using specially crafted filenames |
 | CVE-2025-4673 | MEDIUM | stdlib | v1.18.10 | 1.23.10, 1.24.4 | net/http: Sensitive headers not cleared on cross-origin redirect in net/http |
@@ -621,7 +627,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61727 | MEDIUM | stdlib | v1.18.10 | 1.24.11, 1.25.5 | golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.18.10 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
 | CVE-2026-27142 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
-| CVE-2026-32281 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
+| CVE-2026-32282 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
 
@@ -629,7 +635,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-4424 | HIGH | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-4878 | HIGH | libcap | 2.48-10.el9 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -652,7 +657,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
-| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Arbitrary code execution via integer overflow in ISO9660 image processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
 | CVE-2026-27456 | MEDIUM | libblkid | 2.37.4-21.el9_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2025-13034 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -680,7 +684,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-4424 | HIGH | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-4878 | HIGH | libcap | 2.48-10.el9 | - | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
 | CVE-2026-4786 | HIGH | python3 | 3.9.25-3.el9_7.2 | - | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | python3 | 3.9.25-3.el9_7.2 | - | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
@@ -716,7 +719,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
-| CVE-2026-5121 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Arbitrary code execution via integer overflow in ISO9660 image processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
 | CVE-2026-27456 | MEDIUM | libblkid | 2.37.4-21.el9_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2025-13034 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
