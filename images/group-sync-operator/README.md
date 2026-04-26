@@ -4,17 +4,17 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-04-25 14:15:55 UTC
+**Scanned:** 2026-04-26 03:15:59 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 23 (🔧21) | 102 (🔧52) | 73 (🔧15) | 200 | 🔧 90 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 23 (🔧21) | 103 (🔧52) | 73 (🔧15) | 201 | 🔧 90 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 1 | 13 | 8 | 22 | 🔧 0 |
-| ubi-minimal | 0 | 🟠 1 | 49 | 58 | 108 | 🔧 0 |
-| ubi | 0 | 🟠 7 | 106 | 232 | 345 | 🔧 0 |
+| ubi-minimal | 0 | 🟠 1 | 50 | 58 | 109 | 🔧 0 |
+| ubi | 0 | 🟠 7 | 109 | 232 | 348 | 🔧 0 |
 
 ## Details
 
@@ -95,6 +95,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | libcurl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
 | CVE-2026-3805 | MEDIUM | libcurl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
+| CVE-2026-41989 | MEDIUM | libgcrypt | 1.10.0-11.el9 | - | Libgcrypt: Libgcrypt: Denial of Service and buffer overflow via crafted ECDH ciphertext |
 | CVE-2025-14104 | MEDIUM | libmount | 2.37.4-21.el9 | 2.37.4-21.el9_7 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2026-27456 | MEDIUM | libmount | 2.37.4-21.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2025-14104 | MEDIUM | libsmartcols | 2.37.4-21.el9 | 2.37.4-21.el9_7 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
@@ -215,6 +216,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
 | CVE-2026-3805 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
+| CVE-2026-41989 | MEDIUM | libgcrypt | 1.10.0-11.el9 | - | Libgcrypt: Libgcrypt: Denial of Service and buffer overflow via crafted ECDH ciphertext |
 | CVE-2026-27456 | MEDIUM | libmount | 2.37.4-21.el9_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2026-27456 | MEDIUM | libsmartcols | 2.37.4-21.el9_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2026-27456 | MEDIUM | libuuid | 2.37.4-21.el9_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
@@ -287,6 +289,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-3784 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
 | CVE-2026-3805 | MEDIUM | libcurl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
 | CVE-2026-27456 | MEDIUM | libfdisk | 2.37.4-21.el9_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
+| CVE-2026-41989 | MEDIUM | libgcrypt | 1.10.0-11.el9 | - | Libgcrypt: Libgcrypt: Denial of Service and buffer overflow via crafted ECDH ciphertext |
 | CVE-2026-27456 | MEDIUM | libmount | 2.37.4-21.el9_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2026-27456 | MEDIUM | libsmartcols | 2.37.4-21.el9_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2026-27456 | MEDIUM | libuuid | 2.37.4-21.el9_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
@@ -310,6 +313,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-3644 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2026-5713 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
+| CVE-2026-6019 | MEDIUM | python3 | 3.9.25-3.el9_7.2 | - | python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Out-of-memory when loading Plist |
@@ -320,6 +324,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-3644 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2026-5713 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
+| CVE-2026-6019 | MEDIUM | python3-libs | 3.9.25-3.el9_7.2 | - | python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
