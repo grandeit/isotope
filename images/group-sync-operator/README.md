@@ -4,17 +4,17 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-05-04 14:43:18 UTC
+**Scanned:** 2026-05-05 03:16:51 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 25 (🔧22) | 119 (🔧52) | 76 (🔧15) | 222 | 🔧 91 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 26 (🔧22) | 119 (🔧52) | 76 (🔧15) | 223 | 🔧 91 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 0 | 16 | 8 | 24 | 🔧 0 |
-| ubi-minimal | 0 | 🟠 2 | 66 | 61 | 129 | 🔧 0 |
-| ubi | 0 | 🟠 3 | 127 | 234 | 364 | 🔧 0 |
+| ubi-minimal | 0 | 🟠 3 | 66 | 61 | 130 | 🔧 0 |
+| ubi | 0 | 🟠 4 | 127 | 234 | 365 | 🔧 0 |
 
 ## Details
 
@@ -28,6 +28,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-68121 | CRITICAL | stdlib | v1.21.13 | 1.24.13, 1.25.7, 1.26.0-rc.3 | crypto/tls: crypto/tls: Incorrect certificate validation during TLS session resumption |
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | 2.3.3-5.el9_7 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2026-33845 | HIGH | gnutls | 3.8.3-6.el9 | - | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
+| CVE-2026-33846 | HIGH | gnutls | 3.8.3-6.el9 | - | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
 | CVE-2026-40356 | HIGH | krb5-libs | 1.21.1-8.el9_6 | - | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
 | CVE-2025-5914 | HIGH | libarchive | 3.5.3-5.el9_6 | 3.5.3-6.el9_6 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
 | CVE-2026-4111 | HIGH | libarchive | 3.5.3-5.el9_6 | 3.5.3-7.el9_7 | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
@@ -201,6 +202,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-33845 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
+| CVE-2026-33846 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
 | CVE-2026-40356 | HIGH | krb5-libs | 1.21.1-9.el9_7 | - | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -275,6 +277,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-6846 | HIGH | gdb-gdbserver | 16.3-2.el9 | - | binutils: Binutils: Arbitrary code execution via malformed XCOFF object file processing |
 | CVE-2026-33845 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
+| CVE-2026-33846 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
 | CVE-2026-40356 | HIGH | krb5-libs | 1.21.1-9.el9_7 | - | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
