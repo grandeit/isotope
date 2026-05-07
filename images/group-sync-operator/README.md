@@ -4,7 +4,7 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-05-06 14:53:38 UTC
+**Scanned:** 2026-05-07 03:18:32 UTC
 
 ## Overview
 
@@ -51,7 +51,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-25679 | HIGH | stdlib | v1.21.13 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
 | CVE-2026-32280 | HIGH | stdlib | v1.21.13 | 1.25.9, 1.26.2 | crypto/x509: crypto/tls: golang: Go: Denial of Service vulnerability in certificate chain building |
 | CVE-2026-32281 | HIGH | stdlib | v1.21.13 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
-| CVE-2026-32283 | HIGH | stdlib | v1.21.13 | 1.25.9, 1.26.2 | If one side of the TLS connection sends multiple key update messages p ... |
+| CVE-2026-32283 | HIGH | stdlib | v1.21.13 | 1.25.9, 1.26.2 | crypto/tls: golang: Go crypto/tls: Denial of Service via multiple TLS 1.3 key update messages |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
