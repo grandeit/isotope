@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-05-07 15:47:55 UTC
+**Scanned:** 2026-05-08 04:17:07 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 150 (🔧146) | 477 (🔧326) | 309 (🔧38) | 950 | 🔧 524 |
-| ubi-minimal | 0 | 🟠 3 | 68 (🔧1) | 65 | 136 | 🔧 1 |
-| ubi | 0 | 🟠 4 | 126 (🔧1) | 234 | 364 | 🔧 1 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 151 (🔧146) | 478 (🔧326) | 309 (🔧38) | 952 | 🔧 548 |
+| ubi-minimal | 0 | 🟠 4 | 69 (🔧1) | 65 | 138 | 🔧 1 |
+| ubi | 0 | 🟠 5 | 127 (🔧1) | 234 | 366 | 🔧 1 |
 
 ## Details
 
@@ -52,6 +52,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-68973 | HIGH | gnupg2 | 2.2.20-3.el8_6 | 2.2.20-4.el8_10 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2026-33845 | HIGH | gnutls | 3.6.16-5.el8_6 | - | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
 | CVE-2026-33846 | HIGH | gnutls | 3.6.16-5.el8_6 | - | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
+| CVE-2026-42010 | HIGH | gnutls | 3.6.16-5.el8_6 | - | A flaw was found in gnutls. Servers configured with RSA-PSK (Rivest\u2 ... |
 | CVE-2022-42898 | HIGH | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-25.el8_8 | krb5: integer overflow vulnerabilities in PAC parsing |
 | CVE-2024-3596 | HIGH | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-30.el8_10 | freeradius: forgery attack |
 | CVE-2026-40356 | HIGH | krb5-libs | 1.18.2-22.el8_7 | - | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
@@ -289,6 +290,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-32990 | MEDIUM | gnutls | 3.6.16-5.el8_6 | 3.6.16-8.el8_10.4 | gnutls: Vulnerability in GnuTLS certtool template parsing |
 | CVE-2025-6395 | MEDIUM | gnutls | 3.6.16-5.el8_6 | 3.6.16-8.el8_10.4 | gnutls: NULL pointer dereference in _gnutls_figure_common_ciphersuite() |
 | CVE-2026-3833 | MEDIUM | gnutls | 3.6.16-5.el8_6 | - | gnutls: GnuTLS: Policy bypass due to case-sensitive nameConstraints comparison |
+| CVE-2026-42011 | MEDIUM | gnutls | 3.6.16-5.el8_6 | - | A flaw was found in gnutls. This vulnerability occurs because permitte ... |
 | CVE-2024-37370 | MEDIUM | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-29.el8_10 | krb5: GSS message token handling |
 | CVE-2024-37371 | MEDIUM | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-29.el8_10 | krb5: GSS message token handling |
 | CVE-2025-24528 | MEDIUM | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-31.el8_10 | krb5: overflow when calculating ulog block size |
@@ -670,6 +672,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-33845 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
 | CVE-2026-33846 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
+| CVE-2026-42010 | HIGH | gnutls | 3.8.3-10.el9_7 | - | A flaw was found in gnutls. Servers configured with RSA-PSK (Rivest\u2 ... |
 | CVE-2026-40356 | HIGH | krb5-libs | 1.21.1-9.el9_7 | - | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -704,6 +707,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5928 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2026-3833 | MEDIUM | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Policy bypass due to case-sensitive nameConstraints comparison |
+| CVE-2026-42011 | MEDIUM | gnutls | 3.8.3-10.el9_7 | - | A flaw was found in gnutls. This vulnerability occurs because permitte ... |
 | CVE-2026-40355 | MEDIUM | krb5-libs | 1.21.1-9.el9_7 | - | krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
@@ -747,6 +751,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6846 | HIGH | gdb-gdbserver | 16.3-2.el9 | - | binutils: Binutils: Arbitrary code execution via malformed XCOFF object file processing |
 | CVE-2026-33845 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
 | CVE-2026-33846 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
+| CVE-2026-42010 | HIGH | gnutls | 3.8.3-10.el9_7 | - | A flaw was found in gnutls. Servers configured with RSA-PSK (Rivest\u2 ... |
 | CVE-2026-40356 | HIGH | krb5-libs | 1.21.1-9.el9_7 | - | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -791,6 +796,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5928 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2026-3833 | MEDIUM | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Policy bypass due to case-sensitive nameConstraints comparison |
+| CVE-2026-42011 | MEDIUM | gnutls | 3.8.3-10.el9_7 | - | A flaw was found in gnutls. This vulnerability occurs because permitte ... |
 | CVE-2026-40355 | MEDIUM | krb5-libs | 1.21.1-9.el9_7 | - | krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
