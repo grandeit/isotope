@@ -4,17 +4,17 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-05-07 14:54:22 UTC
+**Scanned:** 2026-05-08 03:23:34 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 26 (🔧22) | 121 (🔧53) | 76 (🔧15) | 225 | 🔧 92 |
-| distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
-| ubi-micro | 0 | 0 | 16 | 8 | 24 | 🔧 0 |
-| ubi-minimal | 0 | 🟠 3 | 67 | 61 | 131 | 🔧 0 |
-| ubi | 0 | 🟠 4 | 125 | 234 | 363 | 🔧 0 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 28 (🔧23) | 122 (🔧53) | 76 (🔧15) | 228 | 🔧 101 |
+| distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
+| ubi-micro | 0 | 🟠 1 (🔧1) | 16 | 8 | 25 | 🔧 1 |
+| ubi-minimal | 0 | 🟠 5 (🔧1) | 68 | 61 | 134 | 🔧 1 |
+| ubi | 0 | 🟠 6 (🔧1) | 126 | 234 | 366 | 🔧 1 |
 
 ## Details
 
@@ -29,6 +29,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | 2.3.3-5.el9_7 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2026-33845 | HIGH | gnutls | 3.8.3-6.el9 | - | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
 | CVE-2026-33846 | HIGH | gnutls | 3.8.3-6.el9 | - | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
+| CVE-2026-42010 | HIGH | gnutls | 3.8.3-6.el9 | - | A flaw was found in gnutls. Servers configured with RSA-PSK (Rivest\u2 ... |
 | CVE-2026-40356 | HIGH | krb5-libs | 1.21.1-8.el9_6 | - | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
 | CVE-2025-5914 | HIGH | libarchive | 3.5.3-5.el9_6 | 3.5.3-6.el9_6 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
 | CVE-2026-4111 | HIGH | libarchive | 3.5.3-5.el9_6 | 3.5.3-7.el9_7 | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
@@ -40,6 +41,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-30204 | HIGH | github.com/golang-jwt/jwt | v3.2.1+incompatible | - | golang-jwt/jwt: jwt-go allows excessive memory allocation during header parsing |
 | CVE-2025-30204 | HIGH | github.com/golang-jwt/jwt/v4 | v4.4.1 | 4.5.2 | golang-jwt/jwt: jwt-go allows excessive memory allocation during header parsing |
 | CVE-2025-30204 | HIGH | github.com/golang-jwt/jwt/v5 | v5.0.0 | 5.2.2 | golang-jwt/jwt: jwt-go allows excessive memory allocation during header parsing |
+| CVE-2026-44503 | HIGH | github.com/microsoft/kiota-http-go | v0.16.1 | 1.5.5 | Kiota abstractions RedirectHandler leaks Cookie/Proxy-Authorization headers on cross-host redirect |
 | CVE-2025-22869 | HIGH | golang.org/x/crypto | v0.17.0 | 0.35.0 | golang.org/x/crypto/ssh: Denial of Service in the Key Exchange of golang.org/x/crypto/ssh |
 | CVE-2025-22868 | HIGH | golang.org/x/oauth2 | v0.0.0-20220722155238-128564f6959c | 0.27.0 | golang.org/x/oauth2/jws: Unexpected memory consumption during token parsing in golang.org/x/oauth2/jws |
 | CVE-2024-34156 | HIGH | stdlib | v1.21.13 | 1.22.7, 1.23.1 | encoding/gob: golang: Calling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion |
@@ -93,6 +95,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-32990 | MEDIUM | gnutls | 3.8.3-6.el9 | 3.8.3-6.el9_6.2 | gnutls: Vulnerability in GnuTLS certtool template parsing |
 | CVE-2025-6395 | MEDIUM | gnutls | 3.8.3-6.el9 | 3.8.3-6.el9_6.2 | gnutls: NULL pointer dereference in _gnutls_figure_common_ciphersuite() |
 | CVE-2026-3833 | MEDIUM | gnutls | 3.8.3-6.el9 | - | gnutls: GnuTLS: Policy bypass due to case-sensitive nameConstraints comparison |
+| CVE-2026-42011 | MEDIUM | gnutls | 3.8.3-6.el9 | - | A flaw was found in gnutls. This vulnerability occurs because permitte ... |
 | CVE-2026-40355 | MEDIUM | krb5-libs | 1.21.1-8.el9_6 | - | krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-5.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-5.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
@@ -176,12 +179,15 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 ### distroless
 
-✅ No Critical, High, or Medium vulnerabilities found.
+| CVE | Severity | Package | Installed | Fixed | Description |
+|-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-44503 | HIGH | github.com/microsoft/kiota-http-go | v0.16.1 | 1.5.5 | Kiota abstractions RedirectHandler leaks Cookie/Proxy-Authorization headers on cross-host redirect |
 
 ### ubi-micro
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-44503 | HIGH | github.com/microsoft/kiota-http-go | v0.16.1 | 1.5.5 | Kiota abstractions RedirectHandler leaks Cookie/Proxy-Authorization headers on cross-host redirect |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2026-4046 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
@@ -205,7 +211,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-33845 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
 | CVE-2026-33846 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
+| CVE-2026-42010 | HIGH | gnutls | 3.8.3-10.el9_7 | - | A flaw was found in gnutls. Servers configured with RSA-PSK (Rivest\u2 ... |
 | CVE-2026-40356 | HIGH | krb5-libs | 1.21.1-9.el9_7 | - | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
+| CVE-2026-44503 | HIGH | github.com/microsoft/kiota-http-go | v0.16.1 | 1.5.5 | Kiota abstractions RedirectHandler leaks Cookie/Proxy-Authorization headers on cross-host redirect |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
@@ -239,6 +247,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5928 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2026-3833 | MEDIUM | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Policy bypass due to case-sensitive nameConstraints comparison |
+| CVE-2026-42011 | MEDIUM | gnutls | 3.8.3-10.el9_7 | - | A flaw was found in gnutls. This vulnerability occurs because permitte ... |
 | CVE-2026-40355 | MEDIUM | krb5-libs | 1.21.1-9.el9_7 | - | krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
@@ -281,7 +290,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6846 | HIGH | gdb-gdbserver | 16.3-2.el9 | - | binutils: Binutils: Arbitrary code execution via malformed XCOFF object file processing |
 | CVE-2026-33845 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
 | CVE-2026-33846 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
+| CVE-2026-42010 | HIGH | gnutls | 3.8.3-10.el9_7 | - | A flaw was found in gnutls. Servers configured with RSA-PSK (Rivest\u2 ... |
 | CVE-2026-40356 | HIGH | krb5-libs | 1.21.1-9.el9_7 | - | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
+| CVE-2026-44503 | HIGH | github.com/microsoft/kiota-http-go | v0.16.1 | 1.5.5 | Kiota abstractions RedirectHandler leaks Cookie/Proxy-Authorization headers on cross-host redirect |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
@@ -325,6 +336,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5928 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2026-3833 | MEDIUM | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Policy bypass due to case-sensitive nameConstraints comparison |
+| CVE-2026-42011 | MEDIUM | gnutls | 3.8.3-10.el9_7 | - | A flaw was found in gnutls. This vulnerability occurs because permitte ... |
 | CVE-2026-40355 | MEDIUM | krb5-libs | 1.21.1-9.el9_7 | - | krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
