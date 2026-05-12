@@ -4,7 +4,7 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-05-12 03:18:25 UTC
+**Scanned:** 2026-05-12 14:56:55 UTC
 
 ## Overview
 
@@ -13,8 +13,8 @@
 | **upstream** | 🔴 2 (🔧2) | 🟠 33 (🔧28) | 128 (🔧58) | 73 (🔧15) | 236 | 🔧 103 |
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 1 (🔧1) | 16 | 8 | 25 | 🔧 1 |
-| ubi-minimal | 0 | 🟠 5 (🔧1) | 71 (🔧2) | 58 | 134 | 🔧 3 |
-| ubi | 0 | 🟠 6 (🔧1) | 130 (🔧2) | 230 | 366 | 🔧 3 |
+| ubi-minimal | 0 | 🟠 5 (🔧1) | 69 | 58 | 132 | 🔧 1 |
+| ubi | 0 | 🟠 6 (🔧1) | 128 | 230 | 364 | 🔧 1 |
 
 ## Details
 
@@ -237,10 +237,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5773 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: libcurl: Wrong file transfer due to incorrect SMB connection reuse |
 | CVE-2026-6253 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Proxy credential disclosure via redirects to unauthenticated proxies |
 | CVE-2026-6429 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: libcurl: Credential leak via reused proxy connection during HTTP redirects |
-| CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | 2.68.4-18.el9_7.2 | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
-| CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | 2.68.4-18.el9_7.2 | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
-| CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
-| CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
+| CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.2 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
+| CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.2 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
 | CVE-2026-4046 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
@@ -329,10 +327,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4647 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: Out-of-Bounds Read in XCOFF Relocation Processing in GNU Binutils BFD Library |
 | CVE-2026-6844 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: Binutils: Denial of Service vulnerabilities in readelf via crafted ELF files |
 | CVE-2026-6845 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: Binutils: Denial of Service via crafted ELF file |
-| CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | 2.68.4-18.el9_7.2 | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
-| CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | 2.68.4-18.el9_7.2 | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
-| CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
-| CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
+| CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.2 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
+| CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.2 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
 | CVE-2026-4046 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
