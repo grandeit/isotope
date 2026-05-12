@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-05-11 04:33:21 UTC
+**Scanned:** 2026-05-12 04:22:47 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 151 (🔧146) | 479 (🔧326) | 308 (🔧38) | 952 | 🔧 548 |
-| ubi-minimal | 0 | 🟠 4 | 72 (🔧1) | 62 | 138 | 🔧 1 |
-| ubi | 0 | 🟠 5 | 131 (🔧1) | 230 | 366 | 🔧 1 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 166 (🔧161) | 488 (🔧335) | 308 (🔧38) | 976 | 🔧 548 |
+| ubi-minimal | 0 | 🟠 4 | 72 (🔧3) | 62 | 138 | 🔧 3 |
+| ubi | 0 | 🟠 5 | 131 (🔧3) | 230 | 366 | 🔧 3 |
 
 ## Details
 
@@ -137,6 +137,11 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32280 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: crypto/tls: golang: Go: Denial of Service vulnerability in certificate chain building |
 | CVE-2026-32281 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
 | CVE-2026-32283 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/tls: golang: Go crypto/tls: Denial of Service via multiple TLS 1.3 key update messages |
+| CVE-2026-33811 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | When using LookupCNAME with the cgo DNS resolver, a very long CNAME re ... |
+| CVE-2026-33814 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | When processing HTTP/2 SETTINGS frames, transport will enter an infini ... |
+| CVE-2026-39820 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ... |
+| CVE-2026-39836 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Panic in Dial and LookupPort when handling NUL byte on Windows in net |
+| CVE-2026-42499 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Pathological inputs could cause DoS through consumePhrase when parsing ... |
 | CVE-2022-21698 | HIGH | github.com/prometheus/client_golang | v1.1.0 | 1.11.1 | prometheus/client_golang: Denial of service using InstrumentHandlerCounter |
 | CVE-2025-65637 | HIGH | github.com/sirupsen/logrus | v1.4.2 | 1.8.3, 1.9.1, 1.9.3 | github.com/sirupsen/logrus: github.com/sirupsen/logrus: Denial-of-Service due to large single-line payload |
 | CVE-2022-41722 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: path/filepath: path-filepath filepath.Clean path traversal |
@@ -163,6 +168,11 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32280 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: crypto/tls: golang: Go: Denial of Service vulnerability in certificate chain building |
 | CVE-2026-32281 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
 | CVE-2026-32283 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/tls: golang: Go crypto/tls: Denial of Service via multiple TLS 1.3 key update messages |
+| CVE-2026-33811 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | When using LookupCNAME with the cgo DNS resolver, a very long CNAME re ... |
+| CVE-2026-33814 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | When processing HTTP/2 SETTINGS frames, transport will enter an infini ... |
+| CVE-2026-39820 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ... |
+| CVE-2026-39836 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Panic in Dial and LookupPort when handling NUL byte on Windows in net |
+| CVE-2026-42499 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Pathological inputs could cause DoS through consumePhrase when parsing ... |
 | CVE-2022-41722 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: path/filepath: path-filepath filepath.Clean path traversal |
 | CVE-2022-41723 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang.org/x/net/http2: avoid quadratic complexity in HPACK decoding |
 | CVE-2022-41724 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: crypto/tls: large handshake records may cause panics |
@@ -187,6 +197,11 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32280 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: crypto/tls: golang: Go: Denial of Service vulnerability in certificate chain building |
 | CVE-2026-32281 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
 | CVE-2026-32283 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/tls: golang: Go crypto/tls: Denial of Service via multiple TLS 1.3 key update messages |
+| CVE-2026-33811 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | When using LookupCNAME with the cgo DNS resolver, a very long CNAME re ... |
+| CVE-2026-33814 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | When processing HTTP/2 SETTINGS frames, transport will enter an infini ... |
+| CVE-2026-39820 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ... |
+| CVE-2026-39836 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Panic in Dial and LookupPort when handling NUL byte on Windows in net |
+| CVE-2026-42499 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Pathological inputs could cause DoS through consumePhrase when parsing ... |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | 1.0.6-28.el8_10 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-13.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2023-23916 | MEDIUM | curl | 7.61.1-25.el8_7.2 | 7.61.1-25.el8_7.3 | curl: HTTP multi-header compression denial of service |
@@ -584,6 +599,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32282 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
+| CVE-2026-39823 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | CVE-2026-27142 fixed a vulnerability in which URLs were not correctly ... |
+| CVE-2026-39825 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | ReverseProxy can forward queries containing parameters not visible to ... |
+| CVE-2026-39826 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | If a trusted template author were to write a <script> tag containing a ... |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20200302150141-5c8b2ff67527 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 | CVE-2023-24532 | MEDIUM | stdlib | v1.18.10 | 1.19.7, 1.20.2 | golang: crypto/internal/nistec: specific unreduced P-256 scalars produce incorrect results |
 | CVE-2023-29406 | MEDIUM | stdlib | v1.18.10 | 1.19.11, 1.20.6 | golang: net/http: insufficient sanitization of Host header |
@@ -625,6 +643,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32282 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
+| CVE-2026-39823 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | CVE-2026-27142 fixed a vulnerability in which URLs were not correctly ... |
+| CVE-2026-39825 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | ReverseProxy can forward queries containing parameters not visible to ... |
+| CVE-2026-39826 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | If a trusted template author were to write a <script> tag containing a ... |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20180926160741-c2ed4eda69e7 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 | CVE-2023-24532 | MEDIUM | stdlib | v1.18.10 | 1.19.7, 1.20.2 | golang: crypto/internal/nistec: specific unreduced P-256 scalars produce incorrect results |
 | CVE-2023-29406 | MEDIUM | stdlib | v1.18.10 | 1.19.11, 1.20.6 | golang: net/http: insufficient sanitization of Host header |
@@ -666,6 +687,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32282 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
+| CVE-2026-39823 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | CVE-2026-27142 fixed a vulnerability in which URLs were not correctly ... |
+| CVE-2026-39825 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | ReverseProxy can forward queries containing parameters not visible to ... |
+| CVE-2026-39826 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | If a trusted template author were to write a <script> tag containing a ... |
 
 ### ubi-minimal
 
@@ -687,8 +711,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5773 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: libcurl: Wrong file transfer due to incorrect SMB connection reuse |
 | CVE-2026-6253 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: curl: Proxy credential disclosure via redirects to unauthenticated proxies |
 | CVE-2026-6429 | MEDIUM | curl-minimal | 7.76.1-35.el9_7.3 | - | curl: libcurl: Credential leak via reused proxy connection during HTTP redirects |
-| CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
-| CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
+| CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | 2.68.4-18.el9_7.2 | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
+| CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | 2.68.4-18.el9_7.2 | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
 | CVE-2026-4046 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
@@ -779,8 +803,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4647 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: Out-of-Bounds Read in XCOFF Relocation Processing in GNU Binutils BFD Library |
 | CVE-2026-6844 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: Binutils: Denial of Service vulnerabilities in readelf via crafted ELF files |
 | CVE-2026-6845 | MEDIUM | gdb-gdbserver | 16.3-2.el9 | - | binutils: Binutils: Denial of Service via crafted ELF file |
-| CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
-| CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
+| CVE-2025-14087 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | 2.68.4-18.el9_7.2 | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
+| CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | 2.68.4-18.el9_7.2 | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-18.el9_7.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
 | CVE-2026-4046 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
