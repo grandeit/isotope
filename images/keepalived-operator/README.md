@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-05-12 15:53:15 UTC
+**Scanned:** 2026-05-13 04:25:47 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 166 (🔧161) | 488 (🔧335) | 308 (🔧38) | 976 | 🔧 548 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 166 (🔧161) | 488 (🔧337) | 308 (🔧38) | 976 | 🔧 550 |
 | ubi-minimal | 0 | 🟠 4 | 70 (🔧1) | 62 | 136 | 🔧 1 |
 | ubi | 0 | 🟠 5 | 129 (🔧1) | 230 | 364 | 🔧 1 |
 
@@ -249,8 +249,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-34397 | MEDIUM | glib2 | 2.56.4-159.el8 | 2.56.4-166.el8_10 | glib2: Signal subscription vulnerabilities |
 | CVE-2024-52533 | MEDIUM | glib2 | 2.56.4-159.el8 | 2.56.4-166.el8_10 | glib: buffer overflow in set_connect_msg() |
 | CVE-2025-13601 | MEDIUM | glib2 | 2.56.4-159.el8 | 2.56.4-168.el8_10 | glib: Integer overflow in in g_escape_uri_string() |
-| CVE-2025-14087 | MEDIUM | glib2 | 2.56.4-159.el8 | - | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
-| CVE-2025-14512 | MEDIUM | glib2 | 2.56.4-159.el8 | - | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
+| CVE-2025-14087 | MEDIUM | glib2 | 2.56.4-159.el8 | 2.56.4-169.el8_10 | glib: GLib: Buffer underflow in GVariant parser leads to heap corruption |
+| CVE-2025-14512 | MEDIUM | glib2 | 2.56.4-159.el8 | 2.56.4-169.el8_10 | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2025-4373 | MEDIUM | glib2 | 2.56.4-159.el8 | 2.56.4-166.el8_10 | glib: Buffer Underflow on GLib through glib/gstring.c via function g_string_insert_unichar |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.56.4-159.el8 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.56.4-159.el8 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
@@ -359,7 +359,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-5372 | MEDIUM | libssh | 0.9.6-3.el8 | 0.9.6-16.el8_10 | libssh: Incorrect Return Code Handling in ssh_kdf() in libssh |
 | CVE-2025-8114 | MEDIUM | libssh | 0.9.6-3.el8 | - | libssh: NULL Pointer Dereference in libssh KEX Session ID Calculation |
 | CVE-2026-0964 | MEDIUM | libssh | 0.9.6-3.el8 | - | libssh: Improper sanitation of paths received from SCP servers |
-| CVE-2026-0966 | MEDIUM | libssh | 0.9.6-3.el8 | - | libssh: Buffer underflow in ssh_get_hexa() on invalid input |
+| CVE-2026-0966 | MEDIUM | libssh | 0.9.6-3.el8 | - | libssh: libssh: Denial of Service via zero-length input in ssh_get_hexa() |
 | CVE-2026-3731 | MEDIUM | libssh | 0.9.6-3.el8 | - | libssh: libssh: Denial of Service via out-of-bounds read in SFTP extension name handler |
 | CVE-2023-1667 | MEDIUM | libssh-config | 0.9.6-3.el8 | 0.9.6-10.el8_8 | libssh: NULL pointer dereference during rekeying with algorithm guessing |
 | CVE-2023-2283 | MEDIUM | libssh-config | 0.9.6-3.el8 | 0.9.6-10.el8_8 | libssh: authorization bypass in pki_verify_data_signature |
@@ -369,7 +369,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-5372 | MEDIUM | libssh-config | 0.9.6-3.el8 | 0.9.6-16.el8_10 | libssh: Incorrect Return Code Handling in ssh_kdf() in libssh |
 | CVE-2025-8114 | MEDIUM | libssh-config | 0.9.6-3.el8 | - | libssh: NULL Pointer Dereference in libssh KEX Session ID Calculation |
 | CVE-2026-0964 | MEDIUM | libssh-config | 0.9.6-3.el8 | - | libssh: Improper sanitation of paths received from SCP servers |
-| CVE-2026-0966 | MEDIUM | libssh-config | 0.9.6-3.el8 | - | libssh: Buffer underflow in ssh_get_hexa() on invalid input |
+| CVE-2026-0966 | MEDIUM | libssh-config | 0.9.6-3.el8 | - | libssh: libssh: Denial of Service via zero-length input in ssh_get_hexa() |
 | CVE-2026-3731 | MEDIUM | libssh-config | 0.9.6-3.el8 | - | libssh: libssh: Denial of Service via out-of-bounds read in SFTP extension name handler |
 | CVE-2020-11023 | MEDIUM | libstdc++ | 8.5.0-16.el8_7 | 8.5.0-23.el8_10 | jquery: Untrusted code execution via <option> tag in HTML passed to DOM manipulation methods |
 | CVE-2024-12133 | MEDIUM | libtasn1 | 4.13-4.el8_7 | 4.13-5.el8_10 | libtasn1: Inefficient DER Decoding in libtasn1 Leading to Potential Remote DoS |
