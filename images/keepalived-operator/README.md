@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-05-13 15:54:41 UTC
+**Scanned:** 2026-05-14 04:25:31 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 166 (🔧161) | 488 (🔧337) | 308 (🔧38) | 976 | 🔧 550 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 166 (🔧162) | 488 (🔧338) | 308 (🔧38) | 976 | 🔧 552 |
 | ubi-minimal | 0 | 🟠 4 | 70 (🔧1) | 62 | 136 | 🔧 1 |
 | ubi | 0 | 🟠 5 | 129 (🔧1) | 230 | 364 | 🔧 1 |
 
@@ -55,7 +55,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-42010 | HIGH | gnutls | 3.6.16-5.el8_6 | - | gnutls: gnutls: Authentication Bypass via NUL Character in Username |
 | CVE-2022-42898 | HIGH | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-25.el8_8 | krb5: integer overflow vulnerabilities in PAC parsing |
 | CVE-2024-3596 | HIGH | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-30.el8_10 | freeradius: forgery attack |
-| CVE-2026-40356 | HIGH | krb5-libs | 1.18.2-22.el8_7 | - | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
+| CVE-2026-40356 | HIGH | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-34.el8_10 | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
 | CVE-2025-5914 | HIGH | libarchive | 3.3.3-4.el8 | 3.3.3-6.el8_10 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
 | CVE-2026-4424 | HIGH | libarchive | 3.3.3-4.el8 | 3.3.3-7.el8_10 | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-4878 | HIGH | libcap | 2.48-4.el8 | 2.48-6.el8_10.1 | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
@@ -310,7 +310,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-37371 | MEDIUM | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-29.el8_10 | krb5: GSS message token handling |
 | CVE-2025-24528 | MEDIUM | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-31.el8_10 | krb5: overflow when calculating ulog block size |
 | CVE-2025-3576 | MEDIUM | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-32.el8_10 | krb5: Kerberos RC4-HMAC-MD5 Checksum Vulnerability Enabling Message Spoofing via MD5 Collisions |
-| CVE-2026-40355 | MEDIUM | krb5-libs | 1.18.2-22.el8_7 | - | krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism |
+| CVE-2026-40355 | MEDIUM | krb5-libs | 1.18.2-22.el8_7 | 1.18.2-34.el8_10 | krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism |
 | CVE-2024-57970 | MEDIUM | libarchive | 3.3.3-4.el8 | - | libarchive: heap buffer over-read in header_gnu_longlink |
 | CVE-2025-25724 | MEDIUM | libarchive | 3.3.3-4.el8 | - | libarchive: Buffer Overflow vulnerability in libarchive |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.3.3-4.el8 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
