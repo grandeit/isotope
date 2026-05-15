@@ -4,7 +4,7 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-05-14 13:36:00 UTC
+**Scanned:** 2026-05-15 01:35:41 UTC
 
 ## Overview
 
@@ -278,7 +278,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61724 | MEDIUM | stdlib | v1.19.13 | 1.24.8, 1.25.2 | net/textproto: Excessive CPU consumption in Reader.ReadResponse in net/textproto |
 | CVE-2025-61725 | MEDIUM | stdlib | v1.19.13 | 1.24.8, 1.25.2 | net/mail: Excessive CPU consumption in ParseAddress in net/mail |
 | CVE-2025-61727 | MEDIUM | stdlib | v1.19.13 | 1.24.11, 1.25.5 | golang: crypto/x509: excluded subdomain constraint does not restrict wildcard SANs |
-| CVE-2025-61730 | MEDIUM | stdlib | v1.19.13 | 1.24.12, 1.25.6 | During the TLS 1.3 handshake if multiple messages are sent in records ... |
+| CVE-2025-61730 | MEDIUM | stdlib | v1.19.13 | 1.24.12, 1.25.6 | crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls |
 | CVE-2026-27142 | MEDIUM | stdlib | v1.19.13 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
 | CVE-2026-32282 | MEDIUM | stdlib | v1.19.13 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.19.13 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
