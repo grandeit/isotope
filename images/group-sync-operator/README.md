@@ -4,7 +4,7 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-05-15 14:47:47 UTC
+**Scanned:** 2026-05-16 03:16:45 UTC
 
 ## Overview
 
@@ -14,7 +14,7 @@
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 1 (🔧1) | 16 | 8 | 25 | 🔧 1 |
 | ubi-minimal | 0 | 🟠 5 (🔧1) | 69 | 58 | 132 | 🔧 1 |
-| ubi | 0 | 🟠 6 (🔧1) | 128 | 230 | 364 | 🔧 1 |
+| ubi | 0 | 🟠 6 (🔧1) | 130 | 230 | 366 | 🔧 1 |
 
 ## Details
 
@@ -396,6 +396,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1502 | MEDIUM | python3 | 3.9.25-3.el9_7.3 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3 | 3.9.25-3.el9_7.3 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3 | 3.9.25-3.el9_7.3 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
+| CVE-2026-42308 | MEDIUM | python3 | 3.9.25-3.el9_7.3 | - | Pillow is a Python imaging library. Prior to version 12.2.0, if a font ... |
 | CVE-2026-5713 | MEDIUM | python3 | 3.9.25-3.el9_7.3 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2026-6019 | MEDIUM | python3 | 3.9.25-3.el9_7.3 | - | python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-3.el9_7.3 | - | cpython: Missing character filtering in Python |
@@ -407,6 +408,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1502 | MEDIUM | python3-libs | 3.9.25-3.el9_7.3 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3-libs | 3.9.25-3.el9_7.3 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3-libs | 3.9.25-3.el9_7.3 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
+| CVE-2026-42308 | MEDIUM | python3-libs | 3.9.25-3.el9_7.3 | - | Pillow is a Python imaging library. Prior to version 12.2.0, if a font ... |
 | CVE-2026-5713 | MEDIUM | python3-libs | 3.9.25-3.el9_7.3 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2026-6019 | MEDIUM | python3-libs | 3.9.25-3.el9_7.3 | - | python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
