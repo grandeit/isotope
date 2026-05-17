@@ -4,7 +4,7 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-05-16 13:32:28 UTC
+**Scanned:** 2026-05-17 01:34:34 UTC
 
 ## Overview
 
@@ -13,8 +13,8 @@
 | **upstream** | 🔴 3 (🔧3) | 🟠 56 (🔧53) | 202 (🔧123) | 138 (🔧24) | 399 | 🔧 203 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 0 | 16 | 8 | 24 | 🔧 0 |
-| ubi-minimal | 0 | 🟠 4 | 69 | 58 | 131 | 🔧 0 |
-| ubi | 0 | 🟠 5 | 130 | 230 | 365 | 🔧 0 |
+| ubi-minimal | 0 | 🟠 4 | 69 | 56 | 129 | 🔧 0 |
+| ubi | 0 | 🟠 5 | 130 | 228 | 363 | 🔧 0 |
 
 ## Details
 
@@ -489,7 +489,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1502 | MEDIUM | python3 | 3.9.25-3.el9_7.3 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3 | 3.9.25-3.el9_7.3 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3 | 3.9.25-3.el9_7.3 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
-| CVE-2026-42308 | MEDIUM | python3 | 3.9.25-3.el9_7.3 | - | Pillow is a Python imaging library. Prior to version 12.2.0, if a font ... |
+| CVE-2026-42308 | MEDIUM | python3 | 3.9.25-3.el9_7.3 | - | Pillow: python: Pillow: Denial of Service via integer overflow in font processing |
 | CVE-2026-5713 | MEDIUM | python3 | 3.9.25-3.el9_7.3 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2026-6019 | MEDIUM | python3 | 3.9.25-3.el9_7.3 | - | python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-3.el9_7.3 | - | cpython: Missing character filtering in Python |
@@ -501,7 +501,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1502 | MEDIUM | python3-libs | 3.9.25-3.el9_7.3 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
 | CVE-2026-3644 | MEDIUM | python3-libs | 3.9.25-3.el9_7.3 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3-libs | 3.9.25-3.el9_7.3 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
-| CVE-2026-42308 | MEDIUM | python3-libs | 3.9.25-3.el9_7.3 | - | Pillow is a Python imaging library. Prior to version 12.2.0, if a font ... |
+| CVE-2026-42308 | MEDIUM | python3-libs | 3.9.25-3.el9_7.3 | - | Pillow: python: Pillow: Denial of Service via integer overflow in font processing |
 | CVE-2026-5713 | MEDIUM | python3-libs | 3.9.25-3.el9_7.3 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2026-6019 | MEDIUM | python3-libs | 3.9.25-3.el9_7.3 | - | python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-1.el9 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
