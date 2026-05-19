@@ -4,17 +4,17 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-05-18 14:14:44 UTC
+**Scanned:** 2026-05-19 01:38:31 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 3 (🔧3) | 🟠 56 (🔧53) | 202 (🔧123) | 138 (🔧24) | 399 | 🔧 203 |
+| **upstream** | 🔴 3 (🔧3) | 🟠 57 (🔧53) | 202 (🔧123) | 136 (🔧24) | 398 | 🔧 203 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 0 | 16 | 8 | 24 | 🔧 0 |
-| ubi-minimal | 0 | 🟠 4 | 69 | 56 | 129 | 🔧 0 |
-| ubi | 0 | 🟠 5 | 130 | 228 | 363 | 🔧 0 |
+| ubi-minimal | 0 | 🟠 5 | 69 | 56 | 130 | 🔧 0 |
+| ubi | 0 | 🟠 6 | 130 | 228 | 364 | 🔧 0 |
 
 ## Details
 
@@ -37,6 +37,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-68973 | HIGH | gnupg2 | 2.2.20-3.el8_6 | 2.2.20-4.el8_10 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2026-33845 | HIGH | gnutls | 3.6.16-8.el8_9 | - | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
 | CVE-2026-33846 | HIGH | gnutls | 3.6.16-8.el8_9 | - | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
+| CVE-2026-42009 | HIGH | gnutls | 3.6.16-8.el8_9 | - | A flaw was found in gnutls. A remote attacker could exploit an issue i ... |
 | CVE-2026-42010 | HIGH | gnutls | 3.6.16-8.el8_9 | - | gnutls: gnutls: Authentication Bypass via NUL Character in Username |
 | CVE-2024-3596 | HIGH | krb5-libs | 1.18.2-26.el8_9 | 1.18.2-30.el8_10 | freeradius: forgery attack |
 | CVE-2026-40356 | HIGH | krb5-libs | 1.18.2-26.el8_9 | 1.18.2-34.el8_10 | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
@@ -317,6 +318,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-33845 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
 | CVE-2026-33846 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
+| CVE-2026-42009 | HIGH | gnutls | 3.8.3-10.el9_7 | - | A flaw was found in gnutls. A remote attacker could exploit an issue i ... |
 | CVE-2026-42010 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: gnutls: Authentication Bypass via NUL Character in Username |
 | CVE-2026-40356 | HIGH | krb5-libs | 1.21.1-9.el9_7 | - | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -396,6 +398,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6846 | HIGH | gdb-gdbserver | 16.3-2.el9 | - | binutils: Binutils: Arbitrary code execution via malformed XCOFF object file processing |
 | CVE-2026-33845 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
 | CVE-2026-33846 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
+| CVE-2026-42009 | HIGH | gnutls | 3.8.3-10.el9_7 | - | A flaw was found in gnutls. A remote attacker could exploit an issue i ... |
 | CVE-2026-42010 | HIGH | gnutls | 3.8.3-10.el9_7 | - | gnutls: gnutls: Authentication Bypass via NUL Character in Username |
 | CVE-2026-40356 | HIGH | krb5-libs | 1.21.1-9.el9_7 | - | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
