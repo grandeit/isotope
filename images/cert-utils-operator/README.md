@@ -4,7 +4,7 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-05-22 13:47:53 UTC
+**Scanned:** 2026-05-23 01:34:27 UTC
 
 ## Overview
 
@@ -562,7 +562,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-35177 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.3 | - | vim: zip.vim: Vim zip.vim plugin: Arbitrary file overwrite via path traversal bypass |
 | CVE-2026-39881 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.3 | - | vim: Vim: Arbitrary code execution via command injection in NetBeans interface |
 | CVE-2026-41411 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.3 | - | vim: Vim: Command injection allows arbitrary code execution via malicious tag files |
-| CVE-2026-45130 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.3 | - | Vim is an open source, command line text editor. Prior to version 9.2. ... |
+| CVE-2026-45130 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.3 | - | vim: Vim: Heap buffer overflow allows arbitrary code execution or denial of service |
 | CVE-2026-46483 | MEDIUM | vim-minimal | 2:8.2.2637-23.el9_7.3 | - | vim: command injection when decompressing .tgz archives |
 | CVE-2026-34743 | MEDIUM | xz-libs | 5.2.5-8.el9_0 | - | xz: XZ Utils: Denial of Service via buffer overflow in index decoding |
 
