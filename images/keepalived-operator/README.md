@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-05-23 15:24:44 UTC
+**Scanned:** 2026-05-24 04:34:04 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 159 (🔧153) | 498 (🔧341) | 312 (🔧44) | 983 | 🔧 552 |
-| ubi-minimal | 0 | 🟠 6 (🔧2) | 77 (🔧8) | 60 | 143 | 🔧 10 |
-| ubi | 0 | 🟠 15 (🔧9) | 145 (🔧14) | 228 | 388 | 🔧 23 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 159 (🔧153) | 497 (🔧341) | 312 (🔧44) | 982 | 🔧 552 |
+| ubi-minimal | 0 | 🟠 6 (🔧2) | 76 (🔧8) | 60 | 142 | 🔧 10 |
+| ubi | 0 | 🟠 15 (🔧9) | 143 (🔧14) | 227 | 385 | 🔧 23 |
 
 ## Details
 
@@ -396,7 +396,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-2408 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-12.el8_9 | php: potential exposure to Marvin attack via unsafe implementation of RSA decryption API |
 | CVE-2025-69419 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-15.el8_6 | openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing |
 | CVE-2025-9230 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-14.el8_10 | openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap |
-| CVE-2026-28386 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | - | openssl: openssl: Denial of Service due to out-of-bounds read in AES-CFB128 |
 | CVE-2026-28390 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | - | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
 | CVE-2024-10041 | MEDIUM | pam | 1.3.1-22.el8 | 1.3.1-36.el8_10 | pam: libpam: Libpam vulnerable to read hashed password |
 | CVE-2024-22365 | MEDIUM | pam | 1.3.1-22.el8 | 1.3.1-33.el8 | pam: allowing unprivileged user to block another user namespace |
@@ -772,7 +771,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-2673 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-31790 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-libs | 1:3.5.1-7.el9_7 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
-| CVE-2026-28386 | MEDIUM | openssl-libs | 1:3.5.1-7.el9_7 | - | openssl: openssl: Denial of Service due to out-of-bounds read in AES-CFB128 |
 | CVE-2026-28390 | MEDIUM | openssl-libs | 1:3.5.1-7.el9_7 | - | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
 | CVE-2026-31790 | MEDIUM | openssl-libs | 1:3.5.1-7.el9_7 | 1:3.5.5-2.el9_8 | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2100 | MEDIUM | p11-kit | 0.25.3-3.el9_5 | 0.26.2-1.el9 | p11-kit: NULL dereference via C_DeriveKey with specific NULL parameters |
@@ -876,7 +874,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6732 | MEDIUM | libxml2 | 2.9.13-14.el9_7 | - | libxml2: libxml2: Denial of Service via crafted XSD-validated document |
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2026-2673 | MEDIUM | openssl | 1:3.5.1-7.el9_7 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
-| CVE-2026-28386 | MEDIUM | openssl | 1:3.5.1-7.el9_7 | - | openssl: openssl: Denial of Service due to out-of-bounds read in AES-CFB128 |
 | CVE-2026-28390 | MEDIUM | openssl | 1:3.5.1-7.el9_7 | - | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
 | CVE-2026-31790 | MEDIUM | openssl | 1:3.5.1-7.el9_7 | 1:3.5.5-2.el9_8 | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-fips-provider | 3.0.7-8.el9 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
@@ -884,7 +881,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-2673 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-31790 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-libs | 1:3.5.1-7.el9_7 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
-| CVE-2026-28386 | MEDIUM | openssl-libs | 1:3.5.1-7.el9_7 | - | openssl: openssl: Denial of Service due to out-of-bounds read in AES-CFB128 |
 | CVE-2026-28390 | MEDIUM | openssl-libs | 1:3.5.1-7.el9_7 | - | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
 | CVE-2026-31790 | MEDIUM | openssl-libs | 1:3.5.1-7.el9_7 | 1:3.5.5-2.el9_8 | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2100 | MEDIUM | p11-kit | 0.25.3-3.el9_5 | 0.26.2-1.el9 | p11-kit: NULL dereference via C_DeriveKey with specific NULL parameters |
