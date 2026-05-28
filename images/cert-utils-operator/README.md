@@ -4,17 +4,17 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-05-27 14:09:40 UTC
+**Scanned:** 2026-05-28 01:34:22 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 3 (🔧3) | 🟠 66 (🔧62) | 196 (🔧114) | 136 (🔧24) | 401 | 🔧 203 |
+| **upstream** | 🔴 3 (🔧3) | 🟠 69 (🔧69) | 199 (🔧121) | 136 (🔧24) | 407 | 🔧 217 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
-| ubi-micro | 0 | 🟠 1 (🔧1) | 16 | 8 | 25 | 🔧 1 |
-| ubi-minimal | 0 | 🟠 4 | 73 | 57 | 134 | 🔧 0 |
-| ubi | 0 | 🟠 6 | 135 | 229 | 370 | 🔧 0 |
+| ubi-micro | 0 | 🟠 1 (🔧1) | 16 (🔧6) | 8 (🔧3) | 25 | 🔧 10 |
+| ubi-minimal | 0 | 🟠 4 | 71 | 53 | 128 | 🔧 0 |
+| ubi | 0 | 🟠 6 | 132 | 225 | 363 | 🔧 0 |
 
 ## Details
 
@@ -35,10 +35,10 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-2961 | HIGH | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.1 | The iconv() function in the GNU C Library versions 2.39 and older may ... |
 | CVE-2024-33599 | HIGH | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.2 | nscd: Stack-based buffer overflow in netgroup cache If the Name Servi ... |
 | CVE-2025-68973 | HIGH | gnupg2 | 2.2.20-3.el8_6 | 2.2.20-4.el8_10 | In GnuPG before 2.4.9, armor_filter in g10/armor.c has two increments ... |
-| CVE-2026-33845 | HIGH | gnutls | 3.6.16-8.el8_9 | - | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
-| CVE-2026-33846 | HIGH | gnutls | 3.6.16-8.el8_9 | - | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
-| CVE-2026-42009 | HIGH | gnutls | 3.6.16-8.el8_9 | - | gnutls: gnutls: Denial of Service via DTLS packet reordering vulnerability |
-| CVE-2026-42010 | HIGH | gnutls | 3.6.16-8.el8_9 | - | gnutls: gnutls: Authentication Bypass via NUL Character in Username |
+| CVE-2026-33845 | HIGH | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
+| CVE-2026-33846 | HIGH | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
+| CVE-2026-42009 | HIGH | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: gnutls: Denial of Service via DTLS packet reordering vulnerability |
+| CVE-2026-42010 | HIGH | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: gnutls: Authentication Bypass via NUL Character in Username |
 | CVE-2024-3596 | HIGH | krb5-libs | 1.18.2-26.el8_9 | 1.18.2-30.el8_10 | RADIUS Protocol under RFC 2865 is susceptible to forgery attacks by a ... |
 | CVE-2026-40356 | HIGH | krb5-libs | 1.18.2-26.el8_9 | 1.18.2-34.el8_10 | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
 | CVE-2025-5914 | HIGH | libarchive | 3.3.3-5.el8 | 3.3.3-6.el8_10 | A vulnerability has been identified in the libarchive library, specifi ... |
@@ -91,6 +91,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-33811 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | When using LookupCNAME with the cgo DNS resolver, a very long CNAME re ... |
 | CVE-2026-33814 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | When processing HTTP/2 SETTINGS frames, transport will enter an infini ... |
 | CVE-2026-39820 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ... |
+| CVE-2026-39823 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | CVE-2026-27142 fixed a vulnerability in which URLs were not correctly ... |
+| CVE-2026-39825 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | ReverseProxy can forward queries containing parameters not visible to ... |
+| CVE-2026-39826 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | If a trusted template author were to write a <script> tag containing a ... |
 | CVE-2026-39836 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | Panic in Dial and LookupPort when handling NUL byte on Windows in net |
 | CVE-2026-42499 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | Pathological inputs could cause DoS through consumePhrase when parsing ... |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | 1.0.6-28.el8_10 | BZ2_decompress in decompress.c in bzip2 through 1.0.6 has an out-of-bo ... |
@@ -124,7 +127,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4802 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.22 | Untrusted LD_LIBRARY_PATH environment variable vulnerability in the GN ... |
 | CVE-2025-8058 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.25 | The regcomp function in the GNU C library version from 2.4 to 2.41 is ... |
 | CVE-2026-0915 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
-| CVE-2026-4046 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
+| CVE-2026-4046 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.37 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
@@ -134,7 +137,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4802 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.22 | Untrusted LD_LIBRARY_PATH environment variable vulnerability in the GN ... |
 | CVE-2025-8058 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.25 | The regcomp function in the GNU C library version from 2.4 to 2.41 is ... |
 | CVE-2026-0915 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
-| CVE-2026-4046 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
+| CVE-2026-4046 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.37 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
@@ -144,7 +147,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4802 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.22 | Untrusted LD_LIBRARY_PATH environment variable vulnerability in the GN ... |
 | CVE-2025-8058 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.25 | The regcomp function in the GNU C library version from 2.4 to 2.41 is ... |
 | CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
-| CVE-2026-4046 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
+| CVE-2026-4046 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.37 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
@@ -158,8 +161,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-32988 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.4 | A flaw was found in GnuTLS. A double-free vulnerability exists in GnuT ... |
 | CVE-2025-32990 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.4 | A heap-buffer-overflow (off-by-one) flaw was found in the GnuTLS softw ... |
 | CVE-2025-6395 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.4 | A NULL pointer dereference flaw was found in the GnuTLS software in _g ... |
-| CVE-2026-3833 | MEDIUM | gnutls | 3.6.16-8.el8_9 | - | gnutls: GnuTLS: Policy bypass due to case-sensitive nameConstraints comparison |
-| CVE-2026-42011 | MEDIUM | gnutls | 3.6.16-8.el8_9 | - | gnutls: gnutls: Security bypass due to incorrect name constraint handling |
+| CVE-2026-3833 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: GnuTLS: Policy bypass due to case-sensitive nameConstraints comparison |
+| CVE-2026-42011 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: gnutls: Security bypass due to incorrect name constraint handling |
+| CVE-2026-42012 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: gnutls: Certificate validation bypass due to improper handling of URI and SRV SANs |
+| CVE-2026-42013 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: gnutls: Certificate validation bypass due to oversized Subject Alternative Name |
+| CVE-2026-42014 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: Fix use-after-free in gnutls_pkcs11_token_set_pin |
+| CVE-2026-42015 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: gnutls: Memory corruption due to off-by-one error in PKCS#12 bag handling |
+| CVE-2026-5260 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: gnutls: Information disclosure via heap overread in RSA key exchange |
 | CVE-2024-37370 | MEDIUM | krb5-libs | 1.18.2-26.el8_9 | 1.18.2-29.el8_10 | In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can modify the ... |
 | CVE-2024-37371 | MEDIUM | krb5-libs | 1.18.2-26.el8_9 | 1.18.2-29.el8_10 | In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can cause inva ... |
 | CVE-2025-24528 | MEDIUM | krb5-libs | 1.18.2-26.el8_9 | 1.18.2-31.el8_10 | In MIT Kerberos 5 (aka krb5) before 1.22 (with incremental propagation ... |
@@ -197,6 +205,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-28182 | MEDIUM | libnghttp2 | 1.33.0-5.el8_9 | 1.33.0-6.el8_10.1 | nghttp2 is an implementation of the Hypertext Transfer Protocol versio ... |
 | CVE-2025-14104 | MEDIUM | libsmartcols | 2.32.1-43.el8 | 2.32.1-48.el8_10 | A flaw was found in util-linux. This vulnerability allows a heap buffe ... |
 | CVE-2026-27456 | MEDIUM | libsmartcols | 2.32.1-43.el8 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
+| CVE-2026-48864 | MEDIUM | libsolv | 0.7.20-6.el8 | - | libsolv: Heap buffer overflow in libsolv repopagestore via unchecked decompression of malicious .solv page data |
 | CVE-2026-9149 | MEDIUM | libsolv | 0.7.20-6.el8 | - | libsolv: Heap buffer overflow in libsolv repo_add_solv via negative maxsize from crafted .solv file |
 | CVE-2026-9150 | MEDIUM | libsolv | 0.7.20-6.el8 | - | libsolv: Stack-based buffer overflow in libsolv's Debian metadata parser when handling SHA384/SHA512 checksums |
 | CVE-2023-48795 | MEDIUM | libssh | 0.9.6-10.el8_8 | 0.9.6-13.el8_9 | ssh: Prefix truncation attack on Binary Packet Protocol (BPP) |
@@ -286,9 +295,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32282 | MEDIUM | stdlib | v1.19.13 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.19.13 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.19.13 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
-| CVE-2026-39823 | MEDIUM | stdlib | v1.19.13 | 1.25.10, 1.26.3 | CVE-2026-27142 fixed a vulnerability in which URLs were not correctly ... |
-| CVE-2026-39825 | MEDIUM | stdlib | v1.19.13 | 1.25.10, 1.26.3 | ReverseProxy can forward queries containing parameters not visible to ... |
-| CVE-2026-39826 | MEDIUM | stdlib | v1.19.13 | 1.25.10, 1.26.3 | If a trusted template author were to write a <script> tag containing a ... |
 
 ### distroless
 
@@ -300,18 +306,18 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-4878 | HIGH | libcap | 2.48-10.el9_7.1 | 2.48-10.el9_8.1 | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | A flaw was found in GNU Coreutils. The sort utility's begfield() funct ... |
-| CVE-2026-4046 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
-| CVE-2026-4437 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
+| CVE-2026-4046 | MEDIUM | glibc | 2.34-231.el9_7.10 | 2.34-270.el9_8 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
+| CVE-2026-4437 | MEDIUM | glibc | 2.34-231.el9_7.10 | 2.34-270.el9_8 | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
-| CVE-2026-4046 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
-| CVE-2026-4437 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
+| CVE-2026-4046 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | 2.34-270.el9_8 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
+| CVE-2026-4437 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | 2.34-270.el9_8 | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
-| CVE-2026-4046 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
-| CVE-2026-4437 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
+| CVE-2026-4046 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | 2.34-270.el9_8 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
+| CVE-2026-4437 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | 2.34-270.el9_8 | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
@@ -339,29 +345,26 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-7168 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: libcurl: Information disclosure via incorrect Proxy-Authorization header reuse |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
-| CVE-2026-4046 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
-| CVE-2026-4437 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
-| CVE-2026-4046 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
-| CVE-2026-4437 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
-| CVE-2026-4046 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
-| CVE-2026-4437 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
-| CVE-2026-4046 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
-| CVE-2026-4437 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | In GnuPG through 2.4.8, if a signed message has \f at the end of a pla ... |
 | CVE-2026-3833 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: GnuTLS: Policy bypass due to case-sensitive nameConstraints comparison |
 | CVE-2026-42011 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Security bypass due to incorrect name constraint handling |
+| CVE-2026-42012 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Certificate validation bypass due to improper handling of URI and SRV SANs |
+| CVE-2026-42013 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Certificate validation bypass due to oversized Subject Alternative Name |
+| CVE-2026-42014 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: Fix use-after-free in gnutls_pkcs11_token_set_pin |
+| CVE-2026-42015 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Memory corruption due to off-by-one error in PKCS#12 bag handling |
+| CVE-2026-5260 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Information disclosure via heap overread in RSA key exchange |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | An issue was discovered in libarchive bsdtar before version 3.8.1 in f ... |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
@@ -382,6 +385,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-41989 | MEDIUM | libgcrypt | 1.10.0-11.el9 | - | Libgcrypt: Libgcrypt: Denial of Service and buffer overflow via crafted ECDH ciphertext |
 | CVE-2026-27456 | MEDIUM | libmount | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2026-27456 | MEDIUM | libsmartcols | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
+| CVE-2026-48864 | MEDIUM | libsolv | 0.7.24-4.el9 | - | libsolv: Heap buffer overflow in libsolv repopagestore via unchecked decompression of malicious .solv page data |
 | CVE-2026-9149 | MEDIUM | libsolv | 0.7.24-4.el9 | - | libsolv: Heap buffer overflow in libsolv repo_add_solv via negative maxsize from crafted .solv file |
 | CVE-2026-9150 | MEDIUM | libsolv | 0.7.24-4.el9 | - | libsolv: Stack-based buffer overflow in libsolv's Debian metadata parser when handling SHA384/SHA512 checksums |
 | CVE-2026-27456 | MEDIUM | libuuid | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
@@ -433,29 +437,26 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6845 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: Binutils: Denial of Service via crafted ELF file |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
-| CVE-2026-4046 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
-| CVE-2026-4437 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
-| CVE-2026-4046 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
-| CVE-2026-4437 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
-| CVE-2026-4046 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
-| CVE-2026-4437 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
-| CVE-2026-4046 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Denial of Service via iconv() function with specific character sets |
-| CVE-2026-4437 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | In GnuPG through 2.4.8, if a signed message has \f at the end of a pla ... |
 | CVE-2026-3833 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: GnuTLS: Policy bypass due to case-sensitive nameConstraints comparison |
 | CVE-2026-42011 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Security bypass due to incorrect name constraint handling |
+| CVE-2026-42012 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Certificate validation bypass due to improper handling of URI and SRV SANs |
+| CVE-2026-42013 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Certificate validation bypass due to oversized Subject Alternative Name |
+| CVE-2026-42014 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: Fix use-after-free in gnutls_pkcs11_token_set_pin |
+| CVE-2026-42015 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Memory corruption due to off-by-one error in PKCS#12 bag handling |
+| CVE-2026-5260 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Information disclosure via heap overread in RSA key exchange |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | An issue was discovered in libarchive bsdtar before version 3.8.1 in f ... |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
@@ -477,6 +478,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-41989 | MEDIUM | libgcrypt | 1.10.0-11.el9 | - | Libgcrypt: Libgcrypt: Denial of Service and buffer overflow via crafted ECDH ciphertext |
 | CVE-2026-27456 | MEDIUM | libmount | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2026-27456 | MEDIUM | libsmartcols | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
+| CVE-2026-48864 | MEDIUM | libsolv | 0.7.24-4.el9 | - | libsolv: Heap buffer overflow in libsolv repopagestore via unchecked decompression of malicious .solv page data |
 | CVE-2026-9149 | MEDIUM | libsolv | 0.7.24-4.el9 | - | libsolv: Heap buffer overflow in libsolv repo_add_solv via negative maxsize from crafted .solv file |
 | CVE-2026-9150 | MEDIUM | libsolv | 0.7.24-4.el9 | - | libsolv: Stack-based buffer overflow in libsolv's Debian metadata parser when handling SHA384/SHA512 checksums |
 | CVE-2026-27456 | MEDIUM | libuuid | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
@@ -521,7 +523,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-2.el9_8 | - | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
 | CVE-2026-25645 | MEDIUM | python3-pip-wheel | 21.3.1-2.el9_8 | - | requests: Requests: Security bypass due to predictable temporary file creation |
 | CVE-2026-32284 | MEDIUM | python3-pip-wheel | 21.3.1-2.el9_8 | - | github.com/shamaton/msgpack: msgpack: Denial of Service via truncated fixext data |
-| CVE-2026-44431 | MEDIUM | python3-pip-wheel | 21.3.1-2.el9_8 | - | urllib3: urllib3: Information disclosure via cross-origin redirects forwarding sensitive headers |
 | CVE-2026-4105 | MEDIUM | systemd | 252-67.el9_8.2 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
 | CVE-2026-4105 | MEDIUM | systemd-libs | 252-67.el9_8.2 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
 | CVE-2026-4105 | MEDIUM | systemd-pam | 252-67.el9_8.2 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
