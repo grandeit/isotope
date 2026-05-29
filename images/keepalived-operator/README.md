@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-05-28 16:28:23 UTC
+**Scanned:** 2026-05-29 04:36:07 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 204 (🔧202) | 464 (🔧312) | 307 (🔧38) | 989 | 🔧 566 |
-| ubi-minimal | 0 | 🟠 4 | 72 (🔧1) | 57 | 133 | 🔧 1 |
-| ubi | 0 | 🟠 6 | 133 (🔧1) | 225 | 364 | 🔧 1 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 204 (🔧202) | 468 (🔧312) | 306 (🔧38) | 992 | 🔧 566 |
+| ubi-minimal | 0 | 🟠 4 | 74 (🔧1) | 57 | 135 | 🔧 1 |
+| ubi | 0 | 🟠 6 | 139 (🔧1) | 224 | 369 | 🔧 1 |
 
 ## Details
 
@@ -540,6 +540,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2021-35937 | MEDIUM | python3-rpm | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: TOCTOU race in checks for unsafe symlinks |
 | CVE-2021-35938 | MEDIUM | python3-rpm | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: races with chown/chmod/capabilities calls during installation |
 | CVE-2021-35939 | MEDIUM | python3-rpm | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: checks for unsafe symlinks are not performed for intermediary directories |
+| CVE-2026-44604 | MEDIUM | python3-rpm | 4.14.3-24.el8_7 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2025-47273 | MEDIUM | python3-setuptools-wheel | 39.2.0-6.el8_7.1 | 39.2.0-9.el8_10 | setuptools is a package that allows users to download, build, install, ... |
 | CVE-2022-0235 | MEDIUM | python3-subscription-manager-rhsm | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
 | CVE-2022-0235 | MEDIUM | python3-syspurpose | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
@@ -549,12 +550,15 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2021-35937 | MEDIUM | rpm | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: TOCTOU race in checks for unsafe symlinks |
 | CVE-2021-35938 | MEDIUM | rpm | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: races with chown/chmod/capabilities calls during installation |
 | CVE-2021-35939 | MEDIUM | rpm | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: checks for unsafe symlinks are not performed for intermediary directories |
+| CVE-2026-44604 | MEDIUM | rpm | 4.14.3-24.el8_7 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2021-35937 | MEDIUM | rpm-build-libs | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: TOCTOU race in checks for unsafe symlinks |
 | CVE-2021-35938 | MEDIUM | rpm-build-libs | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: races with chown/chmod/capabilities calls during installation |
 | CVE-2021-35939 | MEDIUM | rpm-build-libs | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: checks for unsafe symlinks are not performed for intermediary directories |
+| CVE-2026-44604 | MEDIUM | rpm-build-libs | 4.14.3-24.el8_7 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2021-35937 | MEDIUM | rpm-libs | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: TOCTOU race in checks for unsafe symlinks |
 | CVE-2021-35938 | MEDIUM | rpm-libs | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: races with chown/chmod/capabilities calls during installation |
 | CVE-2021-35939 | MEDIUM | rpm-libs | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: checks for unsafe symlinks are not performed for intermediary directories |
+| CVE-2026-44604 | MEDIUM | rpm-libs | 4.14.3-24.el8_7 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2020-24736 | MEDIUM | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-18.el8_8 | sqlite: Crash due to misuse of window functions. |
 | CVE-2023-7104 | MEDIUM | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-19.el8_9 | sqlite: heap-buffer-overflow at sessionfuzz |
 | CVE-2022-0235 | MEDIUM | subscription-manager | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
@@ -782,6 +786,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-31790 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-28390 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
+| CVE-2026-44604 | MEDIUM | rpm | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
+| CVE-2026-44604 | MEDIUM | rpm-libs | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2026-4105 | MEDIUM | systemd-libs | 252-67.el9_8.2 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
 | CVE-2026-34743 | MEDIUM | xz-libs | 5.2.5-8.el9_0 | - | xz: XZ Utils: Denial of Service via buffer overflow in index decoding |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20180926160741-c2ed4eda69e7 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
@@ -907,6 +913,12 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-2.el9_8 | - | urllib3 is a user-friendly HTTP client library for Python. Starting in ... |
 | CVE-2026-25645 | MEDIUM | python3-pip-wheel | 21.3.1-2.el9_8 | - | requests: Requests: Security bypass due to predictable temporary file creation |
 | CVE-2026-32284 | MEDIUM | python3-pip-wheel | 21.3.1-2.el9_8 | - | github.com/shamaton/msgpack: msgpack: Denial of Service via truncated fixext data |
+| CVE-2026-44604 | MEDIUM | python3-rpm | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
+| CVE-2026-44604 | MEDIUM | rpm | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
+| CVE-2026-44604 | MEDIUM | rpm-build-libs | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
+| CVE-2026-44604 | MEDIUM | rpm-libs | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
+| CVE-2026-44604 | MEDIUM | rpm-plugin-systemd-inhibit | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
+| CVE-2026-44604 | MEDIUM | rpm-sign-libs | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2026-4105 | MEDIUM | systemd | 252-67.el9_8.2 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
 | CVE-2026-4105 | MEDIUM | systemd-libs | 252-67.el9_8.2 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
 | CVE-2026-4105 | MEDIUM | systemd-pam | 252-67.el9_8.2 | - | systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method |
