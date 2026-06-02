@@ -4,17 +4,17 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-06-01 16:02:54 UTC
+**Scanned:** 2026-06-02 03:22:12 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 34 (🔧29) | 138 (🔧66) | 73 (🔧20) | 247 | 🔧 117 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 34 (🔧29) | 138 (🔧67) | 73 (🔧20) | 247 | 🔧 118 |
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 16 (🔧6) | 8 (🔧3) | 26 | 🔧 11 |
-| ubi-minimal | 0 | 🟠 5 (🔧1) | 74 | 53 | 132 | 🔧 1 |
-| ubi | 0 | 🟠 7 (🔧1) | 139 | 224 | 370 | 🔧 1 |
+| ubi-minimal | 0 | 🟠 5 (🔧1) | 74 (🔧1) | 53 | 132 | 🔧 2 |
+| ubi | 0 | 🟠 7 (🔧1) | 139 (🔧2) | 224 | 370 | 🔧 3 |
 
 ## Details
 
@@ -152,7 +152,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-69419 | MEDIUM | openssl-libs | 1:3.2.2-6.el9_5.1 | 1:3.5.1-7.el9_7 | openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing |
 | CVE-2025-9230 | MEDIUM | openssl-libs | 1:3.2.2-6.el9_5.1 | 1:3.5.1-4.el9_7 | openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap |
 | CVE-2026-2673 | MEDIUM | openssl-libs | 1:3.2.2-6.el9_5.1 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
-| CVE-2026-28390 | MEDIUM | openssl-libs | 1:3.2.2-6.el9_5.1 | - | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
+| CVE-2026-28390 | MEDIUM | openssl-libs | 1:3.2.2-6.el9_5.1 | 1:3.5.5-3.el9_8 | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
 | CVE-2026-31790 | MEDIUM | openssl-libs | 1:3.2.2-6.el9_5.1 | 1:3.5.5-2.el9_8 | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2100 | MEDIUM | p11-kit | 0.25.3-3.el9_5 | 0.26.2-1.el9 | p11-kit: NULL dereference via C_DeriveKey with specific NULL parameters |
 | CVE-2026-2100 | MEDIUM | p11-kit-trust | 0.25.3-3.el9_5 | 0.26.2-1.el9 | p11-kit: NULL dereference via C_DeriveKey with specific NULL parameters |
@@ -305,7 +305,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-2673 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-31790 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
-| CVE-2026-28390 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
+| CVE-2026-28390 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-3.el9_8 | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
 | CVE-2026-44604 | MEDIUM | rpm | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2026-44604 | MEDIUM | rpm-libs | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2026-5958 | MEDIUM | sed | 4.8-10.el9 | - | sed: GNU sed TOCTOU race condition |
@@ -398,13 +398,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6732 | MEDIUM | libxml2 | 2.9.13-14.el9_7 | - | libxml2: libxml2: Denial of Service via crafted XSD-validated document |
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2026-2673 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
-| CVE-2026-28390 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | - | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
+| CVE-2026-28390 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | 1:3.5.5-3.el9_8 | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
 | CVE-2026-2673 | MEDIUM | openssl-fips-provider | 3.0.7-8.el9 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-31790 | MEDIUM | openssl-fips-provider | 3.0.7-8.el9 | - | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-31790 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
-| CVE-2026-28390 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
+| CVE-2026-28390 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-3.el9_8 | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
 | CVE-2025-11468 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Out-of-memory when loading Plist |
