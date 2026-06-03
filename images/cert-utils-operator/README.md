@@ -4,17 +4,17 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-06-02 14:28:01 UTC
+**Scanned:** 2026-06-03 02:00:42 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 3 (🔧3) | 🟠 57 (🔧57) | 211 (🔧131) | 138 (🔧26) | 409 | 🔧 217 |
+| **upstream** | 🔴 3 (🔧3) | 🟠 57 (🔧57) | 211 (🔧131) | 139 (🔧26) | 410 | 🔧 220 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
-| ubi-micro | 0 | 🟠 1 (🔧1) | 16 (🔧6) | 8 (🔧3) | 25 | 🔧 10 |
-| ubi-minimal | 0 | 🟠 4 | 74 (🔧1) | 53 | 131 | 🔧 1 |
-| ubi | 0 | 🟠 6 | 139 (🔧2) | 224 | 369 | 🔧 2 |
+| ubi-micro | 0 | 🟠 1 (🔧1) | 16 (🔧6) | 9 (🔧3) | 26 | 🔧 10 |
+| ubi-minimal | 0 | 0 | 67 (🔧1) | 54 | 121 | 🔧 1 |
+| ubi | 0 | 🟠 2 | 132 (🔧2) | 226 | 360 | 🔧 2 |
 
 ## Details
 
@@ -326,10 +326,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-33845 | HIGH | gnutls | 3.8.10-4.el9_8 | - | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
-| CVE-2026-33846 | HIGH | gnutls | 3.8.10-4.el9_8 | - | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
-| CVE-2026-42009 | HIGH | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Denial of Service via DTLS packet reordering vulnerability |
-| CVE-2026-42010 | HIGH | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Authentication Bypass via NUL Character in Username |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
@@ -358,13 +354,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5450 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
-| CVE-2026-3833 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: GnuTLS: Policy bypass due to case-sensitive nameConstraints comparison |
-| CVE-2026-42011 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Security bypass due to incorrect name constraint handling |
-| CVE-2026-42012 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Certificate validation bypass due to improper handling of URI and SRV SANs |
-| CVE-2026-42013 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Certificate validation bypass due to oversized Subject Alternative Name |
-| CVE-2026-42014 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: Fix use-after-free in gnutls_pkcs11_token_set_pin |
-| CVE-2026-42015 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Memory corruption due to off-by-one error in PKCS#12 bag handling |
-| CVE-2026-5260 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Information disclosure via heap overread in RSA key exchange |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
@@ -411,10 +400,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-45186 | HIGH | expat | 2.5.0-6.el9 | - | libexpat: denial of service via crafted XML input |
 | CVE-2026-6846 | HIGH | gdb-gdbserver | 16.3-3.el9 | - | binutils: Binutils: Arbitrary code execution via malformed XCOFF object file processing |
-| CVE-2026-33845 | HIGH | gnutls | 3.8.10-4.el9_8 | - | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
-| CVE-2026-33846 | HIGH | gnutls | 3.8.10-4.el9_8 | - | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
-| CVE-2026-42009 | HIGH | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Denial of Service via DTLS packet reordering vulnerability |
-| CVE-2026-42010 | HIGH | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Authentication Bypass via NUL Character in Username |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
@@ -453,13 +438,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5450 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
-| CVE-2026-3833 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: GnuTLS: Policy bypass due to case-sensitive nameConstraints comparison |
-| CVE-2026-42011 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Security bypass due to incorrect name constraint handling |
-| CVE-2026-42012 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Certificate validation bypass due to improper handling of URI and SRV SANs |
-| CVE-2026-42013 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Certificate validation bypass due to oversized Subject Alternative Name |
-| CVE-2026-42014 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: Fix use-after-free in gnutls_pkcs11_token_set_pin |
-| CVE-2026-42015 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Memory corruption due to off-by-one error in PKCS#12 bag handling |
-| CVE-2026-5260 | MEDIUM | gnutls | 3.8.10-4.el9_8 | - | gnutls: gnutls: Information disclosure via heap overread in RSA key exchange |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
