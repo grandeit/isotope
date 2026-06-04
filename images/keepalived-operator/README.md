@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-06-03 16:34:27 UTC
+**Scanned:** 2026-06-04 04:37:06 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 168 (🔧166) | 498 (🔧342) | 313 (🔧44) | 993 | 🔧 575 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 168 (🔧166) | 500 (🔧342) | 313 (🔧44) | 995 | 🔧 575 |
 | ubi-minimal | 0 | 0 | 68 (🔧2) | 58 | 126 | 🔧 2 |
-| ubi | 0 | 🟠 2 | 133 (🔧3) | 226 | 361 | 🔧 3 |
+| ubi | 0 | 🟠 2 | 135 (🔧3) | 226 | 363 | 🔧 3 |
 
 ## Details
 
@@ -445,6 +445,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-42308 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | Pillow: python: Pillow: Denial of Service via integer overflow in font processing |
 | CVE-2026-5713 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2026-6019 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module |
+| CVE-2026-7210 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | python: expat: Python/Expat: Denial of Service via crafted XML document |
 | CVE-2025-47273 | MEDIUM | platform-python-setuptools | 39.2.0-6.el8_7.1 | 39.2.0-9.el8_10 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
 | CVE-2022-0235 | MEDIUM | python3-cloud-what | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
 | CVE-2024-3651 | MEDIUM | python3-idna | 2.5-5.el8 | 2.5-7.el8_10 | python-idna: potential DoS via resource consumption via specially crafted inputs to idna.encode() |
@@ -480,6 +481,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-42308 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | Pillow: python: Pillow: Denial of Service via integer overflow in font processing |
 | CVE-2026-5713 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2026-6019 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module |
+| CVE-2026-7210 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | python: expat: Python/Expat: Denial of Service via crafted XML document |
 | CVE-2022-49043 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-18.el8_10.2 | libxml: use-after-free in xmlXIncludeAddNode |
 | CVE-2023-28484 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-16.el8_8.1 | libxml2: NULL dereference in xmlSchemaFixupComplexType |
 | CVE-2023-29469 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-16.el8_8.1 | libxml2: Hashing of empty dict strings isn't deterministic |
@@ -869,6 +871,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-42308 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | Pillow: python: Pillow: Denial of Service via integer overflow in font processing |
 | CVE-2026-5713 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2026-6019 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module |
+| CVE-2026-7210 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | python: expat: Python/Expat: Denial of Service via crafted XML document |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: Out-of-memory when loading Plist |
@@ -881,6 +884,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-42308 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | Pillow: python: Pillow: Denial of Service via integer overflow in font processing |
 | CVE-2026-5713 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2026-6019 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module |
+| CVE-2026-7210 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | python: expat: Python/Expat: Denial of Service via crafted XML document |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 21.3.1-2.el9_8 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 21.3.1-2.el9_8 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-2.el9_8 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
