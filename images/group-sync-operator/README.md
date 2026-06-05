@@ -4,17 +4,17 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-06-04 15:04:09 UTC
+**Scanned:** 2026-06-05 03:20:31 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 34 (🔧33) | 138 (🔧74) | 76 (🔧22) | 250 | 🔧 134 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 33 (🔧32) | 139 (🔧75) | 76 (🔧22) | 250 | 🔧 134 |
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 16 (🔧6) | 9 (🔧3) | 27 | 🔧 11 |
 | ubi-minimal | 0 | 🟠 1 (🔧1) | 67 (🔧1) | 54 | 122 | 🔧 2 |
-| ubi | 0 | 🟠 3 (🔧1) | 134 (🔧2) | 226 | 363 | 🔧 3 |
+| ubi | 0 | 🟠 3 (🔧2) | 135 (🔧2) | 226 | 364 | 🔧 4 |
 
 ## Details
 
@@ -31,7 +31,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-33846 | HIGH | gnutls | 3.8.3-6.el9 | 3.8.10-4.el9_8 | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
 | CVE-2026-42009 | HIGH | gnutls | 3.8.3-6.el9 | 3.8.10-4.el9_8 | gnutls: gnutls: Denial of Service via DTLS packet reordering vulnerability |
 | CVE-2026-42010 | HIGH | gnutls | 3.8.3-6.el9 | 3.8.10-4.el9_8 | gnutls: gnutls: Authentication Bypass via NUL Character in Username |
-| CVE-2026-40356 | HIGH | krb5-libs | 1.21.1-8.el9_6 | 1.21.1-10.el9_8 | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
 | CVE-2025-5914 | HIGH | libarchive | 3.5.3-5.el9_6 | 3.5.3-6.el9_6 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
 | CVE-2026-4111 | HIGH | libarchive | 3.5.3-5.el9_6 | 3.5.3-7.el9_7 | libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive |
 | CVE-2026-4424 | HIGH | libarchive | 3.5.3-5.el9_6 | 3.5.3-9.el9_7 | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
@@ -58,7 +57,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39823 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | CVE-2026-27142 fixed a vulnerability in which URLs were not correctly ... |
 | CVE-2026-39825 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | ReverseProxy can forward queries containing parameters not visible to ... |
 | CVE-2026-39826 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | If a trusted template author were to write a <script> tag containing a ... |
-| CVE-2026-39836 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | Panic in Dial and LookupPort when handling NUL byte on Windows in net |
+| CVE-2026-39836 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | ELSA-2026-22112: go-toolset:ol8 security update (IMPORTANT) |
 | CVE-2026-42499 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | Pathological inputs could cause DoS through consumePhrase when parsing ... |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -109,6 +108,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-42015 | MEDIUM | gnutls | 3.8.3-6.el9 | 3.8.10-4.el9_8 | gnutls: gnutls: Memory corruption due to off-by-one error in PKCS#12 bag handling |
 | CVE-2026-5260 | MEDIUM | gnutls | 3.8.3-6.el9 | 3.8.10-4.el9_8 | gnutls: gnutls: Information disclosure via heap overread in RSA key exchange |
 | CVE-2026-40355 | MEDIUM | krb5-libs | 1.21.1-8.el9_6 | 1.21.1-10.el9_8 | krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism |
+| CVE-2026-40356 | MEDIUM | krb5-libs | 1.21.1-8.el9_6 | 1.21.1-10.el9_8 | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-5.el9_6 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-5.el9_6 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-5.el9_6 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
@@ -305,7 +305,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-45186 | HIGH | expat | 2.5.0-6.el9 | - | libexpat: denial of service via crafted XML input |
+| CVE-2026-45186 | HIGH | expat | 2.5.0-6.el9 | 2.5.0-6.el9_8.1 | libexpat: denial of service via crafted XML input |
 | CVE-2026-6846 | HIGH | gdb-gdbserver | 16.3-3.el9 | - | binutils: Binutils: Arbitrary code execution via malformed XCOFF object file processing |
 | CVE-2026-44503 | HIGH | github.com/microsoft/kiota-http-go | v0.16.1 | 1.5.5 | Kiota abstractions RedirectHandler leaks Cookie/Proxy-Authorization headers on cross-host redirect |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -390,6 +390,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4516 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2026-0672 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-1502 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
+| CVE-2026-3276 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | python: Python unicodedata: Denial of Service due to excessive CPU consumption |
 | CVE-2026-3644 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2026-42308 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | Pillow: python: Pillow: Denial of Service via integer overflow in font processing |
@@ -403,6 +404,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4516 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2026-0672 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-1502 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
+| CVE-2026-3276 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | python: Python unicodedata: Denial of Service due to excessive CPU consumption |
 | CVE-2026-3644 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2026-42308 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | Pillow: python: Pillow: Denial of Service via integer overflow in font processing |
@@ -436,7 +438,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-28418 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Information disclosure via heap-based buffer overflow in Emacs-style tags file parsing |
 | CVE-2026-28419 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Information disclosure and denial of service via malformed tags file |
 | CVE-2026-28420 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Information disclosure and denial of service via crafted Unicode characters in terminal emulator |
-| CVE-2026-35177 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: zip.vim: Vim zip.vim plugin: Arbitrary file overwrite via path traversal bypass |
 | CVE-2026-39881 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via command injection in NetBeans interface |
 | CVE-2026-41411 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Command injection allows arbitrary code execution via malicious tag files |
 | CVE-2026-45130 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Heap buffer overflow allows arbitrary code execution or denial of service |
