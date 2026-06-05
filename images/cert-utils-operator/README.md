@@ -4,17 +4,17 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-06-04 14:04:42 UTC
+**Scanned:** 2026-06-05 01:43:02 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 3 (🔧3) | 🟠 57 (🔧57) | 211 (🔧131) | 139 (🔧26) | 410 | 🔧 220 |
+| **upstream** | 🔴 3 (🔧3) | 🟠 56 (🔧56) | 212 (🔧132) | 139 (🔧26) | 410 | 🔧 220 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 1 (🔧1) | 16 (🔧6) | 9 (🔧3) | 26 | 🔧 10 |
 | ubi-minimal | 0 | 0 | 67 (🔧1) | 54 | 121 | 🔧 1 |
-| ubi | 0 | 🟠 2 | 134 (🔧2) | 226 | 362 | 🔧 2 |
+| ubi | 0 | 🟠 2 (🔧1) | 135 (🔧2) | 226 | 363 | 🔧 3 |
 
 ## Details
 
@@ -40,7 +40,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-42009 | HIGH | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: gnutls: Denial of Service via DTLS packet reordering vulnerability |
 | CVE-2026-42010 | HIGH | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: gnutls: Authentication Bypass via NUL Character in Username |
 | CVE-2024-3596 | HIGH | krb5-libs | 1.18.2-26.el8_9 | 1.18.2-30.el8_10 | freeradius: forgery attack |
-| CVE-2026-40356 | HIGH | krb5-libs | 1.18.2-26.el8_9 | 1.18.2-34.el8_10 | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
 | CVE-2025-5914 | HIGH | libarchive | 3.3.3-5.el8 | 3.3.3-6.el8_10 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
 | CVE-2026-4424 | HIGH | libarchive | 3.3.3-5.el8 | 3.3.3-7.el8_10 | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-4878 | HIGH | libcap | 2.48-6.el8_9 | 2.48-6.el8_10.1 | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
@@ -82,7 +81,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39823 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | CVE-2026-27142 fixed a vulnerability in which URLs were not correctly ... |
 | CVE-2026-39825 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | ReverseProxy can forward queries containing parameters not visible to ... |
 | CVE-2026-39826 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | If a trusted template author were to write a <script> tag containing a ... |
-| CVE-2026-39836 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | Panic in Dial and LookupPort when handling NUL byte on Windows in net |
+| CVE-2026-39836 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | ELSA-2026-22112: go-toolset:ol8 security update (IMPORTANT) |
 | CVE-2026-42499 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | Pathological inputs could cause DoS through consumePhrase when parsing ... |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | 1.0.6-28.el8_10 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-15.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -161,6 +160,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-24528 | MEDIUM | krb5-libs | 1.18.2-26.el8_9 | 1.18.2-31.el8_10 | krb5: overflow when calculating ulog block size |
 | CVE-2025-3576 | MEDIUM | krb5-libs | 1.18.2-26.el8_9 | 1.18.2-32.el8_10 | krb5: Kerberos RC4-HMAC-MD5 Checksum Vulnerability Enabling Message Spoofing via MD5 Collisions |
 | CVE-2026-40355 | MEDIUM | krb5-libs | 1.18.2-26.el8_9 | 1.18.2-34.el8_10 | krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism |
+| CVE-2026-40356 | MEDIUM | krb5-libs | 1.18.2-26.el8_9 | 1.18.2-34.el8_10 | krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read |
 | CVE-2024-57970 | MEDIUM | libarchive | 3.3.3-5.el8 | - | libarchive: heap buffer over-read in header_gnu_longlink |
 | CVE-2025-25724 | MEDIUM | libarchive | 3.3.3-5.el8 | - | libarchive: Buffer Overflow vulnerability in libarchive |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.3.3-5.el8 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
@@ -398,7 +398,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-45186 | HIGH | expat | 2.5.0-6.el9 | - | libexpat: denial of service via crafted XML input |
+| CVE-2026-45186 | HIGH | expat | 2.5.0-6.el9 | 2.5.0-6.el9_8.1 | libexpat: denial of service via crafted XML input |
 | CVE-2026-6846 | HIGH | gdb-gdbserver | 16.3-3.el9 | - | binutils: Binutils: Arbitrary code execution via malformed XCOFF object file processing |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -482,6 +482,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4516 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2026-0672 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-1502 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
+| CVE-2026-3276 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | python: Python unicodedata: Denial of Service due to excessive CPU consumption |
 | CVE-2026-3644 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2026-42308 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | Pillow: python: Pillow: Denial of Service via integer overflow in font processing |
@@ -495,6 +496,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4516 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: python: CPython DecodeError Handling Vulnerability |
 | CVE-2026-0672 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: Header injection in http.cookies.Morsel in Python |
 | CVE-2026-1502 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | python: Python: HTTP header injection via CR/LF in proxy tunnel headers |
+| CVE-2026-3276 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | python: Python unicodedata: Denial of Service due to excessive CPU consumption |
 | CVE-2026-3644 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2026-42308 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | Pillow: python: Pillow: Denial of Service via integer overflow in font processing |
@@ -528,7 +530,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-28418 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Information disclosure via heap-based buffer overflow in Emacs-style tags file parsing |
 | CVE-2026-28419 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Information disclosure and denial of service via malformed tags file |
 | CVE-2026-28420 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Information disclosure and denial of service via crafted Unicode characters in terminal emulator |
-| CVE-2026-35177 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: zip.vim: Vim zip.vim plugin: Arbitrary file overwrite via path traversal bypass |
 | CVE-2026-39881 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via command injection in NetBeans interface |
 | CVE-2026-41411 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Command injection allows arbitrary code execution via malicious tag files |
 | CVE-2026-45130 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Heap buffer overflow allows arbitrary code execution or denial of service |
