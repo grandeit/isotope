@@ -4,13 +4,13 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-06-05 15:01:08 UTC
+**Scanned:** 2026-06-06 03:20:27 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 33 (🔧32) | 139 (🔧75) | 76 (🔧22) | 250 | 🔧 134 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 34 (🔧33) | 141 (🔧77) | 76 (🔧22) | 253 | 🔧 134 |
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 16 (🔧6) | 9 (🔧3) | 27 | 🔧 11 |
 | ubi-minimal | 0 | 🟠 1 (🔧1) | 67 (🔧1) | 54 | 122 | 🔧 2 |
@@ -59,6 +59,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39826 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | If a trusted template author were to write a <script> tag containing a ... |
 | CVE-2026-39836 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | ELSA-2026-22112: go-toolset:ol8 security update (IMPORTANT) |
 | CVE-2026-42499 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | Pathological inputs could cause DoS through consumePhrase when parsing ... |
+| CVE-2026-42504 | HIGH | stdlib | v1.21.13 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
@@ -195,9 +196,11 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61728 | MEDIUM | stdlib | v1.21.13 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.21.13 | 1.24.12, 1.25.6 | crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls |
 | CVE-2026-27142 | MEDIUM | stdlib | v1.21.13 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
+| CVE-2026-27145 | MEDIUM | stdlib | v1.21.13 | 1.25.11, 1.26.4 | *x509.Certificate).VerifyHostname previously called matchHostnames in ... |
 | CVE-2026-32282 | MEDIUM | stdlib | v1.21.13 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.21.13 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.21.13 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
+| CVE-2026-42507 | MEDIUM | stdlib | v1.21.13 | 1.25.11, 1.26.4 | When returning errors, functions in the net/textproto package would in ... |
 
 ### distroless
 
