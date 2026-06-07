@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-06-06 15:28:44 UTC
+**Scanned:** 2026-06-07 04:37:26 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 170 (🔧169) | 508 (🔧349) | 313 (🔧44) | 1005 | 🔧 576 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 170 (🔧169) | 509 (🔧349) | 313 (🔧44) | 1006 | 🔧 576 |
 | ubi-minimal | 0 | 0 | 68 (🔧2) | 58 | 126 | 🔧 2 |
-| ubi | 0 | 🟠 2 (🔧1) | 136 (🔧3) | 226 | 364 | 🔧 4 |
+| ubi | 0 | 🟠 2 (🔧1) | 137 (🔧3) | 226 | 365 | 🔧 4 |
 
 ## Details
 
@@ -569,6 +569,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-28420 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Information disclosure and denial of service via crafted Unicode characters in terminal emulator |
 | CVE-2026-39881 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary code execution via command injection in NetBeans interface |
 | CVE-2026-41411 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Command injection allows arbitrary code execution via malicious tag files |
+| CVE-2026-44656 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary command execution via :find command-line completion |
 | CVE-2026-45130 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Heap buffer overflow allows arbitrary code execution or denial of service |
 | CVE-2026-46483 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: command injection when decompressing .tgz archives |
 | CVE-2026-34743 | MEDIUM | xz-libs | 5.2.4-4.el8_6 | - | xz: XZ Utils: Denial of Service via buffer overflow in index decoding |
@@ -926,6 +927,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-28420 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Information disclosure and denial of service via crafted Unicode characters in terminal emulator |
 | CVE-2026-39881 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via command injection in NetBeans interface |
 | CVE-2026-41411 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Command injection allows arbitrary code execution via malicious tag files |
+| CVE-2026-44656 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary command execution via :find command-line completion |
 | CVE-2026-45130 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Heap buffer overflow allows arbitrary code execution or denial of service |
 | CVE-2026-46483 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: command injection when decompressing .tgz archives |
 | CVE-2026-34743 | MEDIUM | xz-libs | 5.2.5-8.el9_0 | - | xz: XZ Utils: Denial of Service via buffer overflow in index decoding |
