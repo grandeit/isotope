@@ -4,7 +4,7 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-06-08 15:05:30 UTC
+**Scanned:** 2026-06-09 03:19:23 UTC
 
 ## Overview
 
@@ -14,7 +14,7 @@
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 16 (🔧6) | 9 (🔧3) | 27 | 🔧 11 |
 | ubi-minimal | 0 | 🟠 1 (🔧1) | 67 (🔧1) | 54 | 122 | 🔧 2 |
-| ubi | 0 | 🟠 3 (🔧2) | 136 (🔧2) | 226 | 365 | 🔧 4 |
+| ubi | 0 | 🟠 3 (🔧2) | 137 (🔧2) | 226 | 366 | 🔧 4 |
 
 ## Details
 
@@ -327,6 +327,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32776 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Denial of Service due to NULL pointer dereference |
 | CVE-2026-32777 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing |
 | CVE-2026-32778 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition |
+| CVE-2026-50219 | MEDIUM | expat | 2.5.0-6.el9 | - | expat: libexpat: Use-after-free vulnerability due to improper handler call depth tracking |
 | CVE-2025-11081 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils out-of-bounds read |
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
