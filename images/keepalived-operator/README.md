@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-06-08 16:24:56 UTC
+**Scanned:** 2026-06-09 04:33:37 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 170 (🔧169) | 509 (🔧349) | 313 (🔧44) | 1006 | 🔧 576 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 170 (🔧169) | 510 (🔧349) | 313 (🔧44) | 1007 | 🔧 576 |
 | ubi-minimal | 0 | 0 | 68 (🔧2) | 58 | 126 | 🔧 2 |
-| ubi | 0 | 🟠 2 (🔧1) | 137 (🔧3) | 226 | 365 | 🔧 4 |
+| ubi | 0 | 🟠 2 (🔧1) | 138 (🔧3) | 226 | 366 | 🔧 4 |
 
 ## Details
 
@@ -246,6 +246,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32776 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Denial of Service due to NULL pointer dereference |
 | CVE-2026-32777 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing |
 | CVE-2026-32778 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition |
+| CVE-2026-50219 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | expat: libexpat: Use-after-free vulnerability due to improper handler call depth tracking |
 | CVE-2019-8905 | MEDIUM | file-libs | 5.33-21.el8 | - | file: stack-based buffer over-read in do_core_note in readelf.c |
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
 | CVE-2026-4647 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: Out-of-Bounds Read in XCOFF Relocation Processing in GNU Binutils BFD Library |
@@ -811,6 +812,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32776 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Denial of Service due to NULL pointer dereference |
 | CVE-2026-32777 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing |
 | CVE-2026-32778 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition |
+| CVE-2026-50219 | MEDIUM | expat | 2.5.0-6.el9 | - | expat: libexpat: Use-after-free vulnerability due to improper handler call depth tracking |
 | CVE-2025-11081 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils out-of-bounds read |
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
