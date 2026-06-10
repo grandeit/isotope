@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-06-09 16:02:29 UTC
+**Scanned:** 2026-06-10 04:36:41 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 170 (🔧169) | 510 (🔧349) | 313 (🔧44) | 1007 | 🔧 576 |
-| ubi-minimal | 0 | 0 | 68 (🔧2) | 58 | 126 | 🔧 2 |
-| ubi | 0 | 🟠 2 (🔧1) | 138 (🔧3) | 226 | 366 | 🔧 4 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 167 (🔧166) | 514 (🔧352) | 313 (🔧44) | 1008 | 🔧 576 |
+| ubi-minimal | 0 | 0 | 69 (🔧2) | 58 | 127 | 🔧 2 |
+| ubi | 0 | 🟠 2 (🔧1) | 139 (🔧3) | 226 | 367 | 🔧 4 |
 
 ## Details
 
@@ -140,7 +140,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39820 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ... |
 | CVE-2026-39823 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | CVE-2026-27142 fixed a vulnerability in which URLs were not correctly ... |
 | CVE-2026-39825 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | ReverseProxy can forward queries containing parameters not visible to ... |
-| CVE-2026-39826 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | If a trusted template author were to write a <script> tag containing a ... |
 | CVE-2026-39836 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | ELSA-2026-22112: go-toolset:ol8 security update (IMPORTANT) |
 | CVE-2026-42499 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Pathological inputs could cause DoS through consumePhrase when parsing ... |
 | CVE-2026-42504 | HIGH | stdlib | v1.18.10 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
@@ -172,7 +171,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39820 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ... |
 | CVE-2026-39823 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | CVE-2026-27142 fixed a vulnerability in which URLs were not correctly ... |
 | CVE-2026-39825 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | ReverseProxy can forward queries containing parameters not visible to ... |
-| CVE-2026-39826 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | If a trusted template author were to write a <script> tag containing a ... |
 | CVE-2026-39836 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | ELSA-2026-22112: go-toolset:ol8 security update (IMPORTANT) |
 | CVE-2026-42499 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Pathological inputs could cause DoS through consumePhrase when parsing ... |
 | CVE-2026-42504 | HIGH | stdlib | v1.18.10 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
@@ -202,11 +200,11 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39820 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ... |
 | CVE-2026-39823 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | CVE-2026-27142 fixed a vulnerability in which URLs were not correctly ... |
 | CVE-2026-39825 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | ReverseProxy can forward queries containing parameters not visible to ... |
-| CVE-2026-39826 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | If a trusted template author were to write a <script> tag containing a ... |
 | CVE-2026-39836 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | ELSA-2026-22112: go-toolset:ol8 security update (IMPORTANT) |
 | CVE-2026-42499 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Pathological inputs could cause DoS through consumePhrase when parsing ... |
 | CVE-2026-42504 | HIGH | stdlib | v1.18.10 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | 1.0.6-28.el8_10 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
+| CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-13.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2023-23916 | MEDIUM | curl | 7.61.1-25.el8_7.2 | 7.61.1-25.el8_7.3 | curl: HTTP multi-header compression denial of service |
 | CVE-2023-27535 | MEDIUM | curl | 7.61.1-25.el8_7.2 | 7.61.1-30.el8_8.2 | curl: FTP too eager connection reuse |
@@ -627,6 +625,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32282 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
+| CVE-2026-39826 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping |
 | CVE-2026-42507 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | When returning errors, functions in the net/textproto package would in ... |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20200302150141-5c8b2ff67527 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 | CVE-2023-24532 | MEDIUM | stdlib | v1.18.10 | 1.19.7, 1.20.2 | golang: crypto/internal/nistec: specific unreduced P-256 scalars produce incorrect results |
@@ -671,6 +670,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32282 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
+| CVE-2026-39826 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping |
 | CVE-2026-42507 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | When returning errors, functions in the net/textproto package would in ... |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20180926160741-c2ed4eda69e7 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 | CVE-2023-24532 | MEDIUM | stdlib | v1.18.10 | 1.19.7, 1.20.2 | golang: crypto/internal/nistec: specific unreduced P-256 scalars produce incorrect results |
@@ -715,12 +715,14 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32282 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
+| CVE-2026-39826 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping |
 | CVE-2026-42507 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | When returning errors, functions in the net/textproto package would in ... |
 
 ### ubi-minimal
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
@@ -796,6 +798,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-45186 | HIGH | expat | 2.5.0-6.el9 | 2.5.0-6.el9_8.1 | libexpat: denial of service via crafted XML input |
 | CVE-2026-6846 | HIGH | gdb-gdbserver | 16.3-3.el9 | - | binutils: Binutils: Arbitrary code execution via malformed XCOFF object file processing |
+| CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
