@@ -4,17 +4,17 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-06-10 14:09:31 UTC
+**Scanned:** 2026-06-11 01:48:22 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 3 (🔧3) | 🟠 56 (🔧56) | 216 (🔧135) | 139 (🔧26) | 414 | 🔧 220 |
+| **upstream** | 🔴 3 (🔧3) | 🟠 57 (🔧56) | 219 (🔧135) | 149 (🔧26) | 428 | 🔧 220 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 1 (🔧1) | 16 (🔧6) | 9 (🔧3) | 26 | 🔧 10 |
-| ubi-minimal | 0 | 0 | 68 (🔧1) | 54 | 122 | 🔧 1 |
-| ubi | 0 | 🟠 2 (🔧1) | 138 (🔧2) | 226 | 366 | 🔧 3 |
+| ubi-minimal | 0 | 🟠 1 | 72 (🔧1) | 64 | 137 | 🔧 1 |
+| ubi | 0 | 🟠 4 (🔧1) | 146 (🔧2) | 246 | 396 | 🔧 3 |
 
 ## Details
 
@@ -49,6 +49,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-49794 | HIGH | libxml2 | 2.9.7-18.el8_9 | 2.9.7-21.el8_10.1 | libxml: Heap use after free (UAF) leads to Denial of service (DoS) |
 | CVE-2025-49796 | HIGH | libxml2 | 2.9.7-18.el8_9 | 2.9.7-21.el8_10.1 | libxml: Type confusion leads to Denial of service (DoS) |
 | CVE-2025-7425 | HIGH | libxml2 | 2.9.7-18.el8_9 | 2.9.7-21.el8_10.2 | libxslt: libxml2: Heap Use-After-Free in libxslt caused by atype corruption in xmlAttrPtr |
+| CVE-2026-45447 | HIGH | openssl-libs | 1:1.1.1k-12.el8_9 | - | Issue summary: A specially crafted PKCS#7 or S/MIME signed message cou ... |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.26.0-19.el8_9 | 3.26.0-20.el8_10 | sqlite: Integer Truncation in SQLite |
 | CVE-2021-3121 | HIGH | github.com/gogo/protobuf | v1.3.1 | 1.3.2 | gogo/protobuf: plugin/unmarshal/unmarshal.go lacks certain index validation |
 | CVE-2022-21698 | HIGH | github.com/prometheus/client_golang | v1.7.1 | 1.11.1 | prometheus/client_golang: Denial of service using InstrumentHandlerCounter |
@@ -232,6 +233,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-69419 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | 1:1.1.1k-15.el8_6 | openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing |
 | CVE-2025-9230 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | 1:1.1.1k-14.el8_10 | openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap |
 | CVE-2026-28390 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | - | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
+| CVE-2026-34182 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | - | Issue Summary: Cryptographic Message Services (CMS) processing fails t ... |
+| CVE-2026-34183 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | - | Issue summary: Remote peer may exhaust heap memory of the QUIC server ... |
+| CVE-2026-42764 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | - | Issue summary: Receiving a QUIC initial packet with an invalid token m ... |
 | CVE-2021-35937 | MEDIUM | rpm | 4.14.3-26.el8 | 4.14.3-28.el8_9 | rpm: TOCTOU race in checks for unsafe symlinks |
 | CVE-2021-35938 | MEDIUM | rpm | 4.14.3-26.el8 | 4.14.3-28.el8_9 | rpm: races with chown/chmod/capabilities calls during installation |
 | CVE-2021-35939 | MEDIUM | rpm | 4.14.3-26.el8 | 4.14.3-28.el8_9 | rpm: checks for unsafe symlinks are not performed for intermediary directories |
@@ -330,6 +334,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-45447 | HIGH | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue summary: A specially crafted PKCS#7 or S/MIME signed message cou ... |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -393,6 +398,10 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-31790 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-28390 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-3.el9_8 | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
+| CVE-2026-34182 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue Summary: Cryptographic Message Services (CMS) processing fails t ... |
+| CVE-2026-34183 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue summary: Remote peer may exhaust heap memory of the QUIC server ... |
+| CVE-2026-42764 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue summary: Receiving a QUIC initial packet with an invalid token m ... |
+| CVE-2026-45445 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue summary: When an application drives an AES-OCB context through t ... |
 | CVE-2026-44604 | MEDIUM | rpm | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2026-44604 | MEDIUM | rpm-libs | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2026-5958 | MEDIUM | sed | 4.8-10.el9 | - | sed: GNU sed TOCTOU race condition |
@@ -405,6 +414,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-45186 | HIGH | expat | 2.5.0-6.el9 | 2.5.0-6.el9_8.1 | libexpat: denial of service via crafted XML input |
 | CVE-2026-6846 | HIGH | gdb-gdbserver | 16.3-3.el9 | - | binutils: Binutils: Arbitrary code execution via malformed XCOFF object file processing |
+| CVE-2026-45447 | HIGH | openssl | 1:3.5.5-2.el9_8 | - | Issue summary: A specially crafted PKCS#7 or S/MIME signed message cou ... |
+| CVE-2026-45447 | HIGH | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue summary: A specially crafted PKCS#7 or S/MIME signed message cou ... |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -476,12 +487,20 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2026-2673 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-28390 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | 1:3.5.5-3.el9_8 | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
+| CVE-2026-34182 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | - | Issue Summary: Cryptographic Message Services (CMS) processing fails t ... |
+| CVE-2026-34183 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | - | Issue summary: Remote peer may exhaust heap memory of the QUIC server ... |
+| CVE-2026-42764 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | - | Issue summary: Receiving a QUIC initial packet with an invalid token m ... |
+| CVE-2026-45445 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | - | Issue summary: When an application drives an AES-OCB context through t ... |
 | CVE-2026-2673 | MEDIUM | openssl-fips-provider | 3.0.7-8.el9 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-31790 | MEDIUM | openssl-fips-provider | 3.0.7-8.el9 | - | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-31790 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-28390 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-3.el9_8 | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
+| CVE-2026-34182 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue Summary: Cryptographic Message Services (CMS) processing fails t ... |
+| CVE-2026-34183 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue summary: Remote peer may exhaust heap memory of the QUIC server ... |
+| CVE-2026-42764 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue summary: Receiving a QUIC initial packet with an invalid token m ... |
+| CVE-2026-45445 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue summary: When an application drives an AES-OCB context through t ... |
 | CVE-2025-11468 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Out-of-memory when loading Plist |
