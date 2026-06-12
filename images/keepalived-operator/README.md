@@ -4,7 +4,7 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-06-11 16:30:16 UTC
+**Scanned:** 2026-06-12 04:37:24 UTC
 
 ## Overview
 
@@ -68,7 +68,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-49796 | HIGH | libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-21.el8_10.1 | libxml: Type confusion leads to Denial of service (DoS) |
 | CVE-2025-7425 | HIGH | libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-21.el8_10.2 | libxslt: libxml2: Heap Use-After-Free in libxslt caused by atype corruption in xmlAttrPtr |
 | CVE-2023-0286 | HIGH | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-9.el8_7 | openssl: X.400 address type confusion in X.509 GeneralName |
-| CVE-2026-45447 | HIGH | openssl-libs | 1:1.1.1k-7.el8_6 | - | Issue summary: A specially crafted PKCS#7 or S/MIME signed message cou ... |
+| CVE-2026-45447 | HIGH | openssl-libs | 1:1.1.1k-7.el8_6 | - | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
 | CVE-2024-10963 | HIGH | pam | 1.3.1-22.el8 | 1.3.1-36.el8_10 | pam: Improper Hostname Interpretation in pam_access Leads to Access Control Bypass |
 | CVE-2025-6020 | HIGH | pam | 1.3.1-22.el8 | 1.3.1-38.el8_10 | linux-pam: Linux-pam directory Traversal |
 | CVE-2025-8941 | HIGH | pam | 1.3.1-22.el8 | 1.3.1-38.el8_10 | linux-pam: Incomplete fix for CVE-2025-6020 |
@@ -414,9 +414,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-69419 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-15.el8_6 | openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing |
 | CVE-2025-9230 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-14.el8_10 | openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap |
 | CVE-2026-28390 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | - | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
-| CVE-2026-34182 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | - | Issue Summary: Cryptographic Message Services (CMS) processing fails t ... |
-| CVE-2026-34183 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | - | Issue summary: Remote peer may exhaust heap memory of the QUIC server ... |
-| CVE-2026-42764 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | - | Issue summary: Receiving a QUIC initial packet with an invalid token m ... |
+| CVE-2026-34182 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | - | openssl: CMS AuthEnvelopedData Processing May Accept Forged Messages |
+| CVE-2026-34183 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | - | openssl: Unbounded Memory Growth in the QUIC PATH_CHALLENGE Handler |
+| CVE-2026-42764 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | - | openssl: NULL pointer dereference in QUIC server initial packet handling |
 | CVE-2024-10041 | MEDIUM | pam | 1.3.1-22.el8 | 1.3.1-36.el8_10 | pam: libpam: Libpam vulnerable to read hashed password |
 | CVE-2024-22365 | MEDIUM | pam | 1.3.1-22.el8 | 1.3.1-33.el8 | pam: allowing unprivileged user to block another user namespace |
 | CVE-2007-4559 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-56.el8_9 | python: tarfile module directory traversal |
@@ -726,7 +726,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-45447 | HIGH | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue summary: A specially crafted PKCS#7 or S/MIME signed message cou ... |
+| CVE-2026-45447 | HIGH | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -790,10 +790,10 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-31790 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-28390 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-3.el9_8 | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
-| CVE-2026-34182 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue Summary: Cryptographic Message Services (CMS) processing fails t ... |
-| CVE-2026-34183 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue summary: Remote peer may exhaust heap memory of the QUIC server ... |
-| CVE-2026-42764 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue summary: Receiving a QUIC initial packet with an invalid token m ... |
-| CVE-2026-45445 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue summary: When an application drives an AES-OCB context through t ... |
+| CVE-2026-34182 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: CMS AuthEnvelopedData Processing May Accept Forged Messages |
+| CVE-2026-34183 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: Unbounded Memory Growth in the QUIC PATH_CHALLENGE Handler |
+| CVE-2026-42764 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: NULL pointer dereference in QUIC server initial packet handling |
+| CVE-2026-45445 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: AES-OCB IV Ignored on EVP_Cipher() Path |
 | CVE-2026-44604 | MEDIUM | rpm | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2026-44604 | MEDIUM | rpm-libs | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2026-5958 | MEDIUM | sed | 4.8-10.el9 | - | sed: GNU sed TOCTOU race condition |
@@ -807,8 +807,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-45186 | HIGH | expat | 2.5.0-6.el9 | 2.5.0-6.el9_8.1 | libexpat: denial of service via crafted XML input |
 | CVE-2026-6846 | HIGH | gdb-gdbserver | 16.3-3.el9 | - | binutils: Binutils: Arbitrary code execution via malformed XCOFF object file processing |
-| CVE-2026-45447 | HIGH | openssl | 1:3.5.5-2.el9_8 | - | Issue summary: A specially crafted PKCS#7 or S/MIME signed message cou ... |
-| CVE-2026-45447 | HIGH | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue summary: A specially crafted PKCS#7 or S/MIME signed message cou ... |
+| CVE-2026-45447 | HIGH | openssl | 1:3.5.5-2.el9_8 | - | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
+| CVE-2026-45447 | HIGH | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -880,20 +880,20 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2026-2673 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-28390 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | 1:3.5.5-3.el9_8 | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
-| CVE-2026-34182 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | - | Issue Summary: Cryptographic Message Services (CMS) processing fails t ... |
-| CVE-2026-34183 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | - | Issue summary: Remote peer may exhaust heap memory of the QUIC server ... |
-| CVE-2026-42764 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | - | Issue summary: Receiving a QUIC initial packet with an invalid token m ... |
-| CVE-2026-45445 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | - | Issue summary: When an application drives an AES-OCB context through t ... |
+| CVE-2026-34182 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | - | openssl: CMS AuthEnvelopedData Processing May Accept Forged Messages |
+| CVE-2026-34183 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | - | openssl: Unbounded Memory Growth in the QUIC PATH_CHALLENGE Handler |
+| CVE-2026-42764 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | - | openssl: NULL pointer dereference in QUIC server initial packet handling |
+| CVE-2026-45445 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | - | openssl: AES-OCB IV Ignored on EVP_Cipher() Path |
 | CVE-2026-2673 | MEDIUM | openssl-fips-provider | 3.0.7-8.el9 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-31790 | MEDIUM | openssl-fips-provider | 3.0.7-8.el9 | - | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-31790 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-28390 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-3.el9_8 | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
-| CVE-2026-34182 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue Summary: Cryptographic Message Services (CMS) processing fails t ... |
-| CVE-2026-34183 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue summary: Remote peer may exhaust heap memory of the QUIC server ... |
-| CVE-2026-42764 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue summary: Receiving a QUIC initial packet with an invalid token m ... |
-| CVE-2026-45445 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | Issue summary: When an application drives an AES-OCB context through t ... |
+| CVE-2026-34182 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: CMS AuthEnvelopedData Processing May Accept Forged Messages |
+| CVE-2026-34183 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: Unbounded Memory Growth in the QUIC PATH_CHALLENGE Handler |
+| CVE-2026-42764 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: NULL pointer dereference in QUIC server initial packet handling |
+| CVE-2026-45445 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: AES-OCB IV Ignored on EVP_Cipher() Path |
 | CVE-2025-11468 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Out-of-memory when loading Plist |
