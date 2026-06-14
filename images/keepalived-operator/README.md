@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-06-13 15:33:55 UTC
+**Scanned:** 2026-06-14 04:38:01 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 168 (🔧166) | 520 (🔧352) | 323 (🔧44) | 1025 | 🔧 576 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 168 (🔧166) | 526 (🔧352) | 323 (🔧44) | 1031 | 🔧 576 |
 | ubi-minimal | 0 | 🟠 1 (🔧1) | 74 (🔧6) | 68 (🔧10) | 143 | 🔧 17 |
 | ubi | 0 | 🟠 4 (🔧3) | 150 (🔧11) | 246 (🔧20) | 400 | 🔧 34 |
 
@@ -233,6 +233,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-34969 | MEDIUM | dbus-tools | 1:1.12.8-23.el8_7.1 | 1:1.12.8-24.el8_8.1 | dbus: dbus-daemon: assertion failure when a monitor is active and a message from the driver cannot be delivered |
 | CVE-2023-30630 | MEDIUM | dmidecode | 1:3.3-4.el8 | 1:3.3-4.el8_8.1 | dmidecode: dump-bin to overwrite a local file |
 | CVE-2022-0235 | MEDIUM | dnf-plugin-subscription-manager | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
+| CVE-2026-9358 | MEDIUM | dnf-plugin-subscription-manager | 1.28.32-1.el8 | - | postcss-selector-parser: Postcss: Denial of Service via uncontrolled recursion in AST Serialization |
 | CVE-2013-0340 | MEDIUM | expat | 2.2.5-10.el8_7.1 | 2.5.0-1.el8_10 | expat: internal entity expansion |
 | CVE-2022-23990 | MEDIUM | expat | 2.2.5-10.el8_7.1 | 2.5.0-1.el8_10 | expat: integer overflow in the doProlog function |
 | CVE-2023-52425 | MEDIUM | expat | 2.2.5-10.el8_7.1 | 2.2.5-11.el8_9.1 | expat: parsing large tokens can trigger a denial of service |
@@ -456,6 +457,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-7210 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | python: expat: Python/Expat: Denial of Service via crafted XML document |
 | CVE-2025-47273 | MEDIUM | platform-python-setuptools | 39.2.0-6.el8_7.1 | 39.2.0-9.el8_10 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
 | CVE-2022-0235 | MEDIUM | python3-cloud-what | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
+| CVE-2026-9358 | MEDIUM | python3-cloud-what | 1.28.32-1.el8 | - | postcss-selector-parser: Postcss: Denial of Service via uncontrolled recursion in AST Serialization |
 | CVE-2024-3651 | MEDIUM | python3-idna | 2.5-5.el8 | 2.5-7.el8_10 | python-idna: potential DoS via resource consumption via specially crafted inputs to idna.encode() |
 | CVE-2007-4559 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-56.el8_9 | python: tarfile module directory traversal |
 | CVE-2022-48560 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-56.el8_9.2 | python: use after free in heappushpop() of heapq module |
@@ -517,7 +519,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-44604 | MEDIUM | python3-rpm | 4.14.3-24.el8_7 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2025-47273 | MEDIUM | python3-setuptools-wheel | 39.2.0-6.el8_7.1 | 39.2.0-9.el8_10 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
 | CVE-2022-0235 | MEDIUM | python3-subscription-manager-rhsm | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
+| CVE-2026-9358 | MEDIUM | python3-subscription-manager-rhsm | 1.28.32-1.el8 | - | postcss-selector-parser: Postcss: Denial of Service via uncontrolled recursion in AST Serialization |
 | CVE-2022-0235 | MEDIUM | python3-syspurpose | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
+| CVE-2026-9358 | MEDIUM | python3-syspurpose | 1.28.32-1.el8 | - | postcss-selector-parser: Postcss: Denial of Service via uncontrolled recursion in AST Serialization |
 | CVE-2023-43804 | MEDIUM | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-5.el8_9.2 | python-urllib3: Cookie request header isn't stripped during cross-origin redirects |
 | CVE-2023-45803 | MEDIUM | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-5.el8_9.2 | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2024-37891 | MEDIUM | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-8.el8_10 | urllib3: proxy-authorization request header is not stripped during cross-origin redirects |
@@ -537,7 +541,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2020-24736 | MEDIUM | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-18.el8_8 | sqlite: Crash due to misuse of window functions. |
 | CVE-2023-7104 | MEDIUM | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-19.el8_9 | sqlite: heap-buffer-overflow at sessionfuzz |
 | CVE-2022-0235 | MEDIUM | subscription-manager | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
+| CVE-2026-9358 | MEDIUM | subscription-manager | 1.28.32-1.el8 | - | postcss-selector-parser: Postcss: Denial of Service via uncontrolled recursion in AST Serialization |
 | CVE-2022-0235 | MEDIUM | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
+| CVE-2026-9358 | MEDIUM | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | - | postcss-selector-parser: Postcss: Denial of Service via uncontrolled recursion in AST Serialization |
 | CVE-2018-20839 | MEDIUM | systemd | 239-68.el8_7.4 | - | systemd: mishandling of the current keyboard mode check leading to passwords being disclosed in cleartext to attacker |
 | CVE-2023-26604 | MEDIUM | systemd | 239-68.el8_7.4 | 239-74.el8_8.2 | systemd: privilege escalation via the less pager |
 | CVE-2023-7008 | MEDIUM | systemd | 239-68.el8_7.4 | 239-82.el8 | systemd-resolved: Unsigned name response in signed zone is not refused when DNSSEC=yes |
@@ -577,7 +583,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-44656 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary command execution via :find command-line completion |
 | CVE-2026-45130 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Heap buffer overflow allows arbitrary code execution or denial of service |
 | CVE-2026-46483 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: command injection when decompressing .tgz archives |
-| CVE-2026-52859 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | Vim is an open source, command line text editor. Prior to version 9.2. ... |
+| CVE-2026-52859 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Denial of Service via out-of-bounds write in terminal handling |
 | CVE-2026-34743 | MEDIUM | xz-libs | 5.2.4-4.el8_6 | - | xz: XZ Utils: Denial of Service via buffer overflow in index decoding |
 | CVE-2023-48795 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.17.0, 0.0.0-20231218163308-9d2ee975ef9f | ssh: Prefix truncation attack on Binary Packet Protocol (BPP) |
 | CVE-2025-47914 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.45.0 | golang.org/x/crypto/ssh/agent: SSH Agent servers: Denial of Service due to malformed messages |
@@ -960,7 +966,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-44656 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary command execution via :find command-line completion |
 | CVE-2026-45130 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Heap buffer overflow allows arbitrary code execution or denial of service |
 | CVE-2026-46483 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: command injection when decompressing .tgz archives |
-| CVE-2026-52859 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | Vim is an open source, command line text editor. Prior to version 9.2. ... |
+| CVE-2026-52859 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Denial of Service via out-of-bounds write in terminal handling |
 | CVE-2026-34743 | MEDIUM | xz-libs | 5.2.5-8.el9_0 | - | xz: XZ Utils: Denial of Service via buffer overflow in index decoding |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20180926160741-c2ed4eda69e7 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 
