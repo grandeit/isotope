@@ -4,17 +4,17 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-06-17 15:03:53 UTC
+**Scanned:** 2026-06-18 03:20:05 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 34 (🔧33) | 148 (🔧82) | 86 (🔧32) | 270 | 🔧 149 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 34 (🔧33) | 151 (🔧82) | 86 (🔧32) | 273 | 🔧 149 |
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
-| ubi-micro | 0 | 🟠 2 (🔧2) | 16 (🔧6) | 9 (🔧3) | 27 | 🔧 11 |
-| ubi-minimal | 0 | 🟠 2 (🔧2) | 73 (🔧5) | 64 (🔧10) | 139 | 🔧 17 |
-| ubi | 0 | 🟠 5 (🔧4) | 149 (🔧10) | 246 (🔧20) | 400 | 🔧 34 |
+| ubi-micro | 0 | 🟠 2 (🔧2) | 19 (🔧6) | 9 (🔧3) | 30 | 🔧 11 |
+| ubi-minimal | 0 | 🟠 2 (🔧2) | 77 (🔧5) | 64 (🔧10) | 143 | 🔧 17 |
+| ubi | 0 | 🟠 5 (🔧4) | 154 (🔧10) | 246 (🔧20) | 405 | 🔧 34 |
 
 ## Details
 
@@ -86,16 +86,19 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5435 | MEDIUM | glibc | 2.34-168.el9_6.23 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc | 2.34-168.el9_6.23 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc | 2.34-168.el9_6.23 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
+| CVE-2026-6238 | MEDIUM | glibc | 2.34-168.el9_6.23 | - | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-4046 | MEDIUM | glibc-common | 2.34-168.el9_6.23 | 2.34-270.el9_8 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc-common | 2.34-168.el9_6.23 | 2.34-270.el9_8 | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-common | 2.34-168.el9_6.23 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-common | 2.34-168.el9_6.23 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-common | 2.34-168.el9_6.23 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
+| CVE-2026-6238 | MEDIUM | glibc-common | 2.34-168.el9_6.23 | - | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-4046 | MEDIUM | glibc-minimal-langpack | 2.34-168.el9_6.23 | 2.34-270.el9_8 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc-minimal-langpack | 2.34-168.el9_6.23 | 2.34-270.el9_8 | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-minimal-langpack | 2.34-168.el9_6.23 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-minimal-langpack | 2.34-168.el9_6.23 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-minimal-langpack | 2.34-168.el9_6.23 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
+| CVE-2026-6238 | MEDIUM | glibc-minimal-langpack | 2.34-168.el9_6.23 | - | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-4.el9 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2025-14831 | MEDIUM | gnutls | 3.8.3-6.el9 | 3.8.3-10.el9_7 | gnutls: GnuTLS: Denial of Service via excessive resource consumption during certificate verification |
 | CVE-2025-32988 | MEDIUM | gnutls | 3.8.3-6.el9 | 3.8.3-6.el9_6.2 | gnutls: Vulnerability in GnuTLS otherName SAN export |
@@ -227,16 +230,19 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5435 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
+| CVE-2026-6238 | MEDIUM | glibc | 2.34-231.el9_7.10 | - | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-4046 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | 2.34-270.el9_8 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | 2.34-270.el9_8 | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
+| CVE-2026-6238 | MEDIUM | glibc-common | 2.34-231.el9_7.10 | - | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-4046 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | 2.34-270.el9_8 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | 2.34-270.el9_8 | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
+| CVE-2026-6238 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | - | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 
 ### ubi-minimal
 
@@ -263,15 +269,19 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5435 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
+| CVE-2026-6238 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-5435 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
+| CVE-2026-6238 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-5435 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
+| CVE-2026-6238 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-5435 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
+| CVE-2026-6238 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2026-11850 | MEDIUM | krb5-libs | 1.21.1-10.el9_8 | - | krb5: krb5: integer underflow in berval2tl_data() leads to heap out-of-bounds read |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
@@ -357,15 +367,19 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5435 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
+| CVE-2026-6238 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-5435 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
+| CVE-2026-6238 | MEDIUM | glibc-common | 2.34-270.el9_8 | - | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-5435 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
+| CVE-2026-6238 | MEDIUM | glibc-langpack-en | 2.34-270.el9_8 | - | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-5435 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
+| CVE-2026-6238 | MEDIUM | glibc-minimal-langpack | 2.34-270.el9_8 | - | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.3.3-5.el9_7 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2026-11850 | MEDIUM | krb5-libs | 1.21.1-10.el9_8 | - | krb5: krb5: integer underflow in berval2tl_data() leads to heap out-of-bounds read |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
@@ -413,6 +427,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-34183 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Unbounded Memory Growth in the QUIC PATH_CHALLENGE Handler |
 | CVE-2026-42764 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: NULL pointer dereference in QUIC server initial packet handling |
 | CVE-2026-45445 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: AES-OCB IV Ignored on EVP_Cipher() Path |
+| CVE-2026-54411 | MEDIUM | pam | 1.5.1-28.el9 | - | linux-pam: From CVEorg collector |
 | CVE-2025-11468 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Out-of-memory when loading Plist |
