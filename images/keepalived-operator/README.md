@@ -4,7 +4,7 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-06-18 16:11:05 UTC
+**Scanned:** 2026-06-19 04:38:59 UTC
 
 ## Overview
 
@@ -424,7 +424,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-42764 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | - | openssl: NULL pointer dereference in QUIC server initial packet handling |
 | CVE-2024-10041 | MEDIUM | pam | 1.3.1-22.el8 | 1.3.1-36.el8_10 | pam: libpam: Libpam vulnerable to read hashed password |
 | CVE-2024-22365 | MEDIUM | pam | 1.3.1-22.el8 | 1.3.1-33.el8 | pam: allowing unprivileged user to block another user namespace |
-| CVE-2026-54411 | MEDIUM | pam | 1.3.1-22.el8 | - | linux-pam: From CVEorg collector |
+| CVE-2026-54411 | MEDIUM | pam | 1.3.1-22.el8 | - | linux-pam: Plaintext password recovery via timing discrepancy in pam_userdb module |
 | CVE-2007-4559 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-56.el8_9 | python: tarfile module directory traversal |
 | CVE-2022-48560 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-56.el8_9.2 | python: use after free in heappushpop() of heapq module |
 | CVE-2022-48564 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-56.el8_9.2 | python: DoS when processing malformed Apple Property List files in binary format |
@@ -643,7 +643,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32288 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
 | CVE-2026-39826 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping |
-| CVE-2026-42507 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | When returning errors, functions in the net/textproto package would in ... |
+| CVE-2026-42507 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | net/textproto: golang: Golang net/textproto: Misleading error messages via input injection |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20200302150141-5c8b2ff67527 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 | CVE-2023-24532 | MEDIUM | stdlib | v1.18.10 | 1.19.7, 1.20.2 | golang: crypto/internal/nistec: specific unreduced P-256 scalars produce incorrect results |
 | CVE-2023-29406 | MEDIUM | stdlib | v1.18.10 | 1.19.11, 1.20.6 | golang: net/http: insufficient sanitization of Host header |
@@ -688,7 +688,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32288 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
 | CVE-2026-39826 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping |
-| CVE-2026-42507 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | When returning errors, functions in the net/textproto package would in ... |
+| CVE-2026-42507 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | net/textproto: golang: Golang net/textproto: Misleading error messages via input injection |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20180926160741-c2ed4eda69e7 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 | CVE-2023-24532 | MEDIUM | stdlib | v1.18.10 | 1.19.7, 1.20.2 | golang: crypto/internal/nistec: specific unreduced P-256 scalars produce incorrect results |
 | CVE-2023-29406 | MEDIUM | stdlib | v1.18.10 | 1.19.11, 1.20.6 | golang: net/http: insufficient sanitization of Host header |
@@ -733,7 +733,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32288 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
 | CVE-2026-39826 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping |
-| CVE-2026-42507 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | When returning errors, functions in the net/textproto package would in ... |
+| CVE-2026-42507 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | net/textproto: golang: Golang net/textproto: Misleading error messages via input injection |
 
 ### ubi-minimal
 
@@ -917,7 +917,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-34183 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Unbounded Memory Growth in the QUIC PATH_CHALLENGE Handler |
 | CVE-2026-42764 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: NULL pointer dereference in QUIC server initial packet handling |
 | CVE-2026-45445 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: AES-OCB IV Ignored on EVP_Cipher() Path |
-| CVE-2026-54411 | MEDIUM | pam | 1.5.1-28.el9 | - | linux-pam: From CVEorg collector |
+| CVE-2026-54411 | MEDIUM | pam | 1.5.1-28.el9 | - | linux-pam: Plaintext password recovery via timing discrepancy in pam_userdb module |
 | CVE-2025-11468 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Out-of-memory when loading Plist |
