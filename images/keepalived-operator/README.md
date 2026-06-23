@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-06-22 16:35:52 UTC
+**Scanned:** 2026-06-23 04:30:04 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 14 (🔧14) | 🟠 168 (🔧167) | 530 (🔧352) | 325 (🔧47) | 1037 | 🔧 580 |
-| ubi-minimal | 0 | 🟠 1 (🔧1) | 78 (🔧6) | 68 (🔧10) | 147 | 🔧 17 |
-| ubi | 0 | 🟠 4 (🔧3) | 155 (🔧11) | 248 (🔧20) | 407 | 🔧 34 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 187 (🔧186) | 535 (🔧357) | 325 (🔧47) | 1060 | 🔧 607 |
+| ubi-minimal | 0 | 🟠 1 (🔧1) | 78 (🔧8) | 68 (🔧10) | 147 | 🔧 21 |
+| ubi | 0 | 🟠 4 (🔧3) | 155 (🔧13) | 248 (🔧20) | 407 | 🔧 38 |
 
 ## Details
 
@@ -23,7 +23,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2022-1996 | CRITICAL | github.com/emicklei/go-restful | v2.9.5+incompatible | 2.16.0 | go-restful: Authorization Bypass Through User-Controlled Key |
-| CVE-2024-45337 | CRITICAL | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.31.0 | golang.org/x/crypto/ssh: Misuse of ServerConfig.PublicKeyCallback may cause authorization bypass in golang.org/x/crypto |
 | CVE-2023-24538 | CRITICAL | stdlib | v1.18.10 | 1.19.8, 1.20.3 | golang: html/template: backticks not treated as string delimiters |
 | CVE-2023-24540 | CRITICAL | stdlib | v1.18.10 | 1.19.9, 1.20.4 | golang: html/template: improper handling of JavaScript whitespace |
 | CVE-2024-24790 | CRITICAL | stdlib | v1.18.10 | 1.21.11, 1.22.4 | golang: net/netip: Unexpected behavior from Is methods for IPv4-mapped IPv6 addresses |
@@ -108,10 +107,29 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-3899 | HIGH | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2026-34982 | HIGH | vim-minimal | 2:8.0.1763-19.el8_6.4 | 2:8.0.1763-22.el8_10.3 | vim: arbitrary command execution via modeline sandbox bypass |
 | CVE-2022-27191 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.0.0-20220314234659-1baeb1ce4c0b | golang: crash in a golang.org/x/crypto/ssh server |
+| CVE-2024-45337 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.31.0 | golang.org/x/crypto/ssh: Misuse of ServerConfig.PublicKeyCallback may cause authorization bypass in golang.org/x/crypto |
 | CVE-2025-22869 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.35.0 | golang.org/x/crypto/ssh: Denial of Service in the Key Exchange of golang.org/x/crypto/ssh |
+| CVE-2025-47913 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.43.0 | golang.org/x/crypto/ssh/agent: golang.org/x/crypto/ssh/agent: SSH client panic due to unexpected SSH_AGENT_SUCCESS |
+| CVE-2026-39827 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.52.0 | An authenticated SSH client that repeatedly opened channels which were ... |
+| CVE-2026-39828 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Unauthorized command execution via discarded SSH permissions |
+| CVE-2026-39829 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via crafted public key with excessive parameters |
+| CVE-2026-39830 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via resource leak from unsolicited SSH responses |
+| CVE-2026-39835 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.52.0 | SSH servers which use CertChecker as a public key callback without set ... |
+| CVE-2026-42508 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.52.0 | golang.org/x/crypto/ssh/knownhosts: golang: golang.org/x/crypto/ssh/knownhosts: Revocation bypass via unchecked SignatureKey |
+| CVE-2026-46595 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Authorization bypass due to skipped source-address validation |
+| CVE-2026-46597 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.52.0 | An incorrectly placed cast from bytes to int allowed for server-side p ... |
 | CVE-2022-27664 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.0.0-20220906165146-f3363e06e74c | golang: net/http: handle server errors after sending GOAWAY |
 | CVE-2022-41723 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.7.0 | golang.org/x/net/http2: avoid quadratic complexity in HPACK decoding |
 | CVE-2023-39325 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.17.0 | golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487) |
+| CVE-2023-45288 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.23.0 | golang: net/http, x/net/http2: unlimited number of CONTINUATION frames causes DoS |
+| CVE-2024-45338 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.33.0 | golang.org/x/net/html: Non-linear parsing of case-insensitive content in golang.org/x/net/html |
+| CVE-2026-25680 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | Parsing arbitrary HTML can consume excessive CPU time, possibly leadin ... |
+| CVE-2026-25681 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | Parsing arbitrary HTML which is then rendered using Render can result ... |
+| CVE-2026-27136 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | Parsing arbitrary HTML which is then rendered using Render can result ... |
+| CVE-2026-33814 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.53.0 | When processing HTTP/2 SETTINGS frames, transport will enter an infini ... |
+| CVE-2026-39821 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | golang.org/x/net/idna: golang: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing |
+| CVE-2026-42502 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | Parsing arbitrary HTML which is then rendered using Render can result ... |
+| CVE-2026-42506 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | Parsing arbitrary HTML which is then rendered using Render can result ... |
 | CVE-2025-22868 | HIGH | golang.org/x/oauth2 | v0.0.0-20211104180415-d3ed0bb246c8 | 0.27.0 | golang.org/x/oauth2/jws: Unexpected memory consumption during token parsing in golang.org/x/oauth2/jws |
 | CVE-2022-32149 | HIGH | golang.org/x/text | v0.3.7 | 0.3.8 | golang: golang.org/x/text/language: ParseAcceptLanguage takes a long time to parse complex tags |
 | CVE-2022-28948 | HIGH | gopkg.in/yaml.v3 | v3.0.0-20210107192922-496545a6307b | 3.0.1 | golang-gopkg-yaml: crash when attempting to deserialize invalid input |
@@ -589,15 +607,20 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-46483 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: command injection when decompressing .tgz archives |
 | CVE-2026-52859 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Denial of Service via out-of-bounds write in terminal handling |
 | CVE-2026-34743 | MEDIUM | xz-libs | 5.2.4-4.el8_6 | - | xz: XZ Utils: Denial of Service via buffer overflow in index decoding |
-| CVE-2023-48795 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.17.0, 0.0.0-20231218163308-9d2ee975ef9f | ssh: Prefix truncation attack on Binary Packet Protocol (BPP) |
+| CVE-2023-48795 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.17.0 | ssh: Prefix truncation attack on Binary Packet Protocol (BPP) |
 | CVE-2025-47914 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.45.0 | golang.org/x/crypto/ssh/agent: SSH Agent servers: Denial of Service due to malformed messages |
 | CVE-2025-58181 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.45.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via unbounded memory consumption in GSSAPI authentication |
+| CVE-2026-39831 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.52.0 | The Verify() method for FIDO/U2F security key types (sk-ecdsa-sha2-nis ... |
+| CVE-2026-39832 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.52.0 | When adding a key to a remote agent constraint extensions such as rest ... |
+| CVE-2026-39833 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.52.0 | The in-memory keyring returned by NewKeyring() silently accepted keys ... |
+| CVE-2026-39834 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.52.0 | When writing data larger than 4GB in a single Write call on an SSH cha ... |
+| CVE-2026-46598 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.52.0 | golang.org/x/crypto/ssh/agent: golang: golang.org/x/crypto/ssh/agent: Denial of Service via malformed input |
 | CVE-2022-41717 | MEDIUM | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.4.0 | golang: net/http: excessive memory growth in a Go server accepting HTTP/2 requests |
 | CVE-2023-3978 | MEDIUM | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.13.0 | golang.org/x/net/html: Cross site scripting |
-| CVE-2023-44487 | MEDIUM | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.17.0 | HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack) |
-| CVE-2023-45288 | MEDIUM | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.23.0 | golang: net/http, x/net/http2: unlimited number of CONTINUATION frames causes DoS |
 | CVE-2025-22870 | MEDIUM | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.36.0 | golang.org/x/net/proxy: golang.org/x/net/http/httpproxy: HTTP Proxy bypass using IPv6 Zone IDs in golang.org/x/net |
 | CVE-2025-22872 | MEDIUM | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.38.0 | golang.org/x/net/html: Incorrect Neutralization of Input During Web Page Generation in x/net in golang.org/x/net |
+| CVE-2025-47911 | MEDIUM | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.45.0 | golang.org/x/net/html: Quadratic parsing complexity in golang.org/x/net/html |
+| CVE-2025-58190 | MEDIUM | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.45.0 | golang.org/x/net/html: Infinite parsing loop in golang.org/x/net |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20220209214540-3681064d5158 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 | CVE-2024-24786 | MEDIUM | google.golang.org/protobuf | v1.27.1 | 1.33.0 | golang-protobuf: encoding/protojson, internal/encoding/json: infinite loop in protojson.Unmarshal when unmarshaling certain forms of invalid JSON |
 | CVE-2023-24532 | MEDIUM | stdlib | v1.18.10 | 1.19.7, 1.20.2 | golang: crypto/internal/nistec: specific unreduced P-256 scalars produce incorrect results |
@@ -803,9 +826,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6732 | MEDIUM | libxml2 | 2.9.13-14.el9_7 | - | libxml2: libxml2: Denial of Service via crafted XSD-validated document |
 | CVE-2026-22185 | MEDIUM | openldap | 2.6.8-4.el9 | - | OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow |
 | CVE-2026-2673 | MEDIUM | openssl-fips-provider | 3.0.7-8.el9 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
-| CVE-2026-31790 | MEDIUM | openssl-fips-provider | 3.0.7-8.el9 | - | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
+| CVE-2026-31790 | MEDIUM | openssl-fips-provider | 3.0.7-8.el9 | 3.0.7-11.el9_8 | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
-| CVE-2026-31790 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
+| CVE-2026-31790 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | 3.0.7-11.el9_8 | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-28390 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-3.el9_8 | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
 | CVE-2026-34182 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: CMS AuthEnvelopedData Processing May Accept Forged Messages |
@@ -908,9 +931,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-42764 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: NULL pointer dereference in QUIC server initial packet handling |
 | CVE-2026-45445 | MEDIUM | openssl | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: AES-OCB IV Ignored on EVP_Cipher() Path |
 | CVE-2026-2673 | MEDIUM | openssl-fips-provider | 3.0.7-8.el9 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
-| CVE-2026-31790 | MEDIUM | openssl-fips-provider | 3.0.7-8.el9 | - | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
+| CVE-2026-31790 | MEDIUM | openssl-fips-provider | 3.0.7-8.el9 | 3.0.7-11.el9_8 | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
-| CVE-2026-31790 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | - | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
+| CVE-2026-31790 | MEDIUM | openssl-fips-provider-so | 3.0.7-8.el9 | 3.0.7-11.el9_8 | openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key |
 | CVE-2026-2673 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | - | openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group |
 | CVE-2026-28390 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-3.el9_8 | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
 | CVE-2026-34182 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: CMS AuthEnvelopedData Processing May Accept Forged Messages |
