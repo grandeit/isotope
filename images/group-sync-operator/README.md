@@ -4,17 +4,17 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-06-23 15:00:56 UTC
+**Scanned:** 2026-06-24 03:19:32 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 53 (🔧52) | 157 (🔧90) | 86 (🔧32) | 297 | 🔧 176 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 54 (🔧53) | 156 (🔧89) | 86 (🔧32) | 297 | 🔧 176 |
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 19 (🔧6) | 9 (🔧3) | 30 | 🔧 11 |
 | ubi-minimal | 0 | 🟠 2 (🔧2) | 77 (🔧7) | 64 (🔧10) | 143 | 🔧 19 |
-| ubi | 0 | 🟠 5 (🔧4) | 154 (🔧12) | 248 (🔧20) | 407 | 🔧 36 |
+| ubi | 0 | 🟠 5 (🔧4) | 156 (🔧12) | 248 (🔧20) | 409 | 🔧 36 |
 
 ## Details
 
@@ -67,6 +67,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61726 | HIGH | stdlib | v1.21.13 | 1.24.12, 1.25.6 | golang: net/url: Memory exhaustion in query parameter parsing in net/url |
 | CVE-2025-61729 | HIGH | stdlib | v1.21.13 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2026-25679 | HIGH | stdlib | v1.21.13 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
+| CVE-2026-27145 | HIGH | stdlib | v1.21.13 | 1.25.11, 1.26.4 | *x509.Certificate).VerifyHostname previously called matchHostnames in ... |
 | CVE-2026-32280 | HIGH | stdlib | v1.21.13 | 1.25.9, 1.26.2 | crypto/x509: crypto/tls: golang: Go: Denial of Service vulnerability in certificate chain building |
 | CVE-2026-32281 | HIGH | stdlib | v1.21.13 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
 | CVE-2026-32283 | HIGH | stdlib | v1.21.13 | 1.25.9, 1.26.2 | crypto/tls: golang: Go crypto/tls: Denial of Service via multiple TLS 1.3 key update messages |
@@ -229,7 +230,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61728 | MEDIUM | stdlib | v1.21.13 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.21.13 | 1.24.12, 1.25.6 | crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls |
 | CVE-2026-27142 | MEDIUM | stdlib | v1.21.13 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
-| CVE-2026-27145 | MEDIUM | stdlib | v1.21.13 | 1.25.11, 1.26.4 | *x509.Certificate).VerifyHostname previously called matchHostnames in ... |
 | CVE-2026-32282 | MEDIUM | stdlib | v1.21.13 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.21.13 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.21.13 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
@@ -379,6 +379,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32777 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing |
 | CVE-2026-32778 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition |
 | CVE-2026-50219 | MEDIUM | expat | 2.5.0-6.el9 | - | expat: libexpat: Use-after-free vulnerability due to improper handler call depth tracking |
+| CVE-2026-56403 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Arbitrary code execution due to integer overflow in storeAtts |
+| CVE-2026-56405 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Information disclosure and arbitrary code execution via integer overflow |
 | CVE-2025-11081 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils out-of-bounds read |
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
