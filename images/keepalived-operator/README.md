@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-06-24 15:48:12 UTC
+**Scanned:** 2026-06-25 04:31:32 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 190 (🔧189) | 534 (🔧354) | 325 (🔧47) | 1062 | 🔧 607 |
-| ubi-minimal | 0 | 🟠 1 (🔧1) | 78 (🔧8) | 68 (🔧10) | 147 | 🔧 21 |
-| ubi | 0 | 🟠 4 (🔧3) | 157 (🔧13) | 248 (🔧20) | 409 | 🔧 38 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 196 (🔧189) | 535 (🔧355) | 325 (🔧47) | 1069 | 🔧 608 |
+| ubi-minimal | 0 | 🟠 1 (🔧1) | 78 (🔧8) | 68 (🔧12) | 147 | 🔧 23 |
+| ubi | 0 | 🟠 5 (🔧4) | 159 (🔧15) | 248 (🔧22) | 412 | 🔧 43 |
 
 ## Details
 
@@ -37,6 +37,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-68121 | CRITICAL | stdlib | v1.18.10 | 1.24.13, 1.25.7, 1.26.0-rc.3 | crypto/tls: crypto/tls: Incorrect certificate validation during TLS session resumption |
 | CVE-2025-6176 | HIGH | brotli | 1.0.6-3.el8 | 1.0.6-4.el8_10 | Scrapy: python-scrapy: brotli: Python brotli decompression bomb DoS |
 | CVE-2023-3899 | HIGH | dnf-plugin-subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
+| CVE-2025-71319 | HIGH | dnf-plugin-subscription-manager | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
 | CVE-2025-59375 | HIGH | expat | 2.2.5-10.el8_7.1 | 2.5.0-1.el8_10 | firefox: thunderbird: expat: libexpat in Expat allows attackers to trigger large dynamic memory allocations via a small document that is submitted for |
 | CVE-2026-45186 | HIGH | expat | 2.2.5-10.el8_7.1 | 2.5.0-2.el8_10 | libexpat: denial of service via crafted XML input |
 | CVE-2026-6846 | HIGH | gdb-gdbserver | 8.2-19.el8 | - | binutils: Binutils: Arbitrary code execution via malformed XCOFF object file processing |
@@ -82,6 +83,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6100 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-76.el8_10 | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
 | CVE-2024-6345 | HIGH | platform-python-setuptools | 39.2.0-6.el8_7.1 | 39.2.0-8.el8_10 | pypa/setuptools: Remote code execution via download functions in the package_index module in pypa/setuptools |
 | CVE-2023-3899 | HIGH | python3-cloud-what | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
+| CVE-2025-71319 | HIGH | python3-cloud-what | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
 | CVE-2023-24329 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-51.el8_8.1 | python: urllib.parse url blocklisting bypass |
 | CVE-2023-40217 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-51.el8_8.2 | python: TLS handshake bypass |
 | CVE-2023-6597 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-62.el8_10 | python: Path traversal on tempfile.TemporaryDirectory |
@@ -98,13 +100,17 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-7425 | HIGH | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-21.el8_10.2 | libxslt: libxml2: Heap Use-After-Free in libxslt caused by atype corruption in xmlAttrPtr |
 | CVE-2024-6345 | HIGH | python3-setuptools-wheel | 39.2.0-6.el8_7.1 | 39.2.0-8.el8_10 | pypa/setuptools: Remote code execution via download functions in the package_index module in pypa/setuptools |
 | CVE-2023-3899 | HIGH | python3-subscription-manager-rhsm | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
+| CVE-2025-71319 | HIGH | python3-subscription-manager-rhsm | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
 | CVE-2023-3899 | HIGH | python3-syspurpose | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
+| CVE-2025-71319 | HIGH | python3-syspurpose | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-9.el8_10 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-9.el8_10 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-9.el8_10 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-20.el8_10 | sqlite: Integer Truncation in SQLite |
 | CVE-2023-3899 | HIGH | subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
+| CVE-2025-71319 | HIGH | subscription-manager | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
 | CVE-2023-3899 | HIGH | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
+| CVE-2025-71319 | HIGH | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
 | CVE-2026-34982 | HIGH | vim-minimal | 2:8.0.1763-19.el8_6.4 | 2:8.0.1763-22.el8_10.3 | vim: arbitrary command execution via modeline sandbox bypass |
 | CVE-2022-27191 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.0.0-20220314234659-1baeb1ce4c0b | golang: crash in a golang.org/x/crypto/ssh server |
 | CVE-2024-45337 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.31.0 | golang.org/x/crypto/ssh: Misuse of ServerConfig.PublicKeyCallback may cause authorization bypass in golang.org/x/crypto |
@@ -126,7 +132,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-25680 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | Parsing arbitrary HTML can consume excessive CPU time, possibly leadin ... |
 | CVE-2026-25681 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | Parsing arbitrary HTML which is then rendered using Render can result ... |
 | CVE-2026-27136 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | Parsing arbitrary HTML which is then rendered using Render can result ... |
-| CVE-2026-33814 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.53.0 | When processing HTTP/2 SETTINGS frames, transport will enter an infini ... |
+| CVE-2026-33814 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.53.0 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
 | CVE-2026-39821 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | golang.org/x/net/idna: golang: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing |
 | CVE-2026-42502 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | Parsing arbitrary HTML which is then rendered using Render can result ... |
 | CVE-2026-42506 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | Parsing arbitrary HTML which is then rendered using Render can result ... |
@@ -156,7 +162,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32281 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
 | CVE-2026-32283 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/tls: golang: Go crypto/tls: Denial of Service via multiple TLS 1.3 key update messages |
 | CVE-2026-33811 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | net: golang: Go net package: Denial of Service via long CNAME response in LookupCNAME |
-| CVE-2026-33814 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | When processing HTTP/2 SETTINGS frames, transport will enter an infini ... |
+| CVE-2026-33814 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
 | CVE-2026-39820 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ... |
 | CVE-2026-39823 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | CVE-2026-27142 fixed a vulnerability in which URLs were not correctly ... |
 | CVE-2026-39825 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | ReverseProxy can forward queries containing parameters not visible to ... |
@@ -188,7 +194,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32281 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
 | CVE-2026-32283 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/tls: golang: Go crypto/tls: Denial of Service via multiple TLS 1.3 key update messages |
 | CVE-2026-33811 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | net: golang: Go net package: Denial of Service via long CNAME response in LookupCNAME |
-| CVE-2026-33814 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | When processing HTTP/2 SETTINGS frames, transport will enter an infini ... |
+| CVE-2026-33814 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
 | CVE-2026-39820 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ... |
 | CVE-2026-39823 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | CVE-2026-27142 fixed a vulnerability in which URLs were not correctly ... |
 | CVE-2026-39825 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | ReverseProxy can forward queries containing parameters not visible to ... |
@@ -218,7 +224,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32281 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
 | CVE-2026-32283 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/tls: golang: Go crypto/tls: Denial of Service via multiple TLS 1.3 key update messages |
 | CVE-2026-33811 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | net: golang: Go net package: Denial of Service via long CNAME response in LookupCNAME |
-| CVE-2026-33814 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | When processing HTTP/2 SETTINGS frames, transport will enter an infini ... |
+| CVE-2026-33814 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
 | CVE-2026-39820 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ... |
 | CVE-2026-39823 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | CVE-2026-27142 fixed a vulnerability in which URLs were not correctly ... |
 | CVE-2026-39825 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | ReverseProxy can forward queries containing parameters not visible to ... |
@@ -270,6 +276,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-50219 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | expat: libexpat: Use-after-free vulnerability due to improper handler call depth tracking |
 | CVE-2026-56403 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Arbitrary code execution due to integer overflow in storeAtts |
 | CVE-2026-56405 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Information disclosure and arbitrary code execution via integer overflow |
+| CVE-2026-56406 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Arbitrary code execution via integer overflow in XML_ParseBuffer |
 | CVE-2026-56412 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Use-after-free vulnerability due to improper handling of XML CDATA sections |
 | CVE-2019-8905 | MEDIUM | file-libs | 5.33-21.el8 | - | file: stack-based buffer over-read in do_core_note in readelf.c |
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
@@ -605,7 +612,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-28419 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Information disclosure and denial of service via malformed tags file |
 | CVE-2026-28420 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Information disclosure and denial of service via crafted Unicode characters in terminal emulator |
 | CVE-2026-39881 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary code execution via command injection in NetBeans interface |
-| CVE-2026-41411 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Command injection allows arbitrary code execution via malicious tag files |
+| CVE-2026-41411 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | 2:8.0.1763-24.el8_10 | vim: Vim: Command injection allows arbitrary code execution via malicious tag files |
 | CVE-2026-42307 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | Vim: Vim: Arbitrary code execution via OS command injection in netrw plugin |
 | CVE-2026-44656 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary command execution via :find command-line completion |
 | CVE-2026-45130 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Heap buffer overflow allows arbitrary code execution or denial of service |
@@ -852,6 +859,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6846 | HIGH | gdb-gdbserver | 16.3-3.el9 | - | binutils: Binutils: Arbitrary code execution via malformed XCOFF object file processing |
 | CVE-2026-45447 | HIGH | openssl | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
 | CVE-2026-45447 | HIGH | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
+| CVE-2026-44432 | HIGH | python3-urllib3 | 1.26.5-6.el9_7.1 | 1.26.5-8.el9_8 | urllib3: urllib3: Denial of Service due to excessive HTTP response decompression |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -872,6 +880,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-50219 | MEDIUM | expat | 2.5.0-6.el9 | - | expat: libexpat: Use-after-free vulnerability due to improper handler call depth tracking |
 | CVE-2026-56403 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Arbitrary code execution due to integer overflow in storeAtts |
 | CVE-2026-56405 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Information disclosure and arbitrary code execution via integer overflow |
+| CVE-2026-56406 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Arbitrary code execution via integer overflow in XML_ParseBuffer |
 | CVE-2025-11081 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils out-of-bounds read |
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
@@ -979,6 +988,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-25645 | MEDIUM | python3-pip-wheel | 21.3.1-2.el9_8 | - | requests: Requests: Security bypass due to predictable temporary file creation |
 | CVE-2026-32284 | MEDIUM | python3-pip-wheel | 21.3.1-2.el9_8 | - | github.com/shamaton/msgpack: msgpack: Denial of Service via truncated fixext data |
 | CVE-2026-44604 | MEDIUM | python3-rpm | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
+| CVE-2026-44431 | MEDIUM | python3-urllib3 | 1.26.5-6.el9_7.1 | 1.26.5-8.el9_8 | urllib3: urllib3: Information disclosure via cross-origin redirects forwarding sensitive headers |
 | CVE-2026-44604 | MEDIUM | rpm | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2026-44604 | MEDIUM | rpm-build-libs | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2026-44604 | MEDIUM | rpm-libs | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
@@ -1001,7 +1011,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-28419 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Information disclosure and denial of service via malformed tags file |
 | CVE-2026-28420 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Information disclosure and denial of service via crafted Unicode characters in terminal emulator |
 | CVE-2026-39881 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via command injection in NetBeans interface |
-| CVE-2026-41411 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Command injection allows arbitrary code execution via malicious tag files |
+| CVE-2026-41411 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | 2:8.2.2637-26.el9_8.6 | vim: Vim: Command injection allows arbitrary code execution via malicious tag files |
 | CVE-2026-42307 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | Vim: Vim: Arbitrary code execution via OS command injection in netrw plugin |
 | CVE-2026-44656 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary command execution via :find command-line completion |
 | CVE-2026-45130 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Heap buffer overflow allows arbitrary code execution or denial of service |
