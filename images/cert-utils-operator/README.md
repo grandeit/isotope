@@ -4,17 +4,17 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-06-26 13:41:24 UTC
+**Scanned:** 2026-06-27 01:38:02 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 77 (🔧77) | 228 (🔧140) | 149 (🔧28) | 456 | 🔧 249 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 75 (🔧75) | 230 (🔧142) | 149 (🔧28) | 456 | 🔧 249 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 1 (🔧1) | 19 (🔧7) | 9 (🔧3) | 29 | 🔧 11 |
-| ubi-minimal | 0 | 🟠 1 (🔧1) | 78 (🔧8) | 64 (🔧12) | 143 | 🔧 21 |
-| ubi | 0 | 🟠 5 (🔧4) | 159 (🔧15) | 248 (🔧22) | 412 | 🔧 41 |
+| ubi-minimal | 0 | 🟠 1 (🔧1) | 78 (🔧8) | 65 (🔧12) | 144 | 🔧 21 |
+| ubi | 0 | 🟠 5 (🔧4) | 160 (🔧15) | 249 (🔧22) | 414 | 🔧 41 |
 
 ## Details
 
@@ -62,6 +62,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39828 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Unauthorized command execution via discarded SSH permissions |
 | CVE-2026-39829 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via crafted public key with excessive parameters |
 | CVE-2026-39830 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via resource leak from unsolicited SSH responses |
+| CVE-2026-39832 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh/agent: golang.org/x/crypto/ssh/agent: Security bypass due to improper handling of key restrictions |
 | CVE-2026-39835 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | SSH servers which use CertChecker as a public key callback without set ... |
 | CVE-2026-42508 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh/knownhosts: golang: golang.org/x/crypto/ssh/knownhosts: Revocation bypass via unchecked SignatureKey |
 | CVE-2026-46595 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Authorization bypass due to skipped source-address validation |
@@ -92,17 +93,14 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61726 | HIGH | stdlib | v1.19.13 | 1.24.12, 1.25.6 | golang: net/url: Memory exhaustion in query parameter parsing in net/url |
 | CVE-2025-61729 | HIGH | stdlib | v1.19.13 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2026-25679 | HIGH | stdlib | v1.19.13 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
-| CVE-2026-27145 | HIGH | stdlib | v1.19.13 | 1.25.11, 1.26.4 | *x509.Certificate).VerifyHostname previously called matchHostnames in ... |
 | CVE-2026-32280 | HIGH | stdlib | v1.19.13 | 1.25.9, 1.26.2 | crypto/x509: crypto/tls: golang: Go: Denial of Service vulnerability in certificate chain building |
 | CVE-2026-32281 | HIGH | stdlib | v1.19.13 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
 | CVE-2026-32283 | HIGH | stdlib | v1.19.13 | 1.25.9, 1.26.2 | crypto/tls: golang: Go crypto/tls: Denial of Service via multiple TLS 1.3 key update messages |
 | CVE-2026-33811 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | net: golang: Go net package: Denial of Service via long CNAME response in LookupCNAME |
 | CVE-2026-33814 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
 | CVE-2026-39820 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ... |
-| CVE-2026-39823 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | CVE-2026-27142 fixed a vulnerability in which URLs were not correctly ... |
 | CVE-2026-39836 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | ELSA-2026-22121: golang security update (IMPORTANT) |
 | CVE-2026-42499 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | Pathological inputs could cause DoS through consumePhrase when parsing ... |
-| CVE-2026-42504 | HIGH | stdlib | v1.19.13 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | 1.0.6-28.el8_10 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-15.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -176,7 +174,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-42011 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: gnutls: Security bypass due to incorrect name constraint handling |
 | CVE-2026-42012 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: gnutls: Certificate validation bypass due to improper handling of URI and SRV SANs |
 | CVE-2026-42013 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: gnutls: Certificate validation bypass due to oversized Subject Alternative Name |
-| CVE-2026-42014 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: Fix use-after-free in gnutls_pkcs11_token_set_pin |
+| CVE-2026-42014 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: gnutls: Use-after-free in gnutls_pkcs11_token_set_pin |
 | CVE-2026-42015 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: gnutls: Memory corruption due to off-by-one error in PKCS#12 bag handling |
 | CVE-2026-5260 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_10.6 | gnutls: gnutls: Information disclosure via heap overread in RSA key exchange |
 | CVE-2024-37370 | MEDIUM | krb5-libs | 1.18.2-26.el8_9 | 1.18.2-29.el8_10 | krb5: GSS message token handling |
@@ -278,7 +276,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-47914 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.45.0 | golang.org/x/crypto/ssh/agent: SSH Agent servers: Denial of Service due to malformed messages |
 | CVE-2025-58181 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.45.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via unbounded memory consumption in GSSAPI authentication |
 | CVE-2026-39831 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | The Verify() method for FIDO/U2F security key types (sk-ecdsa-sha2-nis ... |
-| CVE-2026-39832 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | When adding a key to a remote agent constraint extensions such as rest ... |
 | CVE-2026-39833 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | The in-memory keyring returned by NewKeyring() silently accepted keys ... |
 | CVE-2026-39834 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | When writing data larger than 4GB in a single Write call on an SSH cha ... |
 | CVE-2026-46598 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh/agent: golang: golang.org/x/crypto/ssh/agent: Denial of Service via malformed input |
@@ -325,11 +322,14 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61728 | MEDIUM | stdlib | v1.19.13 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.19.13 | 1.24.12, 1.25.6 | crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls |
 | CVE-2026-27142 | MEDIUM | stdlib | v1.19.13 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
+| CVE-2026-27145 | MEDIUM | stdlib | v1.19.13 | 1.25.11, 1.26.4 | *x509.Certificate).VerifyHostname previously called matchHostnames in ... |
 | CVE-2026-32282 | MEDIUM | stdlib | v1.19.13 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.19.13 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.19.13 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
+| CVE-2026-39823 | MEDIUM | stdlib | v1.19.13 | 1.25.10, 1.26.3 | html/template: golang: Go html/template: Cross-Site Scripting via improper URL escaping in meta tag content |
 | CVE-2026-39825 | MEDIUM | stdlib | v1.19.13 | 1.25.10, 1.26.3 | net/http/httputil: golang: net/http/httputil: ReverseProxy forwards hidden query parameters, potentially bypassing security controls |
 | CVE-2026-39826 | MEDIUM | stdlib | v1.19.13 | 1.25.10, 1.26.3 | html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping |
+| CVE-2026-42504 | MEDIUM | stdlib | v1.19.13 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
 | CVE-2026-42507 | MEDIUM | stdlib | v1.19.13 | 1.25.11, 1.26.4 | net/textproto: golang: Golang net/textproto: Misleading error messages via input injection |
 
 ### distroless
@@ -475,6 +475,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-56403 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Arbitrary code execution due to integer overflow in storeAtts |
 | CVE-2026-56405 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Information disclosure and arbitrary code execution via integer overflow |
 | CVE-2026-56406 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Arbitrary code execution via integer overflow in XML_ParseBuffer |
+| CVE-2026-56412 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Use-after-free vulnerability due to improper handling of XML CDATA sections |
 | CVE-2025-11081 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils out-of-bounds read |
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
