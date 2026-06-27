@@ -4,17 +4,17 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-06-26 14:51:49 UTC
+**Scanned:** 2026-06-27 03:17:46 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 53 (🔧52) | 158 (🔧91) | 86 (🔧34) | 298 | 🔧 179 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 51 (🔧50) | 160 (🔧93) | 87 (🔧34) | 299 | 🔧 179 |
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 19 (🔧7) | 9 (🔧3) | 30 | 🔧 12 |
-| ubi-minimal | 0 | 🟠 2 (🔧2) | 78 (🔧8) | 64 (🔧12) | 144 | 🔧 22 |
-| ubi | 0 | 🟠 6 (🔧5) | 159 (🔧15) | 248 (🔧22) | 413 | 🔧 42 |
+| ubi-minimal | 0 | 🟠 2 (🔧2) | 78 (🔧8) | 65 (🔧12) | 145 | 🔧 22 |
+| ubi | 0 | 🟠 6 (🔧5) | 160 (🔧15) | 249 (🔧22) | 415 | 🔧 42 |
 
 ## Details
 
@@ -49,6 +49,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39828 | HIGH | golang.org/x/crypto | v0.17.0 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Unauthorized command execution via discarded SSH permissions |
 | CVE-2026-39829 | HIGH | golang.org/x/crypto | v0.17.0 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via crafted public key with excessive parameters |
 | CVE-2026-39830 | HIGH | golang.org/x/crypto | v0.17.0 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via resource leak from unsolicited SSH responses |
+| CVE-2026-39832 | HIGH | golang.org/x/crypto | v0.17.0 | 0.52.0 | golang.org/x/crypto/ssh/agent: golang.org/x/crypto/ssh/agent: Security bypass due to improper handling of key restrictions |
 | CVE-2026-39835 | HIGH | golang.org/x/crypto | v0.17.0 | 0.52.0 | SSH servers which use CertChecker as a public key callback without set ... |
 | CVE-2026-42508 | HIGH | golang.org/x/crypto | v0.17.0 | 0.52.0 | golang.org/x/crypto/ssh/knownhosts: golang: golang.org/x/crypto/ssh/knownhosts: Revocation bypass via unchecked SignatureKey |
 | CVE-2026-46595 | HIGH | golang.org/x/crypto | v0.17.0 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Authorization bypass due to skipped source-address validation |
@@ -67,17 +68,14 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61726 | HIGH | stdlib | v1.21.13 | 1.24.12, 1.25.6 | golang: net/url: Memory exhaustion in query parameter parsing in net/url |
 | CVE-2025-61729 | HIGH | stdlib | v1.21.13 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2026-25679 | HIGH | stdlib | v1.21.13 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
-| CVE-2026-27145 | HIGH | stdlib | v1.21.13 | 1.25.11, 1.26.4 | *x509.Certificate).VerifyHostname previously called matchHostnames in ... |
 | CVE-2026-32280 | HIGH | stdlib | v1.21.13 | 1.25.9, 1.26.2 | crypto/x509: crypto/tls: golang: Go: Denial of Service vulnerability in certificate chain building |
 | CVE-2026-32281 | HIGH | stdlib | v1.21.13 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
 | CVE-2026-32283 | HIGH | stdlib | v1.21.13 | 1.25.9, 1.26.2 | crypto/tls: golang: Go crypto/tls: Denial of Service via multiple TLS 1.3 key update messages |
 | CVE-2026-33811 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net: golang: Go net package: Denial of Service via long CNAME response in LookupCNAME |
 | CVE-2026-33814 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
 | CVE-2026-39820 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ... |
-| CVE-2026-39823 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | CVE-2026-27142 fixed a vulnerability in which URLs were not correctly ... |
 | CVE-2026-39836 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | ELSA-2026-22121: golang security update (IMPORTANT) |
 | CVE-2026-42499 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | Pathological inputs could cause DoS through consumePhrase when parsing ... |
-| CVE-2026-42504 | HIGH | stdlib | v1.21.13 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-10.el9_5 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | 8.32-41.el9_8 | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -127,7 +125,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-42011 | MEDIUM | gnutls | 3.8.3-6.el9 | 3.8.10-4.el9_8 | gnutls: gnutls: Security bypass due to incorrect name constraint handling |
 | CVE-2026-42012 | MEDIUM | gnutls | 3.8.3-6.el9 | 3.8.10-4.el9_8 | gnutls: gnutls: Certificate validation bypass due to improper handling of URI and SRV SANs |
 | CVE-2026-42013 | MEDIUM | gnutls | 3.8.3-6.el9 | 3.8.10-4.el9_8 | gnutls: gnutls: Certificate validation bypass due to oversized Subject Alternative Name |
-| CVE-2026-42014 | MEDIUM | gnutls | 3.8.3-6.el9 | 3.8.10-4.el9_8 | gnutls: Fix use-after-free in gnutls_pkcs11_token_set_pin |
+| CVE-2026-42014 | MEDIUM | gnutls | 3.8.3-6.el9 | 3.8.10-4.el9_8 | gnutls: gnutls: Use-after-free in gnutls_pkcs11_token_set_pin |
 | CVE-2026-42015 | MEDIUM | gnutls | 3.8.3-6.el9 | 3.8.10-4.el9_8 | gnutls: gnutls: Memory corruption due to off-by-one error in PKCS#12 bag handling |
 | CVE-2026-5260 | MEDIUM | gnutls | 3.8.3-6.el9 | 3.8.10-4.el9_8 | gnutls: gnutls: Information disclosure via heap overread in RSA key exchange |
 | CVE-2026-11850 | MEDIUM | krb5-libs | 1.21.1-8.el9_6 | - | krb5: krb5: integer underflow in berval2tl_data() leads to heap out-of-bounds read |
@@ -196,7 +194,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-47914 | MEDIUM | golang.org/x/crypto | v0.17.0 | 0.45.0 | golang.org/x/crypto/ssh/agent: SSH Agent servers: Denial of Service due to malformed messages |
 | CVE-2025-58181 | MEDIUM | golang.org/x/crypto | v0.17.0 | 0.45.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via unbounded memory consumption in GSSAPI authentication |
 | CVE-2026-39831 | MEDIUM | golang.org/x/crypto | v0.17.0 | 0.52.0 | The Verify() method for FIDO/U2F security key types (sk-ecdsa-sha2-nis ... |
-| CVE-2026-39832 | MEDIUM | golang.org/x/crypto | v0.17.0 | 0.52.0 | When adding a key to a remote agent constraint extensions such as rest ... |
 | CVE-2026-39833 | MEDIUM | golang.org/x/crypto | v0.17.0 | 0.52.0 | The in-memory keyring returned by NewKeyring() silently accepted keys ... |
 | CVE-2026-39834 | MEDIUM | golang.org/x/crypto | v0.17.0 | 0.52.0 | When writing data larger than 4GB in a single Write call on an SSH cha ... |
 | CVE-2026-46598 | MEDIUM | golang.org/x/crypto | v0.17.0 | 0.52.0 | golang.org/x/crypto/ssh/agent: golang: golang.org/x/crypto/ssh/agent: Denial of Service via malformed input |
@@ -230,11 +227,14 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61728 | MEDIUM | stdlib | v1.21.13 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.21.13 | 1.24.12, 1.25.6 | crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls |
 | CVE-2026-27142 | MEDIUM | stdlib | v1.21.13 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
+| CVE-2026-27145 | MEDIUM | stdlib | v1.21.13 | 1.25.11, 1.26.4 | *x509.Certificate).VerifyHostname previously called matchHostnames in ... |
 | CVE-2026-32282 | MEDIUM | stdlib | v1.21.13 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.21.13 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.21.13 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
+| CVE-2026-39823 | MEDIUM | stdlib | v1.21.13 | 1.25.10, 1.26.3 | html/template: golang: Go html/template: Cross-Site Scripting via improper URL escaping in meta tag content |
 | CVE-2026-39825 | MEDIUM | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net/http/httputil: golang: net/http/httputil: ReverseProxy forwards hidden query parameters, potentially bypassing security controls |
 | CVE-2026-39826 | MEDIUM | stdlib | v1.21.13 | 1.25.10, 1.26.3 | html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping |
+| CVE-2026-42504 | MEDIUM | stdlib | v1.21.13 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
 | CVE-2026-42507 | MEDIUM | stdlib | v1.21.13 | 1.25.11, 1.26.4 | net/textproto: golang: Golang net/textproto: Misleading error messages via input injection |
 
 ### distroless
@@ -385,6 +385,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-56403 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Arbitrary code execution due to integer overflow in storeAtts |
 | CVE-2026-56405 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Information disclosure and arbitrary code execution via integer overflow |
 | CVE-2026-56406 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Arbitrary code execution via integer overflow in XML_ParseBuffer |
+| CVE-2026-56412 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Use-after-free vulnerability due to improper handling of XML CDATA sections |
 | CVE-2025-11081 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils out-of-bounds read |
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
