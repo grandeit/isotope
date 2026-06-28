@@ -4,7 +4,7 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-06-27 14:31:29 UTC
+**Scanned:** 2026-06-28 03:19:37 UTC
 
 ## Overview
 
@@ -14,7 +14,7 @@
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 19 (🔧7) | 9 (🔧3) | 30 | 🔧 12 |
 | ubi-minimal | 0 | 🟠 2 (🔧2) | 78 (🔧8) | 65 (🔧12) | 145 | 🔧 22 |
-| ubi | 0 | 🟠 6 (🔧5) | 160 (🔧15) | 249 (🔧22) | 415 | 🔧 42 |
+| ubi | 0 | 🟠 6 (🔧5) | 161 (🔧15) | 249 (🔧22) | 416 | 🔧 42 |
 
 ## Details
 
@@ -382,6 +382,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32777 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing |
 | CVE-2026-32778 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition |
 | CVE-2026-50219 | MEDIUM | expat | 2.5.0-6.el9 | - | expat: libexpat: Use-after-free vulnerability due to improper handler call depth tracking |
+| CVE-2026-56132 | MEDIUM | expat | 2.5.0-6.el9 | - | expat: libexpat: Arbitrary Code Execution via Heap-based Buffer Overflow |
 | CVE-2026-56403 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Arbitrary code execution due to integer overflow in storeAtts |
 | CVE-2026-56405 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Information disclosure and arbitrary code execution via integer overflow |
 | CVE-2026-56406 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Arbitrary code execution via integer overflow in XML_ParseBuffer |
