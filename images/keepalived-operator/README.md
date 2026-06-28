@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-06-27 15:28:09 UTC
+**Scanned:** 2026-06-28 04:37:27 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 185 (🔧178) | 548 (🔧366) | 325 (🔧47) | 1071 | 🔧 608 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 185 (🔧178) | 549 (🔧366) | 325 (🔧47) | 1072 | 🔧 608 |
 | ubi-minimal | 0 | 🟠 1 (🔧1) | 79 (🔧9) | 69 (🔧12) | 149 | 🔧 24 |
-| ubi | 0 | 🟠 5 (🔧4) | 161 (🔧16) | 249 (🔧22) | 415 | 🔧 44 |
+| ubi | 0 | 🟠 5 (🔧4) | 162 (🔧16) | 249 (🔧22) | 416 | 🔧 44 |
 
 ## Details
 
@@ -263,6 +263,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32777 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing |
 | CVE-2026-32778 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition |
 | CVE-2026-50219 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | expat: libexpat: Use-after-free vulnerability due to improper handler call depth tracking |
+| CVE-2026-56132 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | expat: libexpat: Arbitrary Code Execution via Heap-based Buffer Overflow |
 | CVE-2026-56403 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Arbitrary code execution due to integer overflow in storeAtts |
 | CVE-2026-56405 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Information disclosure and arbitrary code execution via integer overflow |
 | CVE-2026-56406 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Arbitrary code execution via integer overflow in XML_ParseBuffer |
@@ -881,6 +882,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32777 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing |
 | CVE-2026-32778 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition |
 | CVE-2026-50219 | MEDIUM | expat | 2.5.0-6.el9 | - | expat: libexpat: Use-after-free vulnerability due to improper handler call depth tracking |
+| CVE-2026-56132 | MEDIUM | expat | 2.5.0-6.el9 | - | expat: libexpat: Arbitrary Code Execution via Heap-based Buffer Overflow |
 | CVE-2026-56403 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Arbitrary code execution due to integer overflow in storeAtts |
 | CVE-2026-56405 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Information disclosure and arbitrary code execution via integer overflow |
 | CVE-2026-56406 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Arbitrary code execution via integer overflow in XML_ParseBuffer |
