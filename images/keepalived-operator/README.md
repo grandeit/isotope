@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-06-28 15:29:09 UTC
+**Scanned:** 2026-06-29 04:38:41 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 185 (🔧178) | 549 (🔧366) | 325 (🔧47) | 1072 | 🔧 608 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 191 (🔧184) | 543 (🔧360) | 325 (🔧47) | 1072 | 🔧 608 |
 | ubi-minimal | 0 | 🟠 1 (🔧1) | 79 (🔧9) | 69 (🔧12) | 149 | 🔧 24 |
 | ubi | 0 | 🟠 5 (🔧4) | 162 (🔧16) | 249 (🔧22) | 416 | 🔧 44 |
 
@@ -158,6 +158,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61726 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: net/url: Memory exhaustion in query parameter parsing in net/url |
 | CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2026-25679 | HIGH | stdlib | v1.18.10 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
+| CVE-2026-27145 | HIGH | stdlib | v1.18.10 | 1.25.11, 1.26.4 | *x509.Certificate).VerifyHostname previously called matchHostnames in ... |
 | CVE-2026-32280 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: crypto/tls: golang: Go: Denial of Service vulnerability in certificate chain building |
 | CVE-2026-32281 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
 | CVE-2026-32283 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/tls: golang: Go crypto/tls: Denial of Service via multiple TLS 1.3 key update messages |
@@ -166,6 +167,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39820 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ... |
 | CVE-2026-39836 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | ELSA-2026-22121: golang security update (IMPORTANT) |
 | CVE-2026-42499 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Pathological inputs could cause DoS through consumePhrase when parsing ... |
+| CVE-2026-42504 | HIGH | stdlib | v1.18.10 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
 | CVE-2022-21698 | HIGH | github.com/prometheus/client_golang | v1.1.0 | 1.11.1 | prometheus/client_golang: Denial of service using InstrumentHandlerCounter |
 | CVE-2025-65637 | HIGH | github.com/sirupsen/logrus | v1.4.2 | 1.8.3, 1.9.1, 1.9.3 | github.com/sirupsen/logrus: github.com/sirupsen/logrus: Denial-of-Service due to large single-line payload |
 | CVE-2022-41722 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: path/filepath: path-filepath filepath.Clean path traversal |
@@ -186,6 +188,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61726 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: net/url: Memory exhaustion in query parameter parsing in net/url |
 | CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2026-25679 | HIGH | stdlib | v1.18.10 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
+| CVE-2026-27145 | HIGH | stdlib | v1.18.10 | 1.25.11, 1.26.4 | *x509.Certificate).VerifyHostname previously called matchHostnames in ... |
 | CVE-2026-32280 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: crypto/tls: golang: Go: Denial of Service vulnerability in certificate chain building |
 | CVE-2026-32281 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
 | CVE-2026-32283 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/tls: golang: Go crypto/tls: Denial of Service via multiple TLS 1.3 key update messages |
@@ -194,6 +197,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39820 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ... |
 | CVE-2026-39836 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | ELSA-2026-22121: golang security update (IMPORTANT) |
 | CVE-2026-42499 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Pathological inputs could cause DoS through consumePhrase when parsing ... |
+| CVE-2026-42504 | HIGH | stdlib | v1.18.10 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
 | CVE-2022-41722 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: path/filepath: path-filepath filepath.Clean path traversal |
 | CVE-2022-41723 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang.org/x/net/http2: avoid quadratic complexity in HPACK decoding |
 | CVE-2022-41724 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: crypto/tls: large handshake records may cause panics |
@@ -212,6 +216,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61726 | HIGH | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: net/url: Memory exhaustion in query parameter parsing in net/url |
 | CVE-2025-61729 | HIGH | stdlib | v1.18.10 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2026-25679 | HIGH | stdlib | v1.18.10 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
+| CVE-2026-27145 | HIGH | stdlib | v1.18.10 | 1.25.11, 1.26.4 | *x509.Certificate).VerifyHostname previously called matchHostnames in ... |
 | CVE-2026-32280 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: crypto/tls: golang: Go: Denial of Service vulnerability in certificate chain building |
 | CVE-2026-32281 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
 | CVE-2026-32283 | HIGH | stdlib | v1.18.10 | 1.25.9, 1.26.2 | crypto/tls: golang: Go crypto/tls: Denial of Service via multiple TLS 1.3 key update messages |
@@ -220,6 +225,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39820 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ... |
 | CVE-2026-39836 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | ELSA-2026-22121: golang security update (IMPORTANT) |
 | CVE-2026-42499 | HIGH | stdlib | v1.18.10 | 1.25.10, 1.26.3 | Pathological inputs could cause DoS through consumePhrase when parsing ... |
+| CVE-2026-42504 | HIGH | stdlib | v1.18.10 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | 1.0.6-28.el8_10 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-13.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -664,14 +670,12 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61728 | MEDIUM | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.18.10 | 1.24.12, 1.25.6 | crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls |
 | CVE-2026-27142 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
-| CVE-2026-27145 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | *x509.Certificate).VerifyHostname previously called matchHostnames in ... |
 | CVE-2026-32282 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
 | CVE-2026-39823 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | html/template: golang: Go html/template: Cross-Site Scripting via improper URL escaping in meta tag content |
 | CVE-2026-39825 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | net/http/httputil: golang: net/http/httputil: ReverseProxy forwards hidden query parameters, potentially bypassing security controls |
 | CVE-2026-39826 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping |
-| CVE-2026-42504 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
 | CVE-2026-42507 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | net/textproto: golang: Golang net/textproto: Misleading error messages via input injection |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20200302150141-5c8b2ff67527 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 | CVE-2023-24532 | MEDIUM | stdlib | v1.18.10 | 1.19.7, 1.20.2 | golang: crypto/internal/nistec: specific unreduced P-256 scalars produce incorrect results |
@@ -712,14 +716,12 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61728 | MEDIUM | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.18.10 | 1.24.12, 1.25.6 | crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls |
 | CVE-2026-27142 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
-| CVE-2026-27145 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | *x509.Certificate).VerifyHostname previously called matchHostnames in ... |
 | CVE-2026-32282 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
 | CVE-2026-39823 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | html/template: golang: Go html/template: Cross-Site Scripting via improper URL escaping in meta tag content |
 | CVE-2026-39825 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | net/http/httputil: golang: net/http/httputil: ReverseProxy forwards hidden query parameters, potentially bypassing security controls |
 | CVE-2026-39826 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping |
-| CVE-2026-42504 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
 | CVE-2026-42507 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | net/textproto: golang: Golang net/textproto: Misleading error messages via input injection |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20180926160741-c2ed4eda69e7 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 | CVE-2023-24532 | MEDIUM | stdlib | v1.18.10 | 1.19.7, 1.20.2 | golang: crypto/internal/nistec: specific unreduced P-256 scalars produce incorrect results |
@@ -760,14 +762,12 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61728 | MEDIUM | stdlib | v1.18.10 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.18.10 | 1.24.12, 1.25.6 | crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls |
 | CVE-2026-27142 | MEDIUM | stdlib | v1.18.10 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
-| CVE-2026-27145 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | *x509.Certificate).VerifyHostname previously called matchHostnames in ... |
 | CVE-2026-32282 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.18.10 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
 | CVE-2026-39823 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | html/template: golang: Go html/template: Cross-Site Scripting via improper URL escaping in meta tag content |
 | CVE-2026-39825 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | net/http/httputil: golang: net/http/httputil: ReverseProxy forwards hidden query parameters, potentially bypassing security controls |
 | CVE-2026-39826 | MEDIUM | stdlib | v1.18.10 | 1.25.10, 1.26.3 | html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping |
-| CVE-2026-42504 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
 | CVE-2026-42507 | MEDIUM | stdlib | v1.18.10 | 1.25.11, 1.26.4 | net/textproto: golang: Golang net/textproto: Misleading error messages via input injection |
 
 ### ubi-minimal
