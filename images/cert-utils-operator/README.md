@@ -4,13 +4,13 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-06-28 13:33:25 UTC
+**Scanned:** 2026-06-29 01:42:16 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 75 (🔧75) | 230 (🔧142) | 149 (🔧28) | 456 | 🔧 249 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 77 (🔧77) | 228 (🔧140) | 149 (🔧28) | 456 | 🔧 249 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 1 (🔧1) | 19 (🔧7) | 9 (🔧3) | 29 | 🔧 11 |
 | ubi-minimal | 0 | 🟠 1 (🔧1) | 78 (🔧8) | 65 (🔧12) | 144 | 🔧 21 |
@@ -93,6 +93,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61726 | HIGH | stdlib | v1.19.13 | 1.24.12, 1.25.6 | golang: net/url: Memory exhaustion in query parameter parsing in net/url |
 | CVE-2025-61729 | HIGH | stdlib | v1.19.13 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
 | CVE-2026-25679 | HIGH | stdlib | v1.19.13 | 1.25.8, 1.26.1 | net/url: Incorrect parsing of IPv6 host literals in net/url |
+| CVE-2026-27145 | HIGH | stdlib | v1.19.13 | 1.25.11, 1.26.4 | *x509.Certificate).VerifyHostname previously called matchHostnames in ... |
 | CVE-2026-32280 | HIGH | stdlib | v1.19.13 | 1.25.9, 1.26.2 | crypto/x509: crypto/tls: golang: Go: Denial of Service vulnerability in certificate chain building |
 | CVE-2026-32281 | HIGH | stdlib | v1.19.13 | 1.25.9, 1.26.2 | crypto/x509: golang: Go crypto/x509: Denial of Service via inefficient certificate chain validation |
 | CVE-2026-32283 | HIGH | stdlib | v1.19.13 | 1.25.9, 1.26.2 | crypto/tls: golang: Go crypto/tls: Denial of Service via multiple TLS 1.3 key update messages |
@@ -101,6 +102,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39820 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | Well-crafted inputs reaching ParseAddress, ParseAddressList, and Parse ... |
 | CVE-2026-39836 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | ELSA-2026-22121: golang security update (IMPORTANT) |
 | CVE-2026-42499 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | Pathological inputs could cause DoS through consumePhrase when parsing ... |
+| CVE-2026-42504 | HIGH | stdlib | v1.19.13 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | 1.0.6-28.el8_10 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-15.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -322,14 +324,12 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-61728 | MEDIUM | stdlib | v1.19.13 | 1.24.12, 1.25.6 | golang: archive/zip: Excessive CPU consumption when building archive index in archive/zip |
 | CVE-2025-61730 | MEDIUM | stdlib | v1.19.13 | 1.24.12, 1.25.6 | crypto/tls: Handshake messages may be processed at the incorrect encryption level in crypto/tls |
 | CVE-2026-27142 | MEDIUM | stdlib | v1.19.13 | 1.25.8, 1.26.1 | html/template: URLs in meta content attribute actions are not escaped in html/template |
-| CVE-2026-27145 | MEDIUM | stdlib | v1.19.13 | 1.25.11, 1.26.4 | *x509.Certificate).VerifyHostname previously called matchHostnames in ... |
 | CVE-2026-32282 | MEDIUM | stdlib | v1.19.13 | 1.25.9, 1.26.2 | golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root |
 | CVE-2026-32288 | MEDIUM | stdlib | v1.19.13 | 1.25.9, 1.26.2 | archive/tar: golang: Go's archive/tar package: Denial of Service via maliciously-crafted archive |
 | CVE-2026-32289 | MEDIUM | stdlib | v1.19.13 | 1.25.9, 1.26.2 | html/template: golang: html/template: Cross-Site Scripting (XSS) via improper context and brace depth tracking in JS template literals |
 | CVE-2026-39823 | MEDIUM | stdlib | v1.19.13 | 1.25.10, 1.26.3 | html/template: golang: Go html/template: Cross-Site Scripting via improper URL escaping in meta tag content |
 | CVE-2026-39825 | MEDIUM | stdlib | v1.19.13 | 1.25.10, 1.26.3 | net/http/httputil: golang: net/http/httputil: ReverseProxy forwards hidden query parameters, potentially bypassing security controls |
 | CVE-2026-39826 | MEDIUM | stdlib | v1.19.13 | 1.25.10, 1.26.3 | html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping |
-| CVE-2026-42504 | MEDIUM | stdlib | v1.19.13 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
 | CVE-2026-42507 | MEDIUM | stdlib | v1.19.13 | 1.25.11, 1.26.4 | net/textproto: golang: Golang net/textproto: Misleading error messages via input injection |
 
 ### distroless
