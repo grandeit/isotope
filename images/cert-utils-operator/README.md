@@ -4,17 +4,17 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-07-01 13:49:07 UTC
+**Scanned:** 2026-07-02 01:39:44 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 78 (🔧76) | 235 (🔧144) | 150 (🔧28) | 465 | 🔧 252 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 78 (🔧75) | 242 (🔧145) | 150 (🔧28) | 472 | 🔧 252 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 3 (🔧1) | 20 (🔧10) | 9 (🔧3) | 32 | 🔧 14 |
-| ubi-minimal | 0 | 🟠 3 (🔧1) | 87 (🔧12) | 67 (🔧12) | 157 | 🔧 25 |
-| ubi | 0 | 🟠 10 (🔧4) | 178 (🔧19) | 255 (🔧22) | 443 | 🔧 45 |
+| ubi-minimal | 0 | 🟠 4 (🔧1) | 93 (🔧12) | 67 (🔧12) | 164 | 🔧 25 |
+| ubi | 0 | 🟠 12 (🔧4) | 187 (🔧19) | 255 (🔧22) | 454 | 🔧 45 |
 
 ## Details
 
@@ -27,6 +27,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-24790 | CRITICAL | stdlib | v1.19.13 | 1.21.11, 1.22.4 | golang: net/netip: Unexpected behavior from Is methods for IPv4-mapped IPv6 addresses |
 | CVE-2025-68121 | CRITICAL | stdlib | v1.19.13 | 1.24.13, 1.25.7, 1.26.0-rc.3 | crypto/tls: crypto/tls: Incorrect certificate validation during TLS session resumption |
 | CVE-2025-6176 | HIGH | brotli | 1.0.6-3.el8 | 1.0.6-4.el8_10 | Scrapy: python-scrapy: brotli: Python brotli decompression bomb DoS |
+| CVE-2026-58016 | HIGH | glib2 | 2.56.4-161.el8 | - | glib: integer underflow in gio/gdbusintrospection.c via "g_dbus_node_info_new_for_xml" |
 | CVE-2024-2961 | HIGH | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.1 | glibc: Out of bounds write in iconv may lead to remote code execution |
 | CVE-2024-33599 | HIGH | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.2 | glibc: stack-based buffer overflow in netgroup cache |
 | CVE-2024-2961 | HIGH | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.1 | glibc: Out of bounds write in iconv may lead to remote code execution |
@@ -76,8 +77,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-39325 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.17.0 | golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487) |
 | CVE-2023-45288 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.23.0 | golang: net/http, x/net/http2: unlimited number of CONTINUATION frames causes DoS |
 | CVE-2024-45338 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.33.0 | golang.org/x/net/html: Non-linear parsing of case-insensitive content in golang.org/x/net/html |
-| CVE-2026-25680 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.55.0 | Parsing arbitrary HTML can consume excessive CPU time, possibly leadin ... |
-| CVE-2026-25681 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.55.0 | Parsing arbitrary HTML which is then rendered using Render can result ... |
+| CVE-2026-25681 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.55.0 | golang.org/x/net/html: golang.org/x/net/html: Arbitrary code execution via Cross-Site Scripting |
 | CVE-2026-27136 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.55.0 | Parsing arbitrary HTML which is then rendered using Render can result ... |
 | CVE-2026-33814 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.53.0 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
 | CVE-2026-39821 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.55.0 | golang.org/x/net/idna: golang: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing |
@@ -131,6 +131,12 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4373 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-166.el8_10 | glib: Buffer Underflow on GLib through glib/gstring.c via function g_string_insert_unichar |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.56.4-161.el8 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.56.4-161.el8 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
+| CVE-2026-58010 | MEDIUM | glib2 | 2.56.4-161.el8 | - | glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal() |
+| CVE-2026-58011 | MEDIUM | glib2 | 2.56.4-161.el8 | - | glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid GDateTime |
+| CVE-2026-58012 | MEDIUM | glib2 | 2.56.4-161.el8 | - | glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char() |
+| CVE-2026-58013 | MEDIUM | glib2 | 2.56.4-161.el8 | - | glib: buffer over-read in glib/giochannel.c via "g_io_channel_read_line_backend" |
+| CVE-2026-58014 | MEDIUM | glib2 | 2.56.4-161.el8 | - | glib: off-by-one error in glib/gkeyfile.c via "g_key_file_get_locale_string_list" |
+| CVE-2026-58015 | MEDIUM | glib2 | 2.56.4-161.el8 | - | glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive |
 | CVE-2024-33600 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.2 | glibc: null pointer dereferences after failed netgroup cache insertion |
 | CVE-2025-0395 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.16 | glibc: buffer overflow in the GNU C Library's assert() |
 | CVE-2025-4802 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
@@ -294,6 +300,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-22872 | MEDIUM | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.38.0 | golang.org/x/net/html: Incorrect Neutralization of Input During Web Page Generation in x/net in golang.org/x/net |
 | CVE-2025-47911 | MEDIUM | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.45.0 | golang.org/x/net/html: Quadratic parsing complexity in golang.org/x/net/html |
 | CVE-2025-58190 | MEDIUM | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.45.0 | golang.org/x/net/html: Infinite parsing loop in golang.org/x/net |
+| CVE-2026-25680 | MEDIUM | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.55.0 | golang.org/x/net/html: golang.org/x/net/html: Denial of Service due to excessive HTML parsing |
 | CVE-2026-42506 | MEDIUM | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.55.0 | golang.org/x/net/html: golang.org/x/net/html: Cross-Site Scripting (XSS) via arbitrary HTML parsing |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20210423082822-04245dca01da | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 | CVE-2024-24786 | MEDIUM | google.golang.org/protobuf | v1.26.0 | 1.33.0 | golang-protobuf: encoding/protojson, internal/encoding/json: infinite loop in protojson.Unmarshal when unmarshaling certain forms of invalid JSON |
@@ -376,6 +383,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-58016 | HIGH | glib2 | 2.68.4-19.el9_8.1 | - | glib: integer underflow in gio/gdbusintrospection.c via "g_dbus_node_info_new_for_xml" |
 | CVE-2026-54369 | HIGH | libacl | 2.3.1-4.el9 | - | acl: Symlink traversal privilege escalation via libacl functions |
 | CVE-2026-54371 | HIGH | libattr | 2.5.1-3.el9 | - | attr: Symlink Traversal Privilege Escalation via getfattr |
 | CVE-2026-45447 | HIGH | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
@@ -395,6 +403,12 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-7168 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: libcurl: Information disclosure via incorrect Proxy-Authorization header reuse |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
+| CVE-2026-58010 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal() |
+| CVE-2026-58011 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid GDateTime |
+| CVE-2026-58012 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char() |
+| CVE-2026-58013 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in glib/giochannel.c via "g_io_channel_read_line_backend" |
+| CVE-2026-58014 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: off-by-one error in glib/gkeyfile.c via "g_key_file_get_locale_string_list" |
+| CVE-2026-58015 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive |
 | CVE-2026-5435 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc | 2.34-270.el9_8 | 2.34-272.el9_8 | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
@@ -474,6 +488,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-54369 | HIGH | acl | 2.3.1-4.el9 | - | acl: Symlink traversal privilege escalation via libacl functions |
 | CVE-2026-54371 | HIGH | attr | 2.5.1-3.el9 | - | attr: Symlink Traversal Privilege Escalation via getfattr |
 | CVE-2026-45186 | HIGH | expat | 2.5.0-6.el9 | 2.5.0-6.el9_8.1 | libexpat: denial of service via crafted XML input |
+| CVE-2026-58016 | HIGH | glib2 | 2.68.4-19.el9_8.1 | - | glib: integer underflow in gio/gdbusintrospection.c via "g_dbus_node_info_new_for_xml" |
 | CVE-2026-54369 | HIGH | libacl | 2.3.1-4.el9 | - | acl: Symlink traversal privilege escalation via libacl functions |
 | CVE-2026-54371 | HIGH | libattr | 2.5.1-3.el9 | - | attr: Symlink Traversal Privilege Escalation via getfattr |
 | CVE-2026-45447 | HIGH | openssl | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
@@ -481,6 +496,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-8643 | HIGH | python3-pip-wheel | 21.3.1-2.el9_8 | - | python-pip: Path traversal via malicious entry point name in pip wheel installation allows arbitrary file overwrite |
 | CVE-2026-44432 | HIGH | python3-urllib3 | 1.26.5-6.el9_7.1 | 1.26.5-8.el9_8 | urllib3: urllib3: Denial of Service due to excessive HTTP response decompression |
 | CVE-2026-47162 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary Code Execution via crafted directory names |
+| CVE-2026-55895 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | Vim is an open source, command line text editor. Prior to 9.2.0663, a ... |
 | CVE-2026-54370 | MEDIUM | acl | 2.3.1-4.el9 | - | acl: TOCTOU Symlink Traversal via getfacl/setfacl |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | 8.32-41.el9_8 | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -514,6 +530,12 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6845 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: Binutils: Denial of Service via crafted ELF file |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
+| CVE-2026-58010 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal() |
+| CVE-2026-58011 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid GDateTime |
+| CVE-2026-58012 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char() |
+| CVE-2026-58013 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in glib/giochannel.c via "g_io_channel_read_line_backend" |
+| CVE-2026-58014 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: off-by-one error in glib/gkeyfile.c via "g_key_file_get_locale_string_list" |
+| CVE-2026-58015 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive |
 | CVE-2026-5435 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc | 2.34-270.el9_8 | 2.34-272.el9_8 | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc | 2.34-270.el9_8 | - | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
@@ -589,6 +611,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-45445 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: AES-OCB IV Ignored on EVP_Cipher() Path |
 | CVE-2026-13757 | MEDIUM | p11-kit | 0.26.2-1.el9 | - | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
 | CVE-2026-13757 | MEDIUM | p11-kit-trust | 0.26.2-1.el9 | - | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
+| CVE-2026-12610 | MEDIUM | pam | 1.5.1-28.el9 | - | sssd: Use-after-free crash in SSSD' 'sssd_pam' process |
 | CVE-2026-54411 | MEDIUM | pam | 1.5.1-28.el9 | - | linux-pam: Plaintext password recovery via timing discrepancy in pam_userdb module |
 | CVE-2025-11468 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
@@ -658,6 +681,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-46483 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: command injection when decompressing .tgz archives |
 | CVE-2026-52859 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Denial of Service via out-of-bounds write in terminal handling |
 | CVE-2026-55892 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Denial of Service via crafted spell file |
+| CVE-2026-57451 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | Vim is an open source, command line text editor. Prior to 9.2.0670, ge ... |
+| CVE-2026-57452 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | Vim is an open source, command line text editor. Prior to 9.2.0671, wh ... |
 | CVE-2026-34743 | MEDIUM | xz-libs | 5.2.5-8.el9_0 | - | xz: XZ Utils: Denial of Service via buffer overflow in index decoding |
 
 ---
