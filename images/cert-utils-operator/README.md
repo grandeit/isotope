@@ -4,7 +4,7 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-07-04 13:32:22 UTC
+**Scanned:** 2026-07-05 01:34:03 UTC
 
 ## Overview
 
@@ -14,7 +14,7 @@
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 2 (🔧1) | 21 (🔧10) | 9 (🔧3) | 32 | 🔧 14 |
 | ubi-minimal | 0 | 🟠 3 (🔧1) | 94 (🔧12) | 67 (🔧12) | 164 | 🔧 25 |
-| ubi | 0 | 🟠 9 (🔧4) | 190 (🔧19) | 255 (🔧22) | 454 | 🔧 45 |
+| ubi | 0 | 🟠 10 (🔧4) | 190 (🔧19) | 255 (🔧22) | 455 | 🔧 45 |
 
 ## Details
 
@@ -494,6 +494,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-44432 | HIGH | python3-urllib3 | 1.26.5-6.el9_7.1 | 1.26.5-8.el9_8 | urllib3: urllib3: Denial of Service due to excessive HTTP response decompression |
 | CVE-2026-47162 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary Code Execution via crafted directory names |
 | CVE-2026-55895 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via Vimscript code injection in netrw plugin |
+| CVE-2026-57456 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via malicious docstrings in Python omni-completion |
 | CVE-2026-54370 | MEDIUM | acl | 2.3.1-4.el9 | - | acl: TOCTOU Symlink Traversal via getfacl/setfacl |
 | CVE-2026-54371 | MEDIUM | attr | 2.5.1-3.el9 | - | attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
