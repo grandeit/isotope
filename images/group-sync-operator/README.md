@@ -4,13 +4,13 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-07-05 14:32:25 UTC
+**Scanned:** 2026-07-06 03:17:11 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 52 (🔧49) | 177 (🔧97) | 89 (🔧34) | 319 | 🔧 182 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 53 (🔧50) | 176 (🔧96) | 89 (🔧34) | 319 | 🔧 182 |
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 3 (🔧2) | 21 (🔧10) | 9 (🔧3) | 33 | 🔧 15 |
 | ubi-minimal | 0 | 🟠 4 (🔧2) | 94 (🔧12) | 67 (🔧12) | 165 | 🔧 26 |
@@ -77,6 +77,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39820 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net/mail: golang: Go net/mail: Denial of Service via crafted email inputs |
 | CVE-2026-39836 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | ELSA-2026-22121: golang security update (IMPORTANT) |
 | CVE-2026-42499 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net/mail: golang: net/mail: Denial of Service via pathological email address parsing |
+| CVE-2026-42504 | HIGH | stdlib | v1.21.13 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-10.el9_5 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | 8.32-41.el9_8 | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -252,7 +253,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39823 | MEDIUM | stdlib | v1.21.13 | 1.25.10, 1.26.3 | html/template: golang: Go html/template: Cross-Site Scripting via improper URL escaping in meta tag content |
 | CVE-2026-39825 | MEDIUM | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net/http/httputil: golang: net/http/httputil: ReverseProxy forwards hidden query parameters, potentially bypassing security controls |
 | CVE-2026-39826 | MEDIUM | stdlib | v1.21.13 | 1.25.10, 1.26.3 | html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping |
-| CVE-2026-42504 | MEDIUM | stdlib | v1.21.13 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
 | CVE-2026-42507 | MEDIUM | stdlib | v1.21.13 | 1.25.11, 1.26.4 | net/textproto: golang: Golang net/textproto: Misleading error messages via input injection |
 
 ### distroless
