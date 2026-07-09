@@ -4,13 +4,13 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-07-08 13:36:57 UTC
+**Scanned:** 2026-07-09 01:34:05 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 89 (🔧75) | 247 (🔧145) | 150 (🔧28) | 488 | 🔧 254 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 88 (🔧74) | 248 (🔧146) | 150 (🔧28) | 488 | 🔧 254 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 2 (🔧1) | 21 (🔧10) | 9 (🔧3) | 32 | 🔧 14 |
 | ubi-minimal | 0 | 🟠 15 (🔧1) | 98 (🔧12) | 67 (🔧12) | 180 | 🔧 25 |
@@ -72,15 +72,15 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-45337 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.31.0 | golang.org/x/crypto/ssh: Misuse of ServerConfig.PublicKeyCallback may cause authorization bypass in golang.org/x/crypto |
 | CVE-2025-22869 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.35.0 | golang.org/x/crypto/ssh: Denial of Service in the Key Exchange of golang.org/x/crypto/ssh |
 | CVE-2025-47913 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.43.0 | golang.org/x/crypto/ssh/agent: golang.org/x/crypto/ssh/agent: SSH client panic due to unexpected SSH_AGENT_SUCCESS |
-| CVE-2026-39827 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | An authenticated SSH client that repeatedly opened channels which were ... |
 | CVE-2026-39828 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Unauthorized command execution via discarded SSH permissions |
 | CVE-2026-39829 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via crafted public key with excessive parameters |
 | CVE-2026-39830 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via resource leak from unsolicited SSH responses |
+| CVE-2026-39831 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Security key bypass due to missing user presence check |
 | CVE-2026-39832 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh/agent: golang.org/x/crypto/ssh/agent: Security bypass due to improper handling of key restrictions |
 | CVE-2026-39835 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh: golang: golang.org/x/crypto/ssh: Denial of Service via crafted SSH certificate |
 | CVE-2026-42508 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh/knownhosts: golang: golang.org/x/crypto/ssh/knownhosts: Revocation bypass via unchecked SignatureKey |
 | CVE-2026-46595 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Authorization bypass due to skipped source-address validation |
-| CVE-2026-46597 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | An incorrectly placed cast from bytes to int allowed for server-side p ... |
+| CVE-2026-46597 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via crafted AES-GCM packet decoder inputs |
 | CVE-2021-33194 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.0.0-20210520170846-37e1c6afe023 | golang: x/net/html: infinite loop in ParseFragment |
 | CVE-2021-44716 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.0.0-20211209124913-491a49abca63 | golang: net/http: limit growth of header canonicalization cache |
 | CVE-2022-27664 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.0.0-20220906165146-f3363e06e74c | golang: net/http: handle server errors after sending GOAWAY |
@@ -92,7 +92,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-27136 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.55.0 | golang.org/x/net/html: golang: golang.org/x/net/html: Cross-Site Scripting via HTML parsing bypass |
 | CVE-2026-33814 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.53.0 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
 | CVE-2026-39821 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.55.0 | golang.org/x/net/idna: golang: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing |
-| CVE-2026-42502 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.55.0 | Parsing arbitrary HTML which is then rendered using Render can result ... |
 | CVE-2025-22868 | HIGH | golang.org/x/oauth2 | v0.0.0-20200107190931-bf48bf16ab8d | 0.27.0 | golang.org/x/oauth2/jws: Unexpected memory consumption during token parsing in golang.org/x/oauth2/jws |
 | CVE-2021-38561 | HIGH | golang.org/x/text | v0.3.6 | 0.3.7 | golang: out-of-bounds read in golang.org/x/text/language leads to DoS |
 | CVE-2022-32149 | HIGH | golang.org/x/text | v0.3.6 | 0.3.8 | golang: golang.org/x/text/language: ParseAcceptLanguage takes a long time to parse complex tags |
@@ -114,7 +113,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39820 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | net/mail: golang: Go net/mail: Denial of Service via crafted email inputs |
 | CVE-2026-39836 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | ELSA-2026-22121: golang security update (IMPORTANT) |
 | CVE-2026-42499 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | net/mail: golang: net/mail: Denial of Service via pathological email address parsing |
-| CVE-2026-42504 | HIGH | stdlib | v1.19.13 | 1.25.11, 1.26.4 | Decoding a maliciously-crafted MIME header containing many invalid enc ... |
+| CVE-2026-42504 | HIGH | stdlib | v1.19.13 | 1.25.11, 1.26.4 | mime: golang: Golang MIME: Denial of Service via maliciously-crafted MIME header |
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | 1.0.6-28.el8_10 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-15.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
@@ -306,9 +305,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-48795 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.17.0 | ssh: Prefix truncation attack on Binary Packet Protocol (BPP) |
 | CVE-2025-47914 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.45.0 | golang.org/x/crypto/ssh/agent: SSH Agent servers: Denial of Service due to malformed messages |
 | CVE-2025-58181 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.45.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via unbounded memory consumption in GSSAPI authentication |
-| CVE-2026-39831 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | The Verify() method for FIDO/U2F security key types (sk-ecdsa-sha2-nis ... |
+| CVE-2026-39827 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh: golang: golang.org/x/crypto/ssh: Denial of Service via repeated rejected channel openings |
 | CVE-2026-39833 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh/agent: golang.org/x/crypto/ssh/agent: Security bypass due to unenforced key confirmation |
-| CVE-2026-39834 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | When writing data larger than 4GB in a single Write call on an SSH cha ... |
+| CVE-2026-39834 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh: golang: golang.org/x/crypto/ssh: Denial of Service due to integer overflow in SSH channel write |
 | CVE-2026-46598 | MEDIUM | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.52.0 | golang.org/x/crypto/ssh/agent: golang: golang.org/x/crypto/ssh/agent: Denial of Service via malformed input |
 | CVE-2022-41717 | MEDIUM | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.4.0 | golang: net/http: excessive memory growth in a Go server accepting HTTP/2 requests |
 | CVE-2023-3978 | MEDIUM | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.13.0 | golang.org/x/net/html: Cross site scripting |
@@ -317,6 +316,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-47911 | MEDIUM | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.45.0 | golang.org/x/net/html: Quadratic parsing complexity in golang.org/x/net/html |
 | CVE-2025-58190 | MEDIUM | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.45.0 | golang.org/x/net/html: Infinite parsing loop in golang.org/x/net |
 | CVE-2026-25680 | MEDIUM | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.55.0 | golang.org/x/net/html: golang.org/x/net/html: Denial of Service due to excessive HTML parsing |
+| CVE-2026-42502 | MEDIUM | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.55.0 | golang.org/x/net/html: golang: golang.org/x/net/html: Cross-Site Scripting via unexpected HTML tree rendering |
 | CVE-2026-42506 | MEDIUM | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.55.0 | golang.org/x/net/html: golang.org/x/net/html: Cross-Site Scripting (XSS) via arbitrary HTML parsing |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20210423082822-04245dca01da | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 | CVE-2024-24786 | MEDIUM | google.golang.org/protobuf | v1.26.0 | 1.33.0 | golang-protobuf: encoding/protojson, internal/encoding/json: infinite loop in protojson.Unmarshal when unmarshaling certain forms of invalid JSON |
