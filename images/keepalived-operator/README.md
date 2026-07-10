@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-07-09 16:01:52 UTC
+**Scanned:** 2026-07-10 04:26:44 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 212 (🔧181) | 574 (🔧366) | 328 (🔧47) | 1127 | 🔧 617 |
-| ubi-minimal | 0 | 🟠 15 (🔧1) | 99 (🔧13) | 71 (🔧12) | 185 | 🔧 28 |
-| ubi | 0 | 🟠 22 (🔧4) | 195 (🔧20) | 255 (🔧22) | 472 | 🔧 48 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 212 (🔧181) | 577 (🔧368) | 328 (🔧50) | 1130 | 🔧 622 |
+| ubi-minimal | 0 | 🟠 15 (🔧1) | 101 (🔧13) | 71 (🔧12) | 187 | 🔧 28 |
+| ubi | 0 | 🟠 22 (🔧4) | 197 (🔧20) | 255 (🔧22) | 474 | 🔧 48 |
 
 ## Details
 
@@ -260,6 +260,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-13034 | MEDIUM | curl | 7.61.1-25.el8_7.2 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl | 7.61.1-25.el8_7.2 | 7.61.1-34.el8_10.9 | curl: libcurl: Curl out of bounds read for cookie path |
+| CVE-2026-11856 | MEDIUM | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Information disclosure via incorrect Digest authentication header reuse |
 | CVE-2026-1965 | MEDIUM | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
@@ -408,6 +409,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-13034 | MEDIUM | libcurl | 7.61.1-25.el8_7.2 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | libcurl | 7.61.1-25.el8_7.2 | 7.61.1-34.el8_10.9 | curl: libcurl: Curl out of bounds read for cookie path |
+| CVE-2026-11856 | MEDIUM | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Information disclosure via incorrect Digest authentication header reuse |
 | CVE-2026-1965 | MEDIUM | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
@@ -434,7 +436,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14104 | MEDIUM | libsmartcols | 2.32.1-39.el8_7 | 2.32.1-48.el8_10 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2026-13595 | MEDIUM | libsmartcols | 2.32.1-39.el8_7 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libsmartcols | 2.32.1-39.el8_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
-| CVE-2026-48864 | MEDIUM | libsolv | 0.7.20-4.el8_7 | - | libsolv: Heap buffer overflow in libsolv repopagestore via unchecked decompression of malicious .solv page data |
+| CVE-2026-48864 | MEDIUM | libsolv | 0.7.20-4.el8_7 | 0.7.20-7.el8_10 | libsolv: Heap buffer overflow in libsolv repopagestore via unchecked decompression of malicious .solv page data |
 | CVE-2026-9149 | MEDIUM | libsolv | 0.7.20-4.el8_7 | - | libsolv: Heap buffer overflow in libsolv repo_add_solv via negative maxsize from crafted .solv file |
 | CVE-2023-1667 | MEDIUM | libssh | 0.9.6-3.el8 | 0.9.6-10.el8_8 | libssh: NULL pointer dereference during rekeying with algorithm guessing |
 | CVE-2023-2283 | MEDIUM | libssh | 0.9.6-3.el8 | 0.9.6-10.el8_8 | libssh: authorization bypass in pki_verify_data_signature |
@@ -602,6 +604,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-43804 | MEDIUM | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-5.el8_9.2 | python-urllib3: Cookie request header isn't stripped during cross-origin redirects |
 | CVE-2023-45803 | MEDIUM | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-5.el8_9.2 | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2024-37891 | MEDIUM | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-8.el8_10 | urllib3: proxy-authorization request header is not stripped during cross-origin redirects |
+| CVE-2026-44431 | MEDIUM | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-10.el8_10 | urllib3: urllib3: Information disclosure via cross-origin redirects forwarding sensitive headers |
 | CVE-2021-35937 | MEDIUM | rpm | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: TOCTOU race in checks for unsafe symlinks |
 | CVE-2021-35938 | MEDIUM | rpm | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: races with chown/chmod/capabilities calls during installation |
 | CVE-2021-35939 | MEDIUM | rpm | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: checks for unsafe symlinks are not performed for intermediary directories |
@@ -845,6 +848,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | 8.32-41.el9_8 | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
+| CVE-2026-11856 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via incorrect Digest authentication header reuse |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
@@ -894,6 +898,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-27456 | MEDIUM | libblkid | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2025-13034 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
+| CVE-2026-11856 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via incorrect Digest authentication header reuse |
 | CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
@@ -973,6 +978,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | 8.32-41.el9_8 | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
+| CVE-2026-11856 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via incorrect Digest authentication header reuse |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
@@ -1039,6 +1045,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-27456 | MEDIUM | libblkid | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2025-13034 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
+| CVE-2026-11856 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via incorrect Digest authentication header reuse |
 | CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
