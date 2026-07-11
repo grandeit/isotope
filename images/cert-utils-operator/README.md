@@ -4,17 +4,17 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-07-10 13:40:06 UTC
+**Scanned:** 2026-07-11 01:33:12 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 88 (🔧74) | 250 (🔧147) | 150 (🔧30) | 490 | 🔧 257 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 89 (🔧75) | 251 (🔧148) | 151 (🔧30) | 493 | 🔧 257 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 2 (🔧1) | 21 (🔧10) | 9 (🔧3) | 32 | 🔧 14 |
-| ubi-minimal | 0 | 🟠 15 (🔧1) | 100 (🔧12) | 67 (🔧12) | 182 | 🔧 25 |
-| ubi | 0 | 🟠 22 (🔧4) | 196 (🔧19) | 255 (🔧22) | 473 | 🔧 45 |
+| ubi-minimal | 0 | 🟠 15 (🔧1) | 100 (🔧12) | 68 (🔧12) | 183 | 🔧 25 |
+| ubi | 0 | 🟠 26 (🔧4) | 202 (🔧19) | 256 (🔧22) | 484 | 🔧 45 |
 
 ## Details
 
@@ -111,6 +111,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-33811 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | net: golang: Go net package: Denial of Service via long CNAME response in LookupCNAME |
 | CVE-2026-33814 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
 | CVE-2026-39820 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | net/mail: golang: Go net/mail: Denial of Service via crafted email inputs |
+| CVE-2026-39822 | HIGH | stdlib | v1.19.13 | 1.25.12, 1.26.5, 1.27.0-rc.2 | os: golang: Go os.Root: Symlink following vulnerability allows directory traversal |
 | CVE-2026-39836 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | ELSA-2026-22121: golang security update (IMPORTANT) |
 | CVE-2026-42499 | HIGH | stdlib | v1.19.13 | 1.25.10, 1.26.3 | net/mail: golang: net/mail: Denial of Service via pathological email address parsing |
 | CVE-2026-42504 | HIGH | stdlib | v1.19.13 | 1.25.11, 1.26.4 | mime: golang: Golang MIME: Denial of Service via maliciously-crafted MIME header |
@@ -363,6 +364,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39823 | MEDIUM | stdlib | v1.19.13 | 1.25.10, 1.26.3 | html/template: golang: Go html/template: Cross-Site Scripting via improper URL escaping in meta tag content |
 | CVE-2026-39825 | MEDIUM | stdlib | v1.19.13 | 1.25.10, 1.26.3 | net/http/httputil: golang: net/http/httputil: ReverseProxy forwards hidden query parameters, potentially bypassing security controls |
 | CVE-2026-39826 | MEDIUM | stdlib | v1.19.13 | 1.25.10, 1.26.3 | html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping |
+| CVE-2026-42505 | MEDIUM | stdlib | v1.19.13 | 1.25.12, 1.26.5, 1.27.0-rc.2 | crypto/tls: golang: Go crypto/tls: Information disclosure in Encrypted Client Hello |
 | CVE-2026-42507 | MEDIUM | stdlib | v1.19.13 | 1.25.11, 1.26.4 | net/textproto: golang: Golang net/textproto: Misleading error messages via input injection |
 
 ### distroless
@@ -539,7 +541,11 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-9547 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
 | CVE-2026-45447 | HIGH | openssl | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
 | CVE-2026-45447 | HIGH | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
+| CVE-2026-15308 | HIGH | python3 | 3.9.25-7.el9_8 | - | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
+| CVE-2026-15308 | HIGH | python3-libs | 3.9.25-7.el9_8 | - | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
 | CVE-2026-44432 | HIGH | python3-urllib3 | 1.26.5-6.el9_7.1 | 1.26.5-8.el9_8 | urllib3: urllib3: Denial of Service due to excessive HTTP response decompression |
+| CVE-2026-59873 | HIGH | tar | 2:1.34-11.el9 | - | tar: node-tar: Denial of Service via crafted gzip bomb |
+| CVE-2026-59874 | HIGH | tar | 2:1.34-11.el9 | - | tar: Node-tar: Denial of Service via malformed tar archive header |
 | CVE-2026-47162 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary Code Execution via crafted directory names |
 | CVE-2026-55895 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via Vimscript code injection in netrw plugin |
 | CVE-2026-57456 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via malicious docstrings in Python omni-completion |
@@ -682,6 +688,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5713 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2026-6019 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module |
 | CVE-2026-7210 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | python: expat: Python/Expat: Denial of Service via crafted XML document |
+| CVE-2026-45409 | MEDIUM | python3-idna | 2.10-7.el9_4.1 | - | python-idna: idna: Denial of Service via specially crafted long inputs |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: Out-of-memory when loading Plist |
@@ -702,6 +709,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 21.3.1-2.el9_8 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
 | CVE-2026-25645 | MEDIUM | python3-pip-wheel | 21.3.1-2.el9_8 | - | requests: Requests: Security bypass due to predictable temporary file creation |
 | CVE-2026-32284 | MEDIUM | python3-pip-wheel | 21.3.1-2.el9_8 | - | github.com/shamaton/msgpack: msgpack: Denial of Service via truncated fixext data |
+| CVE-2026-45409 | MEDIUM | python3-pip-wheel | 21.3.1-2.el9_8 | - | python-idna: idna: Denial of Service via specially crafted long inputs |
 | CVE-2026-44604 | MEDIUM | python3-rpm | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2026-44431 | MEDIUM | python3-urllib3 | 1.26.5-6.el9_7.1 | 1.26.5-8.el9_8 | urllib3: urllib3: Information disclosure via cross-origin redirects forwarding sensitive headers |
 | CVE-2026-44604 | MEDIUM | rpm | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
@@ -717,7 +725,10 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2005-2541 | MEDIUM | tar | 2:1.34-11.el9 | - | tar: does not properly warn the user when extracting setuid or setgid files |
 | CVE-2025-64118 | MEDIUM | tar | 2:1.34-11.el9 | - | node-tar: tar: node-tar: Information disclosure via reading a truncated tar file |
 | CVE-2026-33056 | MEDIUM | tar | 2:1.34-11.el9 | - | tar-rs: tar-rs: Arbitrary directory permission modification via crafted tar archive |
+| CVE-2026-53655 | MEDIUM | tar | 2:1.34-11.el9 | - | node-tar: node-tar: File smuggling due to inconsistent tar archive parsing |
 | CVE-2026-5704 | MEDIUM | tar | 2:1.34-11.el9 | - | tar: tar: Hidden file injection via crafted archives |
+| CVE-2026-59871 | MEDIUM | tar | 2:1.34-11.el9 | - | node-tar: node-tar: Denial of Service due to incorrect PAX path handling |
+| CVE-2026-59875 | MEDIUM | tar | 2:1.34-11.el9 | - | node-tar: node-tar: Denial of Service via crafted archive with NUL bytes in metadata |
 | CVE-2024-29040 | MEDIUM | tpm2-tss | 3.2.3-1.el9 | - | tpm2-tss: arbitrary quote data may go undetected by Fapi_VerifyQuote |
 | CVE-2026-13595 | MEDIUM | util-linux | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | util-linux | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
@@ -734,6 +745,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-45130 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Heap buffer overflow allows arbitrary code execution or denial of service |
 | CVE-2026-46483 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: command injection when decompressing .tgz archives |
 | CVE-2026-52859 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Denial of Service via out-of-bounds write in terminal handling |
+| CVE-2026-55693 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Out-of-bounds Write in Spell File Word Count |
 | CVE-2026-55892 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Denial of Service via crafted spell file |
 | CVE-2026-57451 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Denial of service via crafted undo file |
 | CVE-2026-57452 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Out-of-bounds Read with libsodium-encrypted Files |
