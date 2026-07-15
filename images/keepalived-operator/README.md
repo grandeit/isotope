@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-07-14 15:37:36 UTC
+**Scanned:** 2026-07-15 04:06:02 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 217 (🔧184) | 583 (🔧371) | 329 (🔧50) | 1142 | 🔧 622 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 217 (🔧186) | 586 (🔧372) | 330 (🔧50) | 1146 | 🔧 627 |
 | ubi-minimal | 0 | 🟠 15 (🔧1) | 101 (🔧13) | 72 (🔧12) | 188 | 🔧 28 |
-| ubi | 0 | 🟠 26 (🔧4) | 203 (🔧20) | 256 (🔧22) | 485 | 🔧 48 |
+| ubi | 0 | 🟠 26 (🔧4) | 206 (🔧20) | 256 (🔧22) | 488 | 🔧 48 |
 
 ## Details
 
@@ -94,7 +94,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-12718 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
 | CVE-2025-4517 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | python: cpython: Arbitrary writes via tarfile realpath overflow |
-| CVE-2026-15308 | HIGH | platform-python | 3.6.8-48.el8_7.1 | - | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
+| CVE-2026-15308 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-77.el8_10 | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
 | CVE-2026-4519 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-75.el8_10 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-4786 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-76.el8_10 | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-76.el8_10 | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
@@ -108,7 +108,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-12718 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
 | CVE-2025-4517 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | python: cpython: Arbitrary writes via tarfile realpath overflow |
-| CVE-2026-15308 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | - | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
+| CVE-2026-15308 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-77.el8_10 | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
 | CVE-2026-4519 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-75.el8_10 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-4786 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-76.el8_10 | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
 | CVE-2026-6100 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-76.el8_10 | python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules |
@@ -494,7 +494,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-2408 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-12.el8_9 | php: potential exposure to Marvin attack via unsafe implementation of RSA decryption API |
 | CVE-2025-69419 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-15.el8_6 | openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing |
 | CVE-2025-9230 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-14.el8_10 | openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap |
-| CVE-2026-28390 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | - | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
+| CVE-2026-28390 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-17.el8_6 | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
 | CVE-2026-13757 | MEDIUM | p11-kit | 0.23.22-1.el8 | - | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
 | CVE-2026-13757 | MEDIUM | p11-kit-trust | 0.23.22-1.el8 | - | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
 | CVE-2024-10041 | MEDIUM | pam | 1.3.1-22.el8 | 1.3.1-36.el8_10 | pam: libpam: Libpam vulnerable to read hashed password |
@@ -676,6 +676,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-55892 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Denial of Service via crafted spell file |
 | CVE-2026-57452 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Out-of-bounds Read with libsodium-encrypted Files |
 | CVE-2026-57455 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Denial of Service via stack out-of-bounds write in spell_soundfold_sofo() |
+| CVE-2026-59856 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary code execution via crafted PHP file in omni-completion |
+| CVE-2026-59857 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Denial of Service via out-of-bounds write in spell sound-folding |
+| CVE-2026-59858 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary command execution via crafted tags file in C omni-completion |
 | CVE-2026-34743 | MEDIUM | xz-libs | 5.2.4-4.el8_6 | - | xz: XZ Utils: Denial of Service via buffer overflow in index decoding |
 | CVE-2023-48795 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.17.0 | ssh: Prefix truncation attack on Binary Packet Protocol (BPP) |
 | CVE-2025-47914 | MEDIUM | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.45.0 | golang.org/x/crypto/ssh/agent: SSH Agent servers: Denial of Service due to malformed messages |
@@ -1188,6 +1191,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-57451 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Denial of service via crafted undo file |
 | CVE-2026-57452 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Out-of-bounds Read with libsodium-encrypted Files |
 | CVE-2026-57455 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Denial of Service via stack out-of-bounds write in spell_soundfold_sofo() |
+| CVE-2026-59856 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via crafted PHP file in omni-completion |
+| CVE-2026-59857 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Denial of Service via out-of-bounds write in spell sound-folding |
+| CVE-2026-59858 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary command execution via crafted tags file in C omni-completion |
 | CVE-2026-34743 | MEDIUM | xz-libs | 5.2.5-8.el9_0 | - | xz: XZ Utils: Denial of Service via buffer overflow in index decoding |
 | CVE-2022-29526 | MEDIUM | golang.org/x/sys | v0.0.0-20180926160741-c2ed4eda69e7 | 0.0.0-20220412211240-33da011f77ad | golang: syscall: faccessat checks wrong group |
 
