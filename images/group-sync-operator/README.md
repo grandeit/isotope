@@ -4,17 +4,17 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-07-14 14:45:19 UTC
+**Scanned:** 2026-07-15 03:11:04 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 65 (🔧50) | 184 (🔧98) | 90 (🔧34) | 340 | 🔧 184 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 65 (🔧50) | 184 (🔧98) | 90 (🔧34) | 340 | 🔧 186 |
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 3 (🔧2) | 21 (🔧10) | 9 (🔧3) | 33 | 🔧 15 |
 | ubi-minimal | 0 | 🟠 16 (🔧2) | 100 (🔧12) | 68 (🔧12) | 184 | 🔧 26 |
-| ubi | 0 | 🟠 27 (🔧5) | 202 (🔧19) | 256 (🔧22) | 485 | 🔧 46 |
+| ubi | 0 | 🟠 27 (🔧5) | 205 (🔧19) | 256 (🔧22) | 488 | 🔧 46 |
 
 ## Details
 
@@ -663,6 +663,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-57451 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Denial of service via crafted undo file |
 | CVE-2026-57452 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Out-of-bounds Read with libsodium-encrypted Files |
 | CVE-2026-57455 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Denial of Service via stack out-of-bounds write in spell_soundfold_sofo() |
+| CVE-2026-59856 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via crafted PHP file in omni-completion |
+| CVE-2026-59857 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Denial of Service via out-of-bounds write in spell sound-folding |
+| CVE-2026-59858 | MEDIUM | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary command execution via crafted tags file in C omni-completion |
 | CVE-2026-34743 | MEDIUM | xz-libs | 5.2.5-8.el9_0 | - | xz: XZ Utils: Denial of Service via buffer overflow in index decoding |
 
 ---
