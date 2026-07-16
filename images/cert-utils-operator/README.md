@@ -4,7 +4,7 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-07-15 13:33:30 UTC
+**Scanned:** 2026-07-16 01:33:38 UTC
 
 ## Overview
 
@@ -13,8 +13,8 @@
 | **upstream** | 🔴 2 (🔧2) | 🟠 89 (🔧75) | 251 (🔧149) | 152 (🔧30) | 494 | 🔧 260 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 2 (🔧1) | 21 (🔧10) | 9 (🔧3) | 32 | 🔧 14 |
-| ubi-minimal | 0 | 🟠 15 (🔧1) | 100 (🔧12) | 68 (🔧12) | 183 | 🔧 25 |
-| ubi | 0 | 🟠 26 (🔧4) | 205 (🔧19) | 256 (🔧22) | 487 | 🔧 45 |
+| ubi-minimal | 0 | 🟠 15 (🔧1) | 100 (🔧13) | 68 (🔧13) | 183 | 🔧 27 |
+| ubi | 0 | 🟠 26 (🔧4) | 204 (🔧20) | 256 (🔧23) | 486 | 🔧 47 |
 
 ## Details
 
@@ -490,7 +490,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-27456 | MEDIUM | libmount | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2026-13595 | MEDIUM | libsmartcols | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libsmartcols | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
-| CVE-2026-48864 | MEDIUM | libsolv | 0.7.24-4.el9 | - | libsolv: Heap buffer overflow in libsolv repopagestore via unchecked decompression of malicious .solv page data |
+| CVE-2026-48864 | MEDIUM | libsolv | 0.7.24-4.el9 | 0.7.24-6.el9_8 | libsolv: Heap buffer overflow in libsolv repopagestore via unchecked decompression of malicious .solv page data |
 | CVE-2026-9149 | MEDIUM | libsolv | 0.7.24-4.el9 | - | libsolv: Heap buffer overflow in libsolv repo_add_solv via negative maxsize from crafted .solv file |
 | CVE-2026-9150 | MEDIUM | libsolv | 0.7.24-4.el9 | - | libsolv: Stack-based buffer overflow in libsolv's Debian metadata parser when handling SHA384/SHA512 checksums |
 | CVE-2026-13595 | MEDIUM | libuuid | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
@@ -581,7 +581,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
-| CVE-2026-4647 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: Out-of-Bounds Read in XCOFF Relocation Processing in GNU Binutils BFD Library |
 | CVE-2026-6844 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: Binutils: Denial of Service vulnerabilities in readelf via crafted ELF files |
 | CVE-2026-6845 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: Binutils: Denial of Service via crafted ELF file |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
@@ -642,7 +641,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-27456 | MEDIUM | libmount | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2026-13595 | MEDIUM | libsmartcols | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libsmartcols | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
-| CVE-2026-48864 | MEDIUM | libsolv | 0.7.24-4.el9 | - | libsolv: Heap buffer overflow in libsolv repopagestore via unchecked decompression of malicious .solv page data |
+| CVE-2026-48864 | MEDIUM | libsolv | 0.7.24-4.el9 | 0.7.24-6.el9_8 | libsolv: Heap buffer overflow in libsolv repopagestore via unchecked decompression of malicious .solv page data |
 | CVE-2026-9149 | MEDIUM | libsolv | 0.7.24-4.el9 | - | libsolv: Heap buffer overflow in libsolv repo_add_solv via negative maxsize from crafted .solv file |
 | CVE-2026-9150 | MEDIUM | libsolv | 0.7.24-4.el9 | - | libsolv: Stack-based buffer overflow in libsolv's Debian metadata parser when handling SHA384/SHA512 checksums |
 | CVE-2026-13595 | MEDIUM | libuuid | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
