@@ -4,7 +4,7 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-07-16 13:33:45 UTC
+**Scanned:** 2026-07-17 01:33:34 UTC
 
 ## Overview
 
@@ -14,7 +14,7 @@
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 2 (🔧1) | 21 (🔧10) | 9 (🔧3) | 32 | 🔧 14 |
 | ubi-minimal | 0 | 🟠 15 (🔧1) | 100 (🔧13) | 68 (🔧13) | 183 | 🔧 27 |
-| ubi | 0 | 🟠 26 (🔧4) | 204 (🔧20) | 256 (🔧23) | 486 | 🔧 47 |
+| ubi | 0 | 🟠 26 (🔧6) | 204 (🔧20) | 256 (🔧23) | 486 | 🔧 49 |
 
 ## Details
 
@@ -541,8 +541,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-9547 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
 | CVE-2026-45447 | HIGH | openssl | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
 | CVE-2026-45447 | HIGH | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
-| CVE-2026-15308 | HIGH | python3 | 3.9.25-7.el9_8 | - | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
-| CVE-2026-15308 | HIGH | python3-libs | 3.9.25-7.el9_8 | - | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
+| CVE-2026-15308 | HIGH | python3 | 3.9.25-7.el9_8 | 3.9.25-7.el9_8.2 | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
+| CVE-2026-15308 | HIGH | python3-libs | 3.9.25-7.el9_8 | 3.9.25-7.el9_8.2 | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
 | CVE-2026-44432 | HIGH | python3-urllib3 | 1.26.5-6.el9_7.1 | 1.26.5-8.el9_8 | urllib3: urllib3: Denial of Service due to excessive HTTP response decompression |
 | CVE-2026-59873 | HIGH | tar | 2:1.34-11.el9 | - | tar: node-tar: Denial of Service via crafted gzip bomb |
 | CVE-2026-59874 | HIGH | tar | 2:1.34-11.el9 | - | tar: Node-tar: Denial of Service via malformed tar archive header |
