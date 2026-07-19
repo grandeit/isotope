@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-07-18 15:21:40 UTC
+**Scanned:** 2026-07-19 04:14:21 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
 | **upstream** | 🔴 13 (🔧13) | 🟠 217 (🔧186) | 586 (🔧372) | 330 (🔧50) | 1146 | 🔧 627 |
-| ubi-minimal | 0 | 🟠 15 (🔧1) | 101 (🔧14) | 72 (🔧13) | 188 | 🔧 30 |
-| ubi | 0 | 🟠 26 (🔧6) | 205 (🔧21) | 256 (🔧23) | 487 | 🔧 52 |
+| ubi-minimal | 0 | 🟠 15 (🔧1) | 102 (🔧14) | 72 (🔧13) | 189 | 🔧 30 |
+| ubi | 0 | 🟠 26 (🔧6) | 206 (🔧21) | 256 (🔧23) | 488 | 🔧 52 |
 
 ## Details
 
@@ -159,7 +159,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-25681 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | golang.org/x/net/html: golang.org/x/net/html: Arbitrary code execution via Cross-Site Scripting |
 | CVE-2026-27136 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | golang.org/x/net/html: golang: golang.org/x/net/html: Cross-Site Scripting via HTML parsing bypass |
 | CVE-2026-33814 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.53.0 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
-| CVE-2026-39821 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | golang.org/x/net/idna: golang: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing |
+| CVE-2026-39821 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing |
 | CVE-2025-22868 | HIGH | golang.org/x/oauth2 | v0.0.0-20211104180415-d3ed0bb246c8 | 0.27.0 | golang.org/x/oauth2/jws: Unexpected memory consumption during token parsing in golang.org/x/oauth2/jws |
 | CVE-2022-32149 | HIGH | golang.org/x/text | v0.3.7 | 0.3.8 | golang: golang.org/x/text/language: ParseAcceptLanguage takes a long time to parse complex tags |
 | CVE-2022-28948 | HIGH | gopkg.in/yaml.v3 | v3.0.0-20210107192922-496545a6307b | 3.0.1 | golang-gopkg-yaml: crash when attempting to deserialize invalid input |
@@ -877,6 +877,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-8926 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via incorrect .netrc password lookup |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
+| CVE-2026-16118 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | xdgmime: heap-based buffer overflow in _xdg_mime_magic_parse_magic_line() in xdgmimemagic.c |
 | CVE-2026-58010 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal() |
 | CVE-2026-58011 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid GDateTime |
 | CVE-2026-58012 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char() |
@@ -1026,6 +1027,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6845 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: Binutils: Denial of Service via crafted ELF file |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
+| CVE-2026-16118 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | xdgmime: heap-based buffer overflow in _xdg_mime_magic_parse_magic_line() in xdgmimemagic.c |
 | CVE-2026-58010 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal() |
 | CVE-2026-58011 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid GDateTime |
 | CVE-2026-58012 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char() |
