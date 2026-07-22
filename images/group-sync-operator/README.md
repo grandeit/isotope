@@ -4,17 +4,17 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-07-21 14:40:28 UTC
+**Scanned:** 2026-07-22 03:11:45 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 65 (🔧50) | 185 (🔧99) | 90 (🔧35) | 341 | 🔧 188 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 65 (🔧51) | 187 (🔧99) | 90 (🔧35) | 343 | 🔧 189 |
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 3 (🔧2) | 21 (🔧10) | 9 (🔧3) | 33 | 🔧 15 |
-| ubi-minimal | 0 | 🟠 16 (🔧2) | 101 (🔧13) | 68 (🔧13) | 185 | 🔧 28 |
-| ubi | 0 | 🟠 27 (🔧7) | 205 (🔧20) | 256 (🔧23) | 488 | 🔧 50 |
+| ubi-minimal | 0 | 🟠 16 (🔧3) | 103 (🔧13) | 68 (🔧13) | 187 | 🔧 29 |
+| ubi | 0 | 🟠 27 (🔧8) | 207 (🔧20) | 256 (🔧23) | 490 | 🔧 51 |
 
 ## Details
 
@@ -31,7 +31,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-8286 | HIGH | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8925 | HIGH | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Double-free vulnerability in SASL authentication |
 | CVE-2026-9547 | HIGH | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
-| CVE-2026-58016 | HIGH | glib2 | 2.68.4-16.el9_6.2 | - | glib: integer underflow in gio/gdbusintrospection.c via "g_dbus_node_info_new_for_xml" |
+| CVE-2026-58016 | HIGH | glib2 | 2.68.4-16.el9_6.2 | 2.68.4-19.el9_8.2 | glib: integer underflow in gio/gdbusintrospection.c via "g_dbus_node_info_new_for_xml" |
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | 2.3.3-5.el9_7 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2026-33845 | HIGH | gnutls | 3.8.3-6.el9 | 3.8.10-4.el9_8 | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
 | CVE-2026-33846 | HIGH | gnutls | 3.8.3-6.el9 | 3.8.10-4.el9_8 | gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly |
@@ -113,6 +113,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | 2.68.4-19.el9_8.1 | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
+| CVE-2026-15588 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | - | GDBusServer: glib2: GDBusServer pre-authentication DoS via unbounded SASL line buffering |
 | CVE-2026-16118 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | - | xdgmime: heap-based buffer overflow in _xdg_mime_magic_parse_magic_line() in xdgmimemagic.c |
 | CVE-2026-58010 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | - | glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal() |
 | CVE-2026-58011 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | - | glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid GDateTime |
@@ -186,6 +187,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14104 | MEDIUM | libmount | 2.37.4-21.el9 | 2.37.4-21.el9_7 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2026-13595 | MEDIUM | libmount | 2.37.4-21.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libmount | 2.37.4-21.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
+| CVE-2026-58055 | MEDIUM | libnghttp2 | 1.43.0-6.el9 | - | nghttp2: nghttp2: HTTP Request/Response Smuggling and Response-Queue Poisoning via ambiguous HTTP/1.1 Upgrade requests |
 | CVE-2025-14104 | MEDIUM | libsmartcols | 2.37.4-21.el9 | 2.37.4-21.el9_7 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2026-13595 | MEDIUM | libsmartcols | 2.37.4-21.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libsmartcols | 2.37.4-21.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
@@ -321,7 +323,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-8286 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8925 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Double-free vulnerability in SASL authentication |
 | CVE-2026-9547 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
-| CVE-2026-58016 | HIGH | glib2 | 2.68.4-19.el9_8.1 | - | glib: integer underflow in gio/gdbusintrospection.c via "g_dbus_node_info_new_for_xml" |
+| CVE-2026-58016 | HIGH | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.2 | glib: integer underflow in gio/gdbusintrospection.c via "g_dbus_node_info_new_for_xml" |
 | CVE-2026-54369 | HIGH | libacl | 2.3.1-4.el9 | - | acl: Symlink traversal privilege escalation via libacl functions |
 | CVE-2026-11352 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
 | CVE-2026-11586 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Denial of Service via WebSocket PING flood |
@@ -350,6 +352,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-8926 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via incorrect .netrc password lookup |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
+| CVE-2026-15588 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | GDBusServer: glib2: GDBusServer pre-authentication DoS via unbounded SASL line buffering |
 | CVE-2026-16118 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | xdgmime: heap-based buffer overflow in _xdg_mime_magic_parse_magic_line() in xdgmimemagic.c |
 | CVE-2026-58010 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal() |
 | CVE-2026-58011 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid GDateTime |
@@ -402,6 +405,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-41989 | MEDIUM | libgcrypt | 1.10.0-11.el9 | - | Libgcrypt: Libgcrypt: Denial of Service and buffer overflow via crafted ECDH ciphertext |
 | CVE-2026-13595 | MEDIUM | libmount | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libmount | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
+| CVE-2026-58055 | MEDIUM | libnghttp2 | 1.43.0-6.el9_8.1 | - | nghttp2: nghttp2: HTTP Request/Response Smuggling and Response-Queue Poisoning via ambiguous HTTP/1.1 Upgrade requests |
 | CVE-2026-13595 | MEDIUM | libsmartcols | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libsmartcols | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2026-48864 | MEDIUM | libsolv | 0.7.24-4.el9 | 0.7.24-6.el9_8 | libsolv: Heap buffer overflow in libsolv repopagestore via unchecked decompression of malicious .solv page data |
@@ -445,7 +449,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-8925 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Double-free vulnerability in SASL authentication |
 | CVE-2026-9547 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
 | CVE-2026-45186 | HIGH | expat | 2.5.0-6.el9 | 2.5.0-6.el9_8.1 | libexpat: denial of service via crafted XML input |
-| CVE-2026-58016 | HIGH | glib2 | 2.68.4-19.el9_8.1 | - | glib: integer underflow in gio/gdbusintrospection.c via "g_dbus_node_info_new_for_xml" |
+| CVE-2026-58016 | HIGH | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.2 | glib: integer underflow in gio/gdbusintrospection.c via "g_dbus_node_info_new_for_xml" |
 | CVE-2026-54369 | HIGH | libacl | 2.3.1-4.el9 | - | acl: Symlink traversal privilege escalation via libacl functions |
 | CVE-2026-11352 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
 | CVE-2026-11586 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Denial of Service via WebSocket PING flood |
@@ -500,6 +504,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6845 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: Binutils: Denial of Service via crafted ELF file |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
+| CVE-2026-15588 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | GDBusServer: glib2: GDBusServer pre-authentication DoS via unbounded SASL line buffering |
 | CVE-2026-16118 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | xdgmime: heap-based buffer overflow in _xdg_mime_magic_parse_magic_line() in xdgmimemagic.c |
 | CVE-2026-58010 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal() |
 | CVE-2026-58011 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid GDateTime |
@@ -555,6 +560,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-41989 | MEDIUM | libgcrypt | 1.10.0-11.el9 | - | Libgcrypt: Libgcrypt: Denial of Service and buffer overflow via crafted ECDH ciphertext |
 | CVE-2026-13595 | MEDIUM | libmount | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libmount | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
+| CVE-2026-58055 | MEDIUM | libnghttp2 | 1.43.0-6.el9_8.1 | - | nghttp2: nghttp2: HTTP Request/Response Smuggling and Response-Queue Poisoning via ambiguous HTTP/1.1 Upgrade requests |
 | CVE-2026-13595 | MEDIUM | libsmartcols | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libsmartcols | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2026-48864 | MEDIUM | libsolv | 0.7.24-4.el9 | 0.7.24-6.el9_8 | libsolv: Heap buffer overflow in libsolv repopagestore via unchecked decompression of malicious .solv page data |
