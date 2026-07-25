@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-07-24 15:31:37 UTC
+**Scanned:** 2026-07-25 04:06:37 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 217 (🔧189) | 600 (🔧383) | 333 (🔧50) | 1163 | 🔧 641 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 215 (🔧189) | 600 (🔧383) | 333 (🔧50) | 1161 | 🔧 641 |
 | ubi-minimal | 0 | 🟠 15 (🔧3) | 104 (🔧27) | 73 (🔧13) | 192 | 🔧 45 |
 | ubi | 0 | 🟠 26 (🔧9) | 208 (🔧35) | 257 (🔧23) | 491 | 🔧 69 |
 
@@ -39,7 +39,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6176 | HIGH | brotli | 1.0.6-3.el8 | 1.0.6-4.el8_10 | Scrapy: python-scrapy: brotli: Python brotli decompression bomb DoS |
 | CVE-2026-11352 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
 | CVE-2026-11586 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Denial of Service via WebSocket PING flood |
-| CVE-2026-12064 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: curl: SSH host verification bypass when using schemeless URLs with SFTP/SCP |
 | CVE-2026-8286 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8925 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Double-free vulnerability in SASL authentication |
 | CVE-2026-9547 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
@@ -72,7 +71,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4878 | HIGH | libcap | 2.48-4.el8 | 2.48-6.el8_10.1 | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
 | CVE-2026-11352 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
 | CVE-2026-11586 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Denial of Service via WebSocket PING flood |
-| CVE-2026-12064 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: SSH host verification bypass when using schemeless URLs with SFTP/SCP |
 | CVE-2026-8286 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8925 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Double-free vulnerability in SASL authentication |
 | CVE-2026-9547 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
