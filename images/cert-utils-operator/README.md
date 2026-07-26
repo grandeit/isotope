@@ -4,13 +4,13 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-07-25 13:32:18 UTC
+**Scanned:** 2026-07-26 01:35:28 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 87 (🔧77) | 265 (🔧159) | 155 (🔧30) | 509 | 🔧 272 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 87 (🔧77) | 264 (🔧159) | 153 (🔧30) | 506 | 🔧 272 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 21 (🔧20) | 9 (🔧3) | 32 | 🔧 25 |
 | ubi-minimal | 0 | 🟠 15 (🔧3) | 103 (🔧26) | 69 (🔧13) | 187 | 🔧 42 |
@@ -116,6 +116,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | 1.0.6-28.el8_10 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-15.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
+| CVE-2026-56392 | MEDIUM | coreutils-single | 8.30-15.el8 | - | coreutils: GNU coreutils unexpand: Denial of Service via crafted tab stop values |
 | CVE-2023-46218 | MEDIUM | curl | 7.61.1-33.el8 | 7.61.1-33.el8_9.5 | curl: information disclosure by exploiting a mixed case flaw |
 | CVE-2024-2398 | MEDIUM | curl | 7.61.1-33.el8 | 7.61.1-34.el8_10.2 | curl: HTTP/2 push headers memory-leak |
 | CVE-2025-13034 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -125,7 +126,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1965 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
-| CVE-2026-3805 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
 | CVE-2026-4873 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: curl: Information disclosure due to incorrect TLS connection reuse |
 | CVE-2026-5545 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: libcurl: Authentication bypass due to incorrect HTTP Negotiate connection reuse |
 | CVE-2026-5773 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: libcurl: Wrong file transfer due to incorrect SMB connection reuse |
@@ -226,7 +226,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1965 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
-| CVE-2026-3805 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
 | CVE-2026-4873 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: curl: Information disclosure due to incorrect TLS connection reuse |
 | CVE-2026-5545 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: libcurl: Authentication bypass due to incorrect HTTP Negotiate connection reuse |
 | CVE-2026-5773 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: libcurl: Wrong file transfer due to incorrect SMB connection reuse |
