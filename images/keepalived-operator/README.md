@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-07-28 15:47:11 UTC
+**Scanned:** 2026-07-29 04:07:37 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 215 (🔧189) | 599 (🔧383) | 331 (🔧50) | 1158 | 🔧 641 |
-| ubi-minimal | 0 | 🟠 15 (🔧3) | 104 (🔧27) | 73 (🔧13) | 192 | 🔧 45 |
-| ubi | 0 | 🟠 26 (🔧9) | 208 (🔧35) | 257 (🔧23) | 491 | 🔧 69 |
+| **upstream** | 🔴 15 (🔧13) | 🟠 216 (🔧190) | 602 (🔧383) | 331 (🔧50) | 1164 | 🔧 641 |
+| ubi-minimal | 0 | 🟠 13 (🔧3) | 104 (🔧27) | 73 (🔧13) | 190 | 🔧 45 |
+| ubi | 0 | 🟠 22 (🔧9) | 210 (🔧35) | 257 (🔧23) | 489 | 🔧 69 |
 
 ## Details
 
@@ -22,6 +22,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-51297 | CRITICAL | sqlite-libs | 3.26.0-17.el8_7 | - | sqlite 3.41 has a use-after-free vulnerability in the JSON parsing logic. Remote adversaries can craft malicious JSON payload to trigger memory free f |
+| CVE-2026-51302 | CRITICAL | sqlite-libs | 3.26.0-17.el8_7 | - | SQLite 3.41 has a use-after-free vulnerability exists in the expression evaluation logic. The sqlite3ReleaseTempReg function improperly releases tempo |
 | CVE-2022-1996 | CRITICAL | github.com/emicklei/go-restful | v2.9.5+incompatible | 2.16.0 | go-restful: Authorization Bypass Through User-Controlled Key |
 | CVE-2023-24538 | CRITICAL | stdlib | v1.18.10 | 1.19.8, 1.20.3 | golang: html/template: backticks not treated as string delimiters |
 | CVE-2023-24540 | CRITICAL | stdlib | v1.18.10 | 1.19.9, 1.20.4 | golang: html/template: improper handling of JavaScript whitespace |
@@ -37,10 +39,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-68121 | CRITICAL | stdlib | v1.18.10 | 1.24.13, 1.25.7, 1.26.0-rc.3 | crypto/tls: crypto/tls: Incorrect certificate validation during TLS session resumption |
 | CVE-2026-54369 | HIGH | acl | 2.2.53-1.el8 | 2.4.0-1.el8_10 | acl: Symlink traversal privilege escalation via libacl functions |
 | CVE-2025-6176 | HIGH | brotli | 1.0.6-3.el8 | 1.0.6-4.el8_10 | Scrapy: python-scrapy: brotli: Python brotli decompression bomb DoS |
-| CVE-2026-11352 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
-| CVE-2026-11586 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Denial of Service via WebSocket PING flood |
 | CVE-2026-8286 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
-| CVE-2026-8925 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Double-free vulnerability in SASL authentication |
+| CVE-2026-8927 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: Information disclosure due to uncleared proxy authentication state |
+| CVE-2026-9079 | HIGH | curl | 7.61.1-25.el8_7.2 | - | libcurl: libcurl: Information disclosure due to failure to clear proxy authentication credentials |
 | CVE-2026-9547 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
 | CVE-2023-3899 | HIGH | dnf-plugin-subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2025-71319 | HIGH | dnf-plugin-subscription-manager | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
@@ -69,10 +70,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-5914 | HIGH | libarchive | 3.3.3-4.el8 | 3.3.3-6.el8_10 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
 | CVE-2026-4424 | HIGH | libarchive | 3.3.3-4.el8 | 3.3.3-7.el8_10 | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-4878 | HIGH | libcap | 2.48-4.el8 | 2.48-6.el8_10.1 | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
-| CVE-2026-11352 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
-| CVE-2026-11586 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Denial of Service via WebSocket PING flood |
 | CVE-2026-8286 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
-| CVE-2026-8925 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Double-free vulnerability in SASL authentication |
+| CVE-2026-8927 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: Information disclosure due to uncleared proxy authentication state |
+| CVE-2026-9079 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | libcurl: libcurl: Information disclosure due to failure to clear proxy authentication credentials |
 | CVE-2026-9547 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
 | CVE-2023-44487 | HIGH | libnghttp2 | 1.33.0-3.el8_2.1 | 1.33.0-5.el8_8 | HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack) |
 | CVE-2026-27135 | HIGH | libnghttp2 | 1.33.0-3.el8_2.1 | 1.33.0-6.el8_10.2 | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
@@ -126,6 +126,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-66471 | HIGH | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-9.el8_10 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-9.el8_10 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-20.el8_10 | sqlite: Integer Truncation in SQLite |
+| CVE-2026-51296 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | - | SQLite 3.41 has a use-after-free vulnerability in jsonRemoveFunc of SQLite JSON module. The parsed JSON object is freed at line 3555, while line 3575  |
+| CVE-2026-51298 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | - | sqlite: SQLite: Denial of Service via use-after-free in JSON extraction |
 | CVE-2023-3899 | HIGH | subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2025-71319 | HIGH | subscription-manager | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
 | CVE-2026-12143 | HIGH | subscription-manager | 1.28.32-1.el8 | - | form-data: form-data: Form field override via CRLF injection |
@@ -160,6 +162,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-39821 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing |
 | CVE-2025-22868 | HIGH | golang.org/x/oauth2 | v0.0.0-20211104180415-d3ed0bb246c8 | 0.27.0 | golang.org/x/oauth2/jws: Unexpected memory consumption during token parsing in golang.org/x/oauth2/jws |
 | CVE-2022-32149 | HIGH | golang.org/x/text | v0.3.7 | 0.3.8 | golang: golang.org/x/text/language: ParseAcceptLanguage takes a long time to parse complex tags |
+| CVE-2026-56852 | HIGH | golang.org/x/text | v0.3.7 | 0.39.0 | A norm.Iter can enter an infinite loop when handling input containing ... |
 | CVE-2022-28948 | HIGH | gopkg.in/yaml.v3 | v3.0.0-20210107192922-496545a6307b | 3.0.1 | golang-gopkg-yaml: crash when attempting to deserialize invalid input |
 | CVE-2022-41722 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang: path/filepath: path-filepath filepath.Clean path traversal |
 | CVE-2022-41723 | HIGH | stdlib | v1.18.10 | 1.19.6, 1.20.1 | golang.org/x/net/http2: avoid quadratic complexity in HPACK decoding |
@@ -254,6 +257,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2019-12900 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | 1.0.6-28.el8_10 | bzip2: bzip2: Data integrity error when decompressing (with data integrity tests fail). |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-13.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
+| CVE-2026-56391 | MEDIUM | coreutils-single | 8.30-13.el8 | - | coreutils: GNU coreutils uniq: Denial of Service and information disclosure via out-of-bounds read with multibyte input |
 | CVE-2026-56392 | MEDIUM | coreutils-single | 8.30-13.el8 | - | coreutils: GNU coreutils unexpand: Denial of Service via crafted tab stop values |
 | CVE-2023-23916 | MEDIUM | curl | 7.61.1-25.el8_7.2 | 7.61.1-25.el8_7.3 | curl: HTTP multi-header compression denial of service |
 | CVE-2023-27535 | MEDIUM | curl | 7.61.1-25.el8_7.2 | 7.61.1-30.el8_8.2 | curl: FTP too eager connection reuse |
@@ -304,6 +308,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-56412 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Use-after-free vulnerability due to improper handling of XML CDATA sections |
 | CVE-2019-8905 | MEDIUM | file-libs | 5.33-21.el8 | - | file: stack-based buffer over-read in do_core_note in readelf.c |
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
+| CVE-2026-15003 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: GNU Binutils: Heap-buffer-overflow in linker leads to information disclosure and denial of service |
 | CVE-2026-4647 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: Out-of-Bounds Read in XCOFF Relocation Processing in GNU Binutils BFD Library |
 | CVE-2026-6844 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: Binutils: Denial of Service vulnerabilities in readelf via crafted ELF files |
 | CVE-2026-6845 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: Binutils: Denial of Service via crafted ELF file |
@@ -544,6 +549,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-3644 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2026-42308 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | Pillow: python: Pillow: Denial of Service via integer overflow in font processing |
+| CVE-2026-4360 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | In the Tarfile.extract() function, the filter parameter is not passed ... |
 | CVE-2026-5713 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2026-6019 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module |
 | CVE-2026-7210 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | python: expat: Python/Expat: Denial of Service via crafted XML document |
@@ -584,6 +590,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-3644 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: Incomplete control character validation in http.cookies |
 | CVE-2026-4224 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: Stack overflow parsing XML with deeply nested DTD content models |
 | CVE-2026-42308 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | Pillow: python: Pillow: Denial of Service via integer overflow in font processing |
+| CVE-2026-4360 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | In the Tarfile.extract() function, the filter parameter is not passed ... |
 | CVE-2026-5713 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2026-6019 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module |
 | CVE-2026-7210 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | python: expat: Python/Expat: Denial of Service via crafted XML document |
@@ -685,7 +692,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-52859 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Denial of Service via out-of-bounds write in terminal handling |
 | CVE-2026-55693 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Out-of-bounds Write in Spell File Word Count |
 | CVE-2026-55892 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Denial of Service via crafted spell file |
-| CVE-2026-57452 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Out-of-bounds Read with libsodium-encrypted Files |
 | CVE-2026-57455 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Denial of Service via stack out-of-bounds write in spell_soundfold_sofo() |
 | CVE-2026-59856 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary code execution via crafted PHP file in omni-completion |
 | CVE-2026-59857 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Denial of Service via out-of-bounds write in spell sound-folding |
@@ -856,7 +862,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-11352 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
 | CVE-2026-11586 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Denial of Service via WebSocket PING flood |
-| CVE-2026-12064 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: SSH host verification bypass when using schemeless URLs with SFTP/SCP |
 | CVE-2026-8286 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8925 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Double-free vulnerability in SASL authentication |
 | CVE-2026-9547 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
@@ -864,20 +869,20 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-54369 | HIGH | libacl | 2.3.1-4.el9 | 2.4.0-1.el9_8 | acl: Symlink traversal privilege escalation via libacl functions |
 | CVE-2026-11352 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
 | CVE-2026-11586 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Denial of Service via WebSocket PING flood |
-| CVE-2026-12064 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: SSH host verification bypass when using schemeless URLs with SFTP/SCP |
 | CVE-2026-8286 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8925 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Double-free vulnerability in SASL authentication |
 | CVE-2026-9547 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
 | CVE-2026-45447 | HIGH | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | 8.32-41.el9_8 | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
+| CVE-2026-56391 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: GNU coreutils uniq: Denial of Service and information disclosure via out-of-bounds read with multibyte input |
+| CVE-2026-56392 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: GNU coreutils unexpand: Denial of Service via crafted tab stop values |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-11856 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via incorrect Digest authentication header reuse |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
-| CVE-2026-3805 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
 | CVE-2026-4873 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure due to incorrect TLS connection reuse |
 | CVE-2026-5545 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: libcurl: Authentication bypass due to incorrect HTTP Negotiate connection reuse |
 | CVE-2026-5773 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: libcurl: Wrong file transfer due to incorrect SMB connection reuse |
@@ -929,7 +934,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
-| CVE-2026-3805 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
 | CVE-2026-4873 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure due to incorrect TLS connection reuse |
 | CVE-2026-5545 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: libcurl: Authentication bypass due to incorrect HTTP Negotiate connection reuse |
 | CVE-2026-5773 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: libcurl: Wrong file transfer due to incorrect SMB connection reuse |
@@ -981,7 +985,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-54369 | HIGH | acl | 2.3.1-4.el9 | 2.4.0-1.el9_8 | acl: Symlink traversal privilege escalation via libacl functions |
 | CVE-2026-11352 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
 | CVE-2026-11586 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Denial of Service via WebSocket PING flood |
-| CVE-2026-12064 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: SSH host verification bypass when using schemeless URLs with SFTP/SCP |
 | CVE-2026-8286 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8925 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Double-free vulnerability in SASL authentication |
 | CVE-2026-9547 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
@@ -990,7 +993,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-54369 | HIGH | libacl | 2.3.1-4.el9 | 2.4.0-1.el9_8 | acl: Symlink traversal privilege escalation via libacl functions |
 | CVE-2026-11352 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
 | CVE-2026-11586 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Denial of Service via WebSocket PING flood |
-| CVE-2026-12064 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: SSH host verification bypass when using schemeless URLs with SFTP/SCP |
 | CVE-2026-8286 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8925 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Double-free vulnerability in SASL authentication |
 | CVE-2026-9547 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
@@ -999,8 +1001,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-15308 | HIGH | python3 | 3.9.25-7.el9_8 | 3.9.25-7.el9_8.2 | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
 | CVE-2026-15308 | HIGH | python3-libs | 3.9.25-7.el9_8 | 3.9.25-7.el9_8.2 | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
 | CVE-2026-44432 | HIGH | python3-urllib3 | 1.26.5-6.el9_7.1 | 1.26.5-8.el9_8 | urllib3: urllib3: Denial of Service due to excessive HTTP response decompression |
-| CVE-2026-59873 | HIGH | tar | 2:1.34-11.el9 | - | tar: node-tar: Denial of Service via crafted gzip bomb |
-| CVE-2026-59874 | HIGH | tar | 2:1.34-11.el9 | - | tar: Node-tar: Denial of Service via malformed tar archive header |
 | CVE-2026-47162 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary Code Execution via crafted directory names |
 | CVE-2026-55895 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via Vimscript code injection in netrw plugin |
 | CVE-2026-57456 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via malicious docstrings in Python omni-completion |
@@ -1008,13 +1008,14 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-54371 | MEDIUM | attr | 2.5.1-3.el9 | - | attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | 8.32-41.el9_8 | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
+| CVE-2026-56391 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: GNU coreutils uniq: Denial of Service and information disclosure via out-of-bounds read with multibyte input |
+| CVE-2026-56392 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: GNU coreutils unexpand: Denial of Service via crafted tab stop values |
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-11856 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via incorrect Digest authentication header reuse |
 | CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
-| CVE-2026-3805 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
 | CVE-2026-4873 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure due to incorrect TLS connection reuse |
 | CVE-2026-5545 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: libcurl: Authentication bypass due to incorrect HTTP Negotiate connection reuse |
 | CVE-2026-5773 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: libcurl: Wrong file transfer due to incorrect SMB connection reuse |
@@ -1023,6 +1024,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-7168 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: libcurl: Information disclosure via incorrect Proxy-Authorization header reuse |
 | CVE-2026-8924 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Cookie injection via malicious HTTP server using super cookies |
 | CVE-2026-8926 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via incorrect .netrc password lookup |
+| CVE-2026-16730 | MEDIUM | dbus-broker | 28-7.el9 | - | dbus-broker: dbus-broker: session bus denial of service via EMFILE during peer setup |
 | CVE-2026-32776 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Denial of Service due to NULL pointer dereference |
 | CVE-2026-32777 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing |
 | CVE-2026-32778 | MEDIUM | expat | 2.5.0-6.el9 | - | libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition |
@@ -1036,6 +1038,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-11082 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-11083 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils Linker heap-based overflow |
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
+| CVE-2026-15003 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: GNU Binutils: Heap-buffer-overflow in linker leads to information disclosure and denial of service |
 | CVE-2026-6844 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: Binutils: Denial of Service vulnerabilities in readelf via crafted ELF files |
 | CVE-2026-6845 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: Binutils: Denial of Service via crafted ELF file |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
@@ -1082,7 +1085,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
 | CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
-| CVE-2026-3805 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling |
 | CVE-2026-4873 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure due to incorrect TLS connection reuse |
 | CVE-2026-5545 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: libcurl: Authentication bypass due to incorrect HTTP Negotiate connection reuse |
 | CVE-2026-5773 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: libcurl: Wrong file transfer due to incorrect SMB connection reuse |
