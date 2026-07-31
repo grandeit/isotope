@@ -4,13 +4,13 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-07-30 13:35:34 UTC
+**Scanned:** 2026-07-31 01:33:45 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 6 (🔧2) | 🟠 87 (🔧78) | 263 (🔧159) | 153 (🔧30) | 509 | 🔧 272 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 90 (🔧78) | 263 (🔧160) | 153 (🔧30) | 508 | 🔧 273 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 23 (🔧20) | 9 (🔧3) | 34 | 🔧 25 |
 | ubi-minimal | 0 | 🟠 13 (🔧3) | 103 (🔧26) | 69 (🔧13) | 185 | 🔧 42 |
@@ -24,10 +24,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-51297 | CRITICAL | sqlite-libs | 3.26.0-19.el8_9 | - | sqlite: sqlite: Arbitrary code execution via use-after-free in JSON parsing |
-| CVE-2026-51302 | CRITICAL | sqlite-libs | 3.26.0-19.el8_9 | - | sqlite: SQLite: Arbitrary code execution via malicious SQL statement |
-| CVE-2026-51303 | CRITICAL | sqlite-libs | 3.26.0-19.el8_9 | - | sqlite: SQLite: Arbitrary code execution via specially crafted SQL queries |
-| CVE-2026-51304 | CRITICAL | sqlite-libs | 3.26.0-19.el8_9 | - | sqlite: sqlite: Arbitrary code execution via malicious SQL statement |
 | CVE-2024-24790 | CRITICAL | stdlib | v1.19.13 | 1.21.11, 1.22.4 | golang: net/netip: Unexpected behavior from Is methods for IPv4-mapped IPv6 addresses |
 | CVE-2025-68121 | CRITICAL | stdlib | v1.19.13 | 1.24.13, 1.25.7, 1.26.0-rc.3 | crypto/tls: crypto/tls: Incorrect certificate validation during TLS session resumption |
 | CVE-2025-6176 | HIGH | brotli | 1.0.6-3.el8 | 1.0.6-4.el8_10 | Scrapy: python-scrapy: brotli: Python brotli decompression bomb DoS |
@@ -65,6 +61,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-45447 | HIGH | openssl-libs | 1:1.1.1k-12.el8_9 | 1:1.1.1k-16.el8_6 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.26.0-19.el8_9 | 3.26.0-20.el8_10 | sqlite: Integer Truncation in SQLite |
 | CVE-2026-51296 | HIGH | sqlite-libs | 3.26.0-19.el8_9 | - | sqlite: SQLite: Use-after-free vulnerability leads to denial of service and information disclosure |
+| CVE-2026-51297 | HIGH | sqlite-libs | 3.26.0-19.el8_9 | - | sqlite: sqlite: Arbitrary code execution via use-after-free in JSON parsing |
+| CVE-2026-51303 | HIGH | sqlite-libs | 3.26.0-19.el8_9 | - | sqlite: SQLite: Arbitrary code execution via specially crafted SQL queries |
+| CVE-2026-51304 | HIGH | sqlite-libs | 3.26.0-19.el8_9 | - | sqlite: sqlite: Arbitrary code execution via malicious SQL statement |
 | CVE-2021-3121 | HIGH | github.com/gogo/protobuf | v1.3.1 | 1.3.2 | gogo/protobuf: plugin/unmarshal/unmarshal.go lacks certain index validation |
 | CVE-2022-21698 | HIGH | github.com/prometheus/client_golang | v1.7.1 | 1.11.1 | prometheus/client_golang: Denial of service using InstrumentHandlerCounter |
 | CVE-2020-29652 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.0.0-20201216223049-8b5274cf687f | golang: crypto/ssh: crafted authentication request can lead to nil pointer dereference |
@@ -121,7 +120,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-15.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2026-56391 | MEDIUM | coreutils-single | 8.30-15.el8 | - | coreutils: GNU coreutils uniq: Denial of Service and information disclosure via out-of-bounds read with multibyte input |
-| CVE-2026-56392 | MEDIUM | coreutils-single | 8.30-15.el8 | - | coreutils: GNU coreutils unexpand: Denial of Service via crafted tab stop values |
+| CVE-2026-56392 | MEDIUM | coreutils-single | 8.30-15.el8 | 8.30-20.el8_10 | coreutils: GNU coreutils unexpand: Denial of Service via crafted tab stop values |
 | CVE-2023-46218 | MEDIUM | curl | 7.61.1-33.el8 | 7.61.1-33.el8_9.5 | curl: information disclosure by exploiting a mixed case flaw |
 | CVE-2024-2398 | MEDIUM | curl | 7.61.1-33.el8 | 7.61.1-34.el8_10.2 | curl: HTTP/2 push headers memory-leak |
 | CVE-2025-13034 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
