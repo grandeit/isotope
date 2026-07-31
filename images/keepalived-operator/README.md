@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-07-30 15:39:11 UTC
+**Scanned:** 2026-07-31 04:13:39 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 17 (🔧13) | 🟠 215 (🔧190) | 600 (🔧383) | 331 (🔧50) | 1163 | 🔧 641 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 218 (🔧190) | 602 (🔧384) | 331 (🔧50) | 1164 | 🔧 642 |
 | ubi-minimal | 0 | 🟠 13 (🔧3) | 104 (🔧27) | 73 (🔧13) | 190 | 🔧 45 |
 | ubi | 0 | 🟠 22 (🔧9) | 210 (🔧35) | 257 (🔧23) | 489 | 🔧 69 |
 
@@ -22,10 +22,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
-| CVE-2026-51297 | CRITICAL | sqlite-libs | 3.26.0-17.el8_7 | - | sqlite: sqlite: Arbitrary code execution via use-after-free in JSON parsing |
-| CVE-2026-51302 | CRITICAL | sqlite-libs | 3.26.0-17.el8_7 | - | sqlite: SQLite: Arbitrary code execution via malicious SQL statement |
-| CVE-2026-51303 | CRITICAL | sqlite-libs | 3.26.0-17.el8_7 | - | sqlite: SQLite: Arbitrary code execution via specially crafted SQL queries |
-| CVE-2026-51304 | CRITICAL | sqlite-libs | 3.26.0-17.el8_7 | - | sqlite: sqlite: Arbitrary code execution via malicious SQL statement |
 | CVE-2022-1996 | CRITICAL | github.com/emicklei/go-restful | v2.9.5+incompatible | 2.16.0 | go-restful: Authorization Bypass Through User-Controlled Key |
 | CVE-2023-24538 | CRITICAL | stdlib | v1.18.10 | 1.19.8, 1.20.3 | golang: html/template: backticks not treated as string delimiters |
 | CVE-2023-24540 | CRITICAL | stdlib | v1.18.10 | 1.19.9, 1.20.4 | golang: html/template: improper handling of JavaScript whitespace |
@@ -129,6 +125,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-21441 | HIGH | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-9.el8_10 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-20.el8_10 | sqlite: Integer Truncation in SQLite |
 | CVE-2026-51296 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | - | sqlite: SQLite: Use-after-free vulnerability leads to denial of service and information disclosure |
+| CVE-2026-51297 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | - | sqlite: sqlite: Arbitrary code execution via use-after-free in JSON parsing |
+| CVE-2026-51303 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | - | sqlite: SQLite: Arbitrary code execution via specially crafted SQL queries |
+| CVE-2026-51304 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | - | sqlite: sqlite: Arbitrary code execution via malicious SQL statement |
 | CVE-2023-3899 | HIGH | subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2025-71319 | HIGH | subscription-manager | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
 | CVE-2026-12143 | HIGH | subscription-manager | 1.28.32-1.el8 | - | form-data: form-data: Form field override via CRLF injection |
@@ -259,7 +258,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.6-26.el8 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.30-13.el8 | - | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2026-56391 | MEDIUM | coreutils-single | 8.30-13.el8 | - | coreutils: GNU coreutils uniq: Denial of Service and information disclosure via out-of-bounds read with multibyte input |
-| CVE-2026-56392 | MEDIUM | coreutils-single | 8.30-13.el8 | - | coreutils: GNU coreutils unexpand: Denial of Service via crafted tab stop values |
+| CVE-2026-56392 | MEDIUM | coreutils-single | 8.30-13.el8 | 8.30-20.el8_10 | coreutils: GNU coreutils unexpand: Denial of Service via crafted tab stop values |
 | CVE-2023-23916 | MEDIUM | curl | 7.61.1-25.el8_7.2 | 7.61.1-25.el8_7.3 | curl: HTTP multi-header compression denial of service |
 | CVE-2023-27535 | MEDIUM | curl | 7.61.1-25.el8_7.2 | 7.61.1-30.el8_8.2 | curl: FTP too eager connection reuse |
 | CVE-2023-27536 | MEDIUM | curl | 7.61.1-25.el8_7.2 | 7.61.1-30.el8_8.3 | curl: GSS delegation too eager connection re-use |
@@ -303,8 +302,10 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-50219 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | expat: libexpat: Use-after-free vulnerability due to improper handler call depth tracking |
 | CVE-2026-56132 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | expat: libexpat: Arbitrary Code Execution via Heap-based Buffer Overflow |
 | CVE-2026-56403 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Arbitrary code execution due to integer overflow in storeAtts |
+| CVE-2026-56404 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Arbitrary Code Execution via integer overflow in addBinding |
 | CVE-2026-56405 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Information disclosure and arbitrary code execution via integer overflow |
 | CVE-2026-56406 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Arbitrary code execution via integer overflow in XML_ParseBuffer |
+| CVE-2026-56407 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Arbitrary code execution due to integer overflow |
 | CVE-2026-56412 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Use-after-free vulnerability due to improper handling of XML CDATA sections |
 | CVE-2019-8905 | MEDIUM | file-libs | 5.33-21.el8 | - | file: stack-based buffer over-read in do_core_note in readelf.c |
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
