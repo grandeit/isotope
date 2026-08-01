@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-07-31 15:44:17 UTC
+**Scanned:** 2026-08-01 04:14:07 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 218 (🔧190) | 602 (🔧384) | 331 (🔧50) | 1164 | 🔧 642 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 210 (🔧190) | 606 (🔧384) | 331 (🔧50) | 1160 | 🔧 642 |
 | ubi-minimal | 0 | 🟠 13 (🔧3) | 104 (🔧27) | 73 (🔧13) | 190 | 🔧 45 |
 | ubi | 0 | 🟠 22 (🔧9) | 210 (🔧35) | 257 (🔧23) | 489 | 🔧 69 |
 
@@ -39,8 +39,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6176 | HIGH | brotli | 1.0.6-3.el8 | 1.0.6-4.el8_10 | Scrapy: python-scrapy: brotli: Python brotli decompression bomb DoS |
 | CVE-2026-8286 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8927 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: Information disclosure due to uncleared proxy authentication state |
-| CVE-2026-8932 | HIGH | curl | 7.61.1-25.el8_7.2 | - | libcurl: libcurl: Security feature bypass due to improper mTLS connection reuse |
-| CVE-2026-9079 | HIGH | curl | 7.61.1-25.el8_7.2 | - | libcurl: libcurl: Information disclosure due to failure to clear proxy authentication credentials |
 | CVE-2023-3899 | HIGH | dnf-plugin-subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2025-71319 | HIGH | dnf-plugin-subscription-manager | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
 | CVE-2026-12143 | HIGH | dnf-plugin-subscription-manager | 1.28.32-1.el8 | - | form-data: form-data: Form field override via CRLF injection |
@@ -70,8 +68,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4878 | HIGH | libcap | 2.48-4.el8 | 2.48-6.el8_10.1 | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
 | CVE-2026-8286 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8927 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: Information disclosure due to uncleared proxy authentication state |
-| CVE-2026-8932 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | libcurl: libcurl: Security feature bypass due to improper mTLS connection reuse |
-| CVE-2026-9079 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | libcurl: libcurl: Information disclosure due to failure to clear proxy authentication credentials |
 | CVE-2023-44487 | HIGH | libnghttp2 | 1.33.0-3.el8_2.1 | 1.33.0-5.el8_8 | HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack) |
 | CVE-2026-27135 | HIGH | libnghttp2 | 1.33.0-3.el8_2.1 | 1.33.0-6.el8_10.2 | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2024-56171 | HIGH | libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-19.el8_10 | libxml2: Use-After-Free in libxml2 |
@@ -124,10 +120,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-66471 | HIGH | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-9.el8_10 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-9.el8_10 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-20.el8_10 | sqlite: Integer Truncation in SQLite |
-| CVE-2026-51296 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | - | sqlite: SQLite: Use-after-free vulnerability leads to denial of service and information disclosure |
-| CVE-2026-51297 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | - | sqlite: sqlite: Arbitrary code execution via use-after-free in JSON parsing |
-| CVE-2026-51303 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | - | sqlite: SQLite: Arbitrary code execution via specially crafted SQL queries |
-| CVE-2026-51304 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | - | sqlite: sqlite: Arbitrary code execution via malicious SQL statement |
 | CVE-2023-3899 | HIGH | subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2025-71319 | HIGH | subscription-manager | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
 | CVE-2026-12143 | HIGH | subscription-manager | 1.28.32-1.el8 | - | form-data: form-data: Form field override via CRLF injection |
@@ -279,6 +271,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6429 | MEDIUM | curl | 7.61.1-25.el8_7.2 | - | curl: libcurl: Credential leak via reused proxy connection during HTTP redirects |
 | CVE-2026-7168 | MEDIUM | curl | 7.61.1-25.el8_7.2 | - | curl: libcurl: Information disclosure via incorrect Proxy-Authorization header reuse |
 | CVE-2026-8924 | MEDIUM | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Cookie injection via malicious HTTP server using super cookies |
+| CVE-2026-8932 | MEDIUM | curl | 7.61.1-25.el8_7.2 | - | libcurl: libcurl: Security feature bypass due to improper mTLS connection reuse |
 | CVE-2023-34969 | MEDIUM | dbus | 1:1.12.8-23.el8_7.1 | 1:1.12.8-24.el8_8.1 | dbus: dbus-daemon: assertion failure when a monitor is active and a message from the driver cannot be delivered |
 | CVE-2023-34969 | MEDIUM | dbus-common | 1:1.12.8-23.el8_7.1 | 1:1.12.8-24.el8_8.1 | dbus: dbus-daemon: assertion failure when a monitor is active and a message from the driver cannot be delivered |
 | CVE-2023-34969 | MEDIUM | dbus-daemon | 1:1.12.8-23.el8_7.1 | 1:1.12.8-24.el8_8.1 | dbus: dbus-daemon: assertion failure when a monitor is active and a message from the driver cannot be delivered |
@@ -300,6 +293,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32777 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing |
 | CVE-2026-32778 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition |
 | CVE-2026-50219 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | expat: libexpat: Use-after-free vulnerability due to improper handler call depth tracking |
+| CVE-2026-56131 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat before 2.8.2 lacks handler call depth tracking for calls to X ... |
 | CVE-2026-56132 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | expat: libexpat: Arbitrary Code Execution via Heap-based Buffer Overflow |
 | CVE-2026-56403 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Arbitrary code execution due to integer overflow in storeAtts |
 | CVE-2026-56404 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Arbitrary Code Execution via integer overflow in addBinding |
@@ -430,6 +424,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6429 | MEDIUM | libcurl | 7.61.1-25.el8_7.2 | - | curl: libcurl: Credential leak via reused proxy connection during HTTP redirects |
 | CVE-2026-7168 | MEDIUM | libcurl | 7.61.1-25.el8_7.2 | - | curl: libcurl: Information disclosure via incorrect Proxy-Authorization header reuse |
 | CVE-2026-8924 | MEDIUM | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Cookie injection via malicious HTTP server using super cookies |
+| CVE-2026-8932 | MEDIUM | libcurl | 7.61.1-25.el8_7.2 | - | libcurl: libcurl: Security feature bypass due to improper mTLS connection reuse |
 | CVE-2025-14104 | MEDIUM | libfdisk | 2.32.1-39.el8_7 | 2.32.1-48.el8_10 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2026-13595 | MEDIUM | libfdisk | 2.32.1-39.el8_7 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libfdisk | 2.32.1-39.el8_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
@@ -612,6 +607,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 9.0.3-22.el8 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 9.0.3-22.el8 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
 | CVE-2025-50182 | MEDIUM | python3-pip-wheel | 9.0.3-22.el8 | - | urllib3: urllib3 does not control redirects in browsers and Node.js |
+| CVE-2026-13346 | MEDIUM | python3-pip-wheel | 9.0.3-22.el8 | - | pip: pip: Arbitrary file installation via malicious package indexes |
 | CVE-2026-25645 | MEDIUM | python3-pip-wheel | 9.0.3-22.el8 | - | requests: Requests: Security bypass due to predictable temporary file creation |
 | CVE-2023-32681 | MEDIUM | python3-requests | 2.20.0-2.1.el8_1 | 2.20.0-3.el8_8 | python-requests: Unintended leak of Proxy-Authorization header |
 | CVE-2024-35195 | MEDIUM | python3-requests | 2.20.0-2.1.el8_1 | 2.20.0-5.el8_10 | requests: subsequent requests to the same host ignore cert verification |
