@@ -4,13 +4,13 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-07-31 13:35:10 UTC
+**Scanned:** 2026-08-01 01:33:51 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 90 (🔧78) | 263 (🔧160) | 153 (🔧30) | 508 | 🔧 273 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 82 (🔧78) | 265 (🔧160) | 153 (🔧30) | 502 | 🔧 273 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 23 (🔧20) | 9 (🔧3) | 34 | 🔧 25 |
 | ubi-minimal | 0 | 🟠 13 (🔧3) | 103 (🔧26) | 69 (🔧13) | 185 | 🔧 42 |
@@ -29,8 +29,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6176 | HIGH | brotli | 1.0.6-3.el8 | 1.0.6-4.el8_10 | Scrapy: python-scrapy: brotli: Python brotli decompression bomb DoS |
 | CVE-2026-8286 | HIGH | curl | 7.61.1-33.el8 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8927 | HIGH | curl | 7.61.1-33.el8 | - | curl: Information disclosure due to uncleared proxy authentication state |
-| CVE-2026-8932 | HIGH | curl | 7.61.1-33.el8 | - | libcurl: libcurl: Security feature bypass due to improper mTLS connection reuse |
-| CVE-2026-9079 | HIGH | curl | 7.61.1-33.el8 | - | libcurl: libcurl: Information disclosure due to failure to clear proxy authentication credentials |
 | CVE-2026-58016 | HIGH | glib2 | 2.56.4-161.el8 | 2.56.4-170.el8_10 | glib: integer underflow in gio/gdbusintrospection.c via "g_dbus_node_info_new_for_xml" |
 | CVE-2024-2961 | HIGH | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.1 | glibc: Out of bounds write in iconv may lead to remote code execution |
 | CVE-2024-33599 | HIGH | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.2 | glibc: stack-based buffer overflow in netgroup cache |
@@ -50,8 +48,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4878 | HIGH | libcap | 2.48-6.el8_9 | 2.48-6.el8_10.1 | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
 | CVE-2026-8286 | HIGH | libcurl | 7.61.1-33.el8 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8927 | HIGH | libcurl | 7.61.1-33.el8 | - | curl: Information disclosure due to uncleared proxy authentication state |
-| CVE-2026-8932 | HIGH | libcurl | 7.61.1-33.el8 | - | libcurl: libcurl: Security feature bypass due to improper mTLS connection reuse |
-| CVE-2026-9079 | HIGH | libcurl | 7.61.1-33.el8 | - | libcurl: libcurl: Information disclosure due to failure to clear proxy authentication credentials |
 | CVE-2026-27135 | HIGH | libnghttp2 | 1.33.0-5.el8_9 | 1.33.0-6.el8_10.2 | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2024-56171 | HIGH | libxml2 | 2.9.7-18.el8_9 | 2.9.7-19.el8_10 | libxml2: Use-After-Free in libxml2 |
 | CVE-2025-24928 | HIGH | libxml2 | 2.9.7-18.el8_9 | 2.9.7-19.el8_10 | libxml2: Stack-based buffer overflow in xmlSnprintfElements of libxml2 |
@@ -60,10 +56,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-7425 | HIGH | libxml2 | 2.9.7-18.el8_9 | 2.9.7-21.el8_10.2 | libxslt: libxml2: Heap Use-After-Free in libxslt caused by atype corruption in xmlAttrPtr |
 | CVE-2026-45447 | HIGH | openssl-libs | 1:1.1.1k-12.el8_9 | 1:1.1.1k-16.el8_6 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.26.0-19.el8_9 | 3.26.0-20.el8_10 | sqlite: Integer Truncation in SQLite |
-| CVE-2026-51296 | HIGH | sqlite-libs | 3.26.0-19.el8_9 | - | sqlite: SQLite: Use-after-free vulnerability leads to denial of service and information disclosure |
-| CVE-2026-51297 | HIGH | sqlite-libs | 3.26.0-19.el8_9 | - | sqlite: sqlite: Arbitrary code execution via use-after-free in JSON parsing |
-| CVE-2026-51303 | HIGH | sqlite-libs | 3.26.0-19.el8_9 | - | sqlite: SQLite: Arbitrary code execution via specially crafted SQL queries |
-| CVE-2026-51304 | HIGH | sqlite-libs | 3.26.0-19.el8_9 | - | sqlite: sqlite: Arbitrary code execution via malicious SQL statement |
 | CVE-2021-3121 | HIGH | github.com/gogo/protobuf | v1.3.1 | 1.3.2 | gogo/protobuf: plugin/unmarshal/unmarshal.go lacks certain index validation |
 | CVE-2022-21698 | HIGH | github.com/prometheus/client_golang | v1.7.1 | 1.11.1 | prometheus/client_golang: Denial of service using InstrumentHandlerCounter |
 | CVE-2020-29652 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.0.0-20201216223049-8b5274cf687f | golang: crypto/ssh: crafted authentication request can lead to nil pointer dereference |
@@ -137,6 +129,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6429 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: libcurl: Credential leak via reused proxy connection during HTTP redirects |
 | CVE-2026-7168 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: libcurl: Information disclosure via incorrect Proxy-Authorization header reuse |
 | CVE-2026-8924 | MEDIUM | curl | 7.61.1-33.el8 | - | curl: curl: Cookie injection via malicious HTTP server using super cookies |
+| CVE-2026-8932 | MEDIUM | curl | 7.61.1-33.el8 | - | libcurl: libcurl: Security feature bypass due to improper mTLS connection reuse |
 | CVE-2019-8905 | MEDIUM | file-libs | 5.33-25.el8 | - | file: stack-based buffer over-read in do_core_note in readelf.c |
 | CVE-2024-34397 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-166.el8_10 | glib2: Signal subscription vulnerabilities |
 | CVE-2024-52533 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-166.el8_10 | glib: buffer overflow in set_connect_msg() |
@@ -236,6 +229,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6429 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: libcurl: Credential leak via reused proxy connection during HTTP redirects |
 | CVE-2026-7168 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: libcurl: Information disclosure via incorrect Proxy-Authorization header reuse |
 | CVE-2026-8924 | MEDIUM | libcurl | 7.61.1-33.el8 | - | curl: curl: Cookie injection via malicious HTTP server using super cookies |
+| CVE-2026-8932 | MEDIUM | libcurl | 7.61.1-33.el8 | - | libcurl: libcurl: Security feature bypass due to improper mTLS connection reuse |
 | CVE-2020-11023 | MEDIUM | libgcc | 8.5.0-20.el8 | 8.5.0-23.el8_10 | jquery: Untrusted code execution via <option> tag in HTML passed to DOM manipulation methods |
 | CVE-2019-12904 | MEDIUM | libgcrypt | 1.8.5-7.el8_6 | - | Libgcrypt: physical addresses being available to other processes leads to a flush-and-reload side-channel attack |
 | CVE-2024-2236 | MEDIUM | libgcrypt | 1.8.5-7.el8_6 | - | libgcrypt: vulnerable to Marvin Attack |
