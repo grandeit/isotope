@@ -4,7 +4,7 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-08-04 03:11:45 UTC
+**Scanned:** 2026-08-05 03:11:15 UTC
 
 ## Overview
 
@@ -85,7 +85,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-33811 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net: golang: Go net package: Denial of Service via long CNAME response in LookupCNAME |
 | CVE-2026-33814 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
 | CVE-2026-39820 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net/mail: golang: Go net/mail: Denial of Service via crafted email inputs |
-| CVE-2026-39822 | HIGH | stdlib | v1.21.13 | 1.25.12, 1.26.5, 1.27.0-rc.2 | os: golang: Go os.Root: Symlink following vulnerability allows directory traversal |
+| CVE-2026-39822 | HIGH | stdlib | v1.21.13 | 1.25.12, 1.26.5, 1.27.0-rc.2 | golang: Go os.Root: Symlink following vulnerability allows directory traversal |
 | CVE-2026-39836 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net: golang: Go net package: Denial of Service via NUL byte in Dial and LookupPort on Windows |
 | CVE-2026-42499 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net/mail: golang: net/mail: Denial of Service via pathological email address parsing |
 | CVE-2026-42504 | HIGH | stdlib | v1.21.13 | 1.25.11, 1.26.4 | mime: golang: Golang MIME: Denial of Service via maliciously-crafted MIME header |
