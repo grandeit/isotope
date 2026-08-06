@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-08-05 15:51:18 UTC
+**Scanned:** 2026-08-06 04:07:07 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 209 (🔧190) | 603 (🔧384) | 331 (🔧50) | 1156 | 🔧 642 |
-| ubi-minimal | 0 | 🟠 13 (🔧3) | 104 (🔧27) | 73 (🔧13) | 190 | 🔧 45 |
-| ubi | 0 | 🟠 22 (🔧9) | 210 (🔧35) | 257 (🔧23) | 489 | 🔧 69 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 210 (🔧190) | 608 (🔧384) | 332 (🔧50) | 1163 | 🔧 642 |
+| ubi-minimal | 0 | 🟠 13 (🔧3) | 104 (🔧30) | 73 (🔧13) | 190 | 🔧 48 |
+| ubi | 0 | 🟠 22 (🔧9) | 210 (🔧38) | 257 (🔧23) | 489 | 🔧 72 |
 
 ## Details
 
@@ -128,6 +128,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-12143 | HIGH | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | - | form-data: form-data: Form field override via CRLF injection |
 | CVE-2026-34982 | HIGH | vim-minimal | 2:8.0.1763-19.el8_6.4 | 2:8.0.1763-22.el8_10.3 | vim: arbitrary command execution via modeline sandbox bypass |
 | CVE-2026-47162 | HIGH | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary Code Execution via crafted directory names |
+| CVE-2026-52858 | HIGH | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary code execution via Python omni-completion |
 | CVE-2026-55895 | HIGH | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary code execution via Vimscript code injection in netrw plugin |
 | CVE-2022-27191 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.0.0-20220314234659-1baeb1ce4c0b | golang: crash in a golang.org/x/crypto/ssh server |
 | CVE-2024-45337 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.31.0 | golang.org/x/crypto/ssh: Misuse of ServerConfig.PublicKeyCallback may cause authorization bypass in golang.org/x/crypto |
@@ -301,6 +302,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-56407 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Arbitrary code execution due to integer overflow |
 | CVE-2026-56412 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Use-after-free vulnerability due to improper handling of XML CDATA sections |
 | CVE-2019-8905 | MEDIUM | file-libs | 5.33-21.el8 | - | file: stack-based buffer over-read in do_core_note in readelf.c |
+| CVE-2026-40467 | MEDIUM | gawk | 4.2.1-4.el8 | - | gawk: gawk: Denial of Service due to Use After Free vulnerability in io.c |
+| CVE-2026-40468 | MEDIUM | gawk | 4.2.1-4.el8 | - | gawk: gawk: Memory corruption via integer overflow |
+| CVE-2026-40553 | MEDIUM | gawk | 4.2.1-4.el8 | - | gawk: Gawk: Buffer overflow in ftype() routine may lead to code execution or denial of service |
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
 | CVE-2026-15003 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: GNU Binutils: Heap-buffer-overflow in linker leads to information disclosure and denial of service |
 | CVE-2026-4647 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: Out-of-Bounds Read in XCOFF Relocation Processing in GNU Binutils BFD Library |
@@ -664,6 +668,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2005-2541 | MEDIUM | tar | 2:1.30-6.el8_7.1 | - | tar: does not properly warn the user when extracting setuid or setgid files |
 | CVE-2025-45582 | MEDIUM | tar | 2:1.30-6.el8_7.1 | - | tar: Tar path traversal |
 | CVE-2025-64118 | MEDIUM | tar | 2:1.30-6.el8_7.1 | - | node-tar: tar: node-tar: Information disclosure via reading a truncated tar file |
+| CVE-2026-18477 | MEDIUM | tar | 2:1.30-6.el8_7.1 | - | tar: tar: TOCTOU in incremental dumpdir 'X' rename handling allows restore path escape |
+| CVE-2026-18508 | MEDIUM | tar | 2:1.30-6.el8_7.1 | - | tar: tar: --one-top-level hardlink targets not confined to top-level directory enabling arbitrary file overwrite |
 | CVE-2026-33056 | MEDIUM | tar | 2:1.30-6.el8_7.1 | - | tar-rs: tar-rs: Arbitrary directory permission modification via crafted tar archive |
 | CVE-2026-53655 | MEDIUM | tar | 2:1.30-6.el8_7.1 | - | node-tar: node-tar: File smuggling due to inconsistent tar archive parsing |
 | CVE-2026-5704 | MEDIUM | tar | 2:1.30-6.el8_7.1 | - | tar: tar: Hidden file injection via crafted archives |
@@ -934,7 +940,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-7168 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: libcurl: Information disclosure via incorrect Proxy-Authorization header reuse |
 | CVE-2026-8924 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Cookie injection via malicious HTTP server using super cookies |
 | CVE-2026-8926 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via incorrect .netrc password lookup |
-| CVE-2026-41989 | MEDIUM | libgcrypt | 1.10.0-11.el9 | - | Libgcrypt: Libgcrypt: Denial of Service and buffer overflow via crafted ECDH ciphertext |
+| CVE-2026-41989 | MEDIUM | libgcrypt | 1.10.0-11.el9 | 1.10.0-13.el9_8 | Libgcrypt: Libgcrypt: Denial of Service and buffer overflow via crafted ECDH ciphertext |
 | CVE-2026-13595 | MEDIUM | libmount | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libmount | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2026-58055 | MEDIUM | libnghttp2 | 1.43.0-6.el9_8.1 | - | nghttp2: nghttp2: HTTP Request/Response Smuggling and Response-Queue Poisoning via ambiguous HTTP/1.1 Upgrade requests |
@@ -961,8 +967,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-34183 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Unbounded Memory Growth in the QUIC PATH_CHALLENGE Handler |
 | CVE-2026-42764 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: NULL pointer dereference in QUIC server initial packet handling |
 | CVE-2026-45445 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: AES-OCB IV Ignored on EVP_Cipher() Path |
-| CVE-2026-13757 | MEDIUM | p11-kit | 0.26.2-1.el9 | - | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
-| CVE-2026-13757 | MEDIUM | p11-kit-trust | 0.26.2-1.el9 | - | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
+| CVE-2026-13757 | MEDIUM | p11-kit | 0.26.2-1.el9 | 0.26.4-1.el9_8 | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
+| CVE-2026-13757 | MEDIUM | p11-kit-trust | 0.26.2-1.el9 | 0.26.4-1.el9_8 | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
 | CVE-2026-44604 | MEDIUM | rpm | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2026-44604 | MEDIUM | rpm-libs | 4.16.1.3-40.el9 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
 | CVE-2026-5958 | MEDIUM | sed | 4.8-10.el9 | - | sed: GNU sed TOCTOU race condition |
@@ -1087,7 +1093,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-8926 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via incorrect .netrc password lookup |
 | CVE-2026-13595 | MEDIUM | libfdisk | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libfdisk | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
-| CVE-2026-41989 | MEDIUM | libgcrypt | 1.10.0-11.el9 | - | Libgcrypt: Libgcrypt: Denial of Service and buffer overflow via crafted ECDH ciphertext |
+| CVE-2026-41989 | MEDIUM | libgcrypt | 1.10.0-11.el9 | 1.10.0-13.el9_8 | Libgcrypt: Libgcrypt: Denial of Service and buffer overflow via crafted ECDH ciphertext |
 | CVE-2026-13595 | MEDIUM | libmount | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libmount | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2026-58055 | MEDIUM | libnghttp2 | 1.43.0-6.el9_8.1 | - | nghttp2: nghttp2: HTTP Request/Response Smuggling and Response-Queue Poisoning via ambiguous HTTP/1.1 Upgrade requests |
@@ -1120,8 +1126,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-34183 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Unbounded Memory Growth in the QUIC PATH_CHALLENGE Handler |
 | CVE-2026-42764 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: NULL pointer dereference in QUIC server initial packet handling |
 | CVE-2026-45445 | MEDIUM | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: AES-OCB IV Ignored on EVP_Cipher() Path |
-| CVE-2026-13757 | MEDIUM | p11-kit | 0.26.2-1.el9 | - | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
-| CVE-2026-13757 | MEDIUM | p11-kit-trust | 0.26.2-1.el9 | - | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
+| CVE-2026-13757 | MEDIUM | p11-kit | 0.26.2-1.el9 | 0.26.4-1.el9_8 | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
+| CVE-2026-13757 | MEDIUM | p11-kit-trust | 0.26.2-1.el9 | 0.26.4-1.el9_8 | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
 | CVE-2026-12610 | MEDIUM | pam | 1.5.1-28.el9 | - | sssd: Use-after-free crash in SSSD' 'sssd_pam' process |
 | CVE-2026-54411 | MEDIUM | pam | 1.5.1-28.el9 | - | linux-pam: Plaintext password recovery via timing discrepancy in pam_userdb module |
 | CVE-2025-11468 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Missing character filtering in Python |
