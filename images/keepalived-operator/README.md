@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-08-07 04:02:04 UTC
+**Scanned:** 2026-08-07 15:19:26 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 212 (🔧190) | 608 (🔧384) | 333 (🔧50) | 1166 | 🔧 642 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 212 (🔧190) | 608 (🔧384) | 334 (🔧50) | 1167 | 🔧 642 |
 | ubi-minimal | 0 | 🟠 13 (🔧3) | 104 (🔧30) | 73 (🔧13) | 190 | 🔧 48 |
 | ubi | 0 | 🟠 22 (🔧9) | 210 (🔧38) | 257 (🔧23) | 489 | 🔧 72 |
 
@@ -402,7 +402,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4426 | MEDIUM | libarchive | 3.3.3-4.el8 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
 | CVE-2026-5121 | MEDIUM | libarchive | 3.3.3-4.el8 | 3.3.3-7.el8_10 | libarchive: libarchive: Arbitrary code execution via integer overflow in ISO9660 image processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.3.3-4.el8 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
-| CVE-2026-54371 | MEDIUM | libattr | 2.4.48-3.el8 | - | attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
+| CVE-2026-54371 | MEDIUM | libattr | 2.4.48-3.el8 | - | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
 | CVE-2025-14104 | MEDIUM | libblkid | 2.32.1-39.el8_7 | 2.32.1-48.el8_10 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2026-13595 | MEDIUM | libblkid | 2.32.1-39.el8_7 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libblkid | 2.32.1-39.el8_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
@@ -925,7 +925,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-14164 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Double-Free Vulnerability in RAR5 Decompression Logic via dangling filtered_buf pointer in init_unpack() |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
-| CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | - | attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
+| CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | - | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
 | CVE-2026-13595 | MEDIUM | libblkid | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libblkid | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2025-13034 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -1005,7 +1005,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-55895 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via Vimscript code injection in netrw plugin |
 | CVE-2026-57456 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via malicious docstrings in Python omni-completion |
 | CVE-2026-54370 | MEDIUM | acl | 2.3.1-4.el9 | 2.4.0-1.el9_8 | acl: TOCTOU Symlink Traversal via getfacl/setfacl |
-| CVE-2026-54371 | MEDIUM | attr | 2.5.1-3.el9 | - | attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
+| CVE-2026-54371 | MEDIUM | attr | 2.5.1-3.el9 | - | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | 8.32-41.el9_8 | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2026-56391 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: GNU coreutils uniq: Denial of Service and information disclosure via out-of-bounds read with multibyte input |
@@ -1076,7 +1076,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-14164 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Double-Free Vulnerability in RAR5 Decompression Logic via dangling filtered_buf pointer in init_unpack() |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
-| CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | - | attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
+| CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | - | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
 | CVE-2026-13595 | MEDIUM | libblkid | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libblkid | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2025-13034 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
