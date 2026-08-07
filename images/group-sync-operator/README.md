@@ -4,7 +4,7 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-08-06 14:47:45 UTC
+**Scanned:** 2026-08-07 03:08:05 UTC
 
 ## Overview
 
@@ -73,7 +73,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-33814 | HIGH | golang.org/x/net | v0.17.0 | 0.53.0 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
 | CVE-2026-39821 | HIGH | golang.org/x/net | v0.17.0 | 0.55.0 | golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing |
 | CVE-2025-22868 | HIGH | golang.org/x/oauth2 | v0.0.0-20220722155238-128564f6959c | 0.27.0 | golang.org/x/oauth2/jws: Unexpected memory consumption during token parsing in golang.org/x/oauth2/jws |
-| CVE-2026-56852 | HIGH | golang.org/x/text | v0.14.0 | 0.39.0 | A norm.Iter can enter an infinite loop when handling input containing ... |
+| CVE-2026-56852 | HIGH | golang.org/x/text | v0.14.0 | 0.39.0 | golang.org/x/text: golang.org/x/text: Denial of Service via invalid UTF-8 input |
 | CVE-2024-34156 | HIGH | stdlib | v1.21.13 | 1.22.7, 1.23.1 | encoding/gob: golang: Calling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion |
 | CVE-2025-61726 | HIGH | stdlib | v1.21.13 | 1.24.12, 1.25.6 | golang: net/url: Memory exhaustion in query parameter parsing in net/url |
 | CVE-2025-61729 | HIGH | stdlib | v1.21.13 | 1.24.11, 1.25.5 | crypto/x509: golang: Denial of Service due to excessive resource consumption via crafted certificate |
