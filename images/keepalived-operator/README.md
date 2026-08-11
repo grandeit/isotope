@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-08-10 15:23:08 UTC
+**Scanned:** 2026-08-11 03:43:51 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 212 (🔧190) | 608 (🔧384) | 334 (🔧50) | 1167 | 🔧 642 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 210 (🔧190) | 607 (🔧384) | 334 (🔧50) | 1164 | 🔧 642 |
 | ubi-minimal | 0 | 🟠 13 (🔧3) | 104 (🔧30) | 73 (🔧13) | 190 | 🔧 48 |
 | ubi | 0 | 🟠 22 (🔧9) | 210 (🔧38) | 257 (🔧23) | 489 | 🔧 72 |
 
@@ -129,8 +129,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-71319 | HIGH | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
 | CVE-2026-12143 | HIGH | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | - | form-data: form-data: Form field override via CRLF injection |
 | CVE-2026-34982 | HIGH | vim-minimal | 2:8.0.1763-19.el8_6.4 | 2:8.0.1763-22.el8_10.3 | vim: arbitrary command execution via modeline sandbox bypass |
-| CVE-2026-47162 | HIGH | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary Code Execution via crafted directory names |
-| CVE-2026-52858 | HIGH | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary code execution via Python omni-completion |
 | CVE-2026-55895 | HIGH | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary code execution via Vimscript code injection in netrw plugin |
 | CVE-2022-27191 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.0.0-20220314234659-1baeb1ce4c0b | golang: crash in a golang.org/x/crypto/ssh server |
 | CVE-2024-45337 | HIGH | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.31.0 | golang.org/x/crypto/ssh: Misuse of ServerConfig.PublicKeyCallback may cause authorization bypass in golang.org/x/crypto |
@@ -691,7 +689,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-42307 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | Vim: Vim: Arbitrary code execution via OS command injection in netrw plugin |
 | CVE-2026-44656 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary command execution via :find command-line completion |
 | CVE-2026-45130 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Heap buffer overflow allows arbitrary code execution or denial of service |
-| CVE-2026-46483 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: command injection when decompressing .tgz archives |
 | CVE-2026-52859 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Denial of Service via out-of-bounds write in terminal handling |
 | CVE-2026-55892 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Denial of Service via crafted spell file |
 | CVE-2026-59856 | MEDIUM | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vim: Arbitrary code execution via crafted PHP file in omni-completion |
