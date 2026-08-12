@@ -4,7 +4,7 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-08-11 13:29:57 UTC
+**Scanned:** 2026-08-12 01:32:21 UTC
 
 ## Overview
 
@@ -13,8 +13,8 @@
 | **upstream** | 🔴 2 (🔧2) | 🟠 84 (🔧78) | 268 (🔧160) | 156 (🔧30) | 510 | 🔧 273 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 23 (🔧20) | 9 (🔧3) | 34 | 🔧 25 |
-| ubi-minimal | 0 | 🟠 13 (🔧3) | 103 (🔧29) | 69 (🔧13) | 185 | 🔧 45 |
-| ubi | 0 | 🟠 22 (🔧9) | 209 (🔧37) | 257 (🔧23) | 488 | 🔧 69 |
+| ubi-minimal | 0 | 🟠 13 (🔧3) | 103 (🔧30) | 69 (🔧13) | 185 | 🔧 46 |
+| ubi | 0 | 🟠 22 (🔧9) | 209 (🔧38) | 257 (🔧23) | 488 | 🔧 70 |
 
 ## Details
 
@@ -479,7 +479,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-54370 | MEDIUM | libacl | 2.3.1-4.el9 | 2.4.0-1.el9_8 | acl: TOCTOU Symlink Traversal via getfacl/setfacl |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
-| CVE-2026-14164 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Double-Free Vulnerability in RAR5 Decompression Logic via dangling filtered_buf pointer in init_unpack() |
+| CVE-2026-14164 | MEDIUM | libarchive | 3.5.3-9.el9_7 | 3.5.3-11.el9_8 | libarchive: Double-Free Vulnerability in RAR5 Decompression Logic via dangling filtered_buf pointer in init_unpack() |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
 | CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | - | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
@@ -629,7 +629,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-54370 | MEDIUM | libacl | 2.3.1-4.el9 | 2.4.0-1.el9_8 | acl: TOCTOU Symlink Traversal via getfacl/setfacl |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
-| CVE-2026-14164 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Double-Free Vulnerability in RAR5 Decompression Logic via dangling filtered_buf pointer in init_unpack() |
+| CVE-2026-14164 | MEDIUM | libarchive | 3.5.3-9.el9_7 | 3.5.3-11.el9_8 | libarchive: Double-Free Vulnerability in RAR5 Decompression Logic via dangling filtered_buf pointer in init_unpack() |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
 | CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | - | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
