@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-08-11 03:43:51 UTC
+**Scanned:** 2026-08-12 03:48:56 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 210 (🔧190) | 607 (🔧384) | 334 (🔧50) | 1164 | 🔧 642 |
-| ubi-minimal | 0 | 🟠 13 (🔧3) | 104 (🔧30) | 73 (🔧13) | 190 | 🔧 48 |
-| ubi | 0 | 🟠 22 (🔧9) | 210 (🔧38) | 257 (🔧23) | 489 | 🔧 72 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 212 (🔧190) | 607 (🔧384) | 334 (🔧50) | 1166 | 🔧 642 |
+| ubi-minimal | 0 | 🟠 13 (🔧3) | 104 (🔧31) | 73 (🔧13) | 190 | 🔧 49 |
+| ubi | 0 | 🟠 22 (🔧9) | 210 (🔧39) | 257 (🔧23) | 489 | 🔧 73 |
 
 ## Details
 
@@ -88,6 +88,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-12718 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
 | CVE-2025-4517 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | python: cpython: Arbitrary writes via tarfile realpath overflow |
+| CVE-2026-11940 | HIGH | platform-python | 3.6.8-48.el8_7.1 | - | tarfile.extractall() with the 'data' or 'tar' filter could be bypasse ... |
 | CVE-2026-15308 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-77.el8_10 | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
 | CVE-2026-4519 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-75.el8_10 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-4786 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-76.el8_10 | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
@@ -102,6 +103,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-12718 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
 | CVE-2025-4517 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | python: cpython: Arbitrary writes via tarfile realpath overflow |
+| CVE-2026-11940 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | - | tarfile.extractall() with the 'data' or 'tar' filter could be bypasse ... |
 | CVE-2026-15308 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-77.el8_10 | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
 | CVE-2026-4519 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-75.el8_10 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-4786 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-76.el8_10 | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
@@ -919,7 +921,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-54370 | MEDIUM | libacl | 2.3.1-4.el9 | 2.4.0-1.el9_8 | acl: TOCTOU Symlink Traversal via getfacl/setfacl |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
-| CVE-2026-14164 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Double-Free Vulnerability in RAR5 Decompression Logic via dangling filtered_buf pointer in init_unpack() |
+| CVE-2026-14164 | MEDIUM | libarchive | 3.5.3-9.el9_7 | 3.5.3-11.el9_8 | libarchive: Double-Free Vulnerability in RAR5 Decompression Logic via dangling filtered_buf pointer in init_unpack() |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
 | CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | - | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
@@ -1070,7 +1072,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-54370 | MEDIUM | libacl | 2.3.1-4.el9 | 2.4.0-1.el9_8 | acl: TOCTOU Symlink Traversal via getfacl/setfacl |
 | CVE-2023-30571 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Race condition in multi-threaded use of archive_write_disk_header() on posix based systems |
 | CVE-2025-60753 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: bsdtar hangs and OOMs with zero-length pattern matches |
-| CVE-2026-14164 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: Double-Free Vulnerability in RAR5 Decompression Logic via dangling filtered_buf pointer in init_unpack() |
+| CVE-2026-14164 | MEDIUM | libarchive | 3.5.3-9.el9_7 | 3.5.3-11.el9_8 | libarchive: Double-Free Vulnerability in RAR5 Decompression Logic via dangling filtered_buf pointer in init_unpack() |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
 | CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | - | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
