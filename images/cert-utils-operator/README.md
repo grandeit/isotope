@@ -4,13 +4,13 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-08-12 13:31:21 UTC
+**Scanned:** 2026-08-13 01:32:22 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 84 (🔧78) | 268 (🔧160) | 156 (🔧30) | 510 | 🔧 273 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 85 (🔧79) | 274 (🔧160) | 156 (🔧30) | 517 | 🔧 273 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 23 (🔧20) | 9 (🔧3) | 34 | 🔧 25 |
 | ubi-minimal | 0 | 🟠 13 (🔧3) | 103 (🔧30) | 69 (🔧13) | 185 | 🔧 46 |
@@ -86,6 +86,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-27136 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.55.0 | golang.org/x/net/html: golang: golang.org/x/net/html: Cross-Site Scripting via HTML parsing bypass |
 | CVE-2026-33814 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.53.0 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
 | CVE-2026-39821 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.55.0 | golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing |
+| CVE-2026-46600 | HIGH | golang.org/x/net | v0.0.0-20210428140749-89ef3d95e781 | 0.56.0 | golang.org/x/net/dns/dnsmessage: golang.org/x/net/dns/dnsmessage: Denial of Service via invalid DNS record parsing |
 | CVE-2025-22868 | HIGH | golang.org/x/oauth2 | v0.0.0-20200107190931-bf48bf16ab8d | 0.27.0 | golang.org/x/oauth2/jws: Unexpected memory consumption during token parsing in golang.org/x/oauth2/jws |
 | CVE-2021-38561 | HIGH | golang.org/x/text | v0.3.6 | 0.3.7 | golang: out-of-bounds read in golang.org/x/text/language leads to DoS |
 | CVE-2022-32149 | HIGH | golang.org/x/text | v0.3.6 | 0.3.8 | golang: golang.org/x/text/language: ParseAcceptLanguage takes a long time to parse complex tags |
@@ -162,6 +163,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5450 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.38 | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.40 | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
 | CVE-2026-6238 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.40 | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
+| CVE-2026-6368 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
+| CVE-2026-6791 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2024-33600 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.2 | glibc: null pointer dereferences after failed netgroup cache insertion |
 | CVE-2025-0395 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.16 | glibc: buffer overflow in the GNU C Library's assert() |
 | CVE-2025-4802 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
@@ -173,6 +176,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5450 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.38 | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.40 | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
 | CVE-2026-6238 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.40 | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
+| CVE-2026-6368 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
+| CVE-2026-6791 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2024-33600 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.2 | glibc: null pointer dereferences after failed netgroup cache insertion |
 | CVE-2025-0395 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.16 | glibc: buffer overflow in the GNU C Library's assert() |
 | CVE-2025-4802 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
@@ -184,6 +189,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5450 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.38 | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.40 | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
 | CVE-2026-6238 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.40 | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
+| CVE-2026-6368 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
+| CVE-2026-6791 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2021-43618 | MEDIUM | gmp | 1:6.1.2-10.el8 | 1:6.1.2-11.el8 | gmp: Integer overflow and resultant buffer overflow via crafted input |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.2.20-3.el8_6 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2024-0553 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_9.1 | gnutls: incomplete fix for CVE-2023-5981 |
