@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-08-12 15:21:55 UTC
+**Scanned:** 2026-08-13 03:51:14 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 212 (🔧190) | 607 (🔧384) | 334 (🔧50) | 1166 | 🔧 642 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 213 (🔧191) | 613 (🔧384) | 334 (🔧50) | 1173 | 🔧 642 |
 | ubi-minimal | 0 | 🟠 13 (🔧3) | 104 (🔧31) | 73 (🔧13) | 190 | 🔧 49 |
 | ubi | 0 | 🟠 22 (🔧9) | 210 (🔧39) | 257 (🔧23) | 489 | 🔧 73 |
 
@@ -88,7 +88,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-12718 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
 | CVE-2025-4517 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | python: cpython: Arbitrary writes via tarfile realpath overflow |
-| CVE-2026-11940 | HIGH | platform-python | 3.6.8-48.el8_7.1 | - | tarfile.extractall() with the 'data' or 'tar' filter could be bypasse ... |
+| CVE-2026-11940 | HIGH | platform-python | 3.6.8-48.el8_7.1 | - | python: cpython: CPython: tarfile extraction filter bypass allows escaping the destination directory |
 | CVE-2026-15308 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-77.el8_10 | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
 | CVE-2026-4519 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-75.el8_10 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-4786 | HIGH | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-76.el8_10 | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
@@ -103,7 +103,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-12718 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Bypass extraction filter to modify file metadata outside extraction directory |
 | CVE-2025-4138 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | cpython: python: Bypassing extraction filter to create symlinks to arbitrary targets outside extraction directory |
 | CVE-2025-4517 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-70.el8_10 | python: cpython: Arbitrary writes via tarfile realpath overflow |
-| CVE-2026-11940 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | - | tarfile.extractall() with the 'data' or 'tar' filter could be bypasse ... |
+| CVE-2026-11940 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | - | python: cpython: CPython: tarfile extraction filter bypass allows escaping the destination directory |
 | CVE-2026-15308 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-77.el8_10 | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
 | CVE-2026-4519 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-75.el8_10 | python: Python: Command-line option injection in webbrowser.open() via crafted URLs |
 | CVE-2026-4786 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-76.el8_10 | python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API |
@@ -154,6 +154,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-27136 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | golang.org/x/net/html: golang: golang.org/x/net/html: Cross-Site Scripting via HTML parsing bypass |
 | CVE-2026-33814 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.53.0 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
 | CVE-2026-39821 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.55.0 | golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing |
+| CVE-2026-46600 | HIGH | golang.org/x/net | v0.0.0-20220127200216-cd36cc0744dd | 0.56.0 | golang.org/x/net/dns/dnsmessage: golang.org/x/net/dns/dnsmessage: Denial of Service via invalid DNS record parsing |
 | CVE-2025-22868 | HIGH | golang.org/x/oauth2 | v0.0.0-20211104180415-d3ed0bb246c8 | 0.27.0 | golang.org/x/oauth2/jws: Unexpected memory consumption during token parsing in golang.org/x/oauth2/jws |
 | CVE-2022-32149 | HIGH | golang.org/x/text | v0.3.7 | 0.3.8 | golang: golang.org/x/text/language: ParseAcceptLanguage takes a long time to parse complex tags |
 | CVE-2026-56852 | HIGH | golang.org/x/text | v0.3.7 | 0.39.0 | golang.org/x/text: golang.org/x/text: Denial of Service via invalid UTF-8 input |
@@ -341,6 +342,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5450 | MEDIUM | glibc | 2.28-211.el8 | 2.28-251.el8_10.38 | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc | 2.28-211.el8 | 2.28-251.el8_10.40 | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
 | CVE-2026-6238 | MEDIUM | glibc | 2.28-211.el8 | 2.28-251.el8_10.40 | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
+| CVE-2026-6368 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
+| CVE-2026-6791 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2023-4527 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: Stack read overflow in getaddrinfo in no-aaaa mode |
 | CVE-2023-4806 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in getaddrinfo() |
 | CVE-2023-4813 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in gaih_inet() |
@@ -355,6 +358,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5450 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.38 | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.40 | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
 | CVE-2026-6238 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.40 | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
+| CVE-2026-6368 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
+| CVE-2026-6791 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2023-4527 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: Stack read overflow in getaddrinfo in no-aaaa mode |
 | CVE-2023-4806 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in getaddrinfo() |
 | CVE-2023-4813 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in gaih_inet() |
@@ -369,6 +374,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5450 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.38 | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.40 | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
 | CVE-2026-6238 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.40 | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
+| CVE-2026-6368 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
+| CVE-2026-6791 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2021-43618 | MEDIUM | gmp | 1:6.1.2-10.el8 | 1:6.1.2-11.el8 | gmp: Integer overflow and resultant buffer overflow via crafted input |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.2.20-3.el8_6 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-0361 | MEDIUM | gnutls | 3.6.16-5.el8_6 | 3.6.16-6.el8_7 | gnutls: timing side-channel in the TLS RSA key exchange code |
