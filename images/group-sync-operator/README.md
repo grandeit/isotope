@@ -4,13 +4,13 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-08-12 14:26:28 UTC
+**Scanned:** 2026-08-13 03:01:36 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 64 (🔧53) | 187 (🔧113) | 91 (🔧35) | 343 | 🔧 204 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 65 (🔧54) | 187 (🔧113) | 91 (🔧35) | 344 | 🔧 204 |
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 3 (🔧3) | 23 (🔧20) | 9 (🔧3) | 35 | 🔧 26 |
 | ubi-minimal | 0 | 🟠 14 (🔧4) | 103 (🔧30) | 69 (🔧13) | 186 | 🔧 47 |
@@ -72,6 +72,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-27136 | HIGH | golang.org/x/net | v0.17.0 | 0.55.0 | golang.org/x/net/html: golang: golang.org/x/net/html: Cross-Site Scripting via HTML parsing bypass |
 | CVE-2026-33814 | HIGH | golang.org/x/net | v0.17.0 | 0.53.0 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
 | CVE-2026-39821 | HIGH | golang.org/x/net | v0.17.0 | 0.55.0 | golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing |
+| CVE-2026-46600 | HIGH | golang.org/x/net | v0.17.0 | 0.56.0 | golang.org/x/net/dns/dnsmessage: golang.org/x/net/dns/dnsmessage: Denial of Service via invalid DNS record parsing |
 | CVE-2025-22868 | HIGH | golang.org/x/oauth2 | v0.0.0-20220722155238-128564f6959c | 0.27.0 | golang.org/x/oauth2/jws: Unexpected memory consumption during token parsing in golang.org/x/oauth2/jws |
 | CVE-2026-56852 | HIGH | golang.org/x/text | v0.14.0 | 0.39.0 | golang.org/x/text: golang.org/x/text: Denial of Service via invalid UTF-8 input |
 | CVE-2024-34156 | HIGH | stdlib | v1.21.13 | 1.22.7, 1.23.1 | encoding/gob: golang: Calling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion |
