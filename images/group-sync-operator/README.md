@@ -4,7 +4,7 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-08-13 14:28:22 UTC
+**Scanned:** 2026-08-14 03:08:30 UTC
 
 ## Overview
 
@@ -14,7 +14,7 @@
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 3 (🔧3) | 23 (🔧20) | 9 (🔧3) | 35 | 🔧 26 |
 | ubi-minimal | 0 | 🟠 14 (🔧4) | 103 (🔧30) | 69 (🔧13) | 186 | 🔧 47 |
-| ubi | 0 | 🟠 23 (🔧10) | 209 (🔧38) | 257 (🔧23) | 489 | 🔧 71 |
+| ubi | 0 | 🟠 25 (🔧12) | 209 (🔧38) | 257 (🔧23) | 491 | 🔧 73 |
 
 ## Details
 
@@ -457,7 +457,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-9547 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
 | CVE-2026-45447 | HIGH | openssl | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
 | CVE-2026-45447 | HIGH | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
+| CVE-2026-11940 | HIGH | python3 | 3.9.25-7.el9_8 | 3.9.25-7.el9_8.3 | python: cpython: CPython: tarfile extraction filter bypass allows escaping the destination directory |
 | CVE-2026-15308 | HIGH | python3 | 3.9.25-7.el9_8 | 3.9.25-7.el9_8.2 | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
+| CVE-2026-11940 | HIGH | python3-libs | 3.9.25-7.el9_8 | 3.9.25-7.el9_8.3 | python: cpython: CPython: tarfile extraction filter bypass allows escaping the destination directory |
 | CVE-2026-15308 | HIGH | python3-libs | 3.9.25-7.el9_8 | 3.9.25-7.el9_8.2 | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
 | CVE-2026-44432 | HIGH | python3-urllib3 | 1.26.5-6.el9_7.1 | 1.26.5-8.el9_8 | urllib3: urllib3: Denial of Service due to excessive HTTP response decompression |
 | CVE-2026-47162 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary Code Execution via crafted directory names |
