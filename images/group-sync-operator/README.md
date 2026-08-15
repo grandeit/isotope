@@ -4,17 +4,17 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-08-14 14:23:14 UTC
+**Scanned:** 2026-08-15 02:28:25 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 65 (🔧54) | 187 (🔧113) | 91 (🔧35) | 344 | 🔧 204 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 66 (🔧55) | 187 (🔧114) | 91 (🔧35) | 345 | 🔧 212 |
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 3 (🔧3) | 23 (🔧20) | 9 (🔧3) | 35 | 🔧 26 |
-| ubi-minimal | 0 | 🟠 14 (🔧4) | 103 (🔧30) | 69 (🔧13) | 186 | 🔧 47 |
-| ubi | 0 | 🟠 25 (🔧12) | 209 (🔧38) | 257 (🔧23) | 491 | 🔧 73 |
+| ubi-minimal | 0 | 🟠 14 (🔧4) | 103 (🔧31) | 69 (🔧13) | 186 | 🔧 48 |
+| ubi | 0 | 🟠 25 (🔧12) | 209 (🔧40) | 257 (🔧23) | 491 | 🔧 75 |
 
 ## Details
 
@@ -86,6 +86,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-33811 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net: golang: Go net package: Denial of Service via long CNAME response in LookupCNAME |
 | CVE-2026-33814 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
 | CVE-2026-39820 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net/mail: golang: Go net/mail: Denial of Service via crafted email inputs |
+| CVE-2026-39821 | HIGH | stdlib | v1.21.13 | 1.25.13, 1.26.6, 1.27.0-rc.3 | golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing |
 | CVE-2026-39822 | HIGH | stdlib | v1.21.13 | 1.25.12, 1.26.5, 1.27.0-rc.2 | golang: Go os.Root: Symlink following vulnerability allows directory traversal |
 | CVE-2026-39836 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net: golang: Go net package: Denial of Service via NUL byte in Dial and LookupPort on Windows |
 | CVE-2026-42499 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net/mail: golang: net/mail: Denial of Service via pathological email address parsing |
@@ -187,7 +188,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14104 | MEDIUM | libmount | 2.37.4-21.el9 | 2.37.4-21.el9_7 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2026-13595 | MEDIUM | libmount | 2.37.4-21.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libmount | 2.37.4-21.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
-| CVE-2026-58055 | MEDIUM | libnghttp2 | 1.43.0-6.el9 | - | nghttp2: nghttp2: HTTP Request/Response Smuggling and Response-Queue Poisoning via ambiguous HTTP/1.1 Upgrade requests |
+| CVE-2026-58055 | MEDIUM | libnghttp2 | 1.43.0-6.el9 | 1.43.0-6.el9_8.2 | nghttp2: nghttp2: HTTP Request/Response Smuggling and Response-Queue Poisoning via ambiguous HTTP/1.1 Upgrade requests |
 | CVE-2025-14104 | MEDIUM | libsmartcols | 2.37.4-21.el9 | 2.37.4-21.el9_7 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
 | CVE-2026-13595 | MEDIUM | libsmartcols | 2.37.4-21.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libsmartcols | 2.37.4-21.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
@@ -405,7 +406,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-41989 | MEDIUM | libgcrypt | 1.10.0-11.el9 | 1.10.0-13.el9_8 | Libgcrypt: Libgcrypt: Denial of Service and buffer overflow via crafted ECDH ciphertext |
 | CVE-2026-13595 | MEDIUM | libmount | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libmount | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
-| CVE-2026-58055 | MEDIUM | libnghttp2 | 1.43.0-6.el9_8.1 | - | nghttp2: nghttp2: HTTP Request/Response Smuggling and Response-Queue Poisoning via ambiguous HTTP/1.1 Upgrade requests |
+| CVE-2026-58055 | MEDIUM | libnghttp2 | 1.43.0-6.el9_8.1 | 1.43.0-6.el9_8.2 | nghttp2: nghttp2: HTTP Request/Response Smuggling and Response-Queue Poisoning via ambiguous HTTP/1.1 Upgrade requests |
 | CVE-2026-13595 | MEDIUM | libsmartcols | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libsmartcols | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2026-48864 | MEDIUM | libsolv | 0.7.24-4.el9 | 0.7.24-6.el9_8 | libsolv: Heap buffer overflow in libsolv repopagestore via unchecked decompression of malicious .solv page data |
@@ -560,7 +561,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-41989 | MEDIUM | libgcrypt | 1.10.0-11.el9 | 1.10.0-13.el9_8 | Libgcrypt: Libgcrypt: Denial of Service and buffer overflow via crafted ECDH ciphertext |
 | CVE-2026-13595 | MEDIUM | libmount | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libmount | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
-| CVE-2026-58055 | MEDIUM | libnghttp2 | 1.43.0-6.el9_8.1 | - | nghttp2: nghttp2: HTTP Request/Response Smuggling and Response-Queue Poisoning via ambiguous HTTP/1.1 Upgrade requests |
+| CVE-2026-58055 | MEDIUM | libnghttp2 | 1.43.0-6.el9_8.1 | 1.43.0-6.el9_8.2 | nghttp2: nghttp2: HTTP Request/Response Smuggling and Response-Queue Poisoning via ambiguous HTTP/1.1 Upgrade requests |
 | CVE-2026-13595 | MEDIUM | libsmartcols | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libsmartcols | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2026-48864 | MEDIUM | libsolv | 0.7.24-4.el9 | 0.7.24-6.el9_8 | libsolv: Heap buffer overflow in libsolv repopagestore via unchecked decompression of malicious .solv page data |
@@ -609,7 +610,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5713 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2026-6019 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module |
 | CVE-2026-7210 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | python: expat: Python/Expat: Denial of Service via crafted XML document |
-| CVE-2026-45409 | MEDIUM | python3-idna | 2.10-7.el9_4.1 | - | python-idna: idna: Denial of Service via specially crafted long inputs |
+| CVE-2026-45409 | MEDIUM | python3-idna | 2.10-7.el9_4.1 | 2.10-8.el9_8 | python-idna: idna: Denial of Service via specially crafted long inputs |
 | CVE-2025-11468 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3-libs | 3.9.25-7.el9_8 | - | cpython: Out-of-memory when loading Plist |
