@@ -4,13 +4,13 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-08-15 14:05:17 UTC
+**Scanned:** 2026-08-16 02:33:53 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 66 (🔧55) | 187 (🔧114) | 91 (🔧35) | 345 | 🔧 212 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 72 (🔧61) | 187 (🔧114) | 91 (🔧35) | 351 | 🔧 212 |
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 3 (🔧3) | 23 (🔧20) | 9 (🔧3) | 35 | 🔧 26 |
 | ubi-minimal | 0 | 🟠 14 (🔧4) | 103 (🔧31) | 69 (🔧13) | 186 | 🔧 48 |
@@ -85,12 +85,18 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-32283 | HIGH | stdlib | v1.21.13 | 1.25.9, 1.26.2 | crypto/tls: golang: Go crypto/tls: Denial of Service via multiple TLS 1.3 key update messages |
 | CVE-2026-33811 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net: golang: Go net package: Denial of Service via long CNAME response in LookupCNAME |
 | CVE-2026-33814 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame |
+| CVE-2026-33818 | HIGH | stdlib | v1.21.13 | 1.25.13, 1.26.6, 1.27.0-rc.3 | encoding/asn1: golang: Go encoding/asn1: Denial of Service via excessive recursion in Unmarshal |
 | CVE-2026-39820 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net/mail: golang: Go net/mail: Denial of Service via crafted email inputs |
 | CVE-2026-39821 | HIGH | stdlib | v1.21.13 | 1.25.13, 1.26.6, 1.27.0-rc.3 | golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing |
 | CVE-2026-39822 | HIGH | stdlib | v1.21.13 | 1.25.12, 1.26.5, 1.27.0-rc.2 | golang: Go os.Root: Symlink following vulnerability allows directory traversal |
 | CVE-2026-39836 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net: golang: Go net package: Denial of Service via NUL byte in Dial and LookupPort on Windows |
 | CVE-2026-42499 | HIGH | stdlib | v1.21.13 | 1.25.10, 1.26.3 | net/mail: golang: net/mail: Denial of Service via pathological email address parsing |
 | CVE-2026-42504 | HIGH | stdlib | v1.21.13 | 1.25.11, 1.26.4 | mime: golang: Golang MIME: Denial of Service via maliciously-crafted MIME header |
+| CVE-2026-56853 | HIGH | stdlib | v1.21.13 | 1.25.13, 1.26.6, 1.27.0-rc.3 | net/http: golang: Go net/http: Unencrypted HTTP/2 connections vulnerable to Denial of Service |
+| CVE-2026-56858 | HIGH | stdlib | v1.21.13 | 1.25.13, 1.26.6, 1.27.0-rc.3 | html/template: golang: Go html/template: Cross-Site Scripting via pathological input |
+| CVE-2026-56859 | HIGH | stdlib | v1.21.13 | 1.25.13, 1.26.6, 1.27.0-rc.3 | encoding/xml: golang: Go: Denial of Service via XML decoding recursion depth issue |
+| CVE-2026-56860 | HIGH | stdlib | v1.21.13 | 1.25.13, 1.26.6, 1.27.0-rc.3 | net/url: golang: golang net/url: Denial of Service from quadratic complexity in path resolution |
+| CVE-2026-56862 | HIGH | stdlib | v1.21.13 | 1.25.13, 1.26.6, 1.27.0-rc.3 | crypto/tls: golang: Golang crypto/tls: Denial of Service via indefinite KeyUpdate messages |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-10.el9_5 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-39.el9 | 8.32-41.el9_8 | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2026-56391 | MEDIUM | coreutils-single | 8.32-39.el9 | - | coreutils: GNU coreutils uniq: Denial of Service and information disclosure via out-of-bounds read with multibyte input |
