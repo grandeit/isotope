@@ -4,17 +4,17 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-08-19 14:12:25 UTC
+**Scanned:** 2026-08-20 02:40:45 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 72 (🔧61) | 187 (🔧114) | 91 (🔧35) | 351 | 🔧 212 |
+| **upstream** | 🔴 1 (🔧1) | 🟠 72 (🔧65) | 187 (🔧125) | 91 (🔧35) | 351 | 🔧 227 |
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 3 (🔧3) | 23 (🔧20) | 9 (🔧3) | 35 | 🔧 26 |
-| ubi-minimal | 0 | 🟠 14 (🔧4) | 103 (🔧31) | 69 (🔧13) | 186 | 🔧 48 |
-| ubi | 0 | 🟠 25 (🔧12) | 209 (🔧40) | 257 (🔧23) | 491 | 🔧 75 |
+| ubi-minimal | 0 | 🟠 14 (🔧8) | 103 (🔧42) | 69 (🔧13) | 186 | 🔧 63 |
+| ubi | 0 | 🟠 25 (🔧16) | 209 (🔧51) | 257 (🔧23) | 491 | 🔧 90 |
 
 ## Details
 
@@ -27,9 +27,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-68121 | CRITICAL | stdlib | v1.21.13 | 1.24.13, 1.25.7, 1.26.0-rc.3 | crypto/tls: crypto/tls: Incorrect certificate validation during TLS session resumption |
 | CVE-2026-11352 | HIGH | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
 | CVE-2026-11586 | HIGH | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Denial of Service via WebSocket PING flood |
-| CVE-2026-8286 | HIGH | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
+| CVE-2026-8286 | HIGH | curl-minimal | 7.76.1-31.el9_6.1 | 7.76.1-40.el9_8.5 | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8925 | HIGH | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Double-free vulnerability in SASL authentication |
-| CVE-2026-9547 | HIGH | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
+| CVE-2026-9547 | HIGH | curl-minimal | 7.76.1-31.el9_6.1 | 7.76.1-40.el9_8.5 | curl: curl: Man-in-the-middle attack via SSH host key bypass |
 | CVE-2026-58016 | HIGH | glib2 | 2.68.4-16.el9_6.2 | 2.68.4-19.el9_8.2 | glib: integer underflow in gio/gdbusintrospection.c via "g_dbus_node_info_new_for_xml" |
 | CVE-2025-68973 | HIGH | gnupg2 | 2.3.3-4.el9 | 2.3.3-5.el9_7 | GnuPG: GnuPG: Information disclosure and potential arbitrary code execution via out-of-bounds write |
 | CVE-2026-33845 | HIGH | gnutls | 3.8.3-6.el9 | 3.8.10-4.el9_8 | gnutls: GnuTLS: Denial of Service via DTLS zero-length fragment |
@@ -43,9 +43,9 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4878 | HIGH | libcap | 2.48-9.el9_2 | 2.48-10.el9_8.1 | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
 | CVE-2026-11352 | HIGH | libcurl-minimal | 7.76.1-31.el9_6.1 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
 | CVE-2026-11586 | HIGH | libcurl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Denial of Service via WebSocket PING flood |
-| CVE-2026-8286 | HIGH | libcurl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
+| CVE-2026-8286 | HIGH | libcurl-minimal | 7.76.1-31.el9_6.1 | 7.76.1-40.el9_8.5 | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8925 | HIGH | libcurl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Double-free vulnerability in SASL authentication |
-| CVE-2026-9547 | HIGH | libcurl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
+| CVE-2026-9547 | HIGH | libcurl-minimal | 7.76.1-31.el9_6.1 | 7.76.1-40.el9_8.5 | curl: curl: Man-in-the-middle attack via SSH host key bypass |
 | CVE-2026-27135 | HIGH | libnghttp2 | 1.43.0-6.el9 | 1.43.0-6.el9_7.1 | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
 | CVE-2025-15467 | HIGH | openssl-libs | 1:3.2.2-6.el9_5.1 | 1:3.5.1-7.el9_7 | openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing |
 | CVE-2026-45447 | HIGH | openssl-libs | 1:3.2.2-6.el9_5.1 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
@@ -105,8 +105,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | 7.76.1-35.el9_7.3 | curl: libcurl: Curl out of bounds read for cookie path |
 | CVE-2026-11856 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Information disclosure via incorrect Digest authentication header reuse |
-| CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
-| CVE-2026-3783 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
+| CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | 7.76.1-40.el9_8.5 | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
+| CVE-2026-3783 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | 7.76.1-40.el9_8.5 | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
 | CVE-2026-4873 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Information disclosure due to incorrect TLS connection reuse |
 | CVE-2026-5545 | MEDIUM | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: libcurl: Authentication bypass due to incorrect HTTP Negotiate connection reuse |
@@ -121,14 +121,14 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14512 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | 2.68.4-19.el9_8.1 | glib: Integer Overflow in GLib GIO Attribute Escaping Causes Heap Buffer Overflow |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
-| CVE-2026-15588 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | - | GDBusServer: glib2: GDBusServer pre-authentication DoS via unbounded SASL line buffering |
+| CVE-2026-15588 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | 2.68.4-19.el9_8.9 | GDBusServer: glib2: GDBusServer pre-authentication DoS via unbounded SASL line buffering |
 | CVE-2026-16118 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | - | xdgmime: heap-based buffer overflow in _xdg_mime_magic_parse_magic_line() in xdgmimemagic.c |
-| CVE-2026-58010 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | - | glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal() |
-| CVE-2026-58011 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | - | glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid GDateTime |
-| CVE-2026-58012 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | - | glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char() |
-| CVE-2026-58013 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | - | glib: buffer over-read in glib/giochannel.c via "g_io_channel_read_line_backend" |
-| CVE-2026-58014 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | - | glib: off-by-one error in glib/gkeyfile.c via "g_key_file_get_locale_string_list" |
-| CVE-2026-58015 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | - | glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive |
+| CVE-2026-58010 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | 2.68.4-19.el9_8.9 | glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal() |
+| CVE-2026-58011 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | 2.68.4-19.el9_8.9 | glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid GDateTime |
+| CVE-2026-58012 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | 2.68.4-19.el9_8.9 | glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char() |
+| CVE-2026-58013 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | 2.68.4-19.el9_8.9 | glib: buffer over-read in glib/giochannel.c via "g_io_channel_read_line_backend" |
+| CVE-2026-58014 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | 2.68.4-19.el9_8.9 | glib: off-by-one error in glib/gkeyfile.c via "g_key_file_get_locale_string_list" |
+| CVE-2026-58015 | MEDIUM | glib2 | 2.68.4-16.el9_6.2 | 2.68.4-19.el9_8.9 | glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive |
 | CVE-2026-0915 | MEDIUM | glibc | 2.34-168.el9_6.23 | 2.34-231.el9_7.10 | glibc: glibc: Information disclosure via zero-valued network query |
 | CVE-2026-4046 | MEDIUM | glibc | 2.34-168.el9_6.23 | 2.34-270.el9_8 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc | 2.34-168.el9_6.23 | 2.34-270.el9_8 | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
@@ -179,8 +179,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2025-9086 | MEDIUM | libcurl-minimal | 7.76.1-31.el9_6.1 | 7.76.1-35.el9_7.3 | curl: libcurl: Curl out of bounds read for cookie path |
 | CVE-2026-11856 | MEDIUM | libcurl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Information disclosure via incorrect Digest authentication header reuse |
-| CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
-| CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
+| CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-31.el9_6.1 | 7.76.1-40.el9_8.5 | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
+| CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-31.el9_6.1 | 7.76.1-40.el9_8.5 | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | libcurl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
 | CVE-2026-4873 | MEDIUM | libcurl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Information disclosure due to incorrect TLS connection reuse |
 | CVE-2026-5545 | MEDIUM | libcurl-minimal | 7.76.1-31.el9_6.1 | - | curl: libcurl: Authentication bypass due to incorrect HTTP Negotiate connection reuse |
@@ -328,16 +328,16 @@ _Showing Critical, High, and Medium vulnerabilities only._
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2026-11352 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
 | CVE-2026-11586 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Denial of Service via WebSocket PING flood |
-| CVE-2026-8286 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
+| CVE-2026-8286 | HIGH | curl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8925 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Double-free vulnerability in SASL authentication |
-| CVE-2026-9547 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
+| CVE-2026-9547 | HIGH | curl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Man-in-the-middle attack via SSH host key bypass |
 | CVE-2026-58016 | HIGH | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.2 | glib: integer underflow in gio/gdbusintrospection.c via "g_dbus_node_info_new_for_xml" |
 | CVE-2026-54369 | HIGH | libacl | 2.3.1-4.el9 | 2.4.0-1.el9_8 | acl: Symlink traversal privilege escalation via libacl functions |
 | CVE-2026-11352 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
 | CVE-2026-11586 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Denial of Service via WebSocket PING flood |
-| CVE-2026-8286 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
+| CVE-2026-8286 | HIGH | libcurl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8925 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Double-free vulnerability in SASL authentication |
-| CVE-2026-9547 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
+| CVE-2026-9547 | HIGH | libcurl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Man-in-the-middle attack via SSH host key bypass |
 | CVE-2026-45447 | HIGH | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
 | CVE-2026-44503 | HIGH | github.com/microsoft/kiota-http-go | v0.16.1 | 1.5.5 | Kiota abstractions RedirectHandler leaks Cookie/Proxy-Authorization headers on cross-host redirect |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
@@ -347,8 +347,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-11856 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via incorrect Digest authentication header reuse |
-| CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
-| CVE-2026-3783 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
+| CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
+| CVE-2026-3783 | MEDIUM | curl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
 | CVE-2026-4873 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure due to incorrect TLS connection reuse |
 | CVE-2026-5545 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: libcurl: Authentication bypass due to incorrect HTTP Negotiate connection reuse |
@@ -360,14 +360,14 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-8926 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via incorrect .netrc password lookup |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
-| CVE-2026-15588 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | GDBusServer: glib2: GDBusServer pre-authentication DoS via unbounded SASL line buffering |
+| CVE-2026-15588 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.9 | GDBusServer: glib2: GDBusServer pre-authentication DoS via unbounded SASL line buffering |
 | CVE-2026-16118 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | xdgmime: heap-based buffer overflow in _xdg_mime_magic_parse_magic_line() in xdgmimemagic.c |
-| CVE-2026-58010 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal() |
-| CVE-2026-58011 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid GDateTime |
-| CVE-2026-58012 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char() |
-| CVE-2026-58013 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in glib/giochannel.c via "g_io_channel_read_line_backend" |
-| CVE-2026-58014 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: off-by-one error in glib/gkeyfile.c via "g_key_file_get_locale_string_list" |
-| CVE-2026-58015 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive |
+| CVE-2026-58010 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.9 | glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal() |
+| CVE-2026-58011 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.9 | glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid GDateTime |
+| CVE-2026-58012 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.9 | glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char() |
+| CVE-2026-58013 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.9 | glib: buffer over-read in glib/giochannel.c via "g_io_channel_read_line_backend" |
+| CVE-2026-58014 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.9 | glib: off-by-one error in glib/gkeyfile.c via "g_key_file_get_locale_string_list" |
+| CVE-2026-58015 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.9 | glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive |
 | CVE-2026-5435 | MEDIUM | glibc | 2.34-270.el9_8 | 2.34-274.el9_8 | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc | 2.34-270.el9_8 | 2.34-272.el9_8 | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc | 2.34-270.el9_8 | 2.34-274.el9_8 | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
@@ -398,8 +398,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-13034 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-11856 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via incorrect Digest authentication header reuse |
-| CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
-| CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
+| CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
+| CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
 | CVE-2026-4873 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure due to incorrect TLS connection reuse |
 | CVE-2026-5545 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: libcurl: Authentication bypass due to incorrect HTTP Negotiate connection reuse |
@@ -451,17 +451,17 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-54369 | HIGH | acl | 2.3.1-4.el9 | 2.4.0-1.el9_8 | acl: Symlink traversal privilege escalation via libacl functions |
 | CVE-2026-11352 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
 | CVE-2026-11586 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Denial of Service via WebSocket PING flood |
-| CVE-2026-8286 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
+| CVE-2026-8286 | HIGH | curl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8925 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Double-free vulnerability in SASL authentication |
-| CVE-2026-9547 | HIGH | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
+| CVE-2026-9547 | HIGH | curl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Man-in-the-middle attack via SSH host key bypass |
 | CVE-2026-45186 | HIGH | expat | 2.5.0-6.el9 | 2.5.0-6.el9_8.1 | libexpat: denial of service via crafted XML input |
 | CVE-2026-58016 | HIGH | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.2 | glib: integer underflow in gio/gdbusintrospection.c via "g_dbus_node_info_new_for_xml" |
 | CVE-2026-54369 | HIGH | libacl | 2.3.1-4.el9 | 2.4.0-1.el9_8 | acl: Symlink traversal privilege escalation via libacl functions |
 | CVE-2026-11352 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
 | CVE-2026-11586 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Denial of Service via WebSocket PING flood |
-| CVE-2026-8286 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
+| CVE-2026-8286 | HIGH | libcurl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8925 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Double-free vulnerability in SASL authentication |
-| CVE-2026-9547 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Man-in-the-middle attack via SSH host key bypass |
+| CVE-2026-9547 | HIGH | libcurl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Man-in-the-middle attack via SSH host key bypass |
 | CVE-2026-45447 | HIGH | openssl | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
 | CVE-2026-45447 | HIGH | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
 | CVE-2026-11940 | HIGH | python3 | 3.9.25-7.el9_8 | 3.9.25-7.el9_8.3 | python: cpython: CPython: tarfile extraction filter bypass allows escaping the destination directory |
@@ -482,8 +482,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-13034 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-11856 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via incorrect Digest authentication header reuse |
-| CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
-| CVE-2026-3783 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
+| CVE-2026-1965 | MEDIUM | curl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
+| CVE-2026-3783 | MEDIUM | curl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
 | CVE-2026-4873 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure due to incorrect TLS connection reuse |
 | CVE-2026-5545 | MEDIUM | curl-minimal | 7.76.1-40.el9 | - | curl: libcurl: Authentication bypass due to incorrect HTTP Negotiate connection reuse |
@@ -512,14 +512,14 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6845 | MEDIUM | gdb-gdbserver | 16.3-3.el9 | - | binutils: Binutils: Denial of Service via crafted ELF file |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
-| CVE-2026-15588 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | GDBusServer: glib2: GDBusServer pre-authentication DoS via unbounded SASL line buffering |
+| CVE-2026-15588 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.9 | GDBusServer: glib2: GDBusServer pre-authentication DoS via unbounded SASL line buffering |
 | CVE-2026-16118 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | xdgmime: heap-based buffer overflow in _xdg_mime_magic_parse_magic_line() in xdgmimemagic.c |
-| CVE-2026-58010 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal() |
-| CVE-2026-58011 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid GDateTime |
-| CVE-2026-58012 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char() |
-| CVE-2026-58013 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: buffer over-read in glib/giochannel.c via "g_io_channel_read_line_backend" |
-| CVE-2026-58014 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: off-by-one error in glib/gkeyfile.c via "g_key_file_get_locale_string_list" |
-| CVE-2026-58015 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | - | glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive |
+| CVE-2026-58010 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.9 | glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal() |
+| CVE-2026-58011 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.9 | glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid GDateTime |
+| CVE-2026-58012 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.9 | glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char() |
+| CVE-2026-58013 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.9 | glib: buffer over-read in glib/giochannel.c via "g_io_channel_read_line_backend" |
+| CVE-2026-58014 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.9 | glib: off-by-one error in glib/gkeyfile.c via "g_key_file_get_locale_string_list" |
+| CVE-2026-58015 | MEDIUM | glib2 | 2.68.4-19.el9_8.1 | 2.68.4-19.el9_8.9 | glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive |
 | CVE-2026-5435 | MEDIUM | glibc | 2.34-270.el9_8 | 2.34-274.el9_8 | glibc: glibc: Out-of-bounds write via TSIG record processing |
 | CVE-2026-5450 | MEDIUM | glibc | 2.34-270.el9_8 | 2.34-272.el9_8 | glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width |
 | CVE-2026-5928 | MEDIUM | glibc | 2.34-270.el9_8 | 2.34-274.el9_8 | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
@@ -551,8 +551,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-13034 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
 | CVE-2025-14017 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers |
 | CVE-2026-11856 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via incorrect Digest authentication header reuse |
-| CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
-| CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
+| CVE-2026-1965 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication |
+| CVE-2026-3783 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect |
 | CVE-2026-3784 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Unauthorized access due to improper HTTP proxy connection reuse |
 | CVE-2026-4873 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Information disclosure due to incorrect TLS connection reuse |
 | CVE-2026-5545 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: libcurl: Authentication bypass due to incorrect HTTP Negotiate connection reuse |
