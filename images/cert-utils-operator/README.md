@@ -4,13 +4,13 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-08-20 01:38:32 UTC
+**Scanned:** 2026-08-21 01:30:35 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 92 (🔧86) | 274 (🔧163) | 156 (🔧30) | 524 | 🔧 283 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 96 (🔧86) | 274 (🔧163) | 155 (🔧30) | 527 | 🔧 283 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 23 (🔧20) | 9 (🔧3) | 34 | 🔧 25 |
 | ubi-minimal | 0 | 🟠 13 (🔧7) | 103 (🔧42) | 69 (🔧13) | 185 | 🔧 62 |
@@ -46,11 +46,15 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-54369 | HIGH | libacl | 2.2.53-1.el8 | 2.4.0-1.el8_10 | acl: Symlink traversal privilege escalation via libacl functions |
 | CVE-2025-5914 | HIGH | libarchive | 3.3.3-5.el8 | 3.3.3-6.el8_10 | libarchive: Double free at archive_read_format_rar_seek_data() in archive_read_support_format_rar.c |
 | CVE-2026-4424 | HIGH | libarchive | 3.3.3-5.el8 | 3.3.3-7.el8_10 | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
+| CVE-2026-53613 | HIGH | libblkid | 2.32.1-43.el8 | - | util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path |
 | CVE-2026-4878 | HIGH | libcap | 2.48-6.el8_9 | 2.48-6.el8_10.1 | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
 | CVE-2026-8286 | HIGH | libcurl | 7.61.1-33.el8 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8458 | HIGH | libcurl | 7.61.1-33.el8 | - | curl: libcurl: Unauthorized connection reuse due to a logical error |
 | CVE-2026-8927 | HIGH | libcurl | 7.61.1-33.el8 | - | curl: Information disclosure due to uncleared proxy authentication state |
+| CVE-2026-53613 | HIGH | libmount | 2.32.1-43.el8 | - | util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path |
 | CVE-2026-27135 | HIGH | libnghttp2 | 1.33.0-5.el8_9 | 1.33.0-6.el8_10.2 | nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination |
+| CVE-2026-53613 | HIGH | libsmartcols | 2.32.1-43.el8 | - | util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path |
+| CVE-2026-53613 | HIGH | libuuid | 2.32.1-43.el8 | - | util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path |
 | CVE-2024-56171 | HIGH | libxml2 | 2.9.7-18.el8_9 | 2.9.7-19.el8_10 | libxml2: Use-After-Free in libxml2 |
 | CVE-2025-24928 | HIGH | libxml2 | 2.9.7-18.el8_9 | 2.9.7-19.el8_10 | libxml2: Stack-based buffer overflow in xmlSnprintfElements of libxml2 |
 | CVE-2025-49794 | HIGH | libxml2 | 2.9.7-18.el8_9 | 2.9.7-21.el8_10.1 | libxml: Heap use after free (UAF) leads to Denial of service (DoS) |
