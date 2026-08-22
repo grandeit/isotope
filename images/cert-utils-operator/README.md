@@ -4,13 +4,13 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-08-21 13:20:25 UTC
+**Scanned:** 2026-08-22 01:30:42 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 96 (🔧86) | 274 (🔧163) | 155 (🔧30) | 527 | 🔧 283 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 96 (🔧88) | 274 (🔧163) | 155 (🔧30) | 527 | 🔧 285 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 23 (🔧20) | 9 (🔧3) | 34 | 🔧 25 |
 | ubi-minimal | 0 | 🟠 13 (🔧7) | 103 (🔧42) | 69 (🔧13) | 185 | 🔧 62 |
@@ -27,7 +27,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-24790 | CRITICAL | stdlib | v1.19.13 | 1.21.11, 1.22.4 | golang: net/netip: Unexpected behavior from Is methods for IPv4-mapped IPv6 addresses |
 | CVE-2025-68121 | CRITICAL | stdlib | v1.19.13 | 1.24.13, 1.25.7, 1.26.0-rc.3 | crypto/tls: crypto/tls: Incorrect certificate validation during TLS session resumption |
 | CVE-2025-6176 | HIGH | brotli | 1.0.6-3.el8 | 1.0.6-4.el8_10 | Scrapy: python-scrapy: brotli: Python brotli decompression bomb DoS |
-| CVE-2026-8286 | HIGH | curl | 7.61.1-33.el8 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
+| CVE-2026-8286 | HIGH | curl | 7.61.1-33.el8 | 7.61.1-34.el8_10.13 | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8458 | HIGH | curl | 7.61.1-33.el8 | - | curl: libcurl: Unauthorized connection reuse due to a logical error |
 | CVE-2026-8927 | HIGH | curl | 7.61.1-33.el8 | - | curl: Information disclosure due to uncleared proxy authentication state |
 | CVE-2026-58016 | HIGH | glib2 | 2.56.4-161.el8 | 2.56.4-170.el8_10 | glib: integer underflow in gio/gdbusintrospection.c via "g_dbus_node_info_new_for_xml" |
@@ -48,7 +48,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4424 | HIGH | libarchive | 3.3.3-5.el8 | 3.3.3-7.el8_10 | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-53613 | HIGH | libblkid | 2.32.1-43.el8 | - | util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path |
 | CVE-2026-4878 | HIGH | libcap | 2.48-6.el8_9 | 2.48-6.el8_10.1 | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
-| CVE-2026-8286 | HIGH | libcurl | 7.61.1-33.el8 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
+| CVE-2026-8286 | HIGH | libcurl | 7.61.1-33.el8 | 7.61.1-34.el8_10.13 | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8458 | HIGH | libcurl | 7.61.1-33.el8 | - | curl: libcurl: Unauthorized connection reuse due to a logical error |
 | CVE-2026-8927 | HIGH | libcurl | 7.61.1-33.el8 | - | curl: Information disclosure due to uncleared proxy authentication state |
 | CVE-2026-53613 | HIGH | libmount | 2.32.1-43.el8 | - | util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path |
