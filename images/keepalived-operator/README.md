@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-08-21 15:10:30 UTC
+**Scanned:** 2026-08-22 03:20:59 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 243 (🔧214) | 616 (🔧389) | 335 (🔧50) | 1207 | 🔧 670 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 243 (🔧216) | 616 (🔧389) | 335 (🔧50) | 1207 | 🔧 672 |
 | ubi-minimal | 0 | 🟠 13 (🔧7) | 104 (🔧43) | 73 (🔧13) | 190 | 🔧 65 |
 | ubi | 0 | 🟠 24 (🔧15) | 210 (🔧52) | 257 (🔧23) | 491 | 🔧 92 |
 
@@ -37,7 +37,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-68121 | CRITICAL | stdlib | v1.18.10 | 1.24.13, 1.25.7, 1.26.0-rc.3 | crypto/tls: crypto/tls: Incorrect certificate validation during TLS session resumption |
 | CVE-2026-54369 | HIGH | acl | 2.2.53-1.el8 | 2.4.0-1.el8_10 | acl: Symlink traversal privilege escalation via libacl functions |
 | CVE-2025-6176 | HIGH | brotli | 1.0.6-3.el8 | 1.0.6-4.el8_10 | Scrapy: python-scrapy: brotli: Python brotli decompression bomb DoS |
-| CVE-2026-8286 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
+| CVE-2026-8286 | HIGH | curl | 7.61.1-25.el8_7.2 | 7.61.1-34.el8_10.13 | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8458 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: libcurl: Unauthorized connection reuse due to a logical error |
 | CVE-2026-8927 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: Information disclosure due to uncleared proxy authentication state |
 | CVE-2023-3899 | HIGH | dnf-plugin-subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
@@ -68,7 +68,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-4424 | HIGH | libarchive | 3.3.3-4.el8 | 3.3.3-7.el8_10 | libarchive: libarchive: Information disclosure via heap out-of-bounds read in RAR archive processing |
 | CVE-2026-53613 | HIGH | libblkid | 2.32.1-39.el8_7 | - | util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path |
 | CVE-2026-4878 | HIGH | libcap | 2.48-4.el8 | 2.48-6.el8_10.1 | libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file() |
-| CVE-2026-8286 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
+| CVE-2026-8286 | HIGH | libcurl | 7.61.1-25.el8_7.2 | 7.61.1-34.el8_10.13 | curl: curl: Insecure connection establishment due to TLS configuration mismatch |
 | CVE-2026-8458 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: libcurl: Unauthorized connection reuse due to a logical error |
 | CVE-2026-8927 | HIGH | libcurl | 7.61.1-25.el8_7.2 | - | curl: Information disclosure due to uncleared proxy authentication state |
 | CVE-2026-53613 | HIGH | libfdisk | 2.32.1-39.el8_7 | - | util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path |
@@ -342,7 +342,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-40553 | MEDIUM | gawk | 4.2.1-4.el8 | - | gawk: Gawk: Buffer overflow in ftype() routine may lead to code execution or denial of service |
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
 | CVE-2026-15003 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: GNU Binutils: Heap-buffer-overflow in linker leads to information disclosure and denial of service |
-| CVE-2026-19582 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | In binutils 2.46.1 and prior versions, a victim who opens a crafted PE file using binutils could execute arbitrary code unknowningly via a stack buffe |
+| CVE-2026-19582 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: Stack Buffer Overflow in GNU Binutils in rsrc_print_name from an untrusted PE file |
 | CVE-2026-4647 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: Out-of-Bounds Read in XCOFF Relocation Processing in GNU Binutils BFD Library |
 | CVE-2026-6844 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: Binutils: Denial of Service vulnerabilities in readelf via crafted ELF files |
 | CVE-2026-6845 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: Binutils: Denial of Service via crafted ELF file |
