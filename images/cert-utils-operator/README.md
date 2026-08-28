@@ -4,17 +4,17 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-08-27 16:45:15 UTC
+**Scanned:** 2026-08-28 03:43:15 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 2 (🔧2) | 🟠 96 (🔧88) | 274 (🔧163) | 155 (🔧30) | 527 | 🔧 285 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 98 (🔧90) | 287 (🔧163) | 156 (🔧30) | 543 | 🔧 287 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 0 |
-| ubi-micro | 0 | 🟠 2 (🔧2) | 23 (🔧20) | 9 (🔧3) | 34 | 🔧 25 |
-| ubi-minimal | 0 | 🟠 13 (🔧7) | 103 (🔧42) | 69 (🔧13) | 185 | 🔧 62 |
-| ubi | 0 | 🟠 24 (🔧15) | 209 (🔧51) | 257 (🔧23) | 490 | 🔧 89 |
+| ubi-micro | 0 | 🟠 2 (🔧2) | 23 (🔧21) | 9 (🔧3) | 34 | 🔧 26 |
+| ubi-minimal | 0 | 🟠 15 (🔧9) | 103 (🔧43) | 69 (🔧13) | 187 | 🔧 65 |
+| ubi | 0 | 🟠 26 (🔧17) | 208 (🔧53) | 257 (🔧23) | 491 | 🔧 93 |
 
 ## Details
 
@@ -62,6 +62,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-7425 | HIGH | libxml2 | 2.9.7-18.el8_9 | 2.9.7-21.el8_10.2 | libxslt: libxml2: Heap Use-After-Free in libxslt caused by atype corruption in xmlAttrPtr |
 | CVE-2026-45447 | HIGH | openssl-libs | 1:1.1.1k-12.el8_9 | 1:1.1.1k-16.el8_6 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.26.0-19.el8_9 | 3.26.0-20.el8_10 | sqlite: Integer Truncation in SQLite |
+| CVE-2026-11822 | HIGH | sqlite-libs | 3.26.0-19.el8_9 | 3.26.0-21.el8_10 | sqlite: SQLite: Arbitrary code execution via crafted FTS5 full-text search data |
+| CVE-2026-11824 | HIGH | sqlite-libs | 3.26.0-19.el8_9 | 3.26.0-21.el8_10 | sqlite: SQLite: Arbitrary code execution and crash via heap-based buffer overflow in FTS5 |
 | CVE-2021-3121 | HIGH | github.com/gogo/protobuf | v1.3.1 | 1.3.2 | gogo/protobuf: plugin/unmarshal/unmarshal.go lacks certain index validation |
 | CVE-2022-21698 | HIGH | github.com/prometheus/client_golang | v1.7.1 | 1.11.1 | prometheus/client_golang: Denial of service using InstrumentHandlerCounter |
 | CVE-2020-29652 | HIGH | golang.org/x/crypto | v0.0.0-20201002170205-7f63de1d35b0 | 0.0.0-20201216223049-8b5274cf687f | golang: crypto/ssh: crafted authentication request can lead to nil pointer dereference |
@@ -168,6 +170,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4802 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-8058 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.25 | glibc: Double free in glibc |
 | CVE-2026-0915 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-19499 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: Buffer Overflow in strfmon right-justification padding |
+| CVE-2026-19542 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: Fix out-of-bounds array write in tdelete |
 | CVE-2026-4046 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.37 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.40 | glibc: glibc: Out-of-bounds write via TSIG record processing |
@@ -176,11 +180,14 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6238 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.40 | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-6368 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
+| CVE-2026-77117 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
 | CVE-2024-33600 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.2 | glibc: null pointer dereferences after failed netgroup cache insertion |
 | CVE-2025-0395 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.16 | glibc: buffer overflow in the GNU C Library's assert() |
 | CVE-2025-4802 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-8058 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.25 | glibc: Double free in glibc |
 | CVE-2026-0915 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-19499 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: Buffer Overflow in strfmon right-justification padding |
+| CVE-2026-19542 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: Fix out-of-bounds array write in tdelete |
 | CVE-2026-4046 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.37 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.40 | glibc: glibc: Out-of-bounds write via TSIG record processing |
@@ -189,11 +196,14 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6238 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.40 | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-6368 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
+| CVE-2026-77117 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
 | CVE-2024-33600 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.2 | glibc: null pointer dereferences after failed netgroup cache insertion |
 | CVE-2025-0395 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.16 | glibc: buffer overflow in the GNU C Library's assert() |
 | CVE-2025-4802 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-8058 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.25 | glibc: Double free in glibc |
 | CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-19499 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: Buffer Overflow in strfmon right-justification padding |
+| CVE-2026-19542 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: Fix out-of-bounds array write in tdelete |
 | CVE-2026-4046 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.37 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.40 | glibc: glibc: Out-of-bounds write via TSIG record processing |
@@ -202,6 +212,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6238 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.40 | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-6368 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
+| CVE-2026-77117 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
 | CVE-2021-43618 | MEDIUM | gmp | 1:6.1.2-10.el8 | 1:6.1.2-11.el8 | gmp: Integer overflow and resultant buffer overflow via crafted input |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.2.20-3.el8_6 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2024-0553 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_9.1 | gnutls: incomplete fix for CVE-2023-5981 |
@@ -318,17 +329,21 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-69419 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | 1:1.1.1k-15.el8_6 | openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing |
 | CVE-2025-9230 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | 1:1.1.1k-14.el8_10 | openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap |
 | CVE-2026-28390 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | 1:1.1.1k-17.el8_6 | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
+| CVE-2026-63072 | MEDIUM | openssl-libs | 1:1.1.1k-12.el8_9 | - | openssl: heap buffer overflow in CMS key unwrapping |
 | CVE-2026-13757 | MEDIUM | p11-kit | 0.23.22-1.el8 | - | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
 | CVE-2026-13757 | MEDIUM | p11-kit-trust | 0.23.22-1.el8 | - | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
 | CVE-2021-35937 | MEDIUM | rpm | 4.14.3-26.el8 | 4.14.3-28.el8_9 | rpm: TOCTOU race in checks for unsafe symlinks |
 | CVE-2021-35938 | MEDIUM | rpm | 4.14.3-26.el8 | 4.14.3-28.el8_9 | rpm: races with chown/chmod/capabilities calls during installation |
 | CVE-2021-35939 | MEDIUM | rpm | 4.14.3-26.el8 | 4.14.3-28.el8_9 | rpm: checks for unsafe symlinks are not performed for intermediary directories |
 | CVE-2026-44604 | MEDIUM | rpm | 4.14.3-26.el8 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
+| CVE-2026-78367 | MEDIUM | rpm | 4.14.3-26.el8 | - | rpm: rpmbuild getTarSpec() crafted tar member name → macro injection |
 | CVE-2021-35937 | MEDIUM | rpm-libs | 4.14.3-26.el8 | 4.14.3-28.el8_9 | rpm: TOCTOU race in checks for unsafe symlinks |
 | CVE-2021-35938 | MEDIUM | rpm-libs | 4.14.3-26.el8 | 4.14.3-28.el8_9 | rpm: races with chown/chmod/capabilities calls during installation |
 | CVE-2021-35939 | MEDIUM | rpm-libs | 4.14.3-26.el8 | 4.14.3-28.el8_9 | rpm: checks for unsafe symlinks are not performed for intermediary directories |
 | CVE-2026-44604 | MEDIUM | rpm-libs | 4.14.3-26.el8 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
+| CVE-2026-78367 | MEDIUM | rpm-libs | 4.14.3-26.el8 | - | rpm: rpmbuild getTarSpec() crafted tar member name → macro injection |
 | CVE-2026-5958 | MEDIUM | sed | 4.5-5.el8 | - | sed: GNU sed TOCTOU race condition |
+| CVE-2026-50812 | MEDIUM | sqlite-libs | 3.26.0-19.el8_9 | - | sqlite: SQLite: Denial of Service via malformed changeset in Session Extension |
 | CVE-2018-20839 | MEDIUM | systemd-libs | 239-78.el8 | - | systemd: mishandling of the current keyboard mode check leading to passwords being disclosed in cleartext to attacker |
 | CVE-2023-7008 | MEDIUM | systemd-libs | 239-78.el8 | 239-82.el8 | systemd-resolved: Unsigned name response in signed zone is not refused when DNSSEC=yes |
 | CVE-2025-4598 | MEDIUM | systemd-libs | 239-78.el8 | - | systemd-coredump: race condition that allows a local attacker to crash a SUID program and gain read access to the resulting core dump |
@@ -429,7 +444,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5928 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | 2.34-274.el9_8 | glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings |
 | CVE-2026-6238 | MEDIUM | glibc-minimal-langpack | 2.34-231.el9_7.10 | 2.34-274.el9_8 | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-54370 | MEDIUM | libacl | 2.3.1-4.el9 | 2.4.0-1.el9_8 | acl: TOCTOU Symlink Traversal via getfacl/setfacl |
-| CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | - | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
+| CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | 2.6.0-1.el9_8 | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
 
 ### ubi-minimal
 
@@ -448,6 +463,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-8925 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Double-free vulnerability in SASL authentication |
 | CVE-2026-9547 | HIGH | libcurl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Man-in-the-middle attack via SSH host key bypass |
 | CVE-2026-45447 | HIGH | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
+| CVE-2026-11822 | HIGH | sqlite-libs | 3.34.1-10.el9_8 | 3.34.1-11.el9_8 | sqlite: SQLite: Arbitrary code execution via crafted FTS5 full-text search data |
+| CVE-2026-11824 | HIGH | sqlite-libs | 3.34.1-10.el9_8 | 3.34.1-11.el9_8 | sqlite: SQLite: Arbitrary code execution and crash via heap-based buffer overflow in FTS5 |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | 8.32-41.el9_8 | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2026-56391 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: GNU coreutils uniq: Denial of Service and information disclosure via out-of-bounds read with multibyte input |
@@ -500,7 +517,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-14164 | MEDIUM | libarchive | 3.5.3-9.el9_7 | 3.5.3-11.el9_8 | libarchive: Double-Free Vulnerability in RAR5 Decompression Logic via dangling filtered_buf pointer in init_unpack() |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
-| CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | - | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
+| CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | 2.6.0-1.el9_8 | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
 | CVE-2026-13595 | MEDIUM | libblkid | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libblkid | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2025-13034 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -577,11 +594,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-11940 | HIGH | python3-libs | 3.9.25-7.el9_8 | 3.9.25-7.el9_8.3 | python: cpython: CPython: tarfile extraction filter bypass allows escaping the destination directory |
 | CVE-2026-15308 | HIGH | python3-libs | 3.9.25-7.el9_8 | 3.9.25-7.el9_8.2 | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
 | CVE-2026-44432 | HIGH | python3-urllib3 | 1.26.5-6.el9_7.1 | 1.26.5-8.el9_8 | urllib3: urllib3: Denial of Service due to excessive HTTP response decompression |
+| CVE-2026-11822 | HIGH | sqlite-libs | 3.34.1-10.el9_8 | 3.34.1-11.el9_8 | sqlite: SQLite: Arbitrary code execution via crafted FTS5 full-text search data |
+| CVE-2026-11824 | HIGH | sqlite-libs | 3.34.1-10.el9_8 | 3.34.1-11.el9_8 | sqlite: SQLite: Arbitrary code execution and crash via heap-based buffer overflow in FTS5 |
 | CVE-2026-47162 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary Code Execution via crafted directory names |
 | CVE-2026-55895 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via Vimscript code injection in netrw plugin |
 | CVE-2026-57456 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via malicious docstrings in Python omni-completion |
 | CVE-2026-54370 | MEDIUM | acl | 2.3.1-4.el9 | 2.4.0-1.el9_8 | acl: TOCTOU Symlink Traversal via getfacl/setfacl |
-| CVE-2026-54371 | MEDIUM | attr | 2.5.1-3.el9 | - | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
+| CVE-2026-54371 | MEDIUM | attr | 2.5.1-3.el9 | 2.6.0-1.el9_8 | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | 8.32-41.el9_8 | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2026-56391 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: GNU coreutils uniq: Denial of Service and information disclosure via out-of-bounds read with multibyte input |
@@ -652,7 +671,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-14164 | MEDIUM | libarchive | 3.5.3-9.el9_7 | 3.5.3-11.el9_8 | libarchive: Double-Free Vulnerability in RAR5 Decompression Logic via dangling filtered_buf pointer in init_unpack() |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
-| CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | - | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
+| CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | 2.6.0-1.el9_8 | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
 | CVE-2026-13595 | MEDIUM | libblkid | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libblkid | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2025-13034 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -707,7 +726,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-13757 | MEDIUM | p11-kit | 0.26.2-1.el9 | 0.26.4-1.el9_8 | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
 | CVE-2026-13757 | MEDIUM | p11-kit-trust | 0.26.2-1.el9 | 0.26.4-1.el9_8 | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
 | CVE-2026-12610 | MEDIUM | pam | 1.5.1-28.el9 | - | sssd: Use-after-free crash in SSSD' 'sssd_pam' process |
-| CVE-2026-54411 | MEDIUM | pam | 1.5.1-28.el9 | - | linux-pam: Plaintext password recovery via timing discrepancy in pam_userdb module |
 | CVE-2025-11468 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Out-of-memory when loading Plist |
