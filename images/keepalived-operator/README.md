@@ -4,15 +4,15 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-08-27 18:33:55 UTC
+**Scanned:** 2026-08-28 05:49:03 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 243 (🔧216) | 616 (🔧389) | 335 (🔧50) | 1207 | 🔧 672 |
-| ubi-minimal | 0 | 🟠 13 (🔧7) | 104 (🔧43) | 73 (🔧13) | 190 | 🔧 65 |
-| ubi | 0 | 🟠 24 (🔧15) | 210 (🔧52) | 257 (🔧23) | 491 | 🔧 92 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 245 (🔧218) | 630 (🔧389) | 336 (🔧50) | 1224 | 🔧 674 |
+| ubi-minimal | 0 | 🟠 15 (🔧9) | 104 (🔧44) | 73 (🔧13) | 192 | 🔧 68 |
+| ubi | 0 | 🟠 26 (🔧17) | 209 (🔧54) | 257 (🔧23) | 492 | 🔧 96 |
 
 ## Details
 
@@ -129,6 +129,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-66471 | HIGH | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-9.el8_10 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-9.el8_10 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
 | CVE-2025-6965 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-20.el8_10 | sqlite: Integer Truncation in SQLite |
+| CVE-2026-11822 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-21.el8_10 | sqlite: SQLite: Arbitrary code execution via crafted FTS5 full-text search data |
+| CVE-2026-11824 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-21.el8_10 | sqlite: SQLite: Arbitrary code execution and crash via heap-based buffer overflow in FTS5 |
 | CVE-2023-3899 | HIGH | subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2025-71319 | HIGH | subscription-manager | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
 | CVE-2026-12143 | HIGH | subscription-manager | 1.28.32-1.el8 | - | form-data: form-data: Form field override via CRLF injection |
@@ -342,7 +344,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-40553 | MEDIUM | gawk | 4.2.1-4.el8 | - | gawk: Gawk: Buffer overflow in ftype() routine may lead to code execution or denial of service |
 | CVE-2025-5245 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: GNU Binutils objdump debug.c debug_type_samep memory corruption |
 | CVE-2026-15003 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: GNU Binutils: Heap-buffer-overflow in linker leads to information disclosure and denial of service |
-| CVE-2026-19582 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: Stack Buffer Overflow in GNU Binutils in rsrc_print_name from an untrusted PE file |
 | CVE-2026-4647 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: Out-of-Bounds Read in XCOFF Relocation Processing in GNU Binutils BFD Library |
 | CVE-2026-6844 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: Binutils: Denial of Service vulnerabilities in readelf via crafted ELF files |
 | CVE-2026-6845 | MEDIUM | gdb-gdbserver | 8.2-19.el8 | - | binutils: Binutils: Denial of Service via crafted ELF file |
@@ -369,6 +370,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4802 | MEDIUM | glibc | 2.28-211.el8 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-8058 | MEDIUM | glibc | 2.28-211.el8 | 2.28-251.el8_10.25 | glibc: Double free in glibc |
 | CVE-2026-0915 | MEDIUM | glibc | 2.28-211.el8 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-19499 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: Buffer Overflow in strfmon right-justification padding |
+| CVE-2026-19542 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: Fix out-of-bounds array write in tdelete |
 | CVE-2026-4046 | MEDIUM | glibc | 2.28-211.el8 | 2.28-251.el8_10.37 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc | 2.28-211.el8 | 2.28-251.el8_10.40 | glibc: glibc: Out-of-bounds write via TSIG record processing |
@@ -377,6 +380,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6238 | MEDIUM | glibc | 2.28-211.el8 | 2.28-251.el8_10.40 | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-6368 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
+| CVE-2026-77117 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
 | CVE-2023-4527 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: Stack read overflow in getaddrinfo in no-aaaa mode |
 | CVE-2023-4806 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in getaddrinfo() |
 | CVE-2023-4813 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in gaih_inet() |
@@ -385,6 +389,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4802 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-8058 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.25 | glibc: Double free in glibc |
 | CVE-2026-0915 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-19499 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: Buffer Overflow in strfmon right-justification padding |
+| CVE-2026-19542 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: Fix out-of-bounds array write in tdelete |
 | CVE-2026-4046 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.37 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.40 | glibc: glibc: Out-of-bounds write via TSIG record processing |
@@ -393,6 +399,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6238 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-251.el8_10.40 | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-6368 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
+| CVE-2026-77117 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
 | CVE-2023-4527 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: Stack read overflow in getaddrinfo in no-aaaa mode |
 | CVE-2023-4806 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in getaddrinfo() |
 | CVE-2023-4813 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in gaih_inet() |
@@ -401,6 +408,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4802 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
 | CVE-2025-8058 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.25 | glibc: Double free in glibc |
 | CVE-2026-0915 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.31 | glibc: glibc: Information disclosure via zero-valued network query |
+| CVE-2026-19499 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: Buffer Overflow in strfmon right-justification padding |
+| CVE-2026-19542 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: Fix out-of-bounds array write in tdelete |
 | CVE-2026-4046 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.37 | glibc: glibc: Denial of Service via iconv() function with specific character sets |
 | CVE-2026-4437 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: glibc: Incorrect DNS response parsing via crafted DNS server response |
 | CVE-2026-5435 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.40 | glibc: glibc: Out-of-bounds write via TSIG record processing |
@@ -409,6 +418,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6238 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-251.el8_10.40 | glibc: glibc: Application crash or uninitialized memory read via crafted DNS response |
 | CVE-2026-6368 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
+| CVE-2026-77117 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
 | CVE-2021-43618 | MEDIUM | gmp | 1:6.1.2-10.el8 | 1:6.1.2-11.el8 | gmp: Integer overflow and resultant buffer overflow via crafted input |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.2.20-3.el8_6 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-0361 | MEDIUM | gnutls | 3.6.16-5.el8_6 | 3.6.16-6.el8_7 | gnutls: timing side-channel in the TLS RSA key exchange code |
@@ -551,6 +561,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-69419 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-15.el8_6 | openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing |
 | CVE-2025-9230 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-14.el8_10 | openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap |
 | CVE-2026-28390 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | 1:1.1.1k-17.el8_6 | openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing |
+| CVE-2026-63072 | MEDIUM | openssl-libs | 1:1.1.1k-7.el8_6 | - | openssl: heap buffer overflow in CMS key unwrapping |
 | CVE-2026-13757 | MEDIUM | p11-kit | 0.23.22-1.el8 | - | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
 | CVE-2026-13757 | MEDIUM | p11-kit-trust | 0.23.22-1.el8 | - | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
 | CVE-2024-10041 | MEDIUM | pam | 1.3.1-22.el8 | 1.3.1-36.el8_10 | pam: libpam: Libpam vulnerable to read hashed password |
@@ -661,6 +672,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2021-35938 | MEDIUM | python3-rpm | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: races with chown/chmod/capabilities calls during installation |
 | CVE-2021-35939 | MEDIUM | python3-rpm | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: checks for unsafe symlinks are not performed for intermediary directories |
 | CVE-2026-44604 | MEDIUM | python3-rpm | 4.14.3-24.el8_7 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
+| CVE-2026-78367 | MEDIUM | python3-rpm | 4.14.3-24.el8_7 | - | rpm: rpmbuild getTarSpec() crafted tar member name → macro injection |
 | CVE-2025-47273 | MEDIUM | python3-setuptools-wheel | 39.2.0-6.el8_7.1 | 39.2.0-9.el8_10 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
 | CVE-2022-0235 | MEDIUM | python3-subscription-manager-rhsm | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
 | CVE-2026-9358 | MEDIUM | python3-subscription-manager-rhsm | 1.28.32-1.el8 | - | postcss-selector-parser: Postcss: Denial of Service via uncontrolled recursion in AST Serialization |
@@ -674,17 +686,21 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2021-35938 | MEDIUM | rpm | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: races with chown/chmod/capabilities calls during installation |
 | CVE-2021-35939 | MEDIUM | rpm | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: checks for unsafe symlinks are not performed for intermediary directories |
 | CVE-2026-44604 | MEDIUM | rpm | 4.14.3-24.el8_7 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
+| CVE-2026-78367 | MEDIUM | rpm | 4.14.3-24.el8_7 | - | rpm: rpmbuild getTarSpec() crafted tar member name → macro injection |
 | CVE-2021-35937 | MEDIUM | rpm-build-libs | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: TOCTOU race in checks for unsafe symlinks |
 | CVE-2021-35938 | MEDIUM | rpm-build-libs | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: races with chown/chmod/capabilities calls during installation |
 | CVE-2021-35939 | MEDIUM | rpm-build-libs | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: checks for unsafe symlinks are not performed for intermediary directories |
 | CVE-2026-44604 | MEDIUM | rpm-build-libs | 4.14.3-24.el8_7 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
+| CVE-2026-78367 | MEDIUM | rpm-build-libs | 4.14.3-24.el8_7 | - | rpm: rpmbuild getTarSpec() crafted tar member name → macro injection |
 | CVE-2021-35937 | MEDIUM | rpm-libs | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: TOCTOU race in checks for unsafe symlinks |
 | CVE-2021-35938 | MEDIUM | rpm-libs | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: races with chown/chmod/capabilities calls during installation |
 | CVE-2021-35939 | MEDIUM | rpm-libs | 4.14.3-24.el8_7 | 4.14.3-28.el8_9 | rpm: checks for unsafe symlinks are not performed for intermediary directories |
 | CVE-2026-44604 | MEDIUM | rpm-libs | 4.14.3-24.el8_7 | - | rpm: Command injection in rpmuncompress doUntar() via unescaped archive top-level directory name in popen() shell command |
+| CVE-2026-78367 | MEDIUM | rpm-libs | 4.14.3-24.el8_7 | - | rpm: rpmbuild getTarSpec() crafted tar member name → macro injection |
 | CVE-2026-5958 | MEDIUM | sed | 4.5-5.el8 | - | sed: GNU sed TOCTOU race condition |
 | CVE-2020-24736 | MEDIUM | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-18.el8_8 | sqlite: Crash due to misuse of window functions. |
 | CVE-2023-7104 | MEDIUM | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-19.el8_9 | sqlite: heap-buffer-overflow at sessionfuzz |
+| CVE-2026-50812 | MEDIUM | sqlite-libs | 3.26.0-17.el8_7 | - | sqlite: SQLite: Denial of Service via malformed changeset in Session Extension |
 | CVE-2022-0235 | MEDIUM | subscription-manager | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
 | CVE-2026-9358 | MEDIUM | subscription-manager | 1.28.32-1.el8 | - | postcss-selector-parser: Postcss: Denial of Service via uncontrolled recursion in AST Serialization |
 | CVE-2022-0235 | MEDIUM | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
@@ -912,6 +928,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-8925 | HIGH | libcurl-minimal | 7.76.1-40.el9 | - | curl: curl: Double-free vulnerability in SASL authentication |
 | CVE-2026-9547 | HIGH | libcurl-minimal | 7.76.1-40.el9 | 7.76.1-40.el9_8.5 | curl: curl: Man-in-the-middle attack via SSH host key bypass |
 | CVE-2026-45447 | HIGH | openssl-libs | 1:3.5.5-2.el9_8 | 1:3.5.5-4.el9_8 | openssl: Heap Use-After-Free in OpenSSL PKCS7_verify() |
+| CVE-2026-11822 | HIGH | sqlite-libs | 3.34.1-10.el9_8 | 3.34.1-11.el9_8 | sqlite: SQLite: Arbitrary code execution via crafted FTS5 full-text search data |
+| CVE-2026-11824 | HIGH | sqlite-libs | 3.34.1-10.el9_8 | 3.34.1-11.el9_8 | sqlite: SQLite: Arbitrary code execution and crash via heap-based buffer overflow in FTS5 |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | 8.32-41.el9_8 | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2026-56391 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: GNU coreutils uniq: Denial of Service and information disclosure via out-of-bounds read with multibyte input |
@@ -964,7 +982,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-14164 | MEDIUM | libarchive | 3.5.3-9.el9_7 | 3.5.3-11.el9_8 | libarchive: Double-Free Vulnerability in RAR5 Decompression Logic via dangling filtered_buf pointer in init_unpack() |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
-| CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | - | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
+| CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | 2.6.0-1.el9_8 | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
 | CVE-2026-13595 | MEDIUM | libblkid | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libblkid | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2025-13034 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -1042,11 +1060,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-11940 | HIGH | python3-libs | 3.9.25-7.el9_8 | 3.9.25-7.el9_8.3 | python: cpython: CPython: tarfile extraction filter bypass allows escaping the destination directory |
 | CVE-2026-15308 | HIGH | python3-libs | 3.9.25-7.el9_8 | 3.9.25-7.el9_8.2 | python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations |
 | CVE-2026-44432 | HIGH | python3-urllib3 | 1.26.5-6.el9_7.1 | 1.26.5-8.el9_8 | urllib3: urllib3: Denial of Service due to excessive HTTP response decompression |
+| CVE-2026-11822 | HIGH | sqlite-libs | 3.34.1-10.el9_8 | 3.34.1-11.el9_8 | sqlite: SQLite: Arbitrary code execution via crafted FTS5 full-text search data |
+| CVE-2026-11824 | HIGH | sqlite-libs | 3.34.1-10.el9_8 | 3.34.1-11.el9_8 | sqlite: SQLite: Arbitrary code execution and crash via heap-based buffer overflow in FTS5 |
 | CVE-2026-47162 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary Code Execution via crafted directory names |
 | CVE-2026-55895 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via Vimscript code injection in netrw plugin |
 | CVE-2026-57456 | HIGH | vim-minimal | 2:8.2.2637-26.el9_8.4 | - | vim: Vim: Arbitrary code execution via malicious docstrings in Python omni-completion |
 | CVE-2026-54370 | MEDIUM | acl | 2.3.1-4.el9 | 2.4.0-1.el9_8 | acl: TOCTOU Symlink Traversal via getfacl/setfacl |
-| CVE-2026-54371 | MEDIUM | attr | 2.5.1-3.el9 | - | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
+| CVE-2026-54371 | MEDIUM | attr | 2.5.1-3.el9 | 2.6.0-1.el9_8 | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
 | CVE-2026-42250 | MEDIUM | bzip2-libs | 1.0.8-11.el9 | - | bzip2: bzip2: Denial of Service in bzip2recover via a specially crafted file |
 | CVE-2025-5278 | MEDIUM | coreutils-single | 8.32-40.el9 | 8.32-41.el9_8 | coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification |
 | CVE-2026-56391 | MEDIUM | coreutils-single | 8.32-40.el9 | - | coreutils: GNU coreutils uniq: Denial of Service and information disclosure via out-of-bounds read with multibyte input |
@@ -1117,7 +1137,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-14164 | MEDIUM | libarchive | 3.5.3-9.el9_7 | 3.5.3-11.el9_8 | libarchive: Double-Free Vulnerability in RAR5 Decompression Logic via dangling filtered_buf pointer in init_unpack() |
 | CVE-2026-4426 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: libarchive: Denial of Service via malformed ISO file processing |
 | CVE-2026-5745 | MEDIUM | libarchive | 3.5.3-9.el9_7 | - | libarchive: A NULL pointer dereference vulnerability exists in the ACL parser of libarchive |
-| CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | - | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
+| CVE-2026-54371 | MEDIUM | libattr | 2.5.1-3.el9 | 2.6.0-1.el9_8 | attr: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr |
 | CVE-2026-13595 | MEDIUM | libblkid | 2.37.4-25.el9 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libblkid | 2.37.4-25.el9 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2025-13034 | MEDIUM | libcurl-minimal | 7.76.1-40.el9 | - | curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation |
@@ -1172,7 +1192,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-13757 | MEDIUM | p11-kit | 0.26.2-1.el9 | 0.26.4-1.el9_8 | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
 | CVE-2026-13757 | MEDIUM | p11-kit-trust | 0.26.2-1.el9 | 0.26.4-1.el9_8 | p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing |
 | CVE-2026-12610 | MEDIUM | pam | 1.5.1-28.el9 | - | sssd: Use-after-free crash in SSSD' 'sssd_pam' process |
-| CVE-2026-54411 | MEDIUM | pam | 1.5.1-28.el9 | - | linux-pam: Plaintext password recovery via timing discrepancy in pam_userdb module |
 | CVE-2025-11468 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Missing character filtering in Python |
 | CVE-2025-12781 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: base64.b64decode() always accepts "+/" characters, despite setting altchars |
 | CVE-2025-13837 | MEDIUM | python3 | 3.9.25-7.el9_8 | - | cpython: Out-of-memory when loading Plist |
