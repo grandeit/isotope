@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-08-28 19:05:50 UTC
+**Scanned:** 2026-08-29 03:18:11 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 245 (🔧218) | 630 (🔧389) | 336 (🔧50) | 1224 | 🔧 674 |
+| **upstream** | 🔴 13 (🔧13) | 🟠 239 (🔧218) | 636 (🔧389) | 336 (🔧50) | 1224 | 🔧 675 |
 | ubi-minimal | 0 | 🟠 15 (🔧9) | 104 (🔧44) | 73 (🔧13) | 192 | 🔧 68 |
 | ubi | 0 | 🟠 26 (🔧17) | 209 (🔧54) | 257 (🔧23) | 492 | 🔧 96 |
 
@@ -42,7 +42,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-8927 | HIGH | curl | 7.61.1-25.el8_7.2 | - | curl: Information disclosure due to uncleared proxy authentication state |
 | CVE-2023-3899 | HIGH | dnf-plugin-subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2025-71319 | HIGH | dnf-plugin-subscription-manager | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
-| CVE-2026-12143 | HIGH | dnf-plugin-subscription-manager | 1.28.32-1.el8 | - | form-data: form-data: Form field override via CRLF injection |
 | CVE-2025-59375 | HIGH | expat | 2.2.5-10.el8_7.1 | 2.5.0-1.el8_10 | firefox: thunderbird: expat: libexpat in Expat allows attackers to trigger large dynamic memory allocations via a small document that is submitted for |
 | CVE-2026-45186 | HIGH | expat | 2.2.5-10.el8_7.1 | 2.5.0-2.el8_10 | libexpat: denial of service via crafted XML input |
 | CVE-2026-6846 | HIGH | gdb-gdbserver | 8.2-19.el8 | - | binutils: Binutils: Arbitrary code execution via malformed XCOFF object file processing |
@@ -101,7 +100,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-6345 | HIGH | platform-python-setuptools | 39.2.0-6.el8_7.1 | 39.2.0-8.el8_10 | pypa/setuptools: Remote code execution via download functions in the package_index module in pypa/setuptools |
 | CVE-2023-3899 | HIGH | python3-cloud-what | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2025-71319 | HIGH | python3-cloud-what | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
-| CVE-2026-12143 | HIGH | python3-cloud-what | 1.28.32-1.el8 | - | form-data: form-data: Form field override via CRLF injection |
 | CVE-2023-24329 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-51.el8_8.1 | python: urllib.parse url blocklisting bypass |
 | CVE-2023-40217 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-51.el8_8.2 | python: TLS handshake bypass |
 | CVE-2023-6597 | HIGH | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-62.el8_10 | python: Path traversal on tempfile.TemporaryDirectory |
@@ -121,10 +119,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2024-6345 | HIGH | python3-setuptools-wheel | 39.2.0-6.el8_7.1 | 39.2.0-8.el8_10 | pypa/setuptools: Remote code execution via download functions in the package_index module in pypa/setuptools |
 | CVE-2023-3899 | HIGH | python3-subscription-manager-rhsm | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2025-71319 | HIGH | python3-subscription-manager-rhsm | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
-| CVE-2026-12143 | HIGH | python3-subscription-manager-rhsm | 1.28.32-1.el8 | - | form-data: form-data: Form field override via CRLF injection |
 | CVE-2023-3899 | HIGH | python3-syspurpose | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2025-71319 | HIGH | python3-syspurpose | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
-| CVE-2026-12143 | HIGH | python3-syspurpose | 1.28.32-1.el8 | - | form-data: form-data: Form field override via CRLF injection |
 | CVE-2025-66418 | HIGH | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-9.el8_10 | urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion |
 | CVE-2025-66471 | HIGH | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-9.el8_10 | urllib3: urllib3 Streaming API improperly handles highly compressed data |
 | CVE-2026-21441 | HIGH | python3-urllib3 | 1.24.2-5.el8 | 1.24.2-9.el8_10 | urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API) |
@@ -133,10 +129,8 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-11824 | HIGH | sqlite-libs | 3.26.0-17.el8_7 | 3.26.0-21.el8_10 | sqlite: SQLite: Arbitrary code execution and crash via heap-based buffer overflow in FTS5 |
 | CVE-2023-3899 | HIGH | subscription-manager | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2025-71319 | HIGH | subscription-manager | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
-| CVE-2026-12143 | HIGH | subscription-manager | 1.28.32-1.el8 | - | form-data: form-data: Form field override via CRLF injection |
 | CVE-2023-3899 | HIGH | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | 1.28.36-3.el8_8 | subscription-manager: inadequate authorization of com.redhat.RHSM1 D-Bus interface allows local users to modify configuration |
 | CVE-2025-71319 | HIGH | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | - | image-size: image-size: Denial of Service due to infinite loop when processing specially crafted images. |
-| CVE-2026-12143 | HIGH | subscription-manager-rhsm-certificates | 1.28.32-1.el8 | - | form-data: form-data: Form field override via CRLF injection |
 | CVE-2026-53613 | HIGH | util-linux | 2.32.1-39.el8_7 | - | util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path |
 | CVE-2026-34982 | HIGH | vim-minimal | 2:8.0.1763-19.el8_6.4 | 2:8.0.1763-22.el8_10.3 | vim: arbitrary command execution via modeline sandbox bypass |
 | CVE-2026-43961 | HIGH | vim-minimal | 2:8.0.1763-19.el8_6.4 | - | vim: Vimscript injection via unescaped filename in netrw s:NetrwMarkFile() filter() expression allows arbitrary code execution |
@@ -338,6 +332,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-56406 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Arbitrary code execution via integer overflow in XML_ParseBuffer |
 | CVE-2026-56407 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Arbitrary code execution due to integer overflow |
 | CVE-2026-56412 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Use-after-free vulnerability due to improper handling of XML CDATA sections |
+| CVE-2026-76957 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat before 2.8.4 lacks handler call depth tracking with custom en ... |
 | CVE-2019-8905 | MEDIUM | file-libs | 5.33-21.el8 | - | file: stack-based buffer over-read in do_core_note in readelf.c |
 | CVE-2026-40467 | MEDIUM | gawk | 4.2.1-4.el8 | - | gawk: gawk: Denial of Service due to Use After Free vulnerability in io.c |
 | CVE-2026-40468 | MEDIUM | gawk | 4.2.1-4.el8 | - | gawk: gawk: Memory corruption via integer overflow |
@@ -381,6 +376,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6368 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2026-77117 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
+| CVE-2026-80489 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt; UCS-4 conversion state |
 | CVE-2023-4527 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: Stack read overflow in getaddrinfo in no-aaaa mode |
 | CVE-2023-4806 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in getaddrinfo() |
 | CVE-2023-4813 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in gaih_inet() |
@@ -400,6 +396,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6368 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2026-77117 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
+| CVE-2026-80489 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt; UCS-4 conversion state |
 | CVE-2023-4527 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: Stack read overflow in getaddrinfo in no-aaaa mode |
 | CVE-2023-4806 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in getaddrinfo() |
 | CVE-2023-4813 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in gaih_inet() |
@@ -419,6 +416,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6368 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2026-77117 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
+| CVE-2026-80489 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt; UCS-4 conversion state |
 | CVE-2021-43618 | MEDIUM | gmp | 1:6.1.2-10.el8 | 1:6.1.2-11.el8 | gmp: Integer overflow and resultant buffer overflow via crafted input |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.2.20-3.el8_6 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-0361 | MEDIUM | gnutls | 3.6.16-5.el8_6 | 3.6.16-6.el8_7 | gnutls: timing side-channel in the TLS RSA key exchange code |
@@ -547,7 +545,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-11979 | MEDIUM | libxml2 | 2.9.7-15.el8_7.1 | - | libxml2: libxml2: Arbitrary code execution in xmlcatalog utility via buffer overflow |
 | CVE-2026-1757 | MEDIUM | libxml2 | 2.9.7-15.el8_7.1 | - | libxml2: Memory Leak Leading to Local Denial of Service in xmllint Interactive Shell |
 | CVE-2026-6653 | MEDIUM | libxml2 | 2.9.7-15.el8_7.1 | - | libxml2: mingw-libxml2: libxml2: Denial of Service via crafted XML input due to use-after-free |
-| CVE-2026-6732 | MEDIUM | libxml2 | 2.9.7-15.el8_7.1 | - | libxml2: libxml2: Denial of Service via crafted XSD-validated document |
 | CVE-2022-4899 | MEDIUM | libzstd | 1.4.4-1.el8 | - | zstd: mysql: buffer overrun in util.c |
 | CVE-2019-17543 | MEDIUM | lz4-libs | 1.8.3-3.el8_4 | 1.8.3-5.el8_10 | lz4: heap-based buffer overflow in LZ4_write32 |
 | CVE-2023-29491 | MEDIUM | ncurses-base | 6.1-9.20180224.el8 | 6.1-9.20180224.el8_8.1 | ncurses: Local users can trigger security-relevant memory corruption via malformed data |
@@ -592,6 +589,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-8194 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-71.el8_10 | cpython: Cpython infinite loop when parsing a tarfile |
 | CVE-2025-8291 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
 | CVE-2026-0672 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0864 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | python: cpython: Python configparser: Configuration injection via crafted multi-line input |
 | CVE-2026-0865 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-73.el8_10 | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2026-11972 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | python: Python tarfile module: Denial of Service via improper EOF handling in streaming mode |
 | CVE-2026-1299 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | 3.6.8-73.el8_10 | cpython: email header injection due to unquoted newlines |
@@ -604,6 +602,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5713 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2026-6019 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module |
 | CVE-2026-7210 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | python: expat: Python/Expat: Denial of Service via crafted XML document |
+| CVE-2026-7774 | MEDIUM | platform-python | 3.6.8-48.el8_7.1 | - | python: CPython: Python tarfile: Arbitrary file write via crafted link entries |
 | CVE-2025-47273 | MEDIUM | platform-python-setuptools | 39.2.0-6.el8_7.1 | 39.2.0-9.el8_10 | setuptools: Path Traversal Vulnerability in setuptools PackageIndex |
 | CVE-2022-0235 | MEDIUM | python3-cloud-what | 1.28.32-1.el8 | - | node-fetch: exposure of sensitive information to an unauthorized actor |
 | CVE-2026-9358 | MEDIUM | python3-cloud-what | 1.28.32-1.el8 | - | postcss-selector-parser: Postcss: Denial of Service via uncontrolled recursion in AST Serialization |
@@ -633,6 +632,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-8194 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-71.el8_10 | cpython: Cpython infinite loop when parsing a tarfile |
 | CVE-2025-8291 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: python: Python zipfile End of Central Directory (EOCD) Locator record offset not checked |
 | CVE-2026-0672 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | cpython: Header injection in http.cookies.Morsel in Python |
+| CVE-2026-0864 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | python: cpython: Python configparser: Configuration injection via crafted multi-line input |
 | CVE-2026-0865 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-73.el8_10 | cpython: wsgiref.headers.Headers allows header newline injection in Python |
 | CVE-2026-11972 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | python: Python tarfile module: Denial of Service via improper EOF handling in streaming mode |
 | CVE-2026-1299 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | 3.6.8-73.el8_10 | cpython: email header injection due to unquoted newlines |
@@ -645,6 +645,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-5713 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process. |
 | CVE-2026-6019 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module |
 | CVE-2026-7210 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | python: expat: Python/Expat: Denial of Service via crafted XML document |
+| CVE-2026-7774 | MEDIUM | python3-libs | 3.6.8-48.el8_7.1 | - | python: CPython: Python tarfile: Arbitrary file write via crafted link entries |
 | CVE-2022-49043 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-18.el8_10.2 | libxml: use-after-free in xmlXIncludeAddNode |
 | CVE-2023-28484 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-16.el8_8.1 | libxml2: NULL dereference in xmlSchemaFixupComplexType |
 | CVE-2023-29469 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | 2.9.7-16.el8_8.1 | libxml2: Hashing of empty dict strings isn't deterministic |
@@ -658,7 +659,6 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-11979 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | - | libxml2: libxml2: Arbitrary code execution in xmlcatalog utility via buffer overflow |
 | CVE-2026-1757 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | - | libxml2: Memory Leak Leading to Local Denial of Service in xmllint Interactive Shell |
 | CVE-2026-6653 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | - | libxml2: mingw-libxml2: libxml2: Denial of Service via crafted XML input due to use-after-free |
-| CVE-2026-6732 | MEDIUM | python3-libxml2 | 2.9.7-15.el8_7.1 | - | libxml2: libxml2: Denial of Service via crafted XSD-validated document |
 | CVE-2007-4559 | MEDIUM | python3-pip-wheel | 9.0.3-22.el8 | 9.0.3-23.el8 | python: tarfile module directory traversal |
 | CVE-2023-45803 | MEDIUM | python3-pip-wheel | 9.0.3-22.el8 | - | urllib3: Request body not stripped after redirect from 303 status changes request method to GET |
 | CVE-2025-50181 | MEDIUM | python3-pip-wheel | 9.0.3-22.el8 | - | urllib3: urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation |
