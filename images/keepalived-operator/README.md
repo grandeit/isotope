@@ -4,7 +4,7 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-08-30 15:06:45 UTC
+**Scanned:** 2026-08-31 03:22:09 UTC
 
 ## Overview
 
@@ -376,7 +376,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6368 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2026-77117 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
-| CVE-2026-80489 | MEDIUM | glibc | 2.28-211.el8 | - | Title Not Available |
+| CVE-2026-80489 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt; UCS-4 conversion state |
 | CVE-2023-4527 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: Stack read overflow in getaddrinfo in no-aaaa mode |
 | CVE-2023-4806 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in getaddrinfo() |
 | CVE-2023-4813 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in gaih_inet() |
@@ -396,7 +396,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6368 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2026-77117 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
-| CVE-2026-80489 | MEDIUM | glibc-common | 2.28-211.el8 | - | Title Not Available |
+| CVE-2026-80489 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt; UCS-4 conversion state |
 | CVE-2023-4527 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: Stack read overflow in getaddrinfo in no-aaaa mode |
 | CVE-2023-4806 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in getaddrinfo() |
 | CVE-2023-4813 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in gaih_inet() |
@@ -416,7 +416,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6368 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2026-77117 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
-| CVE-2026-80489 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | Title Not Available |
+| CVE-2026-80489 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt; UCS-4 conversion state |
 | CVE-2021-43618 | MEDIUM | gmp | 1:6.1.2-10.el8 | 1:6.1.2-11.el8 | gmp: Integer overflow and resultant buffer overflow via crafted input |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.2.20-3.el8_6 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-0361 | MEDIUM | gnutls | 3.6.16-5.el8_6 | 3.6.16-6.el8_7 | gnutls: timing side-channel in the TLS RSA key exchange code |
