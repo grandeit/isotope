@@ -4,13 +4,13 @@
 
 **Version:** `v0.0.36`
 
-**Scanned:** 2026-08-31 14:03:44 UTC
+**Scanned:** 2026-09-01 02:26:32 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 1 (🔧1) | 🟠 74 (🔧67) | 187 (🔧126) | 91 (🔧35) | 353 | 🔧 231 |
+| **upstream** | 🔴 2 (🔧2) | 🟠 74 (🔧67) | 187 (🔧126) | 91 (🔧35) | 354 | 🔧 231 |
 | distroless | 0 | 🟠 1 (🔧1) | 0 | 0 | 1 | 🔧 1 |
 | ubi-micro | 0 | 🟠 3 (🔧3) | 23 (🔧21) | 9 (🔧3) | 35 | 🔧 27 |
 | ubi-minimal | 0 | 🟠 16 (🔧10) | 103 (🔧43) | 69 (🔧13) | 188 | 🔧 66 |
@@ -24,6 +24,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
+| CVE-2026-56854 | CRITICAL | golang.org/x/crypto | v0.17.0 | 0.55.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Authentication bypass due to unenforced source-address restrictions |
 | CVE-2025-68121 | CRITICAL | stdlib | v1.21.13 | 1.24.13, 1.25.7, 1.26.0-rc.3 | crypto/tls: crypto/tls: Incorrect certificate validation during TLS session resumption |
 | CVE-2026-11352 | HIGH | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: libcurl: curl/libcurl: Remote denial of service via QUIC UDP receive function vulnerability |
 | CVE-2026-11586 | HIGH | curl-minimal | 7.76.1-31.el9_6.1 | - | curl: curl: Denial of Service via WebSocket PING flood |
