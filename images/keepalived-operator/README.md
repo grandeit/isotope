@@ -4,13 +4,13 @@
 
 **Version:** `v1.5.4`
 
-**Scanned:** 2026-08-31 15:07:15 UTC
+**Scanned:** 2026-09-01 03:22:12 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 13 (🔧13) | 🟠 239 (🔧218) | 637 (🔧389) | 337 (🔧50) | 1226 | 🔧 675 |
+| **upstream** | 🔴 14 (🔧14) | 🟠 239 (🔧218) | 637 (🔧389) | 337 (🔧50) | 1227 | 🔧 675 |
 | ubi-minimal | 0 | 🟠 15 (🔧9) | 104 (🔧44) | 73 (🔧13) | 192 | 🔧 68 |
 | ubi | 0 | 🟠 26 (🔧17) | 209 (🔧54) | 257 (🔧23) | 492 | 🔧 96 |
 
@@ -23,6 +23,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE | Severity | Package | Installed | Fixed | Description |
 |-----|----------|---------|-----------|-------|-------------|
 | CVE-2022-1996 | CRITICAL | github.com/emicklei/go-restful | v2.9.5+incompatible | 2.16.0 | go-restful: Authorization Bypass Through User-Controlled Key |
+| CVE-2026-56854 | CRITICAL | golang.org/x/crypto | v0.0.0-20220214200702-86341886e292 | 0.55.0 | golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Authentication bypass due to unenforced source-address restrictions |
 | CVE-2023-24538 | CRITICAL | stdlib | v1.18.10 | 1.19.8, 1.20.3 | golang: html/template: backticks not treated as string delimiters |
 | CVE-2023-24540 | CRITICAL | stdlib | v1.18.10 | 1.19.9, 1.20.4 | golang: html/template: improper handling of JavaScript whitespace |
 | CVE-2024-24790 | CRITICAL | stdlib | v1.18.10 | 1.21.11, 1.22.4 | golang: net/netip: Unexpected behavior from Is methods for IPv4-mapped IPv6 addresses |
@@ -332,7 +333,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-56406 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Arbitrary code execution via integer overflow in XML_ParseBuffer |
 | CVE-2026-56407 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Arbitrary code execution due to integer overflow |
 | CVE-2026-56412 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Use-after-free vulnerability due to improper handling of XML CDATA sections |
-| CVE-2026-76957 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat before 2.8.4 lacks handler call depth tracking with custom en ... |
+| CVE-2026-76957 | MEDIUM | expat | 2.2.5-10.el8_7.1 | - | libexpat: libexpat: Memory corruption vulnerability allows arbitrary code execution or denial of service |
 | CVE-2019-8905 | MEDIUM | file-libs | 5.33-21.el8 | - | file: stack-based buffer over-read in do_core_note in readelf.c |
 | CVE-2026-40467 | MEDIUM | gawk | 4.2.1-4.el8 | - | gawk: gawk: Denial of Service due to Use After Free vulnerability in io.c |
 | CVE-2026-40468 | MEDIUM | gawk | 4.2.1-4.el8 | - | gawk: gawk: Memory corruption via integer overflow |
@@ -376,7 +377,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6368 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2026-77117 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
-| CVE-2026-80489 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt; UCS-4 conversion state |
+| CVE-2026-80489 | MEDIUM | glibc | 2.28-211.el8 | - | glibc: Non-progress DoS in EUC_JISX0213 -&gt; UCS-4 conversion state |
 | CVE-2023-4527 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: Stack read overflow in getaddrinfo in no-aaaa mode |
 | CVE-2023-4806 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in getaddrinfo() |
 | CVE-2023-4813 | MEDIUM | glibc-common | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in gaih_inet() |
@@ -396,7 +397,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6368 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2026-77117 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
-| CVE-2026-80489 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt; UCS-4 conversion state |
+| CVE-2026-80489 | MEDIUM | glibc-common | 2.28-211.el8 | - | glibc: Non-progress DoS in EUC_JISX0213 -&gt; UCS-4 conversion state |
 | CVE-2023-4527 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: Stack read overflow in getaddrinfo in no-aaaa mode |
 | CVE-2023-4806 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in getaddrinfo() |
 | CVE-2023-4813 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | 2.28-225.el8_8.6 | glibc: potential use-after-free in gaih_inet() |
@@ -416,7 +417,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6368 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2026-77117 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
-| CVE-2026-80489 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt; UCS-4 conversion state |
+| CVE-2026-80489 | MEDIUM | glibc-minimal-langpack | 2.28-211.el8 | - | glibc: Non-progress DoS in EUC_JISX0213 -&gt; UCS-4 conversion state |
 | CVE-2021-43618 | MEDIUM | gmp | 1:6.1.2-10.el8 | 1:6.1.2-11.el8 | gmp: Integer overflow and resultant buffer overflow via crafted input |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.2.20-3.el8_6 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2023-0361 | MEDIUM | gnutls | 3.6.16-5.el8_6 | 3.6.16-6.el8_7 | gnutls: timing side-channel in the TLS RSA key exchange code |
@@ -494,7 +495,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-13595 | MEDIUM | libsmartcols | 2.32.1-39.el8_7 | - | util-linux: util-linux: heap use-after-free in libblkid nested partition probing |
 | CVE-2026-27456 | MEDIUM | libsmartcols | 2.32.1-39.el8_7 | - | util-linux: TOCTOU in the mount program when setting up loop devices |
 | CVE-2026-48864 | MEDIUM | libsolv | 0.7.20-4.el8_7 | 0.7.20-7.el8_10 | libsolv: Heap buffer overflow in libsolv repopagestore via unchecked decompression of malicious .solv page data |
-| CVE-2026-82327 | MEDIUM | libsolv | 0.7.20-4.el8_7 | - | A flaw was found in libsolv, a dependency-resolution library used by R ... |
+| CVE-2026-82327 | MEDIUM | libsolv | 0.7.20-4.el8_7 | - | libsolv: libsolv: out-of-bounds write in repo_write() via unvalidated directory id from vertical/paged .solv filelist data |
 | CVE-2026-9149 | MEDIUM | libsolv | 0.7.20-4.el8_7 | - | libsolv: Heap buffer overflow in libsolv repo_add_solv via negative maxsize from crafted .solv file |
 | CVE-2023-1667 | MEDIUM | libssh | 0.9.6-3.el8 | 0.9.6-10.el8_8 | libssh: NULL pointer dereference during rekeying with algorithm guessing |
 | CVE-2023-2283 | MEDIUM | libssh | 0.9.6-3.el8 | 0.9.6-10.el8_8 | libssh: authorization bypass in pki_verify_data_signature |
