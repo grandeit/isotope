@@ -4,7 +4,7 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-09-01 13:08:14 UTC
+**Scanned:** 2026-09-02 01:16:27 UTC
 
 ## Overview
 
@@ -182,7 +182,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6368 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2026-77117 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
-| CVE-2026-80489 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: Non-progress DoS in EUC_JISX0213 -&gt; UCS-4 conversion state |
+| CVE-2026-80489 | MEDIUM | glibc | 2.28-236.el8.7 | - | glibc: Non-progress DoS in EUC_JISX0213 -> UCS-4 conversion state |
 | CVE-2024-33600 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.2 | glibc: null pointer dereferences after failed netgroup cache insertion |
 | CVE-2025-0395 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.16 | glibc: buffer overflow in the GNU C Library's assert() |
 | CVE-2025-4802 | MEDIUM | glibc-common | 2.28-236.el8.7 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
@@ -199,7 +199,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6368 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2026-77117 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
-| CVE-2026-80489 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: Non-progress DoS in EUC_JISX0213 -&gt; UCS-4 conversion state |
+| CVE-2026-80489 | MEDIUM | glibc-common | 2.28-236.el8.7 | - | glibc: Non-progress DoS in EUC_JISX0213 -> UCS-4 conversion state |
 | CVE-2024-33600 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.2 | glibc: null pointer dereferences after failed netgroup cache insertion |
 | CVE-2025-0395 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.16 | glibc: buffer overflow in the GNU C Library's assert() |
 | CVE-2025-4802 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
@@ -216,7 +216,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-6368 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: glibc: Process abort due to invalid memory in wordexp |
 | CVE-2026-6791 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: Glibc: Denial of Service via stack exhaustion during tilde expansion |
 | CVE-2026-77117 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: Non-progress DoS in SHIFT_JISX0213 -&gt |
-| CVE-2026-80489 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: Non-progress DoS in EUC_JISX0213 -&gt; UCS-4 conversion state |
+| CVE-2026-80489 | MEDIUM | glibc-minimal-langpack | 2.28-236.el8.7 | - | glibc: Non-progress DoS in EUC_JISX0213 -> UCS-4 conversion state |
 | CVE-2021-43618 | MEDIUM | gmp | 1:6.1.2-10.el8 | 1:6.1.2-11.el8 | gmp: Integer overflow and resultant buffer overflow via crafted input |
 | CVE-2025-68972 | MEDIUM | gnupg2 | 2.2.20-3.el8_6 | - | gnupg: GnuPG: Signature bypass via form feed character in signed messages |
 | CVE-2024-0553 | MEDIUM | gnutls | 3.6.16-8.el8_9 | 3.6.16-8.el8_9.1 | gnutls: incomplete fix for CVE-2023-5981 |
