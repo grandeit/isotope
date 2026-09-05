@@ -4,13 +4,13 @@
 
 **Version:** `v1.3.12`
 
-**Scanned:** 2026-09-04 13:07:55 UTC
+**Scanned:** 2026-09-05 13:06:48 UTC
 
 ## Overview
 
 | Isotope | Critical | High | Medium | Low | Total | Fixable |
 |---------|----------|------|--------|-----|-------|---------|
-| **upstream** | 🔴 3 (🔧3) | 🟠 98 (🔧90) | 290 (🔧163) | 157 (🔧30) | 548 | 🔧 290 |
+| **upstream** | 🔴 3 (🔧3) | 🟠 98 (🔧90) | 290 (🔧183) | 157 (🔧32) | 548 | 🔧 312 |
 | distroless | 0 | 0 | 0 | 0 | 0 | 🔧 2 |
 | ubi-micro | 0 | 🟠 2 (🔧2) | 23 (🔧21) | 9 (🔧3) | 34 | 🔧 28 |
 | ubi-minimal | 0 | 🟠 15 (🔧9) | 103 (🔧43) | 69 (🔧13) | 187 | 🔧 67 |
@@ -159,13 +159,13 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-4373 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-166.el8_10 | glib: Buffer Underflow on GLib through glib/gstring.c via function g_string_insert_unichar |
 | CVE-2026-1484 | MEDIUM | glib2 | 2.56.4-161.el8 | - | Glib: Integer Overflow Leading to Buffer Underflow and Out-of-Bounds Write in GLib g_base64_encode() |
 | CVE-2026-1489 | MEDIUM | glib2 | 2.56.4-161.el8 | - | Glib: GLib: Memory corruption via integer overflow in Unicode case conversion |
-| CVE-2026-15588 | MEDIUM | glib2 | 2.56.4-161.el8 | - | GDBusServer: glib2: GDBusServer pre-authentication DoS via unbounded SASL line buffering |
-| CVE-2026-58010 | MEDIUM | glib2 | 2.56.4-161.el8 | - | glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal() |
-| CVE-2026-58011 | MEDIUM | glib2 | 2.56.4-161.el8 | - | glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid GDateTime |
-| CVE-2026-58012 | MEDIUM | glib2 | 2.56.4-161.el8 | - | glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char() |
-| CVE-2026-58013 | MEDIUM | glib2 | 2.56.4-161.el8 | - | glib: buffer over-read in glib/giochannel.c via "g_io_channel_read_line_backend" |
-| CVE-2026-58014 | MEDIUM | glib2 | 2.56.4-161.el8 | - | glib: off-by-one error in glib/gkeyfile.c via "g_key_file_get_locale_string_list" |
-| CVE-2026-58015 | MEDIUM | glib2 | 2.56.4-161.el8 | - | glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive |
+| CVE-2026-15588 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-177.el8_10 | GDBusServer: glib2: GDBusServer pre-authentication DoS via unbounded SASL line buffering |
+| CVE-2026-58010 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-177.el8_10 | glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal() |
+| CVE-2026-58011 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-177.el8_10 | glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid GDateTime |
+| CVE-2026-58012 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-177.el8_10 | glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char() |
+| CVE-2026-58013 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-177.el8_10 | glib: buffer over-read in glib/giochannel.c via "g_io_channel_read_line_backend" |
+| CVE-2026-58014 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-177.el8_10 | glib: off-by-one error in glib/gkeyfile.c via "g_key_file_get_locale_string_list" |
+| CVE-2026-58015 | MEDIUM | glib2 | 2.56.4-161.el8 | 2.56.4-177.el8_10 | glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive |
 | CVE-2024-33600 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.2 | glibc: null pointer dereferences after failed netgroup cache insertion |
 | CVE-2025-0395 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.16 | glibc: buffer overflow in the GNU C Library's assert() |
 | CVE-2025-4802 | MEDIUM | glibc | 2.28-236.el8.7 | 2.28-251.el8_10.22 | glibc: static setuid binary dlopen may incorrectly search LD_LIBRARY_PATH |
@@ -291,12 +291,12 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0964 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: Improper sanitation of paths received from SCP servers |
 | CVE-2026-0966 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: libssh: Denial of Service via zero-length input in ssh_get_hexa() |
 | CVE-2026-3731 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: libssh: Denial of Service via out-of-bounds read in SFTP extension name handler |
-| CVE-2026-59843 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: libssh: denial of service via zero advertised channel packet size |
-| CVE-2026-59844 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: libssh: denial of service via oversized SFTP read length |
-| CVE-2026-59845 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: libssh: denial of service via unchecked ProxyCommand fork() failure |
-| CVE-2026-59847 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: libssh: integrity downgrade via OpenSSL AES-GCM tag verification |
-| CVE-2026-59848 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: libssh: denial of service via SFTP responses with unknown request IDs |
-| CVE-2026-59850 | MEDIUM | libssh | 0.9.6-10.el8_8 | - | libssh: libssh: use-after-free via data callbacks on closed channels |
+| CVE-2026-59843 | MEDIUM | libssh | 0.9.6-10.el8_8 | 0.9.6-17.el8_10 | libssh: libssh: denial of service via zero advertised channel packet size |
+| CVE-2026-59844 | MEDIUM | libssh | 0.9.6-10.el8_8 | 0.9.6-17.el8_10 | libssh: libssh: denial of service via oversized SFTP read length |
+| CVE-2026-59845 | MEDIUM | libssh | 0.9.6-10.el8_8 | 0.9.6-17.el8_10 | libssh: libssh: denial of service via unchecked ProxyCommand fork() failure |
+| CVE-2026-59847 | MEDIUM | libssh | 0.9.6-10.el8_8 | 0.9.6-17.el8_10 | libssh: libssh: integrity downgrade via OpenSSL AES-GCM tag verification |
+| CVE-2026-59848 | MEDIUM | libssh | 0.9.6-10.el8_8 | 0.9.6-17.el8_10 | libssh: libssh: denial of service via SFTP responses with unknown request IDs |
+| CVE-2026-59850 | MEDIUM | libssh | 0.9.6-10.el8_8 | 0.9.6-17.el8_10 | libssh: libssh: use-after-free via data callbacks on closed channels |
 | CVE-2023-48795 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | 0.9.6-13.el8_9 | ssh: Prefix truncation attack on Binary Packet Protocol (BPP) |
 | CVE-2025-5318 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | 0.9.6-15.el8_10 | libssh: out-of-bounds read in sftp_handle() |
 | CVE-2025-5351 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: Double Free Vulnerability in libssh Key Export Functions |
@@ -305,12 +305,12 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2026-0964 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: Improper sanitation of paths received from SCP servers |
 | CVE-2026-0966 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: libssh: Denial of Service via zero-length input in ssh_get_hexa() |
 | CVE-2026-3731 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: libssh: Denial of Service via out-of-bounds read in SFTP extension name handler |
-| CVE-2026-59843 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: libssh: denial of service via zero advertised channel packet size |
-| CVE-2026-59844 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: libssh: denial of service via oversized SFTP read length |
-| CVE-2026-59845 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: libssh: denial of service via unchecked ProxyCommand fork() failure |
-| CVE-2026-59847 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: libssh: integrity downgrade via OpenSSL AES-GCM tag verification |
-| CVE-2026-59848 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: libssh: denial of service via SFTP responses with unknown request IDs |
-| CVE-2026-59850 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | - | libssh: libssh: use-after-free via data callbacks on closed channels |
+| CVE-2026-59843 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | 0.9.6-17.el8_10 | libssh: libssh: denial of service via zero advertised channel packet size |
+| CVE-2026-59844 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | 0.9.6-17.el8_10 | libssh: libssh: denial of service via oversized SFTP read length |
+| CVE-2026-59845 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | 0.9.6-17.el8_10 | libssh: libssh: denial of service via unchecked ProxyCommand fork() failure |
+| CVE-2026-59847 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | 0.9.6-17.el8_10 | libssh: libssh: integrity downgrade via OpenSSL AES-GCM tag verification |
+| CVE-2026-59848 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | 0.9.6-17.el8_10 | libssh: libssh: denial of service via SFTP responses with unknown request IDs |
+| CVE-2026-59850 | MEDIUM | libssh-config | 0.9.6-10.el8_8 | 0.9.6-17.el8_10 | libssh: libssh: use-after-free via data callbacks on closed channels |
 | CVE-2020-11023 | MEDIUM | libstdc++ | 8.5.0-20.el8 | 8.5.0-23.el8_10 | jquery: Untrusted code execution via <option> tag in HTML passed to DOM manipulation methods |
 | CVE-2024-12133 | MEDIUM | libtasn1 | 4.13-4.el8_7 | 4.13-5.el8_10 | libtasn1: Inefficient DER Decoding in libtasn1 Leading to Potential Remote DoS |
 | CVE-2025-14104 | MEDIUM | libuuid | 2.32.1-43.el8 | 2.32.1-48.el8_10 | util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames |
@@ -323,7 +323,7 @@ _Showing Critical, High, and Medium vulnerabilities only._
 | CVE-2025-6021 | MEDIUM | libxml2 | 2.9.7-18.el8_9 | 2.9.7-21.el8_10.1 | libxml2: Integer Overflow in xmlBuildQName() Leads to Stack Buffer Overflow in libxml2 |
 | CVE-2025-9714 | MEDIUM | libxml2 | 2.9.7-18.el8_9 | 2.9.7-21.el8_10.4 | libxslt: libxml2: Inifinite recursion at exsltDynMapFunction function in libexslt/dynamic.c |
 | CVE-2026-0990 | MEDIUM | libxml2 | 2.9.7-18.el8_9 | - | libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing |
-| CVE-2026-11979 | MEDIUM | libxml2 | 2.9.7-18.el8_9 | - | libxml2: libxml2: Arbitrary code execution in xmlcatalog utility via buffer overflow |
+| CVE-2026-11979 | MEDIUM | libxml2 | 2.9.7-18.el8_9 | 2.9.7-21.el8_10.7 | libxml2: libxml2: Arbitrary code execution in xmlcatalog utility via buffer overflow |
 | CVE-2026-1757 | MEDIUM | libxml2 | 2.9.7-18.el8_9 | - | libxml2: Memory Leak Leading to Local Denial of Service in xmllint Interactive Shell |
 | CVE-2026-6653 | MEDIUM | libxml2 | 2.9.7-18.el8_9 | - | libxml2: mingw-libxml2: libxml2: Denial of Service via crafted XML input due to use-after-free |
 | CVE-2022-4899 | MEDIUM | libzstd | 1.4.4-1.el8 | - | zstd: mysql: buffer overrun in util.c |
